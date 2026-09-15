@@ -1,0 +1,792 @@
+/* -------------------------------------------------------------------------- */
+/* CREATOR CTA / START EARNING SECTION                                       */
+/* -------------------------------------------------------------------------- */
+
+
+
+.creator-cta {
+    width: 100%;
+    padding: 30px 20px 30px;
+    text-align: center;
+}
+
+.creator-cta-inner {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* HEADING                                                                     */
+/* -------------------------------------------------------------------------- */
+
+.creator-cta-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 0.98;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--primary-text);
+    text-transform: uppercase;
+}
+
+.creator-cta-subtitle {
+    margin-top: 24px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    line-height: 1.5;
+
+    color: var(--primary-navy);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* START EARNING CARD                                                         */
+/* -------------------------------------------------------------------------- */
+
+.creator-cta-card {
+    position: relative;
+
+    width: min(100%, 545px);
+    min-height: 242px;
+
+    margin: 42px auto 0;
+    padding: 28px 24px 25px;
+
+    background: var(--white);
+
+    border: 1px solid var(--primary-text);
+    border-radius: 24px;
+
+    text-align: center;
+
+
+    box-shadow: 7px 7px 0 var(--sage);
+}
+
+
+/* Card heading */
+
+.creator-cta-card h3 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 800;
+
+    color: var(--primary-text);
+    text-transform: uppercase;
+}
+
+
+/* Card description */
+
+.creator-cta-card>p {
+    margin-top: 16px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    color: var(--primary-navy);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* RATING                                                                     */
+/* -------------------------------------------------------------------------- */
+
+.creator-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.rating-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+    background: var(--sage-light);
+
+    color: var(--primary-text);
+
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.rating-pill strong {
+    font-size: 14px;
+}
+
+.members {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--primary-text);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* APP STORE BUTTONS                                                          */
+/* -------------------------------------------------------------------------- */
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 17px;
+}
+
+.store-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    width: 145px;
+    height: 48px;
+
+    padding: 5px 10px;
+
+    background: #000;
+    color: #fff;
+
+    border: 1px solid #777;
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.store-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* Store icons */
+
+.apple-icon {
+    width: 25px;
+    font-size: 25px;
+    line-height: 1;
+    color: #fff;
+}
+
+.play-icon {
+    width: 24px;
+
+    font-size: 23px;
+    line-height: 1;
+
+    color: #35B8FF;
+}
+
+
+/* Store text */
+
+.store-button span:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+}
+
+.store-button small {
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+
+    margin-bottom: 2px;
+}
+
+.store-button strong {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* SEE ALL BRANDS BUTTON                                                      */
+/* -------------------------------------------------------------------------- */
+
+.creator-brands-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 170px;
+    height: 50px;
+
+    margin-top: 34px;
+    padding: 0 28px;
+
+    border: 1px solid rgba(20, 37, 54, 0.55);
+    border-radius: 999px;
+
+    background: transparent;
+    color: var(--primary-text);
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.creator-brands-button:hover {
+    background: var(--primary-navy);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* RESPONSIVE                                                                 */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .creator-cta {
+        padding: 25px 16px 35px;
+    }
+
+    .creator-cta-title {
+        font-size: clamp(2.5rem, 11vw, 4rem);
+    }
+
+    .creator-cta-subtitle {
+        margin-top: 18px;
+    }
+
+    .creator-cta-card {
+        margin-top: 32px;
+        padding: 26px 16px 22px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 0 #DFFF5A;
+    }
+
+    .creator-rating {
+        flex-wrap: wrap;
+    }
+
+    .store-buttons {
+        gap: 10px;
+    }
+
+    .store-button {
+        width: 140px;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .store-buttons {
+        flex-direction: column;
+    }
+
+    .store-button {
+        width: 150px;
+    }
+
+    .creator-cta-card {
+        min-height: auto;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* ACCESSIBILITY                                                              */
+/* -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .store-button,
+    .creator-brands-button {
+        transition: none;
+    }
+}
+
+
+
+/* CREATOR CTA END */
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/* MARQUEE CONTAINERS (STRICTLY CONSTRAINED TO 1440px CONTAINER)              */
+/* -------------------------------------------------------------------------- */
+.creator-wrapper{
+    /*CONTAINER: HARD 1440px MAX WIDTH & CENTERED */
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 20px 24px;
+      position: relative;
+}
+
+
+.marquee-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 12px 0;
+    /* Soft fade edges on left and right borders */
+    mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+}
+
+/* Continuous Animation Tracks */
+.marquee-track-right {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scrollRight 38s linear infinite;
+}
+
+.marquee-track-left {
+    display: flex;
+    gap: 18px;
+    width: max-content;
+    animation: scrollLeft 32s linear infinite;
+}
+
+.marquee-wrapper:hover .marquee-track-right,
+.marquee-wrapper:hover .marquee-track-left {
+    animation-play-state: paused;
+}
+
+/* -------------------------------------------------------------------------- */
+/* CUSTOMER EARNING PILLS                                                     */
+/* -------------------------------------------------------------------------- */
+
+.client-chip-pill {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    min-width: 245px;
+    height: 62px;
+
+    padding: 8px 14px 8px 9px;
+
+    border-radius: 999px;
+
+    background: var(--white);
+    border: 1px solid rgba(20, 37, 54, 0.08);
+
+    color: var(--primary-navy);
+
+    box-shadow: 0 4px 12px rgba(20, 37, 54, 0.05);
+
+    flex-shrink: 0;
+}
+
+
+/* Brand logo */
+
+.client-brand-logo {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    background: var(--white);
+}
+
+
+/* Customer + brand */
+
+.client-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-width: 0;
+
+    line-height: 1.15;
+}
+
+.client-info strong {
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    font-weight: 800;
+
+    color: var(--primary-text);
+
+    white-space: nowrap;
+}
+
+.client-info span {
+    margin-top: 4px;
+
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 500;
+
+    color: rgba(20, 37, 54, 0.62);
+
+    white-space: nowrap;
+}
+
+
+/* Earnings */
+
+.client-earning {
+    margin-left: auto;
+
+    padding-left: 10px;
+
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    font-weight: 800;
+
+    color: var(--primary-text);
+
+    white-space: nowrap;
+}
+
+
+.client-icon-circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--primary-navy);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Spring Entrance Animation */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: springFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-2 {
+    animation-delay: 0.2s;
+}
+
+.delay-3 {
+    animation-delay: 0.3s;
+}
+
+.delay-4 {
+    animation-delay: 0.4s;
+}
+
+@keyframes springFadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* RESPONSIVE DESIGN                                                          */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .client-chip-pill {
+        min-width: 220px;
+        height: 58px;
+        padding-right: 12px;
+    }
+
+    .client-brand-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .client-info strong {
+        font-size: 0.82rem;
+    }
+
+    .client-info span {
+        font-size: 0.68rem;
+    }
+
+    .client-earning {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+/* =========================
+   Workflow Section
+========================= */
+
+.workflow-section {
+    position: relative;
+    overflow: hidden;
+    background: #f5f5f2;
+}
+
+.workflow-container {
+    position: relative;
+    z-index: 10;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 96px 24px;
+}
+
+/* =========================
+   Heading
+========================= */
+
+.workflow-heading {
+    max-width: 576px;
+    margin: 0 auto 64px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.workflow-heading h2 {
+    margin: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-family: Arial, sans-serif;
+    font-size: clamp(48px, 7vw, 72px);
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+}
+
+.workflow-heading p {
+    margin: 0;
+
+    text-align: center;
+
+    font-family: Georgia, serif;
+    font-size: clamp(20px, 3vw, 28px);
+    font-style: italic;
+    line-height: 1.4;
+}
+
+/* =========================
+   Cards Grid
+========================= */
+
+.workflow-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.workflow-card {
+    position: relative;
+
+    /* height: 448px; */
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 32px;
+
+    padding: 32px 32px 0;
+
+    background: #ffffff;
+    border: 1px solid #deded9;
+    border-radius: 16px;
+}
+
+.workflow-card p {
+    margin: 0;
+
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.workflow-card img {
+    display: block;
+
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+
+    margin-top: auto;
+
+    filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.15));
+}
+
+/* =========================
+   Decorative Blobs
+========================= */
+
+.blob-container {
+    position: absolute;
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+}
+
+.blob {
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(80px);
+}
+
+.blob-1 {
+    width: 400px;
+    height: 400px;
+
+    top: 10%;
+    left: -180px;
+
+    background: #dbc8e8;
+}
+
+.blob-2 {
+    width: 500px;
+    height: 500px;
+
+    right: -220px;
+    bottom: -180px;
+
+    background: #e9b7e6;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+    .workflow-container {
+        padding: 80px 24px;
+    }
+
+    .workflow-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .workflow-card {
+        height: 448px;
+    }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+    .workflow-container {
+        padding: 64px 20px;
+    }
+
+    .workflow-heading {
+        margin-bottom: 48px;
+        gap: 12px;
+    }
+
+    .workflow-heading h2 {
+        font-size: 48px;
+    }
+
+    .workflow-heading p {
+        font-size: 20px;
+    }
+
+    .workflow-grid {
+        gap: 20px;
+    }
+
+    .workflow-card {
+        height: 420px;
+        padding: 28px 24px 0;
+        gap: 24px;
+        border-radius: 14px;
+    }
+
+    .workflow-card p {
+        font-size: 21px;
+    }
+
+    .workflow-card img {
+        max-width: 210px;
+    }
+}
+
+
+
+/* WORKFLOW SECTION END */

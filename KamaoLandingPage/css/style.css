@@ -1,0 +1,36 @@
+    :root {
+      --primary-navy: #142536;
+      --primary-text: #111315;
+      --secondary-text: #66758A;
+      --muted-text: #8B98A8;
+      --background: #FAFAF7;
+      --white: #FFFFFF;
+      --sage: #B8D6B0;
+      --sage-dark: #5F8F5A;
+      --sage-light: #EDF5E9;
+      --lavender: #EEEAF8;
+      --soft-blue: #EAF1F8;
+      --peach: #F9EDE5;
+      --sand: #F2EEE5;
+      --warning: #C98A32;
+      --error: #C95656;
+      --success: #3D8A47;
+
+      --font-display: 'Oswald', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --max-width: 1440px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--primary-text);
+      font-family: var(--font-body);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }

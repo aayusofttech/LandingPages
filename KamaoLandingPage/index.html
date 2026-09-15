@@ -1,0 +1,509 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KamaOO — Turn Customers Into Influencers</title>
+
+  <!-- Google Fonts: Oswald (Kamao Display Font) & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+  
+</head>
+<body>
+
+   <!-- TRANSLUCENT NAVIGATION BAR -->
+<header class="site-header">
+  <nav class="navbar" id="navbar">
+    <!-- Brand Logo -->
+    <a href="#" class="nav-logo">
+      <span class="logo-dot"></span>
+<span class="tracking-in-expand">KamaOO</span>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="#works">How it works</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+
+    <!-- Desktop Action Buttons -->
+    <div class="nav-actions">
+      <a href="#login" class="btn-text">Sign in</a>
+      <a href="#launch" class="btn-primary">Get Started</a>
+    </div>
+
+    <!-- Mobile Hamburger Toggle -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation" aria-expanded="false">
+      <span class="bar bar-1"></span>
+      <span class="bar bar-2"></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Dropdown Drawer Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="#works" class="mobile-link">How it works</a></li>
+      <li><a href="#features" class="mobile-link">Features</a></li>
+      <li><a href="#pricing" class="mobile-link">Pricing</a></li>
+      <li><a href="#login" class="mobile-link">Sign in</a></li>
+    </ul>
+    <div class="mobile-action-container">
+      <a href="#launch" class="btn-primary mobile-btn">Get Started</a>
+    </div>
+  </div>
+</header>
+
+  <!-- 1. HERO SECTION WITH CLIENT BRANDS -->
+  <div class="wrapper">
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <!-- Main Display Headline -->
+      <h1 class="hero-title fade-up delay-1" >
+        TURN YOUR CUSTOMERS INTO INFLUENCERS
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="hero-subhead fade-up delay-2">
+        Kamao functions as a micro-influencer network designed to serve as an effective growth channel for any brand.
+      </p>
+
+      <!-- Post Counter -->
+ <div class="hero-counter fade-up delay-3">
+  <span class="pulse-dot"></span>
+  <span id="counterTicker" class="ticker-text">184,441 posts</span>
+</div>
+
+      <!-- Call to Action Pill Buttons -->
+      <div class="hero-ctas fade-up delay-4">
+        <a href="#launch" class="btn btn-sage" style="padding: 14px 34px; font-size: 1rem;">
+          Launch campaign
+        </a>
+        <a href="#demo" class="btn btn-outline" style="padding: 14px 34px; font-size: 1rem;">
+          Book a demo call
+        </a>
+      </div>
+
+      <!-- MARQUEE 1: UGC REEL CARDS (SCROLL RIGHT) -->
+      <div class="marquee-wrapper">
+        <div class="marquee-track-right" id="reelsTrack">
+            <!-- 1 -->
+       <div class="reel-card">
+  <img class="fullImage" src="./assets/5.gif" alt="Card" />
+  <div class="reel-gradient"></div>
+  <div class="reel-creator-pill">
+    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User"/>
+    <div class="reel-user-info">
+      <span class="reel-username">@cam_gear</span>
+      <span class="reel-metric">★ 4.9 · 95k views</span>
+    </div>
+  </div>
+</div>
+<!-- 2 -->
+           <div class="reel-card">
+            <img class="fullImage" src="./assets/4.gif" alt="Card" />
+            <div class="reel-gradient"></div>
+
+            <div class="reel-creator-pill">
+              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User" />
+              <div class="reel-user-info">
+                <span class="reel-username">@cam_gear</span>
+                <span class="reel-metric">★ 4.9 · 95k views</span>
+              </div>
+            </div>
+        </div>
+           <div class="reel-card">
+            <img class="fullImage" src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80" alt="Card" />
+            <div class="reel-gradient"></div>
+
+            <div class="reel-creator-pill">
+              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User" />
+              <div class="reel-user-info">
+                <span class="reel-username">@cam_gear</span>
+                <span class="reel-metric">★ 4.9 · 95k views</span>
+              </div>
+            </div>
+        </div>
+        <!-- 3 -->
+                <div class="reel-card">
+            <img class="fullImage" src="./assets/3.gif" alt="Card" />
+
+  <div class="reel-gradient"></div>
+  <div class="reel-creator-pill">
+    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User"/>
+    <div class="reel-user-info">
+      <span class="reel-username">@cam_gear</span>
+      <span class="reel-metric">★ 4.9 · 95k views</span>
+    </div>
+  </div>
+</div>
+
+<!-- 4 -->
+           <div class="reel-card">
+            <img class="fullImage" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80" alt="Card" />
+            <div class="reel-gradient"></div>
+            
+            <div class="reel-creator-pill">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User" />
+              <div class="reel-user-info">
+                <span class="reel-username">@glow_skincare</span>
+                <span class="reel-metric">★ 4.9 · 340k sales</span>
+              </div>
+            </div>
+          </div>
+
+<!-- 5 -->
+        <div class="reel-card">
+            <img class="fullImage" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80" alt="Card" />
+  <div class="reel-gradient"></div>
+  <div class="reel-creator-pill">
+    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User"/>
+    <div class="reel-user-info">
+      <span class="reel-username">@cam_gear</span>
+      <span class="reel-metric">★ 4.9 · 95k views</span>
+    </div>
+  </div>
+</div>
+
+<!-- 6 -->
+           <div class="reel-card">
+            <img class="fullImage" src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80" alt="Card" />
+            <div class="reel-gradient"></div>
+            <div class="reel-creator-pill">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User" />
+              <div class="reel-user-info">
+                <span class="reel-username">@fit_marcus</span>
+                <span class="reel-metric">★ 5.0 · 85k views</span>
+              </div>
+            </div>
+          </div>
+
+<!-- 7 -->
+         <div class="reel-card">
+            <img class="fullImage" src="./assets/2.gif" alt="Card" />
+
+  <div class="reel-gradient"></div>
+  <div class="reel-creator-pill">
+    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User"/>
+    <div class="reel-user-info">
+      <span class="reel-username">@cam_gear</span>
+      <span class="reel-metric">★ 4.9 · 95k views</span>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+
+      <!-- MARQUEE 2: CLIENT BRAND CHIPS (SCROLL LEFT) -->
+      <div class="marquee-wrapper" style="margin-top: 16px;">
+        <div class="marquee-track-left" id="clientsTrack">
+          <div class="client-chip-pill" style="background: var(--lavender);">
+            <div class="client-icon-circle">M</div> Marks & Spencer
+          </div>
+          <div class="client-chip-pill" style="background: var(--soft-blue);">
+            <div class="client-icon-circle" style="background: var(--sage-dark);">G</div> Gymshark
+          </div>
+          <div class="client-chip-pill" style="background: var(--peach);">
+            <div class="client-icon-circle" style="background: var(--warning);">S</div> Sephora
+          </div>
+          <div class="client-chip-pill" style="background: var(--sand);">
+            <div class="client-icon-circle">G</div> Glossier
+          </div>
+          <div class="client-chip-pill" style="background: var(--sage-light);">
+            <div class="client-icon-circle" style="background: var(--sage-dark);">Z</div> Zara
+          </div>
+          <div class="client-chip-pill" style="background: var(--lavender);">
+            <div class="client-icon-circle">K</div> Kith NYC
+          </div>
+          <div class="client-chip-pill" style="background: var(--soft-blue);">
+            <div class="client-icon-circle" style="background: var(--warning);">N</div> Nespresso
+          </div>
+          <div class="client-chip-pill" style="background: var(--peach);">
+            <div class="client-icon-circle" style="background: var(--sage-dark);">A</div> Alo Yoga
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+<!-- HERO SECTION WITH CLIENT BRAND ENDS  -->
+
+<!-- 2. VIEWS SECTION -->
+<section class="stats-banner">
+  <div class="stats-container">
+    <div class="stats-content-wrapper">
+      <h2 class="stats-title reveal-item ">1 MILLION VERIFIED VIEWS</h2>
+      <p class="stats-subtitle reveal-item">on average, for every Rs. 10,000 you invest</p>
+    </div>
+  </div>
+</section>
+<!-- 2. VIEWS SECTION ENDs-->
+
+
+<!-- MEASUREMENT  -->
+  <section class="comparison-section">
+    <div class="comparison-container">
+      
+      <!-- Section Header -->
+      <div class="section-header">
+        <span class="sub-heading reveal-item">Why Choose Us</span>
+        <h2 class="main-heading reveal-item">See How Kamao Outperforms Traditional Marketing</h2>
+        <p class="description reveal-item">Examine essential metrics to observe how user-generated, receipt-verified content accelerates the expansion of your brand.</p>
+      </div>
+
+      <!-- Mobile Tab Switcher (Visible only on screens <= 768px) -->
+      <div class="mobile-tabs">
+        <button class="tab-btn active" data-target="kamao-tip reveal-item">Kamao</button>
+        <button class="tab-btn" data-target="influencer reveal-item">Influencer</button>
+        <button class="tab-btn" data-target="social-ads reveal-item">Social Ads</button>
+        <button class="tab-btn" data-target="tv reveal-item">TV</button>
+      </div>
+
+      <!-- Desktop & Mobile Comparison Matrix -->
+      <div class="comparison-matrix">
+        
+        <!-- Row Labels / Features Column -->
+        <div class="matrix-column features-column reveal-item">
+          <div class="column-header">Features & Metrics</div>
+          <div class="feature-cell">Verified Purchasers</div>
+          <div class="feature-cell">Average Engagement</div>
+          <div class="feature-cell">Average Watch Time</div>
+          <div class="feature-cell">Cost Per Million Views</div>
+          <div class="feature-cell">Sales Attribution</div>
+          <div class="feature-cell">Day One ROAS</div>
+          <div class="feature-cell">Shopper Intelligence</div>
+          <div class="feature-cell">Content Library Created</div>
+          <div class="feature-cell">Content Usage Rights</div>
+          <div class="feature-cell">Proven Incremental Sales</div>
+        </div>
+
+        <!-- Highlighted Column:  -->
+        <div class="matrix-column highlight-column active-mobile reveal-item" id="kamao-tip">
+          <div class="column-header">
+            <span class="badge">Recommended</span>
+            <h3>Kamao</h3>
+          </div>
+          <div class="data-cell" data-label="Verified Purchasers"><span class="highlight-text">Every creator</span></div>
+          <div class="data-cell" data-label="Average Engagement"><span class="highlight-value">8 - 11%</span></div>
+          <div class="data-cell" data-label="Average Watch Time"><strong>8.4 sec</strong></div>
+          <div class="data-cell" data-label="Cost Per Million Views"><strong class="price">Rs. 10,000</strong></div>
+          <div class="data-cell" data-label="Sales Attribution"><span class="tag tag-success">Receipt Verified</span></div>
+          <div class="data-cell" data-label="Day One ROAS"><span class="tag tag-success">Positive</span></div>
+          <div class="data-cell" data-label="Shopper Intelligence"><strong>100,000+ receipts</strong></div>
+          <div class="data-cell" data-label="Content Library Created"><strong>1,000+ videos</strong></div>
+          <div class="data-cell" data-label="Content Usage Rights"><strong>Perpetual</strong></div>
+          <div class="data-cell" data-label="Proven Incremental Sales"><span class="tag tag-success">Receipt verified</span></div>
+        </div>
+
+        <!-- Column 2: Influencer Marketing -->
+        <div class="matrix-column  reveal-item" id="influencer">
+          <div class="column-header">
+            <h3>INFLUENCER MARKETING</h3>
+          </div>
+          <div class="data-cell" data-label="Verified Purchasers"><span class="text-muted">No</span></div>
+          <div class="data-cell" data-label="Average Engagement">1 - 3%</div>
+          <div class="data-cell" data-label="Average Watch Time">3 - 6 sec</div>
+          <div class="data-cell" data-label="Cost Per Million Views">Rs. 100,000+</div>
+          <div class="data-cell" data-label="Sales Attribution">Limited</div>
+          <div class="data-cell" data-label="Day One ROAS"><span class="text-warning">Rarely measured</span></div>
+          <div class="data-cell" data-label="Shopper Intelligence">None</div>
+          <div class="data-cell" data-label="Content Library Created">11 posts</div>
+          <div class="data-cell" data-label="Content Usage Rights">Usually limited</div>
+          <div class="data-cell" data-label="Proven Incremental Sales">Limited evidence</div>
+        </div>
+
+        <!-- Column 3: Social Ads -->
+        <div class="matrix-column  reveal-item"" id="social-ads">
+          <div class="column-header">
+            <h3>SOCIAL ADS</h3>
+          </div>
+          <div class="data-cell" data-label="Verified Purchasers"><span class="text-muted">No</span></div>
+          <div class="data-cell" data-label="Average Engagement">0.5 - 2%</div>
+          <div class="data-cell" data-label="Average Watch Time">2 - 4 sec</div>
+          <div class="data-cell" data-label="Cost Per Million Views">Rs. 5 - Rs. 15,000</div>
+          <div class="data-cell" data-label="Sales Attribution">Click level</div>
+          <div class="data-cell" data-label="Day One ROAS">Often positive</div>
+          <div class="data-cell" data-label="Shopper Intelligence">None</div>
+          <div class="data-cell" data-label="Content Library Created">None</div>
+          <div class="data-cell" data-label="Content Usage Rights">None</div>
+          <div class="data-cell" data-label="Proven Incremental Sales">Sometimes</div>
+        </div>
+
+        <!-- Column 4: TV -->
+        <div class="matrix-column reveal-item" id="tv">
+          <div class="column-header">
+            <h3>TV</h3>
+          </div>
+          <div class="data-cell" data-label="Verified Purchasers"><span class="text-muted">No</span></div>
+          <div class="data-cell" data-label="Average Engagement"><span class="text-muted">N/A</span></div>
+          <div class="data-cell" data-label="Average Watch Time">15 - 30 sec</div>
+          <div class="data-cell" data-label="Cost Per Million Views">Rs. 10 - Rs. 25,000</div>
+          <div class="data-cell" data-label="Sales Attribution">Econometric</div>
+          <div class="data-cell" data-label="Day One ROAS"><span class="text-muted">Not measurable</span></div>
+          <div class="data-cell" data-label="Shopper Intelligence">None</div>
+          <div class="data-cell" data-label="Content Library Created">1 advert</div>
+          <div class="data-cell" data-label="Content Usage Rights">None</div>
+          <div class="data-cell" data-label="Proven Incremental Sales">Hard to isolate</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<!-- MEASUREMENT END -->
+
+
+  <script>
+    // Initialize Lucide icons
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+
+    // Seamless continuous infinite scroll cloning
+    const reelsTrack = document.getElementById('reelsTrack');
+    if (reelsTrack) {
+      reelsTrack.innerHTML += reelsTrack.innerHTML + reelsTrack.innerHTML;
+    }
+
+    const clientsTrack = document.getElementById('clientsTrack');
+    if (clientsTrack) {
+      clientsTrack.innerHTML += clientsTrack.innerHTML + clientsTrack.innerHTML;
+    }
+
+    // HERO PAGE COUNTER
+    // Array of items to cycle through
+const metrics = [
+  "184,441 posts",
+  "23,293 Views",
+  "$1.8M Paid to Creators",
+  "98.4% Engagement Rate",
+  "12,500+ Active Campaigns"
+];
+
+let currentMetricIndex = 0;
+const tickerEl = document.getElementById('counterTicker');
+
+setInterval(() => {
+  if (!tickerEl) return;
+
+  // 1. Exit animation (slide up & fade)
+  tickerEl.classList.add('ticker-exit');
+
+  setTimeout(() => {
+    // 2. Change content to next metric
+    currentMetricIndex = (currentMetricIndex + 1) % metrics.length;
+    tickerEl.textContent = metrics[currentMetricIndex];
+
+    // 3. Move instantly to bottom starting point
+    tickerEl.classList.remove('ticker-exit');
+    tickerEl.classList.add('ticker-prepare');
+
+    // 4. Animate smoothly from bottom into center
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        tickerEl.classList.remove('ticker-prepare');
+      });
+    });
+  }, 380); // Trigger right before the 0.4s CSS exit transition completes
+}, 2000); // 2 Seconds Loop
+    // HERO PAGE COUNTER ENDDSS
+
+
+    // NAVBAR JAVASCRIOPT 
+    // 1. Scroll-Triggered Navbar Transformation (200px threshold)
+const navbar = document.getElementById('navbar');
+const scrollThreshold = 200;
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > scrollThreshold) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+}, { passive: true });
+
+// 2. Mobile Menu Toggle Animation
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburgerBtn.addEventListener('click', () => {
+  const isOpen = hamburgerBtn.classList.toggle('active');
+  mobileMenu.classList.toggle('open');
+  hamburgerBtn.setAttribute('aria-expanded', isOpen);
+});
+
+// Close mobile menu automatically when a link is clicked
+document.querySelectorAll('.mobile-link, .mobile-btn').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburgerBtn.classList.remove('active');
+    mobileMenu.classList.remove('open');
+    hamburgerBtn.setAttribute('aria-expanded', 'false');
+  });
+});
+
+// Close mobile menu when clicking outside of it
+document.addEventListener('click', (e) => {
+  const isClickInside = navbar.contains(e.target) || mobileMenu.contains(e.target);
+  if (!isClickInside && mobileMenu.classList.contains('open')) {
+    hamburgerBtn.classList.remove('active');
+    mobileMenu.classList.remove('open');
+    hamburgerBtn.setAttribute('aria-expanded', 'false');
+  }
+});
+    // NAVBAR JAVASCRIOPT NEND
+
+    // REAVEAL ANIMATION
+    document.addEventListener("DOMContentLoaded", () => {
+  const revealItems = document.querySelectorAll('.reveal-item');
+
+  const observerOptions = {
+    root: null, // uses the browser viewport
+    rootMargin: '0px 0px -80px 0px', // triggers just before it fully enters screen view
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries, observerInstance) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        // Unobserve once animated so it stays visible and doesn't re-trigger
+        observerInstance.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  revealItems.forEach(item => {
+    observer.observe(item);
+  });
+});
+    // REAVEAL ANIMATION END 
+
+    // MEASUREMENT SECTION 
+    const tabs = document.querySelectorAll('.tab-btn');
+    const columns = document.querySelectorAll('.matrix-column:not(.features-column)');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        columns.forEach(col => col.classList.remove('active-mobile'));
+
+        tab.classList.add('active');
+        const targetId = tab.getAttribute('data-target');
+        document.getElementById(targetId).classList.add('active-mobile');
+      });
+    });
+    // MEASUREMENT SECTION END 
+  </script>
+</body>
+</html>

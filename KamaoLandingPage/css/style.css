@@ -6,7 +6,7 @@
       --background: #FAFAF7;
       --white: #FFFFFF;
       --sage: #B8D6B0;
-      --sage-dark: #5F8F5A;
+      --sage-dark: #28b900;
       --sage-light: #EDF5E9;
       --lavender: #EEEAF8;
       --soft-blue: #EAF1F8;
@@ -15,6 +15,7 @@
       --warning: #C98A32;
       --error: #C95656;
       --success: #3D8A47;
+      --lightPrimary: #28b900;
 
       --font-display: 'Oswald', sans-serif;
       --font-body: 'Plus Jakarta Sans', sans-serif;

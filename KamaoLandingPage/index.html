@@ -19,9 +19,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animation.css">
   
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"
+/>
 </head>
 <body>
-
+  <div data-scroll-container>
    <!-- TRANSLUCENT NAVIGATION BAR -->
 <header class="site-header">
   <nav class="navbar" id="navbar">
@@ -364,6 +368,125 @@
 <!-- MEASUREMENT END -->
 
 
+<!-- BUDGET MANAGEMENT  -->
+ <section class="buddgetSection">
+ <main class="calculator-wrapper">
+    <div class="budget-card">
+      
+      <!-- Top Header -->
+      <div class="card-header">
+        <div class="badge-pill reveal-item">
+          <i data-lucide="zap"></i> Flexible Pricing
+        </div>
+        <h2 class="title reveal-item">SET YOUR BUDGET</h2>
+        <p class="subtitle reveal-item">Starter budgets from <strong>Rs. 500</strong>.</p>
+      </div>
+
+      <!-- Slider Input Section -->
+      <div class="slider-container">
+        <div class="slider-header">
+          <label for="budgetSlider" class="slider-label">Your Budget</label>
+          <div class="budget-display">
+            <span class="currency">Rs. </span><span id="budgetValue">17,500</span>
+          </div>
+        </div>
+
+        <div class="range-wrapper reveal-item">
+          <input 
+            type="range" 
+            id="budgetSlider" 
+            min="50" 
+            max="1000" 
+            step="25" 
+            value="75"
+            class="styled-slider"
+          >
+        </div>
+        <div class="slider-ticks reveal-item">
+          <span>Rs. 50</span>
+          <span>Rs. 750</span>
+          <span>Rs. 999+</span>
+        </div>
+      </div>
+
+      <!-- Live Calculated Metrics Grid -->
+      <div class="metrics-grid reveal-item">
+        
+        <!-- Metric 1 -->
+        <div class="metric-card">
+          <div class="metric-header">
+            <div class="icon-box">
+              <i data-lucide="file-check"></i>
+            </div>
+            <span class="metric-title">Verified Posts</span>
+          </div>
+          <div class="metric-value" id="postsValue">1,750</div>
+        </div>
+
+        <!-- Metric 2 -->
+        <div class="metric-card highlight-metric">
+          <div class="metric-header">
+            <div class="icon-box">
+              <i data-lucide="eye"></i>
+            </div>
+            <span class="metric-title">Verified Views</span>
+          </div>
+          <div class="metric-value" id="viewsValue">1,750,000</div>
+        </div>
+
+        <!-- Metric 3 -->
+        <div class="metric-card">
+          <div class="metric-header">
+            <div class="icon-box">
+              <i data-lucide="trending-up"></i>
+            </div>
+            <span class="metric-title">Engagement Rate</span>
+          </div>
+          <div class="metric-value" id="engagementValue">8-12%</div>
+        </div>
+
+      </div>
+
+      <!-- CTA Button & Footer Notes -->
+      <div class="card-footer">
+        <button class="cta-btn">
+          <span>Launch Campaign</span>
+          <i data-lucide="arrow-right"></i>
+        </button>
+        
+        <div class="trust-features">
+          <div class="trust-item">
+            <i data-lucide="shield-check"></i>
+            <span>No contract. Top up or pause anytime.</span>
+          </div>
+          <div class="trust-item">
+            <i data-lucide="clock"></i>
+            <span>Launch in minutes.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  </section>
+<!-- BUDGET MANAGEMENT ENDas -->
+ 
+</div>
+<!-- SCROLL  -->
+ <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <script>
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true,
+      smartphone: {
+        smooth: false
+      },
+      tablet: {
+        smooth: false
+      }
+    });
+  </script>
+  <!-- SCROLL END -->
   <script>
     // Initialize Lucide icons
     if (window.lucide) {
@@ -418,6 +541,10 @@ setInterval(() => {
   }, 380); // Trigger right before the 0.4s CSS exit transition completes
 }, 2000); // 2 Seconds Loop
     // HERO PAGE COUNTER ENDDSS
+
+// SMOOTH SCROOOL 
+ 
+// SMOOTH SCROOOL END END DNDK
 
 
     // NAVBAR JAVASCRIOPT 
@@ -504,6 +631,45 @@ document.addEventListener('click', (e) => {
       });
     });
     // MEASUREMENT SECTION END 
+
+    // BUDGET MANAGEMENT
+    document.addEventListener('DOMContentLoaded', () => {
+  // Initialize Lucide Icons
+  lucide.createIcons();
+
+  const slider = document.getElementById('budgetSlider');
+  const budgetValue = document.getElementById('budgetValue');
+  const postsValue = document.getElementById('postsValue');
+  const viewsValue = document.getElementById('viewsValue');
+
+  // Update calculation metrics dynamically
+  function updateCalculator() {
+    const value = parseInt(slider.value, 10);
+    
+    // Format Budget (Rs. )
+    budgetValue.textContent = value.toLocaleString();
+
+    // Calculations based on budget
+    const posts = Math.round(value / 10);
+    const views = value * 100;
+
+    postsValue.textContent = posts.toLocaleString();
+    viewsValue.textContent = views.toLocaleString();
+
+    // Dynamic Slider Fill Background Track Color
+    const percentage = ((value - slider.min) / (slider.max - slider.min)) * 100;
+    slider.style.background = `linear-gradient(to right,  #1feb0a 0%, var(--sage-dark) ${percentage}%, var(--sand) ${percentage}%, var(--sand) 100%)`;
+  }
+
+  // Listener for interactive slider adjustment
+  slider.addEventListener('input', updateCalculator);
+
+  // Initial calculation on page load
+  updateCalculator();
+});
+// background: linear-gradient(to right, #1feb0a 0%, #266f00 36.84210526315789%, var(--sand) 36.84210526315789%, var(--sand) 100%);
+
+    // BUDGET MANAGEMENT END
   </script>
 </body>
 </html>

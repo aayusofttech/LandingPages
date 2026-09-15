@@ -962,3 +962,333 @@
   }
 }
     /* MEASUREMENT SECTITON END  */
+
+    /* BUDGET MANAGEMENT  */
+    /* Container */
+.calculator-wrapper {
+  width: 100%;
+  max-width: 760px;
+}
+
+.budget-card {
+  background: var(--white);
+  border-radius: 17px;
+  padding: 48px 40px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(20, 37, 54, 0.06);
+  transition: transform 0.3s ease;
+}
+
+/* Header Section */
+.card-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--sage-light);
+  color: var(--lightPrimary);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.badge-pill svg {
+  width: 14px;
+  height: 14px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 38px;
+  letter-spacing: 0.5px;
+  color: var(--primary-navy);
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: var(--secondary-text);
+  font-size: 16px;
+}
+
+.subtitle strong {
+  color: var(--primary-navy);
+}
+
+/* Slider Section */
+.slider-container {
+  background-color: var(--background);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  margin-bottom: 32px;
+  border: 1px solid var(--sand);
+}
+
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.slider-label {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--primary-navy);
+}
+
+.budget-display {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  display: flex;
+  align-items: center;
+}
+
+.budget-display .currency {
+  color: var(--lightPrimary);
+  margin-right: 2px;
+}
+
+.range-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.styled-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--sand);
+  outline: none;
+  cursor: pointer;
+}
+
+/* Custom Slider Thumb styling */
+.styled-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 3px solid var(--sage-dark);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.styled-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+.slider-ticks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted-text);
+  font-weight: 600;
+}
+
+/* Metrics Cards Grid */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.metric-card {
+  background-color: var(--background);
+  border-radius: var(--radius-lg);
+  padding: 20px 18px;
+  border: 1px solid var(--sand);
+  transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--sage);
+  background-color: var(--white);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+}
+
+.metric-card.highlight-metric {
+  background-color: var(--sage-light);
+  border-color: var(--sage);
+}
+
+.metric-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.icon-box {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sage-dark);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.icon-box svg {
+  width: 16px;
+  height: 16px;
+}
+
+.metric-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--secondary-text);
+}
+
+.metric-value {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-navy);
+}
+
+/* Footer & Call To Action */
+.card-footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-btn {
+  background-color: var(--lightPrimary);
+  color: var(--white);
+  border: none;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 20px rgba(184, 214, 176, 0.4);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+  justify-content: center;
+}
+
+.cta-btn:hover {
+  background-color: var(--sage-dark);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(95, 143, 90, 0.3);
+}
+
+.cta-btn svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.2s ease;
+}
+
+.cta-btn:hover svg {
+  transform: translateX(4px);
+}
+
+.trust-features {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--secondary-text);
+}
+
+.trust-item svg {
+  width: 15px;
+  height: 15px;
+  color: var(--sage-dark);
+}
+.buddgetSection{
+  width: 100%;
+  margin: 0 auto;
+      display: flex;
+      padding-top: 80px;
+          background: radial-gradient(circle at 15% 20%, rgb(214 255 203 / 52%) 0%, transparent 45%), radial-gradient(circle at 85% 80%, rgba(249, 237, 229, 0.7) 0%, transparent 50%), linear-gradient(180deg, var(--background, #FAFAF7) 0%, #feffb882 100%);
+    justify-content: center;
+}
+/* Responsive Rules */
+@media (max-width: 768px) {
+  .budget-card {
+    padding: 32px 20px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .metric-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+  }
+
+  .metric-header {
+    margin-bottom: 0;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+    /* BUDGET MANAGEMENT  END*/
+
+
+    /* TEST  */
+    .scrollDist {
+  position:absolute;
+}
+
+.mainPara {
+  position:fixed;
+  background:#fff;
+  width:100%;
+  max-width:1200px;
+  height:100%;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.scrollDist {
+  width:100%;
+  height:200%;
+}

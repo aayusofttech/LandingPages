@@ -2214,3 +2214,265 @@ input[type="checkbox"]:checked+.col-section h3::after {
   color: #333;
 }
 /* FOOOTER END */
+
+/* REVIEW SECTION  */
+/*-- -------------------------- -->
+<---          CTA               -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews-1529 {
+    padding: var(--sectionPadding);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #reviews-1529 .cs-container {
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6.3vw, 4rem);
+  }
+  #reviews-1529 .cs-content {
+    text-align: center;
+    width: 100%;
+    max-width: 39.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #reviews-1529 .cs-review {
+    width: 100%;
+    padding: clamp(2rem, 7vw, 5rem) clamp(1.5rem, 7vw, 6.875rem);
+    box-sizing: border-box;
+    border: 1px solid var(--secondary);
+    border-radius: clamp(2rem, 5vw, 6.25rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  #reviews-1529 .cs-review:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    border-radius: clamp(2rem, 5vw, 6.25rem);
+    opacity: 0.1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  /* Inner container for review item transition animation */
+  #reviews-1529 .cs-review-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+  }
+
+  /* Transition state when switching testimonials */
+  #reviews-1529 .cs-review-inner.is-animating {
+    opacity: 0;
+    transform: translateY(15px);
+    filter: blur(4px);
+  }
+
+  #reviews-1529 .cs-image-group {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: relative;
+    display: none;
+    z-index: 1;
+    aspect-ratio: 1.15966387;
+  }
+  #reviews-1529 .cs-picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  #reviews-1529 .cs-picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #reviews-1529 .cs-flex {
+    max-width: 46rem;
+  }
+  #reviews-1529 .cs-quote {
+    font-size: clamp(0.875rem, 2vw, 1.25rem);
+    line-height: 1.5em;
+    font-weight: 400;
+    margin: 0 0 1.5rem;
+    color: #4e4b66;
+  }
+  #reviews-1529 .cs-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 0.25rem;
+    color: #1a1a1a;
+    display: block;
+  }
+  #reviews-1529 .cs-job {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: var(--primaryLight);
+    display: block;
+  }
+  #reviews-1529 .cs-mask {
+    --maskBorder: #ffffff;
+    --maskBG: #c5e5ca;
+    width: 101%;
+    height: 101%;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+  }
+  #reviews-1529 .cs-mask path {
+    transition: stroke 0.3s;
+  }
+
+  /* Navigation Button Controls */
+  #reviews-1529 .cs-nav-controls {
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    bottom: 24px;
+    right: 32px;
+    z-index: 10;
+  }
+
+  #reviews-1529 .cs-nav-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid var(--secondary);
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+  }
+
+  #reviews-1529 .cs-nav-btn:hover {
+    background-color: var(--secondary);
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+
+  #reviews-1529 .cs-blob-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: clamp(2rem, 5vw, 6.25rem);
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #reviews-1529 .cs-blob {
+    --blobColor: var(--secondary);
+  }
+  #reviews-1529 .cs-blob1 {
+    width: 6.25rem;
+    height: auto;
+    opacity: 0.25;
+    position: absolute;
+    top: -0.3125rem;
+    left: -1.875rem;
+  }
+  #reviews-1529 .cs-blob2 {
+    width: clamp(14.9375rem, 40vw, 28.8125rem);
+    height: auto;
+    opacity: 0.25;
+    position: absolute;
+    right: -3.125rem;
+    bottom: -0.9375rem;
+  }
+  #reviews-1529 .cs-graphic {
+    position: absolute;
+    z-index: 1;
+  }
+  #reviews-1529 .cs-graphic-one {
+    width: clamp(3rem, 10vw, 8.625rem);
+    height: auto;
+    top: -1.25rem;
+    right: -1.25rem;
+    transform: rotate(104deg);
+  }
+  #reviews-1529 .cs-graphic-two {
+    width: clamp(5.5rem, 15vw, 12.3125rem);
+    height: auto;
+    bottom: -1.25rem;
+    left: -2rem;
+  }
+}
+
+/* Tablet - 500px */
+@media only screen and (min-width: 31.25rem) {
+  #reviews-1529 .cs-container {
+    max-width: 80rem;
+  }
+  #reviews-1529 .cs-review {
+    max-width: none;
+    flex-direction: row;
+    padding-bottom: clamp(2rem, 7vw, 5rem);
+  }
+  #reviews-1529 .cs-review-inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  #reviews-1529 .cs-image-group,
+  #reviews-1529 .cs-flex {
+    flex: 1 0 0;
+  }
+  #reviews-1529 .cs-image-group {
+    max-width: 16.25rem;
+  }
+  #reviews-1529 .cs-nav-controls {
+    bottom: 24px;
+    right: 40px;
+  }
+}
+
+/* Larger Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #reviews-1529 .cs-picture {
+    font-size: inherit;
+  }
+  #reviews-1529 .cs-blob1 {
+    width: 10rem;
+    left: 0;
+    top: 0;
+  }
+}
+#reviews-1529 .cs-blob2 {
+    --blobColor: #28a745; /* Replace with your preferred green shade (e.g., #22c55e, #10b981) */
+}
+/* REVIEW SECTION END */

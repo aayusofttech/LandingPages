@@ -20,6 +20,8 @@
       --font-display: 'Oswald', sans-serif;
       --font-body: 'Plus Jakarta Sans', sans-serif;
       --max-width: 1440px;
+      --primaryLight: #28b900;
+
     }
 
     * {

@@ -18,15 +18,12 @@
     <link rel="stylesheet" href="./css/homepage.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animation.css">
+    <script src="script.js" defer></script>
   
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"
-/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"/>
 </head>
 <body>
-  <div data-scroll-container>
-   <!-- TRANSLUCENT NAVIGATION BAR -->
+     <!-- TRANSLUCENT NAVIGATION BAR -->
 <header class="site-header">
   <nav class="navbar" id="navbar">
     <!-- Brand Logo -->
@@ -68,6 +65,8 @@
     </div>
   </div>
 </header>
+  <div data-scroll-container>
+
 
   <!-- 1. HERO SECTION WITH CLIENT BRANDS -->
   <div class="wrapper">
@@ -470,7 +469,163 @@
   </main>
   </section>
 <!-- BUDGET MANAGEMENT ENDas -->
+
+
+<!-- PROJECT SHOWCASE -->
+  <section class="workflow-section">
+        <div class="workflow-container">
+
+            <div class="workflow-heading">
+                <h2 class="reveal-item">How it works</h2>
+                <p class="reveal-item">Simple. Seamless. Rewarding.</p>
+            </div>
+
+            <div class="workflow-grid">
+
+                <div class="workflow-card">
+                    <p>Your customer makes a verified purchase.</p>
+                    <img src="./assets/demo_workflow.webp" alt="App home page">
+                </div>
+
+                <div class="workflow-card">
+                    <p>They share genuine love for you on social media.</p>
+                    <img src="./assets/demo_workflow.webp" alt="App post detail page">
+                </div>
+
+                <div class="workflow-card">
+                    <p>They get a cash reward for the post.</p>
+                    <img src="./assets/demo_workflow.webp" alt="App wallet">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="blob-container">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+    </section>
+<!-- PROJECT SHOWCASE END -->
+
+<!-- LAUNCH SECTION -->
+ <section class="launch-section">
+  <div class="launch-card-container">
+    <div class="launch-grid">
+      
+      <!-- LEFT CONTENT COLUMN -->
+      <div class="launch-content">
+        <h2 class="launch-title reveal-item">LAUNCH. THEN WATCH IT WORK.</h2>
+        <p class="launch-subtitle reveal-item">No waiting for the post-campaign report.</p>
+        <p class="launch-desc">
+          Watch your customers post, your views climb and your sales come in, all from your live Kamao dashboard.
+        </p>
+
+        <ul class="launch-checklist">
+          <li>
+            <span class="check-icon-circle">✓</span>
+            <span>Sign up and build your brand profile</span>
+          </li>
+          <li>
+            <span class="check-icon-circle">✓</span>
+            <span>Configure your reward settings and post limits</span>
+          </li>
+          <li>
+            <span class="check-icon-circle">✓</span>
+            <span>Top up your balance and manage your spend control</span>
+          </li>
+          <li>
+            <span class="check-icon-circle">✓</span>
+            <span>Publish your brand and activate your audience</span>
+          </li>
+          <li>
+            <span class="check-icon-circle">✓</span>
+            <span>Start from as little as Rs. 500</span>
+          </li>
+        </ul>
+
+        <div class="launch-buttons">
+          <a href="#get-started" class="btn btn-primary">Get started</a>
+          <a href="#demo" class="btn btn-outline">Book a demo call</a>
+        </div>
+      </div>
+
+      <!-- RIGHT VISUAL COLUMN (Dashboard & Floating Badges) -->
+      <div class="launch-visual">
+        <div class="dashboard-wrapper">
+          
+          <!-- Main Vibrant Sage/Green Container Box -->
+          <div class="green-dashboard-card">
+            <!-- Mock Dashboard UI -->
+            <div class="mock-dash-inner">
+              <div class="mock-dash-top">
+                <span class="mock-brand">Kamao</span>
+                <span class="mock-user">Join us today!</span>
+              </div>
+              <div class="mock-balance-box">
+                <span class="mock-label">Balance</span>
+                <strong class="mock-val">Rs. 3,482.39</strong>
+              </div>
+              <div class="mock-posts-strip">
+                <div class="mock-thumb" style="background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=200&q=80')"></div>
+                <div class="mock-thumb" style="background-image: url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=200&q=80')"></div>
+                <div class="mock-thumb" style="background-image: url('https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=200&q=80')"></div>
+                <div class="mock-thumb" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=200&q=80')"></div>
+              </div>
+              <div class="mock-metrics-grid">
+                <div class="mock-metric-item">
+                  <span>Total investment</span>
+                  <strong>Rs. 15,843.94</strong>
+                </div>
+                <div class="mock-metric-item">
+                  <span>Earned media value</span>
+                  <strong>Rs. 112,415.89</strong>
+                </div>
+                <div class="mock-metric-item">
+                  <span>ROI</span>
+                  <strong>7.1x</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Badge 1: Top CPM -->
+          <div class="float-badge float-cpm">
+            <div class="badge-text-group">
+              <span class="b-label reveal-item">CPM</span>
+              <strong class="b-val">Rs. 3.75</strong>
+            </div>
+            <span class="b-icon">🔗</span>
+          </div>
+
+          <!-- Floating Badge 2: Bottom-Left Earned Media Value -->
+          <div class="float-badge float-emv">
+            <div class="badge-text-group">
+              <span class="b-label">Earned media value</span>
+              <strong class="b-val">Rs. 112,415.89</strong>
+            </div>
+            <span class="b-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hand-coins"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></svg>
+            </span>
+          </div>
+
+          <!-- Floating Badge 3: Bottom-Right ROI -->
+          <div class="float-badge float-roi">
+            <div class="badge-text-group">
+              <span class="b-label">ROI</span>
+              <strong class="b-val">7.1x</strong>
+            </div>
+            <span class="b-icon">📈</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- LAUNCH SECTION END -->
  
+
 </div>
 <!-- SCROLL  -->
  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
@@ -541,10 +696,6 @@ setInterval(() => {
   }, 380); // Trigger right before the 0.4s CSS exit transition completes
 }, 2000); // 2 Seconds Loop
     // HERO PAGE COUNTER ENDDSS
-
-// SMOOTH SCROOOL 
- 
-// SMOOTH SCROOOL END END DNDK
 
 
     // NAVBAR JAVASCRIOPT 

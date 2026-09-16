@@ -3,629 +3,1890 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SocialTip — Turn Customers Into Influencers</title>
 
-  <!-- Google Fonts: Oswald (SocialTip Display Font) & Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>GSAP Canvas Image Interaction</title>
 
-  <!-- Lucide Icons CDN -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
   <style>
-    /* -------------------------------------------------------------------------- */
-    /* COLOR PALETTE VARIABLES (EXACT MATCH TO PROVIDED DESIGN SYSTEM IMAGE)       */
-    /* -------------------------------------------------------------------------- */
-    :root {
-      --primary-navy: #142536;
-      --primary-text: #111315;
-      --secondary-text: #66758A;
-      --muted-text: #8B98A8;
-      --background: #FAFAF7;
-      --white: #FFFFFF;
-      --sage: #B8D6B0;
-      --sage-dark: #5F8F5A;
-      --sage-light: #EDF5E9;
-      --lavender: #EEEAF8;
-      --soft-blue: #EAF1F8;
-      --peach: #F9EDE5;
-      --sand: #F2EEE5;
-      --warning: #C98A32;
-      --error: #C95656;
-      --success: #3D8A47;
-
-      --font-display: 'Oswald', sans-serif;
-      --font-body: 'Plus Jakarta Sans', sans-serif;
-      --max-width: 1440px;
-    }
-
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
+    html,
     body {
-      background-color: var(--background);
-      color: var(--primary-text);
-      font-family: var(--font-body);
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .wrapper {
       width: 100%;
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 24px;
+      min-height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #161616;
+      color: #fff;
+      font-family: "Red Rose", sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* =========================================
+       MAIN
+    ========================================= */
+
+    main {
+      width: 100%;
+      min-height: 100vh;
+
+      display: grid;
+      place-items: center;
+
+      padding: 80px 40px;
+    }
+
+    /* =========================================
+       CARDS
+    ========================================= */
+
+    .cards {
+      width: 100%;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
       position: relative;
+
+      width: 260px;
+      height: 360px;
+
+      margin: 32px 64px;
     }
 
-    /* -------------------------------------------------------------------------- */
-    /* TRANSLUCENT GLASS NAVBAR                                                   */
-    /* -------------------------------------------------------------------------- */
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      padding: 16px 24px;
-    }
+    /* =========================================
+       IMAGE
+    ========================================= */
 
-    .navbar {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      background: rgba(250, 250, 247, 0.85);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(20, 37, 54, 0.08);
-      border-radius: 100px;
-      padding: 10px 28px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 4px 20px rgba(20, 37, 54, 0.03);
-    }
-
-    .logo {
-      font-family: var(--font-display);
-      font-size: 1.8rem;
-      letter-spacing: -0.01em;
-      color: var(--primary-navy);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      text-transform: uppercase;
-    }
-
-    .logo-badge {
-      width: 30px;
-      height: 30px;
-      background-color: var(--sage);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 36px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: var(--primary-text);
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: color 0.2s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--sage-dark);
-    }
-
-    /* Action Buttons */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      border-radius: 100px;
-      font-weight: 700;
-      font-size: 0.95rem;
-      text-decoration: none;
-      cursor: pointer;
-      transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease, background-color 0.2s ease;
-      border: none;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px) scale(1.02);
-    }
-
-    .btn-sage {
-      background-color: var(--sage);
-      color: var(--primary-navy);
-      padding: 12px 28px;
-      box-shadow: 0 4px 14px rgba(184, 214, 176, 0.4);
-    }
-
-    .btn-sage:hover {
-      background-color: var(--sage-dark);
-      color: var(--white);
-    }
-
-    .btn-outline {
-      background-color: var(--white);
-      color: var(--primary-navy);
-      padding: 12px 28px;
-      border: 1px solid rgba(20, 37, 54, 0.15);
-    }
-
-    .btn-outline:hover {
-      background-color: var(--sand);
-    }
-
-    /* -------------------------------------------------------------------------- */
-    /* HERO SECTION                                                               */
-    /* -------------------------------------------------------------------------- */
-    .hero-section {
-      padding-top: 150px;
-      padding-bottom: 30px;
-      text-align: center;
-    }
-
-    .hero-title {
-      font-family: var(--font-display);
-      font-size: clamp(2.8rem, 6.5vw, 5.2rem);
-      line-height: 0.98;
-      letter-spacing: 0.01em;
-      color: var(--primary-text);
-      text-transform: uppercase;
-      max-width: 920px;
-      margin: 0 auto 18px auto;
-    }
-
-    .hero-subhead {
-      font-size: 1.15rem;
-      color: var(--secondary-text);
-      max-width: 620px;
-      margin: 0 auto 18px auto;
-      line-height: 1.5;
-      font-weight: 500;
-    }
-
-    .hero-counter {
-      font-weight: 800;
-      font-size: 1.1rem;
-      color: var(--primary-navy);
-      margin-bottom: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
-
-    .hero-ctas {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      margin-bottom: 50px;
-    }
-
-    /* -------------------------------------------------------------------------- */
-    /* CONTINUOUS MARQUEE CONTAINERS                                               */
-    /* -------------------------------------------------------------------------- */
-    .marquee-wrapper {
-      width: 100vw;
+    .card__image {
       position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
-      overflow: hidden;
-      padding: 12px 0;
-      mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
-      -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
-    }
 
-    /* Continuous Animation Tracks */
-    .marquee-track-right {
-      display: flex;
-      gap: 20px;
-      width: max-content;
-      animation: scrollRight 38s linear infinite;
-    }
-
-    .marquee-track-left {
-      display: flex;
-      gap: 18px;
-      width: max-content;
-      animation: scrollLeft 32s linear infinite;
-    }
-
-    .marquee-wrapper:hover .marquee-track-right,
-    .marquee-wrapper:hover .marquee-track-left {
-      animation-play-state: paused;
-    }
-
-    /* 9:16 UGC Reel Video Cards */
-    .reel-card {
-      width: 210px;
-      height: 330px;
-      border-radius: 20px;
-      position: relative;
-      overflow: hidden;
-      background-color: var(--sand);
-      flex-shrink: 0;
-      box-shadow: 0 10px 25px rgba(20, 37, 54, 0.08);
-      border: 3px solid var(--white);
-      cursor: pointer;
-      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
-    }
-
-    .reel-card:hover {
-      transform: translateY(-8px) scale(1.04);
-      box-shadow: 0 20px 40px rgba(20, 37, 54, 0.15);
-    }
-
-    .reel-card img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+
+      overflow: hidden;
     }
 
-    .reel-gradient {
+    .card__image--inner {
+      position: relative;
+
+      width: 100%;
+      height: 100%;
+
+      overflow: hidden;
+    }
+
+    .card__image--inner canvas {
       position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(20,37,54,0.75) 100%);
+
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      display: block;
+
+      transform: scale(1.02);
     }
 
-    .reel-creator-pill {
+    /* =========================================
+       CARD TEXT
+    ========================================= */
+
+    .card__text {
       position: absolute;
-      bottom: 12px;
-      left: 12px;
-      right: 12px;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
-      border-radius: 100px;
-      padding: 6px 12px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+
+      left: 0;
+      bottom: 25%;
+
+      transform: translateX(-50%);
+
+      pointer-events: none;
+      user-select: none;
+
+      overflow: hidden;
+
+      z-index: 5;
     }
 
-    .reel-avatar {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
+    .card__text--inner {
+      display: inline-block;
 
-    .reel-user-info {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.1;
-      text-align: left;
-    }
+      color: #fff;
 
-    .reel-username {
-      font-weight: 800;
-      font-size: 0.75rem;
-      color: var(--primary-navy);
-    }
+      font-size: 3rem;
+      line-height: 1;
 
-    .reel-metric {
-      font-size: 0.65rem;
-      color: var(--sage-dark);
+      font-family: "Red Rose", sans-serif;
       font-weight: 700;
+
+      white-space: nowrap;
     }
 
-    .play-icon-overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 44px;
-      height: 44px;
-      background: rgba(255, 255, 255, 0.35);
-      backdrop-filter: blur(10px);
-      border-radius: 50%;
+    /* =========================================
+       LOADER
+    ========================================= */
+
+    .loading__wrapper {
+      position: fixed;
+
+      left: 0;
+      top: 0;
+
+      width: 100%;
+      height: 100vh;
+
       display: flex;
-      align-items: center;
       justify-content: center;
-      color: var(--white);
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      transition: transform 0.2s ease, background 0.2s ease;
-    }
-
-    .reel-card:hover .play-icon-overlay {
-      transform: translate(-50%, -50%) scale(1.15);
-      background: rgba(255, 255, 255, 0.9);
-      color: var(--primary-navy);
-    }
-
-    /* Client Logo Chips */
-    .client-chip-pill {
-      display: inline-flex;
       align-items: center;
-      gap: 10px;
-      padding: 8px 22px;
-      border-radius: 100px;
-      background: var(--white);
-      border: 1px solid rgba(20, 37, 54, 0.08);
-      font-weight: 700;
-      font-size: 0.88rem;
-      color: var(--primary-navy);
-      box-shadow: 0 4px 12px rgba(20, 37, 54, 0.03);
-      flex-shrink: 0;
+
+      background: #000;
+
+      z-index: 200;
+
+      transition:
+        opacity 500ms ease-in,
+        visibility 500ms ease-in;
     }
 
-    .client-icon-circle {
-      width: 26px;
-      height: 26px;
-      border-radius: 50%;
-      background: var(--primary-navy);
-      color: var(--white);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.75rem;
-      font-weight: 800;
-    }
-
-    /* -------------------------------------------------------------------------- */
-    /* KEYFRAME ANIMATIONS                                                       */
-    /* -------------------------------------------------------------------------- */
-    @keyframes scrollRight {
-      0% { transform: translateX(-50%); }
-      100% { transform: translateX(0%); }
-    }
-
-    @keyframes scrollLeft {
-      0% { transform: translateX(0%); }
-      100% { transform: translateX(-50%); }
-    }
-
-    /* Spring Entrance Effect */
-    .fade-up {
+    .loading__wrapper.hide {
       opacity: 0;
-      transform: translateY(30px);
-      animation: springFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      visibility: hidden;
+
+      pointer-events: none;
+      user-select: none;
     }
 
-    .delay-1 { animation-delay: 0.1s; }
-    .delay-2 { animation-delay: 0.2s; }
-    .delay-3 { animation-delay: 0.3s; }
-    .delay-4 { animation-delay: 0.4s; }
+    .loader__text {
+      color: #fff;
 
-    @keyframes springFadeUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      font-family: "Red Rose", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+
+      letter-spacing: 0.04em;
     }
 
-    /* -------------------------------------------------------------------------- */
-    /* RESPONSIVE DESIGN                                                          */
-    /* -------------------------------------------------------------------------- */
+    /* =========================================
+       SUPPORT
+    ========================================= */
+
+    .support {
+      position: fixed;
+
+      right: 20px;
+      bottom: 20px;
+
+      z-index: 20;
+    }
+
+    .support a {
+      color: #fff;
+
+      text-decoration: none;
+
+      font-size: 13px;
+
+      opacity: 0.5;
+
+      transition: opacity 200ms ease;
+    }
+
+    .support a:hover {
+      opacity: 1;
+    }
+
+    /* =========================================
+       MOBILE
+    ========================================= */
+
     @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .hero-ctas {
-        flex-direction: column;
-        padding: 0 20px;
+      main {
+        padding: 50px 20px;
       }
-      .btn { width: 100%; }
-      .reel-card {
-        width: 165px;
-        height: 260px;
+
+      .card {
+        width: min(260px, 80vw);
+        height: min(360px, 110vw);
+
+        margin: 40px 20px;
+      }
+
+      .card__text--inner {
+        font-size: 2.4rem;
       }
     }
   </style>
 </head>
+
 <body>
 
-  <div class="wrapper">
-    <!-- ---------------------------------------------------------------------- -->
-    <!-- TRANSLUCENT NAVBAR                                                     -->
-    <!-- ---------------------------------------------------------------------- -->
-    <header>
-      <nav class="navbar">
-        <a href="#" class="logo">
-          <div class="logo-badge">
-            <i data-lucide="play" size="14" fill="#142536" color="#142536"></i>
-          </div>
-          SocialTip
-        </a>
+  <!-- =========================================
+       MAIN
+  ========================================= -->
 
-        <ul class="nav-links">
-          <li><a href="#works">How it works</a></li>
-          <li><a href="#promote">Promote created content</a></li>
-        </ul>
+  <main>
+    <div class="cards">
 
-        <a href="#launch" class="btn btn-sage">Launch campaign</a>
-      </nav>
-    </header>
+      <!-- CARD 1 -->
+      <div class="card">
 
-    <!-- ---------------------------------------------------------------------- -->
-    <!-- HERO SECTION                                                           -->
-    <!-- ---------------------------------------------------------------------- -->
-    <section class="hero-section">
-      <!-- Main Display Headline -->
-      <h1 class="hero-title fade-up delay-1">
-        TURN YOUR CUSTOMERS INTO INFLUENCERS
-      </h1>
-
-      <!-- Subheadline -->
-      <p class="hero-subhead fade-up delay-2">
-        Social Tip is a micro-influencer network to perform as an effective growth channel for any brand.
-      </p>
-
-      <!-- Post Counter -->
-      <div class="hero-counter fade-up delay-3">
-        <span>184,441 posts</span>
-      </div>
-
-      <!-- Call to Action Pill Buttons -->
-      <div class="hero-ctas fade-up delay-4">
-        <a href="#launch" class="btn btn-sage" style="padding: 14px 34px; font-size: 1rem;">
-          Launch campaign
-        </a>
-        <a href="#demo" class="btn btn-outline" style="padding: 14px 34px; font-size: 1rem;">
-          Book a demo call
-        </a>
-      </div>
-
-      <!-- ------------------------------------------------------------------ -->
-      <!-- CONTINUOUS MARQUEE 1: UGC REEL CARDS (SCROLL RIGHT)                -->
-      <!-- ------------------------------------------------------------------ -->
-      <div class="marquee-wrapper">
-        <div class="marquee-track-right" id="reelsTrack">
-          <!-- Card 1 -->
-          <div class="reel-card">
-            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=80" alt="Card" />
-            <div class="reel-gradient"></div>
-            <div class="play-icon-overlay"><i data-lucide="play" size="18" fill="currentColor"></i></div>
-            <div class="reel-creator-pill">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User" />
-              <div class="reel-user-info">
-                <span class="reel-username">@chloe_style</span>
-                <span class="reel-metric">★ 4.9 · 120k sales</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="reel-card">
-            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80" alt="Card" />
-            <div class="reel-gradient"></div>
-            <div class="play-icon-overlay"><i data-lucide="play" size="18" fill="currentColor"></i></div>
-            <div class="reel-creator-pill">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User" />
-              <div class="reel-user-info">
-                <span class="reel-username">@fit_marcus</span>
-                <span class="reel-metric">★ 5.0 · 85k views</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="reel-card">
-            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=500&q=80" alt="Card" />
-            <div class="reel-gradient"></div>
-            <div class="play-icon-overlay"><i data-lucide="play" size="18" fill="currentColor"></i></div>
-            <div class="reel-creator-pill">
-              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User" />
-              <div class="reel-user-info">
-                <span class="reel-username">@organic_blend</span>
-                <span class="reel-metric">★ 4.8 · 210k views</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="reel-card">
-            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80" alt="Card" />
-            <div class="reel-gradient"></div>
-            <div class="play-icon-overlay"><i data-lucide="play" size="18" fill="currentColor"></i></div>
-            <div class="reel-creator-pill">
-              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User" />
-              <div class="reel-user-info">
-                <span class="reel-username">@glow_skincare</span>
-                <span class="reel-metric">★ 4.9 · 340k sales</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="reel-card">
-            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Card" />
-            <div class="reel-gradient"></div>
-            <div class="play-icon-overlay"><i data-lucide="play" size="18" fill="currentColor"></i></div>
-            <div class="reel-creator-pill">
-              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User" />
-              <div class="reel-user-info">
-                <span class="reel-username">@audio_tech</span>
-                <span class="reel-metric">★ 5.0 · 500k views</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="reel-card">
-            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80" alt="Card" />
-            <div class="reel-gradient"></div>
-            <div class="play-icon-overlay"><i data-lucide="play" size="18" fill="currentColor"></i></div>
-            <div class="reel-creator-pill">
-              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User" />
-              <div class="reel-user-info">
-                <span class="reel-username">@cam_gear</span>
-                <span class="reel-metric">★ 4.9 · 95k views</span>
-              </div>
-            </div>
-          </div>
+        <div class="card__image">
+          <div class="card__image--inner"></div>
         </div>
-      </div>
 
-      <!-- ------------------------------------------------------------------ -->
-      <!-- CONTINUOUS MARQUEE 2: CLIENT BRAND CHIPS (SCROLL LEFT)             -->
-      <!-- ------------------------------------------------------------------ -->
-      <div class="marquee-wrapper" style="margin-top: 16px;">
-        <div class="marquee-track-left" id="clientsTrack">
-          <div class="client-chip-pill" style="background: var(--lavender);">
-            <div class="client-icon-circle">M</div> Marks & Spencer
-          </div>
-          <div class="client-chip-pill" style="background: var(--soft-blue);">
-            <div class="client-icon-circle" style="background: var(--sage-dark);">G</div> Gymshark
-          </div>
-          <div class="client-chip-pill" style="background: var(--peach);">
-            <div class="client-icon-circle" style="background: var(--warning);">S</div> Sephora
-          </div>
-          <div class="client-chip-pill" style="background: var(--sand);">
-            <div class="client-icon-circle">G</div> Glossier
-          </div>
-          <div class="client-chip-pill" style="background: var(--sage-light);">
-            <div class="client-icon-circle" style="background: var(--sage-dark);">Z</div> Zara
-          </div>
-          <div class="client-chip-pill" style="background: var(--lavender);">
-            <div class="client-icon-circle">K</div> Kith NYC
-          </div>
-          <div class="client-chip-pill" style="background: var(--soft-blue);">
-            <div class="client-icon-circle" style="background: var(--warning);">N</div> Nespresso
-          </div>
-          <div class="client-chip-pill" style="background: var(--peach);">
-            <div class="client-icon-circle" style="background: var(--sage-dark);">A</div> Alo Yoga
-          </div>
+        <div class="card__text">
+          <span class="card__text--inner">
+            DESERT
+          </span>
         </div>
+
       </div>
 
-    </section>
+
+      <!-- CARD 2 -->
+      <div class="card">
+
+        <div class="card__image">
+          <div class="card__image--inner"></div>
+        </div>
+
+        <div class="card__text">
+          <span class="card__text--inner">
+            FOREST
+          </span>
+        </div>
+
+      </div>
+
+
+      <!-- CARD 3 -->
+      <div class="card">
+
+        <div class="card__image">
+          <div class="card__image--inner"></div>
+        </div>
+
+        <div class="card__text">
+          <span class="card__text--inner">
+            OCEAN
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+
+  <!-- =========================================
+       LOADING SCREEN
+  ========================================= -->
+
+  <div class="loading__wrapper">
+
+    <div class="loader__text">
+      Loading...
+    </div>
+
   </div>
 
+
+  <!-- =========================================
+       JAVASCRIPT
+  ========================================= -->
+
   <script>
-    // Initialize Lucide icons safely
-    if (window.lucide) {
-      lucide.createIcons();
+
+    /* =========================================
+       CARD ELEMENTS
+    ========================================= */
+
+    const cards = Array.from(
+      document.querySelectorAll(".card")
+    );
+
+
+    /* =========================================
+       IMAGE CONFIGURATION
+    ========================================= */
+
+    const cardOptions = [
+
+      {
+        imageURL: {
+          default:
+            "https://raw.githubusercontent.com/devloop01/canvas-image-interaction/master/src/images/desert-dark.jpg",
+
+          hovered:
+            "https://raw.githubusercontent.com/devloop01/canvas-image-interaction/master/src/images/desert-bright.jpg"
+        },
+
+        totalParticles: 1500,
+
+        mouseRange: 80,
+
+        particlesConfig: {
+          jumpToRandomPosition: false,
+          fill: true,
+          randomRadius: true,
+          minRadius: 1,
+          maxRadius: 2
+        }
+      },
+
+
+      {
+        imageURL: {
+          default:
+            "https://raw.githubusercontent.com/devloop01/canvas-image-interaction/master/src/images/forest.jpg",
+
+          hovered:
+            "https://raw.githubusercontent.com/devloop01/canvas-image-interaction/master/src/images/forest-top.jpg"
+        },
+
+        totalParticles: 2500,
+
+        mouseRange: 80,
+
+        particlesConfig: {
+          jumpToRandomPosition: true,
+          fill: true,
+          shape: "square",
+          radius: 2
+        }
+      },
+
+
+      {
+        imageURL: {
+          default:
+            "https://raw.githubusercontent.com/devloop01/canvas-image-interaction/master/src/images/ocean-top.jpg",
+
+          hovered:
+            "https://raw.githubusercontent.com/devloop01/canvas-image-interaction/master/src/images/ocean.jpg"
+        },
+
+        totalParticles: 2500,
+
+        mouseRange: 80,
+
+        particlesConfig: {
+          jumpToRandomPosition: false,
+          bounceFromEdges: false,
+          fill: false,
+          shape: "hexagon",
+          radius: 1
+        }
+      }
+
+    ];
+
+
+    /* =========================================
+       GET ALL IMAGE URLS
+    ========================================= */
+
+    const imageURLs = cardOptions
+      .map(option => Object.values(option.imageURL))
+      .flat();
+
+
+    /* =========================================
+       CANVAS CLASS
+    ========================================= */
+
+    class Canvas {
+
+      constructor(options = {}) {
+
+        this.parent = options.parent;
+
+        this.dimensions = options.dimensions;
+
+        this.imageURL = options.imageURL || {};
+
+        this.images = options.images || {};
+
+        this.imagesData = {
+          default: null,
+          hovered: null
+        };
+
+        this.currentImageData = null;
+
+        this.particles = null;
+
+        this.totalParticles =
+          options.totalParticles || 400;
+
+        this.hovered = false;
+
+        this.particlesConfig =
+          options.particlesConfig || {};
+
+        this.mouseRange =
+          options.mouseRange || null;
+
+        this.mouse = null;
+
+        this.init();
+      }
+
+
+      /* =========================================
+         INIT CANVAS
+      ========================================= */
+
+      init() {
+
+        this.canvas =
+          document.createElement("canvas");
+
+        this.ctx =
+          this.canvas.getContext("2d");
+
+        this.canvas.width =
+          this.dimensions.width;
+
+        this.canvas.height =
+          this.dimensions.height;
+
+
+        /*
+         * We already loaded the images,
+         * so process them directly.
+         */
+
+        this.imagesData.default =
+          returnImageData(
+            this.images.default,
+            this.dimensions
+          );
+
+
+        this.imagesData.hovered =
+          returnImageData(
+            this.images.hovered,
+            this.dimensions
+          );
+
+
+        this.currentImageData =
+          this.imagesData.default;
+
+
+        this.addParticles(
+          this.totalParticles
+        );
+
+
+        this.startRender();
+
+        this.initEvents();
+
+
+        this.parent.appendChild(
+          this.canvas
+        );
+
+
+        /* =====================================
+           MOUSE PARTICLE
+        ===================================== */
+
+        if (this.mouseRange !== null) {
+
+          this.mouse =
+            new Particle({
+
+              ctx: this.ctx,
+
+              position: {
+                x: 0,
+                y: 0
+              },
+
+              radius: this.mouseRange,
+
+              color: "#000",
+
+              avoidEdges: true,
+
+              shape: "circle"
+            });
+        }
+
+      }
+
+
+      /* =========================================
+         EVENTS
+      ========================================= */
+
+      initEvents() {
+
+        const onMouseEnter = () => {
+
+          this.hovered = true;
+
+          this.currentImageData =
+            this.imagesData.hovered;
+        };
+
+
+        const onMouseLeave = () => {
+
+          this.hovered = false;
+
+          this.currentImageData =
+            this.imagesData.default;
+        };
+
+
+        const onMouseMove = (e) => {
+
+          if (
+            this.mouse !== null &&
+            this.hovered
+          ) {
+
+            this.mouse.position.x =
+              e.offsetX;
+
+            this.mouse.position.y =
+              e.offsetY;
+          }
+        };
+
+
+        this.canvas.addEventListener(
+          "mouseenter",
+          onMouseEnter
+        );
+
+
+        this.canvas.addEventListener(
+          "mouseleave",
+          onMouseLeave
+        );
+
+
+        this.canvas.addEventListener(
+          "mousemove",
+          onMouseMove
+        );
+
+      }
+
+
+      /* =========================================
+         CREATE PARTICLES
+      ========================================= */
+
+      addParticles(total) {
+
+        this.particles =
+          new Particles({
+
+            ctx: this.ctx,
+
+            totalParticles: total,
+
+            maxBounds: {
+              width:
+                this.dimensions.width,
+
+              height:
+                this.dimensions.height
+            },
+
+            imageData:
+              this.currentImageData,
+
+            particlesConfig:
+              this.particlesConfig
+
+          });
+      }
+
+
+      /* =========================================
+         UPDATE PARTICLE COLOR
+      ========================================= */
+
+      updateParticleColor(
+        imageData,
+        particle
+      ) {
+
+        const color =
+          returnPixelColor(
+            imageData,
+
+            Math.floor(
+              this.dimensions.width
+            ),
+
+            {
+              x: Math.floor(
+                particle.position.x
+              ),
+
+              y: Math.floor(
+                particle.position.y
+              )
+            }
+          );
+
+
+        particle.updateColor(
+          color
+        );
+      }
+
+
+      /* =========================================
+         RENDER LOOP
+      ========================================= */
+
+      startRender() {
+
+        requestAnimationFrame(
+          () => this.render()
+        );
+      }
+
+
+      render() {
+
+        this.particles.particles
+          .forEach(particle => {
+
+            if (
+              this.mouseRange !== null
+            ) {
+
+              const distance =
+                dist(
+                  this.mouse.position,
+                  particle.position
+                );
+
+
+              if (
+                distance <
+                  this.mouse.radius +
+                  particle.radius &&
+                this.hovered
+              ) {
+
+                this.updateParticleColor(
+                  this.imagesData.hovered,
+                  particle
+                );
+
+              } else {
+
+                this.updateParticleColor(
+                  this.imagesData.default,
+                  particle
+                );
+
+              }
+
+            } else {
+
+              this.updateParticleColor(
+                this.currentImageData,
+                particle
+              );
+            }
+
+          });
+
+
+        this.particles.update();
+
+
+        requestAnimationFrame(
+          () => this.render()
+        );
+
+      }
+
     }
 
-    // Seamless continuous infinite scroll cloning
-    const reelsTrack = document.getElementById('reelsTrack');
-    if (reelsTrack) {
-      reelsTrack.innerHTML += reelsTrack.innerHTML + reelsTrack.innerHTML;
+
+    /* =========================================
+       PARTICLES CLASS
+    ========================================= */
+
+    class Particles {
+
+      constructor(options = {}) {
+
+        this.ctx =
+          options.ctx;
+
+        this.totalParticles =
+          options.totalParticles;
+
+        this.maxBounds =
+          options.maxBounds;
+
+        this.imageData =
+          options.imageData;
+
+        this.particles = [];
+
+
+        const config =
+          options.particlesConfig || {};
+
+
+        this.particlesConfig = {
+
+          jumpToRandomPosition:
+            config.jumpToRandomPosition ??
+            false,
+
+          growAndShrink:
+            config.growAndShrink ??
+            false,
+
+          fill:
+            config.fill ??
+            true,
+
+          bounceFromEdges:
+            config.bounceFromEdges ??
+            true,
+
+          shape:
+            config.shape ??
+            "circle",
+
+          radius:
+            config.radius ??
+            5,
+
+          randomRadius:
+            config.randomRadius ??
+            false,
+
+          maxRadius:
+            config.maxRadius ??
+            5,
+
+          minRadius:
+            config.minRadius ??
+            2,
+
+          maxVelocity:
+            config.maxVelocity ??
+            8
+        };
+
+
+        this.init();
+      }
+
+
+      /* =========================================
+         CREATE PARTICLES
+      ========================================= */
+
+      init() {
+
+        for (
+          let i = 0;
+          i < this.totalParticles;
+          i++
+        ) {
+
+          const radius =
+            this.particlesConfig.randomRadius
+
+              ? randomIntegerFromRange(
+                  this.particlesConfig.minRadius,
+                  this.particlesConfig.maxRadius
+                )
+
+              : this.particlesConfig.radius;
+
+
+          const position = {
+
+            x: randomIntegerFromRange(
+              radius,
+              this.maxBounds.width -
+              radius
+            ),
+
+            y: randomIntegerFromRange(
+              radius,
+              this.maxBounds.height -
+              radius
+            )
+
+          };
+
+
+          this.particles.push(
+
+            new Particle({
+
+              ctx: this.ctx,
+
+              position,
+
+              radius,
+
+              color: "transparent",
+
+              imageData: this.imageData,
+
+              maxVelocity:
+                this.particlesConfig.maxVelocity,
+
+              bounceFromEdges:
+                this.particlesConfig.bounceFromEdges,
+
+              shape:
+                this.particlesConfig.shape,
+
+              edges: {
+                width:
+                  this.maxBounds.width,
+
+                height:
+                  this.maxBounds.height
+              }
+
+            })
+
+          );
+
+        }
+
+      }
+
+
+      /* =========================================
+         UPDATE PARTICLES
+      ========================================= */
+
+      update() {
+
+        this.particles.forEach(
+          particle => {
+
+            particle.draw();
+
+
+            if (
+              this.particlesConfig.fill
+            ) {
+
+              particle.fillShape();
+
+            } else {
+
+              particle.strokeShape();
+
+            }
+
+
+            particle.update();
+
+
+            if (
+              this.particlesConfig.growAndShrink
+            ) {
+
+              particle.growAndShrink(
+                particle.minRadius * 0.65
+              );
+
+            }
+
+
+            if (
+              !this.particlesConfig
+                .jumpToRandomPosition
+            ) {
+
+              particle.updatePosition();
+
+            } else {
+
+              particle.jumpToRandomPosition({
+
+                width:
+                  this.maxBounds.width,
+
+                height:
+                  this.maxBounds.height
+
+              });
+
+            }
+
+          }
+        );
+
+      }
+
     }
 
-    const clientsTrack = document.getElementById('clientsTrack');
-    if (clientsTrack) {
-      clientsTrack.innerHTML += clientsTrack.innerHTML + clientsTrack.innerHTML;
+
+    /* =========================================
+       PARTICLE CLASS
+    ========================================= */
+
+    class Particle {
+
+      constructor(options = {}) {
+
+        this.ctx =
+          options.ctx;
+
+
+        this.position =
+          options.position || {
+            x: 0,
+            y: 0
+          };
+
+
+        this.maxVelocity =
+          options.maxVelocity || 5;
+
+
+        this.velocity =
+          options.velocity || {
+
+            x:
+              (0.5 - Math.random()) *
+              this.maxVelocity,
+
+            y:
+              (0.5 - Math.random()) *
+              this.maxVelocity
+
+          };
+
+
+        this.radius =
+          options.radius;
+
+
+        this.minRadius =
+          this.radius;
+
+
+        this.color =
+          options.color;
+
+
+        this.imageData =
+          options.imageData;
+
+
+        this.rotation = 0;
+
+
+        this.rotationIncrement =
+          randomIntegerFromRange(
+            2,
+            5
+          );
+
+
+        this.edges =
+          options.edges || null;
+
+
+        this.bounceFromEdges =
+          options.bounceFromEdges;
+
+
+        this.avoidEdges =
+          options.avoidEdges ||
+          false;
+
+
+        this.tick = 0;
+
+
+        this.tickIncrement =
+          0.02 +
+          Math.random() * 0.03;
+
+      }
+
+
+      /* =========================================
+         DRAW
+      ========================================= */
+
+      draw() {
+
+        this.ctx.beginPath();
+
+        this.ctx.save();
+
+
+        this.ctx.translate(
+          this.position.x,
+          this.position.y
+        );
+
+
+        this.ctx.rotate(
+          (Math.PI / 180) *
+          this.rotation
+        );
+
+
+        this.drawShape(
+          this.shape
+        );
+
+
+        this.ctx.restore();
+
+        this.ctx.closePath();
+
+      }
+
+
+      /* =========================================
+         FILL
+      ========================================= */
+
+      fillShape() {
+
+        this.ctx.fillStyle =
+          this.color;
+
+        this.ctx.fill();
+
+      }
+
+
+      /* =========================================
+         STROKE
+      ========================================= */
+
+      strokeShape() {
+
+        this.ctx.strokeStyle =
+          this.color;
+
+        this.ctx.stroke();
+
+      }
+
+
+      /* =========================================
+         DRAW SHAPE
+      ========================================= */
+
+      drawShape(shape) {
+
+        if (
+          shape === "square"
+        ) {
+
+          this.ctx.rect(
+
+            -this.radius / 2,
+
+            -this.radius / 2,
+
+            this.radius,
+
+            this.radius
+
+          );
+
+        }
+
+        else if (
+          shape === "hexagon"
+        ) {
+
+          this.ctx.moveTo(
+
+            this.radius *
+              Math.cos(0),
+
+            this.radius *
+              Math.sin(0)
+
+          );
+
+
+          for (
+            let side = 0;
+            side < 7;
+            side++
+          ) {
+
+            this.ctx.lineTo(
+
+              this.radius *
+                Math.cos(
+                  side *
+                  2 *
+                  Math.PI /
+                  6
+                ),
+
+              this.radius *
+                Math.sin(
+                  side *
+                  2 *
+                  Math.PI /
+                  6
+                )
+
+            );
+
+          }
+
+        }
+
+        else {
+
+          this.ctx.arc(
+
+            0,
+            0,
+
+            this.radius,
+
+            0,
+            Math.PI * 2
+
+          );
+
+        }
+
+      }
+
+
+      /* =========================================
+         UPDATE
+      ========================================= */
+
+      update() {
+
+        if (
+          this.bounceFromEdges
+        ) {
+
+          this.changeVelocityOnBounce();
+
+        } else {
+
+          this.continueFromEdge();
+
+        }
+
+
+        this.rotation +=
+          this.rotationIncrement;
+
+
+        this.tick +=
+          this.tickIncrement;
+
+      }
+
+
+      /* =========================================
+         POSITION
+      ========================================= */
+
+      updatePosition() {
+
+        this.position.x +=
+          this.velocity.x;
+
+        this.position.y +=
+          this.velocity.y;
+
+      }
+
+
+      /* =========================================
+         RANDOM POSITION
+      ========================================= */
+
+      jumpToRandomPosition(bounds) {
+
+        this.position.x =
+          Math.random() *
+          bounds.width;
+
+        this.position.y =
+          Math.random() *
+          bounds.height;
+
+      }
+
+
+      /* =========================================
+         GROW / SHRINK
+      ========================================= */
+
+      growAndShrink(max) {
+
+        this.radius =
+          this.minRadius +
+          Math.abs(
+            Math.sin(this.tick)
+          ) * max;
+
+      }
+
+
+      /* =========================================
+         COLOR
+      ========================================= */
+
+      updateColor(color) {
+
+        this.color = color;
+
+      }
+
+
+      /* =========================================
+         CONTINUE FROM EDGE
+      ========================================= */
+
+      continueFromEdge() {
+
+        if (
+          !this.avoidEdges
+        ) {
+
+          if (
+            this.position.x >
+            this.edges.width
+          ) {
+
+            this.position.x = 0;
+
+          }
+
+          else if (
+            this.position.x < 0
+          ) {
+
+            this.position.x =
+              this.edges.width;
+
+          }
+
+
+          if (
+            this.position.y >
+            this.edges.height
+          ) {
+
+            this.position.y = 0;
+
+          }
+
+          else if (
+            this.position.y < 0
+          ) {
+
+            this.position.y =
+              this.edges.height;
+
+          }
+
+        }
+
+      }
+
+
+      /* =========================================
+         BOUNCE
+      ========================================= */
+
+      changeVelocityOnBounce() {
+
+        if (
+          !this.avoidEdges
+        ) {
+
+          if (
+            this.position.x +
+              this.radius >
+              this.edges.width ||
+
+            this.position.x -
+              this.radius <
+              0
+          ) {
+
+            this.velocity.x *= -1;
+
+          }
+
+
+          if (
+            this.position.y +
+              this.radius >
+              this.edges.height ||
+
+            this.position.y -
+              this.radius <
+              0
+          ) {
+
+            this.velocity.y *= -1;
+
+          }
+
+        }
+
+      }
+
     }
+
+
+    /* =========================================
+       UTILITY FUNCTIONS
+    ========================================= */
+
+    function randomIntegerFromRange(
+      min,
+      max
+    ) {
+
+      return Math.floor(
+        Math.random() *
+        (max - min + 1) +
+        min
+      );
+
+    }
+
+
+    function dist(a, b) {
+
+      return Math.sqrt(
+
+        Math.pow(
+          a.x - b.x,
+          2
+        ) +
+
+        Math.pow(
+          a.y - b.y,
+          2
+        )
+
+      );
+
+    }
+
+
+    /* =========================================
+       IMAGE -> PIXEL DATA
+    ========================================= */
+
+    function returnImageData(
+      image,
+      dimensions
+    ) {
+
+      const imageCanvas =
+        document.createElement(
+          "canvas"
+        );
+
+
+      const imageCanvasCtx =
+        imageCanvas.getContext(
+          "2d"
+        );
+
+
+      imageCanvas.width =
+        dimensions.width;
+
+      imageCanvas.height =
+        dimensions.height;
+
+
+      imageCanvasCtx.drawImage(
+
+        image,
+
+        0,
+        0,
+
+        imageCanvas.width,
+        imageCanvas.height
+
+      );
+
+
+      return imageCanvasCtx.getImageData(
+
+        0,
+        0,
+
+        imageCanvas.width,
+        imageCanvas.height
+
+      );
+
+    }
+
+
+    /* =========================================
+       LOAD IMAGE
+    ========================================= */
+
+    function loadImage(
+      url
+    ) {
+
+      return new Promise(
+        (resolve, reject) => {
+
+          const img =
+            new Image();
+
+
+          img.crossOrigin =
+            "anonymous";
+
+
+          img.onload = () => {
+
+            resolve(img);
+
+          };
+
+
+          img.onerror = () => {
+
+            reject(
+              new Error(
+                "Could not load image: " +
+                url
+              )
+            );
+
+          };
+
+
+          img.src = url;
+
+        }
+      );
+
+    }
+
+
+    /* =========================================
+       LOAD ALL IMAGES
+    ========================================= */
+
+    async function loadImages(
+      urls
+    ) {
+
+      const loadedImages = [];
+
+      for (
+        const url of urls
+      ) {
+
+        const image =
+          await loadImage(url);
+
+        loadedImages.push(image);
+
+      }
+
+      return loadedImages;
+
+    }
+
+
+    /* =========================================
+       PIXEL COLOR
+    ========================================= */
+
+    function returnPixelColor(
+      imageData,
+      width,
+      position
+    ) {
+
+      let x =
+        Math.max(
+          0,
+          Math.min(
+            width - 1,
+            position.x
+          )
+        );
+
+
+      let y =
+        Math.max(
+          0,
+          Math.min(
+            imageData.height - 1,
+            position.y
+          )
+        );
+
+
+      const index =
+        (x + y * width) * 4;
+
+
+      const r =
+        imageData.data[index];
+
+
+      const g =
+        imageData.data[index + 1];
+
+
+      const b =
+        imageData.data[index + 2];
+
+
+      return `rgb(${r}, ${g}, ${b})`;
+
+    }
+
+
+    /* =========================================
+       APP
+    ========================================= */
+
+    class App {
+
+      async init() {
+
+        try {
+
+          /*
+           * Wait until every image is loaded.
+           */
+
+          const images =
+            await loadImages(
+              imageURLs
+            );
+
+
+          /*
+           * Split:
+           *
+           * [
+           *   desert default,
+           *   desert hover,
+           *   forest default,
+           *   forest hover,
+           *   ocean default,
+           *   ocean hover
+           * ]
+           */
+
+          const splitImages =
+            splitArray(
+              images,
+              2
+            );
+
+
+          /* =====================================
+             CREATE CANVAS FOR EACH CARD
+          ===================================== */
+
+          cards.forEach(
+            (card, index) => {
+
+              const rect =
+                card.getBoundingClientRect();
+
+
+              new Canvas({
+
+                parent:
+                  card.querySelector(
+                    ".card__image--inner"
+                  ),
+
+                dimensions: {
+
+                  width:
+                    Math.floor(
+                      rect.width
+                    ),
+
+                  height:
+                    Math.floor(
+                      rect.height
+                    )
+
+                },
+
+                ...cardOptions[index],
+
+                images: {
+
+                  default:
+                    splitImages[index][0],
+
+                  hovered:
+                    splitImages[index][1]
+
+                }
+
+              });
+
+            }
+          );
+
+
+          /* =====================================
+             HIDE LOADER
+          ===================================== */
+
+          document
+            .querySelector(
+              ".loading__wrapper"
+            )
+            .classList.add(
+              "hide"
+            );
+
+
+          /* =====================================
+             GSAP ANIMATION
+          ===================================== */
+
+          createGSAPAnimation();
+
+
+        } catch (error) {
+
+          console.error(
+            "Image loading error:",
+            error
+          );
+
+
+          document
+            .querySelector(
+              ".loader__text"
+            )
+            .textContent =
+              "Unable to load images.";
+
+        }
+
+      }
+
+    }
+
+
+    /* =========================================
+       SPLIT ARRAY
+    ========================================= */
+
+    function splitArray(
+      array,
+      size
+    ) {
+
+      const result = [];
+
+
+      for (
+        let i = 0;
+        i < array.length;
+        i += size
+      ) {
+
+        result.push(
+          array.slice(
+            i,
+            i + size
+          )
+        );
+
+      }
+
+
+      return result;
+
+    }
+
+
+    /* =========================================
+       GSAP INTRO ANIMATION
+    ========================================= */
+
+    function createGSAPAnimation() {
+
+      const imageWrappers =
+        cards.map(
+          card =>
+            card.querySelector(
+              ".card__image"
+            )
+        );
+
+
+      const imageInner =
+        cards.map(
+          card =>
+            card.querySelector(
+              ".card__image--inner"
+            )
+        );
+
+
+      const textInner =
+        cards.map(
+          card =>
+            card.querySelector(
+              ".card__text--inner"
+            )
+        );
+
+
+      gsap.timeline({
+
+        delay: 0.8,
+
+        defaults: {
+
+          duration: 1.5,
+
+          stagger: 0.1,
+
+          ease: "expo.out"
+
+        }
+
+      })
+
+      /* -----------------------------------------
+         IMAGE COMES DOWN
+      ----------------------------------------- */
+
+      .fromTo(
+
+        imageWrappers,
+
+        {
+          yPercent: -100
+        },
+
+        {
+          yPercent: 0
+        }
+
+      )
+
+
+      /* -----------------------------------------
+         IMAGE PARTICLES COME UP
+      ----------------------------------------- */
+
+      .fromTo(
+
+        imageInner,
+
+        {
+          yPercent: 100
+        },
+
+        {
+          yPercent: 0
+        },
+
+        0
+
+      )
+
+
+      /* -----------------------------------------
+         TEXT COMES UP
+      ----------------------------------------- */
+
+      .fromTo(
+
+        textInner,
+
+        {
+          yPercent: 100
+        },
+
+        {
+          duration: 1.2,
+
+          yPercent: 0
+
+        },
+
+        0.4
+
+      );
+
+    }
+
+
+    /* =========================================
+       START APP
+    ========================================= */
+
+    const app =
+      new App();
+
+    app.init();
+
   </script>
+
 </body>
 </html>

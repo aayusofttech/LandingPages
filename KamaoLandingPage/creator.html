@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="./css/creator.css">
     <link rel="stylesheet" href="./css/animation.css">
 
+    <script src="script.js" defer></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"/> -->
+
+
 </head>
 
 <body>
@@ -72,12 +76,12 @@
     <section class="creator-cta">
         <div class="creator-cta-inner">
 
-            <h2 class="creator-cta-title">
+            <h2 class="creator-cta-title reveal-item">
                 GET PAID TO POST<br>
                 ON SOCIAL MEDIA
             </h2>
 
-            <p class="creator-cta-subtitle">
+            <p class="creator-cta-subtitle reveal-item">
                 Turn your everyday purchases into real cash rewards.
             </p>
 
@@ -109,7 +113,7 @@
             </div>
 
             <a href="#" class="creator-brands-button">
-                See all brands
+                <span class="button-text"></span>
             </a>
 
         </div>
@@ -291,7 +295,7 @@
     <section class="workflow-section">
         <div class="workflow-container">
 
-            <div class="workflow-heading">
+            <div class="workflow-heading reveal-item">
                 <h2>How it works</h2>
                 <p>Simple. Seamless. Rewarding.</p>
             </div>
@@ -328,12 +332,12 @@
         <!-- HERO SECTION -->
         <section class="hero-section">
             <!-- Main Display Headline -->
-            <h1 class="hero-title fade-up delay-1">
+            <h1 class="hero-title reveal-item">
                 AUTHENTIC CONTENT WITH ACTUAL EARNINGS
             </h1>
 
             <!-- Subheadline -->
-            <p class="hero-subhead fade-up delay-2">
+            <p class="hero-subhead reveal-item">
                 Kamao functions helps creator become a prime organic content marketing channel.
             </p>
 
@@ -484,12 +488,12 @@
 
 
             <!-- Main Display Headline -->
-            <h1 class="hero-title fade-up delay-1">
+            <h1 class="hero-title reveal-item">
                 BRANDS INFLUENCERS WILL BE WORKING WITH
             </h1>
 
             <!-- Subheadline -->
-            <p class="hero-subhead fade-up delay-2">
+            <p class="hero-subhead reveal-item">
                 Real reward for authentic and popular content from the brands.
             </p>
 
@@ -533,7 +537,7 @@
     <!-- TESTIMONIAL SECTION -->
 
     <section class="testimonial-section">
-        <h2 class="testimonial-title">DON'T TAKE OUR WORD FOR IT</h2>
+        <h2 class="testimonial-title reveal-item">DON'T TAKE OUR WORD FOR IT</h2>
 
         <div class="testimonial-grid">
             <article class="testimonial-card">
@@ -587,9 +591,9 @@
         <div class="cta_earn_card">
 
             <div class="cta_earn_content">
-                <h2 class="cta_earn_title">START EARNING TODAY</h2>
+                <h2 class="cta_earn_title reveal-item">START EARNING TODAY</h2>
 
-                <p class="cta_earn_description">
+                <p class="cta_earn_description reveal-item">
                     Get paid to post about brands you love on social media —
                     and discover hundreds more!
                 </p>
@@ -606,130 +610,271 @@
             </div>
 
             <div class="cta_earn_image">
-                <img src="./assets/demo_workflow.webp" alt="Social Tip app">
+                <img src="./assets/cta_kamao.jpg" alt="Kamao app">
             </div>
 
         </div>
     </section>
 
     <!-- CTA SECTION ENDS -->
-
-    <!-- FAQ SECTION -->
-    <section class="faq-section" aria-labelledby="faq-title">
-        <div class="faq-container">
-            <div class="faq-content">
-                <p class="faq-eyebrow">Frequently Asked Questions</p>
-
-                <h2 class="faq-title" id="faq-title">
-                    Have questions? We've got answers.
+    <!-- STATS SECTION ABOVE FAQ SECTION -->
+    <section class="stats-banner" style="text-align: start;">
+        <div class="stats-container">
+            <div class="stats-content-wrapper">
+                <h2 class="stats-title reveal-item">
+                    50K+ CREATOR CAMPAIGNS
                 </h2>
 
-                <p class="faq-description">
-                    Find quick answers to the questions we hear most often.
+                <p class="stats-subtitle reveal-item">
+                    Draft figure — creators earn by making content for brands they actually want to promote.
                 </p>
+            </div>
+        </div>
+    </section>
 
-                <a class="faq-link" href="#faqs">
-                    See all FAQs
-                    <span class="faq-link-icon" aria-hidden="true">→</span>
-                </a>
+
+    <!-- ============================================ -->
+    <!--             FAQ ACCORDION AND IMAGES        -->
+    <!-- ============================================ -->
+
+    <section id="sbsr-1575">
+        <div class="cs-container">
+
+            <!-- Right Section -->
+            <div class="cs-image-group">
+                <div class="cs-row">
+
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/man2.jpg">
+
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/man2.jpg">
+
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/man2.jpg"
+                            alt="Creator making content" width="305" height="410">
+                    </picture>
+
+                    <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)"
+                            srcset="./assets/music.jpg">
+
+                        <source media="(min-width: 601px)"
+                            srcset="./assets/music.jpg">
+
+                        <img loading="lazy" decoding="async"
+                            src="./assets/music.jpg"
+                            alt="Creator filming music" width="305" height="467">
+                    </picture>
+
+                </div>
+
+                <div class="cs-row">
+
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing.jpg">
+
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing.jpg">
+
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing.jpg"
+                            alt="Camera" width="305" height="615">
+                    </picture>
+
+                    <picture class="cs-picture cs-picture4">
+                        <source media="(max-width: 600px)"
+                            srcset="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80">
+
+                        <source media="(min-width: 601px)"
+                            srcset="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80">
+
+                        <img loading="lazy" decoding="async"
+                            src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80"
+                            alt="Creator content" width="305" height="277">
+                    </picture>
+
+                </div>
             </div>
 
-        </div>
 
+            <!-- Left Section -->
+            <div class="cs-content">
+
+                <span class="cs-topper reveal-item">
+                    For creators
+                </span>
+
+                <h2 class="cs-title reveal-item">
+                    Create. Post. Get paid.
+                </h2>
+
+
+                <ul class="cs-faq-group">
+
+                    <!-- FAQ 01 -->
+                    <li class="cs-faq-item active">
+
+                        <button class="cs-button">
+
+                            <span class="cs-button-text reveal-item">
+                                How do I make money on Kamao?
+                            </span>
+
+                            <span class="cs-indicator" aria-hidden="true"></span>
+
+                        </button>
+
+                        <p class="cs-item-p ">
+                            Brands post campaigns on Kamao looking for creators to make
+                            content for them. You choose the campaigns that fit your
+                            content and audience, create the post, and earn when your
+                            work meets the campaign requirements.
+                        </p>
+
+                    </li>
+
+
+                    <!-- FAQ 02 -->
+                    <li class="cs-faq-item">
+
+                        <button class="cs-button">
+
+                            <span class="cs-button-text reveal-item">
+                                Do I have to pay to join a campaign?
+                            </span>
+
+                            <span class="cs-indicator" aria-hidden="true"></span>
+
+                        </button>
+
+                        <p class="cs-item-p">
+                            No. Kamao is built around creators earning from brand
+                            campaigns, not paying to access them. Each campaign can
+                            have its own requirements, deliverables, and payout.
+                        </p>
+
+                    </li>
+
+
+                    <!-- FAQ 03 -->
+                    <li class="cs-faq-item">
+
+                        <button class="cs-button">
+
+                            <span class="cs-button-text reveal-item">
+                                Can I choose which brands I work with?
+                            </span>
+
+                            <span class="cs-indicator" aria-hidden="true"></span>
+
+                        </button>
+
+                        <p class="cs-item-p">
+                            Yes. You can browse available campaigns and decide which
+                            brands, products, and content opportunities make sense
+                            for you. The goal is to let creators choose work that
+                            feels natural to their content.
+                        </p>
+
+                    </li>
+
+
+                    <!-- FAQ 04 -->
+                    <li class="cs-faq-item">
+
+                        <button class="cs-button">
+
+                            <span class="cs-button-text reveal-item">
+                                How much can I earn from a campaign?
+                            </span>
+
+                            <span class="cs-indicator" aria-hidden="true"></span>
+
+                        </button>
+
+                        <p class="cs-item-p">
+                            Campaign payouts can vary depending on the brand,
+                            campaign requirements, content format, and other
+                            factors. For this draft, imagine campaigns ranging from
+                            Rs. 2,000 to Rs. 50,000+.
+                        </p>
+
+                    </li>
+
+
+                    <!-- FAQ 05 -->
+                    <li class="cs-faq-item">
+
+                        <button class="cs-button">
+
+                            <span class="cs-button-text reveal-item">
+                                Do I need a huge following to get started?
+                            </span>
+
+                            <span class="cs-indicator" aria-hidden="true"></span>
+
+                        </button>
+
+                        <p class="cs-item-p">
+                            Not necessarily. Brands can look for different types of
+                            creators depending on their campaign. A focused audience,
+                            strong content, and a good fit with the brand can matter
+                            more than simply having a large follower count.
+                        </p>
+
+                    </li>
+
+
+                    <!-- FAQ 06 -->
+                    <li class="cs-faq-item">
+
+                        <button class="cs-button">
+
+                            <span class="cs-button-text reveal-item">
+                                What kind of content can I create?
+                            </span>
+
+                            <span class="cs-indicator" aria-hidden="true"></span>
+
+                        </button>
+
+                        <p class="cs-item-p">
+                            Campaigns can include short-form videos, product
+                            showcases, reviews, tutorials, lifestyle posts, and
+                            other social content. Each campaign will tell you what
+                            the brand is looking for before you create.
+                        </p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
     </section>
     <!--FAQ SECTION ENDS -->
 
 
 
-    <!-- FOOTER SECTION
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a class="footer-logo" href="./index.html" aria-label="Homepage">
-                        KamaOO
-                    </a>
 
-                    <p class="footer-tagline">
-                        Simple solutions for better work.
-                    </p>
-                </div>
 
-                <div class="footer-links">
-
-                    <div class="footer-column">
-                        <h2 class="footer-heading">Product</h2>
-
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Features</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Pricing</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">FAQs</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Changelog</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h2 class="footer-heading">Company</h2>
-
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">About</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Blog</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Contact</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Careers</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h2 class="footer-heading">Legal</h2>
-
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Privacy</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Terms</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Security</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p class="footer-copyright">
-                    © 2025 YourBrand. All rights reserved.
-                </p>
-
-                <div class="footer-socials">
-                    <a class="footer-social" href="#" aria-label="X">X</a>
-                    <a class="footer-social" href="#" aria-label="LinkedIn">in</a>
-                    <a class="footer-social" href="#" aria-label="GitHub">Git</a>
-                </div>
-            </div>
-
-        </div>
-
-    </footer> -->
-
+    <!-- SCROLL  -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,
+            smartphone: {
+                smooth: false
+            },
+            tablet: {
+                smooth: false
+            }
+        });
+    </script>
     <script>
         // Initialize Lucide icons
         if (window.lucide) {
@@ -870,6 +1015,65 @@
             });
         });
         // MEASUREMENT SECTION END 
+    </script>
+
+
+    <script>
+        // FAQ ACCORDION
+        const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+                item.classList.toggle('active')
+            }
+            item.addEventListener('click', onClick)
+        }
+
+
+
+        //  SCROLL EFFECT IN TEXT 
+
+        const buttonText = "See all brands";
+
+        const textContainer = document.querySelector(".button-text");
+
+        textContainer.innerHTML = [...buttonText]
+            .map(char => {
+                // Preserve spaces
+                if (char === " ") {
+                    return `<span class="button-space"></span>`;
+                }
+
+                // Create 4 copies of each character
+                return `
+            <span class="button-letter">
+                <span>${char}</span>
+                <span>${char}</span>
+                <span>${char}</span>
+                <span>${char}</span>
+            </span>
+        `;
+            })
+            .join("");
+
+        const button = document.querySelector(".creator-brands-button");
+        const letters = document.querySelectorAll(".button-letter");
+
+        button.addEventListener("mouseenter", () => {
+            letters.forEach((letter, index) => {
+                setTimeout(() => {
+                    letter.style.transform = "translateY(-310%)";
+                }, index * 30);
+            });
+        });
+
+        button.addEventListener("mouseleave", () => {
+            letters.forEach((letter, index) => {
+                setTimeout(() => {
+                    letter.style.transform = "translateY(0)";
+                }, index * 20);
+            });
+        });
+
     </script>
 </body>
 

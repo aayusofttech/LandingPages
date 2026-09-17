@@ -2009,14 +2009,7 @@
 
 
 
-@media (max-width: 768px) {
-  .bento-grid {
-    grid-template-columns: 1fr;
-  }
-  .bento-spend {
-    grid-column: span 1;
-  }
-}
+
 .bento-text-content h3{
  background-color: transparent !important;
 }
@@ -2515,4 +2508,13 @@ input[type="checkbox"]:checked+.col-section h3::after {
       .stats-banner {
     padding: 75px 15px;
 }
+}
+
+@media (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+  .bento-spend {
+    grid-column: span 1;
+  }
 }

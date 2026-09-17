@@ -455,7 +455,8 @@
   color: #111315;
   font-weight: 600;
   font-size: 0.95rem;
-  transition: color 0.2s ease;
+  /* transition: color 0.2s ease; */
+  transition: ease-in-out all 0.3s;
 }
 
 .nav-links a:hover {
@@ -732,6 +733,8 @@
   padding-bottom: 12px;
   margin-bottom: 20px;
   justify-content: flex-start;
+      padding-left: 12px;
+    padding-right: 12px;
 }
 
 .tab-btn {
@@ -916,8 +919,18 @@
   .comparison-matrix {
     grid-template-columns: 1.4fr repeat(4, 1fr);
     font-size: 13px;
+    padding: 0 12px;
   }
-  
+  .comparison-section {
+  padding: 30px 0 !important;
+}
+.buddgetSection {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+.visual-features-section{
+      padding: 30px 10px !important;
+}
   .column-header h3 {
     font-size: 16px;
   }
@@ -2003,15 +2016,7 @@
   font-weight: 500;
 }
 
-/* Responsive Grid Adjustments */
-@media (max-width: 1024px) {
-  .bento-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .bento-spend {
-    grid-column: span 2;
-  }
-}
+
 
 @media (max-width: 768px) {
   .bento-grid {
@@ -2042,8 +2047,20 @@ footer {
   padding: 0 22px;
   padding-bottom: 21px;
   overflow: hidden;
+    min-height: 450px !important;
 }
-
+/* Responsive Grid Adjustments */
+@media (max-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bento-spend {
+    grid-column: span 2;
+  }
+  footer {
+    min-height: 350px !important;
+}
+}
 .footer-content {
   max-width: 980px;
   margin: 0 auto;
@@ -2223,11 +2240,13 @@ input[type="checkbox"]:checked+.col-section h3::after {
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #reviews-1529 {
-    padding: var(--sectionPadding);
     overflow: hidden;
     position: relative;
     z-index: 1;
   }
+      #reviews-1529{
+    padding: 50px 16px;
+}
   #reviews-1529 .cs-container {
     max-width: 34.375rem;
     margin: auto;
@@ -2287,6 +2306,9 @@ input[type="checkbox"]:checked+.col-section h3::after {
     transform: translateY(15px);
     filter: blur(4px);
   }
+.cs-review::before{
+    background: lime !important;
+}
 
   #reviews-1529 .cs-image-group {
     width: 100%;
@@ -2322,6 +2344,7 @@ input[type="checkbox"]:checked+.col-section h3::after {
     font-weight: 400;
     margin: 0 0 1.5rem;
     color: #4e4b66;
+        min-height: 151px;
   }
   #reviews-1529 .cs-name {
     font-size: 1.25rem;
@@ -2438,6 +2461,9 @@ input[type="checkbox"]:checked+.col-section h3::after {
   #reviews-1529 .cs-container {
     max-width: 80rem;
   }
+    #reviews-1529{
+    padding: 50px 36px;
+}
   #reviews-1529 .cs-review {
     max-width: none;
     flex-direction: row;
@@ -2459,6 +2485,7 @@ input[type="checkbox"]:checked+.col-section h3::after {
     bottom: 24px;
     right: 40px;
   }
+
 }
 
 /* Larger Desktop - 1300px */
@@ -2466,6 +2493,9 @@ input[type="checkbox"]:checked+.col-section h3::after {
   #reviews-1529 .cs-picture {
     font-size: inherit;
   }
+  #reviews-1529{
+      padding: 80px 0;
+}
   #reviews-1529 .cs-blob1 {
     width: 10rem;
     left: 0;

@@ -207,6 +207,7 @@
   --max-width: 1440px;
   /* --primaryLight: #28b900; */
   --primaryLight: #5F8F5A;
+  --radius-lg: 20px;
 }
 
 * {

@@ -757,7 +757,7 @@
 
 .matrix-column {
   background-color: var(--white);
-  border-radius: var(--radius-lg);
+  border-radius: 20px;
   border: 1px solid rgba(20, 37, 54, 0.06);
   box-shadow: var(--shadow-soft);
   display: flex;
@@ -824,6 +824,7 @@
 .features-column {
   background: transparent;
   border: none;
+  border-radius: 20px;;
   box-shadow: none;
 }
 

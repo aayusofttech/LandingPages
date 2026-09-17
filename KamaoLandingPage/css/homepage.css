@@ -460,11 +460,11 @@
 }
 
 .active-page{
-  color:#6ab162 !important;
+  color:var(--lightPrimary) !important;
 }
 
 .nav-links a:hover {
-  color: #5F8F5A;
+  color: var(--lightPrimary);
 }
 
 /* Action Controls */
@@ -2031,7 +2031,7 @@ footer {
   padding: 0 22px;
   padding-bottom: 21px;
   overflow: hidden;
-    min-height: 450px !important;
+    min-height: 450px;
 }
 /* Responsive Grid Adjustments */
 @media (max-width: 1024px) {
@@ -2217,6 +2217,44 @@ input[type="checkbox"]:checked+.col-section h3::after {
 /* FOOOTER END */
 
 /* REVIEW SECTION  */
+
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.cs-title {
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+
+
+
+
+
 /*-- -------------------------- -->
 <---          CTA               -->
 <--- -------------------------- -*/

@@ -1,7 +1,6 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,893 +9,952 @@
   <!-- Google Fonts: Oswald (Kamao Display Font) & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-    <link rel="stylesheet" href="./css/homepage.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/animation.css">
-    <script src="script.js" defer></script>
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"/>
+  <link rel="stylesheet" href="./css/homepage.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  <script src="script.js" defer></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css" />
 </head>
+
 <body>
-     <!-- TRANSLUCENT NAVIGATION BAR -->
-<header class="site-header">
-  <nav class="navbar" id="navbar">
-    <!-- Brand Logo -->
-    <a href="./index.html" class="nav-logo">
-      <!-- <span class="logo-dot"></span> -->
-        <img src="./assets/kamao_logo.png" height="50px"/>
-    </a>
+  <!-- TRANSLUCENT NAVIGATION BAR -->
+  <header class="site-header">
+    <nav class="navbar" id="navbar">
+      <!-- Brand Logo -->
+      <a href="./index.html" class="nav-logo">
+        <!-- <span class="logo-dot"></span> -->
+        <img src="./assets/kamao_logo.png" height="50px" />
+      </a>
 
-    <!-- Desktop Navigation Links -->
-    <ul class="nav-links">
-      <li><a class="active-page" href="./creator.html">For Brands</a></li>
-      <li><a  href="./creator.html">For Creators</a></li>
-      <!-- <li><a href="#features">Features</a></li>
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links">
+        <li><a class="active-page" href="./creator.html">For Brands</a></li>
+        <li><a href="./creator.html">For Creators</a></li>
+        <!-- <li><a href="#features">Features</a></li>
       <li><a href="#pricing">Pricing</a></li> -->
-    </ul>
+      </ul>
 
-    <!-- Desktop Action Buttons -->
-    <div class="nav-actions">
-      <a href="" class="btn-text">Book Demo</a>
-      <a href="#launch" class="btn-primary">Get Started</a>
+      <!-- Desktop Action Buttons -->
+      <div class="nav-actions">
+        <a href="" class="btn-text">Book Demo</a>
+        <a href="#launch" class="btn-primary">Get Started</a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation" aria-expanded="false">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Dropdown Drawer Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-nav-links">
+        <li><a href="./creator.html" class="mobile-link">For Creators</a></li>
+        <li><a href="index.html" class="mobile-link">For Brands</a></li>
+      </ul>
+      <div class="mobile-action-container">
+        <a href="#launch" class="btn-primary mobile-btn">Get Started</a>
+      </div>
     </div>
-
-    <!-- Mobile Hamburger Toggle -->
-    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation" aria-expanded="false">
-      <span class="bar bar-1"></span>
-      <span class="bar bar-2"></span>
-    </button>
-  </nav>
-
-  <!-- Mobile Dropdown Drawer Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <ul class="mobile-nav-links">
-      <li><a href="./creator.html" class="mobile-link">For Creators</a></li>
-      <li><a href="index.html" class="mobile-link">For Brands</a></li>
-    </ul>
-    <div class="mobile-action-container">
-      <a href="#launch" class="btn-primary mobile-btn">Get Started</a>
-    </div>
-  </div>
-</header>
+  </header>
   <div data-scroll-container>
 
 
-  <!-- 1. HERO SECTION WITH CLIENT BRANDS -->
-  <div class="wrapper">
-    <!-- HERO SECTION -->
-    <section class="hero-section">
-      <!-- Main Display Headline -->
-      <!-- <h1 class="hero-title fade-up delay-1" >TURN YOUR CUSTOMERS INTO </h1> -->
+    <!-- 1. HERO SECTION WITH CLIENT BRANDS -->
+    <div class="wrapper">
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <!-- Main Display Headline -->
+        <!-- <h1 class="hero-title fade-up delay-1" >TURN YOUR CUSTOMERS INTO </h1> -->
         <div class="hero-container">
-        <div class="hero-title-container"></div>
-    </div>
-
-      <!-- Subheadline -->
-      <p class="hero-subhead fade-up delay-2">
-        Kamao functions as a micro-influencer network designed to serve as an effective growth channel for any brand.
-      </p>
-
-      <!-- Post Counter -->
- <div class="hero-counter fade-up delay-3">
-  <span class="pulse-dot"></span>
-  <span id="counterTicker" class="ticker-text">184,441 posts</span>
-</div>
-
-      <!-- Call to Action Pill Buttons -->
-      <div class="hero-ctas fade-up delay-4">
-        <a href="#launch" class="btn btn-sage" style="padding: 14px 34px; font-size: 1rem;">
-          Launch campaign
-        </a>
-        <a href="#demo" class="btn btn-outline" style="padding: 14px 34px; font-size: 1rem;">
-          Book Demo
-        </a>
-      </div>
-
-      <!-- MARQUEE 1: UGC REEL CARDS (SCROLL RIGHT) -->
-      <div class="marquee-wrapper">
-        <div class="marquee-track-right" id="reelsTrack">
-            <!-- 1 -->
-       <div class="reel-card">
-  <img class="fullImage" src="./assets/5.gif" alt="Card" />
-  <div class="reel-gradient"></div>
-  <div class="reel-creator-pill">
-    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User"/>
-    <div class="reel-user-info">
-      <span class="reel-username">@cam_gear</span>
-      <span class="reel-metric">★ 4.9 · 95k views</span>
-    </div>
-  </div>
-</div>
-<!-- 2 -->
-           <div class="reel-card">
-            <img class="fullImage" src="./assets/4.gif" alt="Card" />
-            <div class="reel-gradient"></div>
-
-            <div class="reel-creator-pill">
-              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User" />
-              <div class="reel-user-info">
-                <span class="reel-username">@cam_gear</span>
-                <span class="reel-metric">★ 4.9 · 95k views</span>
-              </div>
-            </div>
-        </div>
-           <div class="reel-card">
-            <img class="fullImage" src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80" alt="Card" />
-            <div class="reel-gradient"></div>
-
-            <div class="reel-creator-pill">
-              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User" />
-              <div class="reel-user-info">
-                <span class="reel-username">@cam_gear</span>
-                <span class="reel-metric">★ 4.9 · 95k views</span>
-              </div>
-            </div>
-        </div>
-        <!-- 3 -->
-                <div class="reel-card">
-            <img class="fullImage" src="./assets/3.gif" alt="Card" />
-
-  <div class="reel-gradient"></div>
-  <div class="reel-creator-pill">
-    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User"/>
-    <div class="reel-user-info">
-      <span class="reel-username">@cam_gear</span>
-      <span class="reel-metric">★ 4.9 · 95k views</span>
-    </div>
-  </div>
-</div>
-
-<!-- 4 -->
-           <div class="reel-card">
-            <img class="fullImage" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80" alt="Card" />
-            <div class="reel-gradient"></div>
-            
-            <div class="reel-creator-pill">
-              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User" />
-              <div class="reel-user-info">
-                <span class="reel-username">@glow_skincare</span>
-                <span class="reel-metric">★ 4.9 · 340k sales</span>
-              </div>
-            </div>
-          </div>
-
-<!-- 5 -->
-        <div class="reel-card">
-            <img class="fullImage" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80" alt="Card" />
-  <div class="reel-gradient"></div>
-  <div class="reel-creator-pill">
-    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User"/>
-    <div class="reel-user-info">
-      <span class="reel-username">@cam_gear</span>
-      <span class="reel-metric">★ 4.9 · 95k views</span>
-    </div>
-  </div>
-</div>
-
-<!-- 6 -->
-           <div class="reel-card">
-            <img class="fullImage" src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80" alt="Card" />
-            <div class="reel-gradient"></div>
-            <div class="reel-creator-pill">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User" />
-              <div class="reel-user-info">
-                <span class="reel-username">@fit_marcus</span>
-                <span class="reel-metric">★ 5.0 · 85k views</span>
-              </div>
-            </div>
-          </div>
-
-<!-- 7 -->
-         <div class="reel-card">
-            <img class="fullImage" src="./assets/2.gif" alt="Card" />
-
-  <div class="reel-gradient"></div>
-  <div class="reel-creator-pill">
-    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" class="reel-avatar" alt="User"/>
-    <div class="reel-user-info">
-      <span class="reel-username">@cam_gear</span>
-      <span class="reel-metric">★ 4.9 · 95k views</span>
-    </div>
-  </div>
-</div>
-
-
-      </div>
-
-      <!-- MARQUEE 2: CLIENT BRAND CHIPS (SCROLL LEFT) -->
-      <div class="marquee-wrapper" style="margin-top: 16px;">
-        <div class="marquee-track-left" id="clientsTrack">
-          <div class="client-chip-pill" style="background: var(--lavender);">
-            <div class="client-icon-circle">M</div> Marks & Spencer
-          </div>
-          <div class="client-chip-pill" style="background: var(--soft-blue);">
-            <div class="client-icon-circle" style="background: var(--sage-dark);">G</div> Aayumalun
-          </div>
-          <div class="client-chip-pill" style="background: var(--peach);">
-            <div class="client-icon-circle" style="background: var(--warning);">S</div> Dudhkoshi
-          </div>
-          <div class="client-chip-pill" style="background: var(--sand);">
-            <div class="client-icon-circle">G</div> Puwakhola
-          </div>
-          <div class="client-chip-pill" style="background: var(--sage-light);">
-            <div class="client-icon-circle" style="background: var(--sage-dark);">Z</div> Karnali
-          </div>
-          <div class="client-chip-pill" style="background: var(--lavender);">
-            <div class="client-icon-circle">K</div> Kith NYC
-          </div>
-          <div class="client-chip-pill" style="background: var(--soft-blue);">
-            <div class="client-icon-circle" style="background: var(--warning);">N</div> Nespresso
-          </div>
-          <div class="client-chip-pill" style="background: var(--peach);">
-            <div class="client-icon-circle" style="background: var(--sage-dark);">A</div> Alo Yoga
-          </div>
-        </div>
-      </div>
-
-    </section>
-  </div>
-<!-- HERO SECTION WITH CLIENT BRAND ENDS  -->
-
-<!-- 2. VIEWS SECTION -->
-<section class="stats-banner">
-  <div class="stats-container">
-    <div class="stats-content-wrapper">
-      <h2 class="stats-title reveal-item ">REACH THOURSANDS OF REAL VEIWS</h2>
-      <p class="stats-subtitle reveal-item">on average, with every Rs. 10,000 invested</p>
-    </div>
-  </div>
-</section>
-<!-- 2. VIEWS SECTION ENDs-->
-
-
-<!-- MEASUREMENT  -->
-  <section class="comparison-section">
-    <div class="comparison-container">
-      
-      <!-- Section Header -->
-      <div class="section-header">
-        <span class="sub-heading reveal-item">Why Choose Us</span>
-        <h2 class="main-heading reveal-item">See How Kamao Outperforms Traditional Marketing</h2>
-        <p class="description reveal-item">Examine essential metrics to observe how user-generated, receipt-verified content accelerates the expansion of your brand.</p>
-      </div>
-
-      <!-- Mobile Tab Switcher (Visible only on screens <= 768px) -->
-      <div class="mobile-tabs">
-        <button class="tab-btn active reveal-item" data-target="kamao-tip">Kamao</button>
-        <button class="tab-btn reveal-item" data-target="influencer">Influencer</button>
-        <button class="tab-btn reveal-item" data-target="social-ads">Social Ads</button>
-        <button class="tab-btn reveal-item" data-target="tv">TV</button>
-      </div>
-
-      <!-- Desktop & Mobile Comparison Matrix -->
-      <div class="comparison-matrix">
-        
-        <!-- Row Labels / Features Column -->
-        <div class="matrix-column features-column reveal-item">
-          <div class="column-header">Features & Metrics</div>
-          <div class="feature-cell">Verified Purchasers</div>
-          <div class="feature-cell">Average Engagement</div>
-          <div class="feature-cell">Average Watch Time</div>
-          <div class="feature-cell">Cost Per Million Views</div>
-          <div class="feature-cell">Sales Attribution</div>
-          <div class="feature-cell">Day One ROAS</div>
-          <div class="feature-cell">Shopper Intelligence</div>
-          <div class="feature-cell">Content Library Created</div>
-          <div class="feature-cell">Content Usage Rights</div>
-          <div class="feature-cell">Proven Incremental Sales</div>
+          <div class="hero-title-container"></div>
         </div>
 
-        <!-- Highlighted Column:  -->
-        <div class="matrix-column highlight-column active-mobile reveal-item" id="kamao-tip">
-          <div class="column-header">
-            <span class="badge">Recommended</span>
-            <h3>Kamao</h3>
-          </div>
-          <div class="data-cell" data-label="Verified Purchasers"><span class="highlight-text">Every creator</span></div>
-          <div class="data-cell" data-label="Average Engagement"><span class="highlight-value">8 - 11%</span></div>
-          <div class="data-cell" data-label="Average Watch Time"><strong>8.4 sec</strong></div>
-          <div class="data-cell" data-label="Cost Per Million Views"><strong class="price">Rs. 10,000</strong></div>
-          <div class="data-cell" data-label="Sales Attribution"><span class="tag tag-success">Receipt Verified</span></div>
-          <div class="data-cell" data-label="Day One ROAS"><span class="tag tag-success">Positive</span></div>
-          <div class="data-cell" data-label="Shopper Intelligence"><strong>100,000+ receipts</strong></div>
-          <div class="data-cell" data-label="Content Library Created"><strong>1,000+ videos</strong></div>
-          <div class="data-cell" data-label="Content Usage Rights"><strong>Perpetual</strong></div>
-          <div class="data-cell" data-label="Proven Incremental Sales"><span class="tag tag-success">Receipt verified</span></div>
-        </div>
-
-        <!-- Column 2: Influencer Marketing -->
-        <div class="matrix-column  reveal-item" id="influencer">
-          <div class="column-header">
-            <h3>INFLUENCER MARKETING</h3>
-          </div>
-          <div class="data-cell" data-label="Verified Purchasers"><span class="text-muted">No</span></div>
-          <div class="data-cell" data-label="Average Engagement">1 - 3%</div>
-          <div class="data-cell" data-label="Average Watch Time">3 - 6 sec</div>
-          <div class="data-cell" data-label="Cost Per Million Views">Rs. 100,000+</div>
-          <div class="data-cell" data-label="Sales Attribution">Limited</div>
-          <div class="data-cell" data-label="Day One ROAS"><span class="text-warning">Rarely measured</span></div>
-          <div class="data-cell" data-label="Shopper Intelligence">None</div>
-          <div class="data-cell" data-label="Content Library Created">11 posts</div>
-          <div class="data-cell" data-label="Content Usage Rights">Usually limited</div>
-          <div class="data-cell" data-label="Proven Incremental Sales">Limited evidence</div>
-        </div>
-
-        <!-- Column 3: Social Ads -->
-        <div class="matrix-column  reveal-item" id="social-ads">
-          <div class="column-header">
-            <h3>SOCIAL ADS</h3>
-          </div>
-          <div class="data-cell" data-label="Verified Purchasers"><span class="text-muted">No</span></div>
-          <div class="data-cell" data-label="Average Engagement">0.5 - 2%</div>
-          <div class="data-cell" data-label="Average Watch Time">2 - 4 sec</div>
-          <div class="data-cell" data-label="Cost Per Million Views">Rs. 5 - Rs. 15,000</div>
-          <div class="data-cell" data-label="Sales Attribution">Click level</div>
-          <div class="data-cell" data-label="Day One ROAS">Often positive</div>
-          <div class="data-cell" data-label="Shopper Intelligence">None</div>
-          <div class="data-cell" data-label="Content Library Created">None</div>
-          <div class="data-cell" data-label="Content Usage Rights">None</div>
-          <div class="data-cell" data-label="Proven Incremental Sales">Sometimes</div>
-        </div>
-
-        <!-- Column 4: TV -->
-        <div class="matrix-column reveal-item" id="tv">
-          <div class="column-header">
-            <h3>TV</h3>
-          </div>
-          <div class="data-cell" data-label="Verified Purchasers"><span class="text-muted">No</span></div>
-          <div class="data-cell" data-label="Average Engagement"><span class="text-muted">N/A</span></div>
-          <div class="data-cell" data-label="Average Watch Time">15 - 30 sec</div>
-          <div class="data-cell" data-label="Cost Per Million Views">Rs. 10 - Rs. 25,000</div>
-          <div class="data-cell" data-label="Sales Attribution">Econometric</div>
-          <div class="data-cell" data-label="Day One ROAS"><span class="text-muted">Not measurable</span></div>
-          <div class="data-cell" data-label="Shopper Intelligence">None</div>
-          <div class="data-cell" data-label="Content Library Created">1 advert</div>
-          <div class="data-cell" data-label="Content Usage Rights">None</div>
-          <div class="data-cell" data-label="Proven Incremental Sales">Hard to isolate</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-<!-- MEASUREMENT END -->
-
-
-<!-- BUDGET MANAGEMENT  -->
- <section class="buddgetSection">
- <main class="calculator-wrapper">
-    <div class="budget-card">
-      
-      <!-- Top Header -->
-      <div class="card-header">
-        <div class="badge-pill reveal-item">
-          <i data-lucide="zap"></i> Flexible Pricing
-        </div>
-        <h2 class="title reveal-item">BUDGET YOUR WAY</h2>
-        <p class="subtitle reveal-item">Pricing starts from <strong>Rs. 10,000</strong>.</p>
-      </div>
-
-      <!-- Slider Input Section -->
-      <div class="slider-container">
-        <div class="slider-header">
-          <label for="budgetSlider" class="slider-label">Your Budget</label>
-          <div class="budget-display">
-            <span class="currency">Rs. </span><span id="budgetValue">17,500</span>
-          </div>
-        </div>
-
-        <div class="range-wrapper reveal-item">
-          <input 
-            type="range" 
-            id="budgetSlider" 
-            min="50" 
-            max="1000" 
-            step="25" 
-            value="75"
-            class="styled-slider"
-          >
-        </div>
-        <div class="slider-ticks reveal-item">
-          <span>Rs. 50</span>
-          <span>Rs. 750</span>
-          <span>Rs. 999+</span>
-        </div>
-      </div>
-
-      <!-- Live Calculated Metrics Grid -->
-      <div class="metrics-grid reveal-item">
-        
-        <!-- Metric 1 -->
-        <div class="metric-card">
-          <div class="metric-header">
-            <div class="icon-box">
-              <i data-lucide="file-check"></i>
-            </div>
-            <span class="metric-title">Verified Posts</span>
-          </div>
-          <div class="metric-value" id="postsValue">1,750</div>
-        </div>
-
-        <!-- Metric 2 -->
-        <div class="metric-card highlight-metric">
-          <div class="metric-header">
-            <div class="icon-box">
-              <i data-lucide="eye"></i>
-            </div>
-            <span class="metric-title">Verified Views</span>
-          </div>
-          <div class="metric-value" id="viewsValue">1,750,000</div>
-        </div>
-
-        <!-- Metric 3 -->
-        <div class="metric-card">
-          <div class="metric-header">
-            <div class="icon-box">
-              <i data-lucide="trending-up"></i>
-            </div>
-            <span class="metric-title">Engagement Rate</span>
-          </div>
-          <div class="metric-value" id="engagementValue">8-12%</div>
-        </div>
-
-      </div>
-
-      <!-- CTA Button & Footer Notes -->
-      <div class="card-footer">
-        <button class="cta-btn">
-          <span>Launch Campaign</span>
-          <i data-lucide="arrow-right"></i>
-        </button>
-        
-        <div class="trust-features">
-          <div class="trust-item">
-            <i data-lucide="shield-check"></i>
-            <span>No contract. Top up or pause anytime.</span>
-          </div>
-          <div class="trust-item">
-            <i data-lucide="clock"></i>
-            <span>Launch in minutes.</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </main>
-  </section>
-<!-- BUDGET MANAGEMENT ENDas -->
-
-
-<!-- PROJECT SHOWCASE -->
-  <section class="workflow-section">
-        <div class="workflow-container">
-
-            <div class="workflow-heading">
-                <h2 class="reveal-item">The Simple Process</h2>
-                <p class="reveal-item">Set your brand up for success.</p>
-            </div>
-
-            <div class="workflow-grid">
-
-                <div class="workflow-card">
-                    <p>Your customer makes a verified purchase.</p>
-                    <img src="./assets/demo_workflow.webp" alt="App home page">
-                </div>
-
-                <div class="workflow-card">
-                    <p>They share genuine love for you on social media.</p>
-                    <img src="./assets/demo_workflow.webp" alt="App post detail page">
-                </div>
-
-                <div class="workflow-card">
-                    <p>They get a cash reward for the post.</p>
-                    <img src="./assets/demo_workflow.webp" alt="App wallet">
-                </div>
-
-            </div>
-        </div>
-
-        <div class="blob-container">
-            <div class="blob blob-1"></div>
-            <div class="blob blob-2"></div>
-        </div>
-    </section>
-<!-- PROJECT SHOWCASE END -->
-
-<!-- LAUNCH SECTION -->
- <section class="launch-section">
-  <div class="launch-card-container">
-    <div class="launch-grid">
-      
-      <!-- LEFT CONTENT COLUMN -->
-      <div class="launch-content">
-        <h2 class="launch-title reveal-item">LAUNCH. THEN WATCH THE RESULTS ROLL IN.</h2>
-        <p class="launch-subtitle reveal-item">SEE YOUR RESULTS IN REAL TIME.</p>
-        <p class="launch-desc">
-          Track posts, views, and sales as they happen—all from your live Kamao dashboard.
+        <!-- Subheadline -->
+        <p class="hero-subhead fade-up delay-2">
+          Kamao functions as a micro-influencer network designed to serve as an effective growth channel for any brand.
         </p>
 
-        <ul class="launch-checklist">
-          <li>
-            <span class="check-icon-circle">✓</span>
-            <span>CREATE YOUR BRAND PROFILE AND GET STARTED.</span>
-          </li>
-          <li>
-            <span class="check-icon-circle">✓</span>
-            <span> SET YOUR REWARDS AND POST LIMITS.</span>
-          </li>
-          <li>
-            <span class="check-icon-circle">✓</span>
-            <span>ADD FUNDS AND STAY IN CONTROL OF YOUR SPEND.</span>
-          </li>
-          <li>
-            <span class="check-icon-circle">✓</span>
-            <span>GO LIVE AND START ENGAGING YOUR AUDIENCE.</span>
-          </li>
-          <li>
-            <span class="check-icon-circle">✓</span>
-            <span> GET STARTED WITH JUST RS. 10,000.</span>
-          </li>
-        </ul>
-
-        <div class="launch-buttons">
-          <a href="#get-started" class="btn btn-primary">Get started</a>
-          <a href="#demo" class="btn btn-outline">Book a demo call</a>
+        <!-- Post Counter -->
+        <div class="hero-counter fade-up delay-3">
+          <span class="pulse-dot"></span>
+          <span id="counterTicker" class="ticker-text">184,441 posts</span>
         </div>
-      </div>
 
-      <!-- RIGHT VISUAL COLUMN (Dashboard & Floating Badges) -->
-      <div class="launch-visual">
-        <div class="dashboard-wrapper">
-          
-          <!-- Main Vibrant Sage/Green Container Box -->
-          <div class="green-dashboard-card">
-            <!-- Mock Dashboard UI -->
-            <div class="mock-dash-inner">
-              <div class="mock-dash-top">
-                <span class="mock-brand">Kamao</span>
-                <span class="mock-user">Join us today!</span>
-              </div>
-              <div class="mock-balance-box">
-                <span class="mock-label">Balance</span>
-                <strong class="mock-val">Rs. 3,482.39</strong>
-              </div>
-              <div class="mock-posts-strip">
-                <div class="mock-thumb" style="background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=200&q=80')"></div>
-                <div class="mock-thumb" style="background-image: url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=200&q=80')"></div>
-                <div class="mock-thumb" style="background-image: url('https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=200&q=80')"></div>
-                <div class="mock-thumb" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=200&q=80')"></div>
-              </div>
-              <div class="mock-metrics-grid">
-                <div class="mock-metric-item">
-                  <span>Total investment</span>
-                  <strong>Rs. 15,843.94</strong>
-                </div>
-                <div class="mock-metric-item">
-                  <span>Earned media value</span>
-                  <strong>Rs. 112,415.89</strong>
-                </div>
-                <div class="mock-metric-item">
-                  <span>ROI</span>
-                  <strong>7.1x</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Floating Badge 1: Top CPM -->
-          <div class="float-badge float-cpm">
-            <div class="badge-text-group">
-              <span class="b-label reveal-item">CPM</span>
-              <strong class="b-val">Rs. 3.75</strong>
-            </div>
-            <span class="b-icon">🔗</span>
-          </div>
-
-          <!-- Floating Badge 2: Bottom-Left Earned Media Value -->
-          <div class="float-badge float-emv">
-            <div class="badge-text-group">
-              <span class="b-label">Earned media value</span>
-              <strong class="b-val">Rs. 112,415.89</strong>
-            </div>
-            <span class="b-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hand-coins"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></svg>
-            </span>
-          </div>
-
-          <!-- Floating Badge 3: Bottom-Right ROI -->
-          <div class="float-badge float-roi">
-            <div class="badge-text-group">
-              <span class="b-label">ROI</span>
-              <strong class="b-val">7.1x</strong>
-            </div>
-            <span class="b-icon">📈</span>
-          </div>
-
+        <!-- Call to Action Pill Buttons -->
+        <div class="hero-ctas fade-up delay-4">
+          <a href="#launch" class="btn btn-sage" style="padding: 14px 34px; font-size: 1rem;">
+            Launch campaign
+          </a>
+          <a href="#demo" class="btn btn-outline" style="padding: 14px 34px; font-size: 1rem;">
+            Book Demo
+          </a>
         </div>
-      </div>
 
+        <!-- MARQUEE 1: UGC REEL CARDS (SCROLL RIGHT) -->
+        <div class="marquee-wrapper">
+          <div class="marquee-track-right" id="reelsTrack">
+            <!-- 1 -->
+            <div class="reel-card">
+              <img class="fullImage" src="./assets/5.gif" alt="Card" />
+              <div class="reel-gradient"></div>
+              <div class="reel-creator-pill">
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80"
+                  class="reel-avatar" alt="User" />
+                <div class="reel-user-info">
+                  <span class="reel-username">@cam_gear</span>
+                  <span class="reel-metric">★ 4.9 · 95k views</span>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="reel-card">
+              <img class="fullImage" src="./assets/4.gif" alt="Card" />
+              <div class="reel-gradient"></div>
+
+              <div class="reel-creator-pill">
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80"
+                  class="reel-avatar" alt="User" />
+                <div class="reel-user-info">
+                  <span class="reel-username">@cam_gear</span>
+                  <span class="reel-metric">★ 4.9 · 95k views</span>
+                </div>
+              </div>
+            </div>
+            <div class="reel-card">
+              <img class="fullImage"
+                src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80"
+                alt="Card" />
+              <div class="reel-gradient"></div>
+
+              <div class="reel-creator-pill">
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80"
+                  class="reel-avatar" alt="User" />
+                <div class="reel-user-info">
+                  <span class="reel-username">@cam_gear</span>
+                  <span class="reel-metric">★ 4.9 · 95k views</span>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="reel-card">
+              <img class="fullImage" src="./assets/3.gif" alt="Card" />
+
+              <div class="reel-gradient"></div>
+              <div class="reel-creator-pill">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
+                  class="reel-avatar" alt="User" />
+                <div class="reel-user-info">
+                  <span class="reel-username">@cam_gear</span>
+                  <span class="reel-metric">★ 4.9 · 95k views</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="reel-card">
+              <img class="fullImage"
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80"
+                alt="Card" />
+              <div class="reel-gradient"></div>
+
+              <div class="reel-creator-pill">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
+                  class="reel-avatar" alt="User" />
+                <div class="reel-user-info">
+                  <span class="reel-username">@glow_skincare</span>
+                  <span class="reel-metric">★ 4.9 · 340k sales</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="reel-card">
+              <img class="fullImage"
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80"
+                alt="Card" />
+              <div class="reel-gradient"></div>
+              <div class="reel-creator-pill">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                  class="reel-avatar" alt="User" />
+                <div class="reel-user-info">
+                  <span class="reel-username">@cam_gear</span>
+                  <span class="reel-metric">★ 4.9 · 95k views</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="reel-card">
+              <img class="fullImage"
+                src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80"
+                alt="Card" />
+              <div class="reel-gradient"></div>
+              <div class="reel-creator-pill">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+                  class="reel-avatar" alt="User" />
+                <div class="reel-user-info">
+                  <span class="reel-username">@fit_marcus</span>
+                  <span class="reel-metric">★ 5.0 · 85k views</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="reel-card">
+              <img class="fullImage" src="./assets/2.gif" alt="Card" />
+
+              <div class="reel-gradient"></div>
+              <div class="reel-creator-pill">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                  class="reel-avatar" alt="User" />
+                <div class="reel-user-info">
+                  <span class="reel-username">@cam_gear</span>
+                  <span class="reel-metric">★ 4.9 · 95k views</span>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- MARQUEE 2: CLIENT BRAND CHIPS (SCROLL LEFT) -->
+          <div class="marquee-wrapper" style="margin-top: 16px;">
+            <div class="marquee-track-left" id="clientsTrack">
+              <div class="client-chip-pill" style="background: var(--lavender);">
+                <div class="client-icon-circle">M</div> Marks & Spencer
+              </div>
+              <div class="client-chip-pill" style="background: var(--soft-blue);">
+                <div class="client-icon-circle" style="background: var(--sage-dark);">G</div> Aayumalun
+              </div>
+              <div class="client-chip-pill" style="background: var(--peach);">
+                <div class="client-icon-circle" style="background: var(--warning);">S</div> Dudhkoshi
+              </div>
+              <div class="client-chip-pill" style="background: var(--sand);">
+                <div class="client-icon-circle">G</div> Puwakhola
+              </div>
+              <div class="client-chip-pill" style="background: var(--sage-light);">
+                <div class="client-icon-circle" style="background: var(--sage-dark);">Z</div> Karnali
+              </div>
+              <div class="client-chip-pill" style="background: var(--lavender);">
+                <div class="client-icon-circle">K</div> Kith NYC
+              </div>
+              <div class="client-chip-pill" style="background: var(--soft-blue);">
+                <div class="client-icon-circle" style="background: var(--warning);">N</div> Nespresso
+              </div>
+              <div class="client-chip-pill" style="background: var(--peach);">
+                <div class="client-icon-circle" style="background: var(--sage-dark);">A</div> Alo Yoga
+              </div>
+            </div>
+          </div>
+
+      </section>
     </div>
-  </div>
-</section>
-<!-- LAUNCH SECTION END -->
+    <!-- HERO SECTION WITH CLIENT BRAND ENDS  -->
 
-
-<!-- EVERYTHING YOU NEED  -->
- <section class="visual-features-section">
-  <div class="visual-features-container">
-    
-    <div class="visual-header reveal-item">
-      <h2 class="visual-title">EVERYTHING YOU NEED</h2>
-      <p class="visual-subtitle">One platform to run, reward, and grow.</p>
-    </div>
-
-    <div class="bento-grid">
-      
-      <div class="bento-card bento-spend reveal-item">
-        <div class="card-visual-bg spend-gradient">
-          <div class="floating-wallet-badge">
-            <span class="wallet-icon">💳</span>
-            <div class="wallet-info">
-              <small>Spend Limit</small>
-              <strong>Rs. 500 / mo</strong>
-            </div>
-          </div>
-          <div class="animated-wave-bar"></div>
-        </div>
-        <div class="bento-text-content">
-          <h3>Spend Control</h3>
-          <p>Configure reward limits and manage budgets instantly.</p>
+    <!-- 2. VIEWS SECTION -->
+    <section class="stats-banner">
+      <div class="stats-container">
+        <div class="stats-content-wrapper">
+          <h2 class="stats-title reveal-item ">REACH THOURSANDS OF REAL VIEWS</h2>
+          <p class="stats-subtitle reveal-item">on average, with every Rs. 10,000 invested</p>
         </div>
       </div>
-
-      <div class="bento-card bento-dash reveal-item">
-        <div class="card-visual-bg dash-gradient">
-          <div class="mini-chart-mockup">
-            <div class="chart-line"></div>
-            <span class="chart-badge">↑ 7.1x ROI</span>
-          </div>
-        </div>
-        <div class="bento-text-content">
-          <h3>Performance Dashboard</h3>
-          <p>Real-time tracking of views, ROI & spend.</p>
-        </div>
-      </div>
-
-      <div class="bento-card bento-feed reveal-item">
-        <div class="card-visual-bg feed-gradient">
-          <div class="mini-feed-strip">
-            <div class="mini-thumb" style="background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=150&q=80')"></div>
-            <div class="mini-thumb" style="background-image: url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=150&q=80')"></div>
-            <div class="mini-thumb" style="background-image: url('https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=150&q=80')"></div>
-          </div>
-        </div>
-        <div class="bento-text-content">
-          <h3>Live Posts Feed</h3>
-          <p>Explore high-converting customer posts instantly.</p>
-        </div>
-      </div>
-
-      <div class="bento-card bento-guidelines reveal-item">
-        <div class="card-visual-bg guide-gradient">
-          <div class="icon-bubble reveal-item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-indian-rupee"><path d="M6 3h12"/><path d="M6 8h12"/><path d="m6 13 8.5 8"/><path d="M6 13h3"/><path d="M9 13c6.667 0 6.667-10 0-10"/></svg>
-          </div>
-        </div>
-        <div class="bento-text-content">
-          <h3>Post Guidelines & Earnings</h3>
-          <p>Provide clear briefs & guidance for creators.</p>
-        </div>
-      </div>
-
-      <div class="bento-card bento-insights reveal-item">
-        <div class="card-visual-bg insights-gradient">
-          <div class="receipt-icon-mock">Receipt Analysis 
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-no-axes-combined"><path d="M12 16v5"/><path d="M16 14.639V21"/><path d="M20 10.656V21"/><path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"/><path d="M4 18.463V21"/><path d="M8 14.656V21"/></svg>
-          </div>
-        </div>
-        <div class="bento-text-content">
-          <h3>Shopper Insights</h3>
-          <p>Deep monthly analytics and receipt breakdown.</p>
-        </div>
-      </div>
-
-      <div class="bento-card bento-reg reveal-item">
-        <div class="card-visual-bg reg-gradient">
-          <div class="shield-badge">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-badge-check"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m16 9-5.5 5.5L8 12"/></svg>
-            Verified Compliant</div>
-        </div>
-        <div class="bento-text-content">
-          <h3>Advertising Regulation</h3>
-          <p>Stay up to date automatically with FTC & ASA guidelines.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- EVERYTHING YOU NEED END -->
-
-<!-- REVIEW SECTION  -->
-    <section id="reviews-1529">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Creator Stories</span>
-                <h2 class="cs-title">Creators Are Turning Content Into Kamao</h2>
-                <p class="cs-text">
-                    Create content for brands you already love, share products you would actually buy,
-                    and get paid for the content you create.
-                </p>
-            </div>
-
-            <div class="cs-review">
-                <!-- Animated Content Target Wrapper -->
-                <div class="cs-review-inner">
-                    <div class="cs-image-group">
-                        <picture class="cs-picture">
-                            <source id="cs-source-mobile" media="(max-width: 600px)"
-                                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/day-care-review.jpg">
-                            <source id="cs-source-desktop" media="(min-width: 601px)"
-                                srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/day-care-review.jpg">
-                            <img id="cs-review-img" decoding="async"
-                                src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/day-care-review.jpg"
-                                alt="Kamao creator" width="413" height="374" aria-hidden="true">
-                        </picture>
-
-                        <svg class="cs-mask" width="100%" height="100%" viewBox="0 0 264 288" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M266 0H0V288H266V0ZM22.47 277.06C-3.13 224.38 3.86 98.26 11.47 34.79C14.17 12.21 18.6 9.69 30.47 8.97C77.4 6.16 139.23 4.6 215.47 5C233.88 5.12 249.16 15.2 255.47 48.69C265.38 101.42 261.07 155.11 256.9 207.21C256.76 208.98 256.62 210.76 256.47 212.53C255.06 230.47 252.33 246.68 248.47 260.19C246.3 267.74 243.11 270.79 238.47 270.12C168.15 260.11 100.01 269.4 30.47 283.03C28.95 283.34 27.89 283.03 26.47 282.04C25.05 281.04 23.47 279.16 22.47 277.08V277.06Z"
-                                fill="var(--maskBG)" />
-                            <path
-                                d="M11.4688 34.7899C3.85881 98.2599 -3.13119 224.37 22.4688 277.06C23.4688 279.14 25.0488 281.02 26.4688 282.02C27.8888 283.02 28.9488 283.32 30.4688 283.01C100.009 269.38 168.149 260.09 238.469 270.1C243.109 270.77 246.299 267.72 248.469 260.17C252.329 246.66 255.059 230.45 256.469 212.51C260.759 158.76 265.719 103.2 255.469 48.6799C249.159 15.1999 233.879 5.10993 215.469 4.98993C139.229 4.58993 77.3988 6.15993 30.4688 8.95993C18.5988 9.66993 14.1688 12.1999 11.4688 34.7799V34.7899Z"
-                                stroke="var(--maskBorder)" stroke-width="8" />
-                        </svg>
-                    </div>
-
-                    <div class="cs-flex">
-                        <p id="cs-quote" class="cs-quote">
-                            I already made content for products I genuinely liked.
-                            Kamao gave me a way to turn that creativity into paid brand opportunities.
-                            It feels much more natural than creating content for products I don't care about.
-                        </p>
-
-                        <span id="cs-name" class="cs-name">Aarav Sharma</span>
-                        <span id="cs-job" class="cs-job">Content Creator</span>
-                    </div>
-                </div>
-
-                <!-- Next / Previous Navigation Controls -->
-                <div class="cs-nav-controls">
-                    <button class="cs-nav-btn cs-prev-btn" aria-label="Previous testimonial">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </button>
-
-                    <button class="cs-nav-btn cs-next-btn" aria-label="Next testimonial">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="9 18 15 12 9 6"></polyline>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="cs-blob-wrapper">
-                    <!--Left Blob-->
-                    <svg class="cs-blob cs-blob1" width="162" height="128" viewBox="0 0 162 128" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M15.578 122.409C10.381 119.368 5.92643 114.978 3.60463 109.384C0.9885 103.088 0.175877 96.0886 -0.354449 89.3761C-0.866915 82.8575 -1.24072 75.777 -5.31557 70.3659C-9.67808 64.5668 -16.4216 63.1296 -23.3033 64.3291C-39.2035 67.104 -48.514 81.3615 -62.3523 88.2493C-76.8448 95.4647 -94.4631 94.1513 -109.354 89.1531C-116.966 86.597 -124.408 83.1835 -131.334 79.1082C-138.132 75.1098 -144.284 70.2008 -149.303 64.0714C-158.733 52.5594 -162.328 36.754 -160.217 22.0489C-158.195 7.94315 -150.61 -4.57519 -139.145 -12.908C-133.368 -17.1036 -127.101 -20.3408 -120.127 -21.8691C-111.542 -23.7487 -102.778 -23.0838 -94.1272 -21.816C-76.3173 -19.2024 -59.0408 -12.8899 -41.1498 -10.7076C-33.2319 -9.74094 -24.8931 -9.53953 -17.1478 -11.6585C-11.3315 -13.2476 -6.55438 -15.5318 -2.13146 -19.6277C2.49267 -23.9098 6.35041 -29.4307 9.8992 -34.6032C13.9864 -40.5641 18.343 -45.896 23.9319 -50.5745C35.2231 -60.0189 49.3056 -65.3874 63.9625 -65.4926C64.2181 -65.4958 64.7911 -65.5969 64.9625 -65.4906C72.1959 -65.4758 78.9861 -64.3591 85.9563 -62.4476C101.309 -58.2417 116.323 -49.9956 128.911 -40.3597C140.909 -31.1783 151.882 -20.4226 157.842 -6.30045C163.027 5.98506 163.158 20.3515 157.762 32.6995C155.234 38.4881 151.818 43.9001 146.731 47.6769C141.07 51.8764 132.65 55.09 125.721 52.634C118.883 50.211 116.075 41.9996 108.746 40.5992C102.216 39.3503 95.2099 43.0425 90.7313 47.5624C85.1368 53.2059 83.2703 60.9658 81.6883 68.5439C80.0954 76.1549 79.1905 84.1586 76.6413 91.5336C72.0829 104.72 63.2704 117.033 50.5759 123.48C39.6798 129.007 26.1617 128.597 15.578 122.409Z"
-                            fill="var(--blobColor)" />
-                    </svg>
-
-                    <!--Right blob-->
-                    <svg class="cs-blob cs-blob2" width="423" height="152" viewBox="0 0 423 152" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M446 185.996C437.652 209.276 424.317 227.375 409 226.996C398.568 226.732 389.048 219.154 380 211.996C346.92 185.812 321.111 207.237 285 219.996C244.784 234.202 223.038 185.716 189 168.996C142.612 146.21 105.611 185.367 58.9998 204.996C34.8473 215.167 10.0832 211.93 1.9998 169.996C-9.5339 110.121 40.5169 96.6287 61.9998 87.9963C77.3226 81.8377 93.2386 72.8434 107 56.9963C119.705 42.3661 131.527 7.18936 146 0.99633C152.671 -1.85625 158.896 2.75738 164 8.99633C171.922 18.6733 177.895 32.0744 187 38.9963C204.137 52.031 224.119 57.6817 244 49.9963C263.795 42.3397 279.796 18.2702 299 7.99633C309.489 2.383 321.457 2.19178 330 10.9963C344.858 26.3211 348.113 61.1321 363 76.9963C379.775 94.8809 403.952 94.1948 424 78.9963C429.052 75.168 433.775 70.4414 439 67.9963C455.161 60.443 463.429 84.0291 462 108.996C460.542 134.291 454.106 163.405 446 185.996Z"
-                            fill="var(--blobColor)" />
-                    </svg>
-                </div>
-
-                <!--Green Squiggles-->
-                <img class="cs-graphic cs-graphic-one"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-team-graphic-four.svg"
-                    alt="graphic" loading="lazy" decoding="async" height="134" width="197">
-
-                <!--Rd Squiggle-->
-                <img class="cs-graphic cs-graphic-two" src="./assets/curlyBlob.png" alt="graphic" loading="lazy"
-                    decoding="async" height="191" width="138">
-            </div>
-        </div>
     </section>
-<!-- REVIEW SECTION END -->
- 
+    <!-- 2. VIEWS SECTION ENDs-->
 
 
+    <!-- MEASUREMENT  -->
+    <section class="comparison-section">
+      <div class="comparison-container">
 
-<!-- FOOTER  -->
-  <footer>
-    <div class="footer-content">
-    <nav class="footer-menu">
-      <div class="footer-col">
-        <div class="item">
-          <input type="checkbox" id="products">
-          <div class="col-section reveal-item">
-            <label for="products">
-            <h3>For Creators</h3>  
-          </label>
-            <ul class="product-list">
-              <li><a href="#">Calculator</a></li>
-              <li><a href="#">Coach</a></li>
-              <li><a href="#">Tearms and Conditions</a></li>
-              <li><a href="#">FAQs</a></li>
-            </ul>
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="sub-heading reveal-item">Why Choose Us</span>
+          <h2 class="main-heading reveal-item">See How Kamao Outperforms Traditional Marketing</h2>
+          <p class="description reveal-item">Examine essential metrics to observe how user-generated, receipt-verified
+            content accelerates the expansion of your brand.</p>
+        </div>
+
+        <!-- Mobile Tab Switcher (Visible only on screens <= 768px) -->
+        <div class="mobile-tabs">
+          <button class="tab-btn active reveal-item" data-target="kamao-tip">Kamao</button>
+          <button class="tab-btn reveal-item" data-target="influencer">Influencer</button>
+          <button class="tab-btn reveal-item" data-target="social-ads">Social Ads</button>
+          <button class="tab-btn reveal-item" data-target="tv">TV</button>
+        </div>
+
+        <!-- Desktop & Mobile Comparison Matrix -->
+        <div class="comparison-matrix">
+
+          <!-- Row Labels / Features Column -->
+          <div class="matrix-column features-column reveal-item">
+            <div class="column-header">Features & Metrics</div>
+            <div class="feature-cell">Verified Purchasers</div>
+            <div class="feature-cell">Average Engagement</div>
+            <div class="feature-cell">Average Watch Time</div>
+            <div class="feature-cell">Cost Per Million Views</div>
+            <div class="feature-cell">Sales Attribution</div>
+            <div class="feature-cell">Day One ROAS</div>
+            <div class="feature-cell">Shopper Intelligence</div>
+            <div class="feature-cell">Content Library Created</div>
+            <div class="feature-cell">Content Usage Rights</div>
+            <div class="feature-cell">Proven Incremental Sales</div>
           </div>
+
+          <!-- Highlighted Column:  -->
+          <div class="matrix-column highlight-column active-mobile reveal-item" id="kamao-tip">
+            <div class="column-header">
+              <span class="badge">Recommended</span>
+              <h3>Kamao</h3>
+            </div>
+            <div class="data-cell" data-label="Verified Purchasers"><span class="highlight-text">Every creator</span>
+            </div>
+            <div class="data-cell" data-label="Average Engagement"><span class="highlight-value">8 - 11%</span></div>
+            <div class="data-cell" data-label="Average Watch Time"><strong>8.4 sec</strong></div>
+            <div class="data-cell" data-label="Cost Per Million Views"><strong class="price">Rs. 10,000</strong></div>
+            <div class="data-cell" data-label="Sales Attribution"><span class="tag tag-success">Receipt Verified</span>
+            </div>
+            <div class="data-cell" data-label="Day One ROAS"><span class="tag tag-success">Positive</span></div>
+            <div class="data-cell" data-label="Shopper Intelligence"><strong>100,000+ receipts</strong></div>
+            <div class="data-cell" data-label="Content Library Created"><strong>1,000+ videos</strong></div>
+            <div class="data-cell" data-label="Content Usage Rights"><strong>Perpetual</strong></div>
+            <div class="data-cell" data-label="Proven Incremental Sales"><span class="tag tag-success">Receipt
+                verified</span></div>
+          </div>
+
+          <!-- Column 2: Influencer Marketing -->
+          <div class="matrix-column  reveal-item" id="influencer">
+            <div class="column-header">
+              <h3>INFLUENCER MARKETING</h3>
+            </div>
+            <div class="data-cell" data-label="Verified Purchasers"><span class="text-muted">No</span></div>
+            <div class="data-cell" data-label="Average Engagement">1 - 3%</div>
+            <div class="data-cell" data-label="Average Watch Time">3 - 6 sec</div>
+            <div class="data-cell" data-label="Cost Per Million Views">Rs. 100,000+</div>
+            <div class="data-cell" data-label="Sales Attribution">Limited</div>
+            <div class="data-cell" data-label="Day One ROAS"><span class="text-warning">Rarely measured</span></div>
+            <div class="data-cell" data-label="Shopper Intelligence">None</div>
+            <div class="data-cell" data-label="Content Library Created">11 posts</div>
+            <div class="data-cell" data-label="Content Usage Rights">Usually limited</div>
+            <div class="data-cell" data-label="Proven Incremental Sales">Limited evidence</div>
+          </div>
+
+          <!-- Column 3: Social Ads -->
+          <div class="matrix-column  reveal-item" id="social-ads">
+            <div class="column-header">
+              <h3>SOCIAL ADS</h3>
+            </div>
+            <div class="data-cell" data-label="Verified Purchasers"><span class="text-muted">No</span></div>
+            <div class="data-cell" data-label="Average Engagement">0.5 - 2%</div>
+            <div class="data-cell" data-label="Average Watch Time">2 - 4 sec</div>
+            <div class="data-cell" data-label="Cost Per Million Views">Rs. 5 - Rs. 15,000</div>
+            <div class="data-cell" data-label="Sales Attribution">Click level</div>
+            <div class="data-cell" data-label="Day One ROAS">Often positive</div>
+            <div class="data-cell" data-label="Shopper Intelligence">None</div>
+            <div class="data-cell" data-label="Content Library Created">None</div>
+            <div class="data-cell" data-label="Content Usage Rights">None</div>
+            <div class="data-cell" data-label="Proven Incremental Sales">Sometimes</div>
+          </div>
+
+          <!-- Column 4: TV -->
+          <div class="matrix-column reveal-item" id="tv">
+            <div class="column-header">
+              <h3>TV</h3>
+            </div>
+            <div class="data-cell" data-label="Verified Purchasers"><span class="text-muted">No</span></div>
+            <div class="data-cell" data-label="Average Engagement"><span class="text-muted">N/A</span></div>
+            <div class="data-cell" data-label="Average Watch Time">15 - 30 sec</div>
+            <div class="data-cell" data-label="Cost Per Million Views">Rs. 10 - Rs. 25,000</div>
+            <div class="data-cell" data-label="Sales Attribution">Econometric</div>
+            <div class="data-cell" data-label="Day One ROAS"><span class="text-muted">Not measurable</span></div>
+            <div class="data-cell" data-label="Shopper Intelligence">None</div>
+            <div class="data-cell" data-label="Content Library Created">1 advert</div>
+            <div class="data-cell" data-label="Content Usage Rights">None</div>
+            <div class="data-cell" data-label="Proven Incremental Sales">Hard to isolate</div>
+          </div>
+
         </div>
       </div>
-  
-      <div class="footer-col">
-        <div class="item">
-          <input type="checkbox" id="store">
-          <div class="col-section reveal-item">
-            <label for="store">
-            <h3>For Brands</h3>  
-          </label>
-            <ul class="product-list">
-              <li><a href="#">Showcase</a></li>
-              <li><a href="#">Terms and Conditions</a></li>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Case Study</a></li>
-            </ul>
+    </section>
+    <!-- MEASUREMENT END -->
+
+
+    <!-- BUDGET MANAGEMENT  -->
+    <section class="buddgetSection">
+      <main class="calculator-wrapper">
+        <div class="budget-card">
+
+          <!-- Top Header -->
+          <div class="card-header">
+            <div class="badge-pill reveal-item">
+              <i data-lucide="zap"></i> Flexible Pricing
+            </div>
+            <h2 class="title reveal-item">BUDGET YOUR WAY</h2>
+            <p class="subtitle reveal-item">Pricing starts from <strong>Rs. 10,000</strong>.</p>
           </div>
+
+          <!-- Slider Input Section -->
+          <div class="slider-container">
+            <div class="slider-header">
+              <label for="budgetSlider" class="slider-label">Your Budget</label>
+              <div class="budget-display">
+                <span class="currency">Rs. </span><span id="budgetValue">17,500</span>
+              </div>
+            </div>
+
+            <div class="range-wrapper reveal-item">
+              <input type="range" id="budgetSlider" min="50" max="1000" step="25" value="75" class="styled-slider">
+            </div>
+            <div class="slider-ticks reveal-item">
+              <span>Rs. 50</span>
+              <span>Rs. 750</span>
+              <span>Rs. 999+</span>
+            </div>
+          </div>
+
+          <!-- Live Calculated Metrics Grid -->
+          <div class="metrics-grid reveal-item">
+
+            <!-- Metric 1 -->
+            <div class="metric-card">
+              <div class="metric-header">
+                <div class="icon-box">
+                  <i data-lucide="file-check"></i>
+                </div>
+                <span class="metric-title">Verified Posts</span>
+              </div>
+              <div class="metric-value" id="postsValue">1,750</div>
+            </div>
+
+            <!-- Metric 2 -->
+            <div class="metric-card highlight-metric">
+              <div class="metric-header">
+                <div class="icon-box">
+                  <i data-lucide="eye"></i>
+                </div>
+                <span class="metric-title">Verified Views</span>
+              </div>
+              <div class="metric-value" id="viewsValue">1,750,000</div>
+            </div>
+
+            <!-- Metric 3 -->
+            <div class="metric-card">
+              <div class="metric-header">
+                <div class="icon-box">
+                  <i data-lucide="trending-up"></i>
+                </div>
+                <span class="metric-title">Engagement Rate</span>
+              </div>
+              <div class="metric-value" id="engagementValue">8-12%</div>
+            </div>
+
+          </div>
+
+          <!-- CTA Button & Footer Notes -->
+          <div class="card-footer">
+            <button class="cta-btn">
+              <span>Launch Campaign</span>
+              <i data-lucide="arrow-right"></i>
+            </button>
+
+            <div class="trust-features">
+              <div class="trust-item">
+                <i data-lucide="shield-check"></i>
+                <span>No contract. Top up or pause anytime.</span>
+              </div>
+              <div class="trust-item">
+                <i data-lucide="clock"></i>
+                <span>Launch in minutes.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </section>
+    <!-- BUDGET MANAGEMENT ENDas -->
+
+
+    <!-- PROJECT SHOWCASE -->
+    <section class="workflow-section">
+      <div class="workflow-container">
+
+        <div class="workflow-heading">
+          <h2 class="reveal-item">The Simple Process</h2>
+          <p class="reveal-item">Set your brand up for success.</p>
+        </div>
+
+        <div class="workflow-grid">
+
+          <div class="workflow-card">
+            <p>Your customer makes a verified purchase.</p>
+            <img src="./assets/demo_workflow.webp" alt="App home page">
+          </div>
+
+          <div class="workflow-card">
+            <p>They share genuine love for you on social media.</p>
+            <img src="./assets/demo_workflow.webp" alt="App post detail page">
+          </div>
+
+          <div class="workflow-card">
+            <p>They get a cash reward for the post.</p>
+            <img src="./assets/demo_workflow.webp" alt="App wallet">
+          </div>
+
         </div>
       </div>
-      <div class="footer-col">
-        <div class="item">
-          <input type="checkbox" id="education">
-          <div class="col-section reveal-item">
-            <label for="education">
-            <h3>Resources</h3>  
 
-          </label>
-            <ul class="product-list">
-              <li><a href="#">See all brands</a></li>
-              <li><a href="#">Get more views on socials</a></li>
-              <li><a href="#">Easiest way to get UGC</a></li>
-              <li><a href="#">Get customers to post</a></li>
-              <li><a href="#">Word-of-mouth marketing</a></li>    
-              <li><a href="#">Get Trustpilot reviews</a></li>
-            </ul>
-          </div>
-        </div>
-
+      <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
       </div>
-      <div class="footer-col">
+    </section>
+    <!-- PROJECT SHOWCASE END -->
 
-              <div class="item">
-          <input type="checkbox" id="business">
-          <div class="col-section reveal-item">
-            <label for="business">
-            <h3>Our Company</h3>  
-          </label>
-            <ul class="product-list">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Contact us</a></li>
+    <!-- LAUNCH SECTION -->
+    <section class="launch-section">
+      <div class="launch-card-container">
+        <div class="launch-grid">
+
+          <!-- LEFT CONTENT COLUMN -->
+          <div class="launch-content">
+            <h2 class="launch-title reveal-item">LAUNCH. THEN WATCH THE RESULTS ROLL IN.</h2>
+            <p class="launch-subtitle reveal-item">SEE YOUR RESULTS IN REAL TIME.</p>
+            <p class="launch-desc">
+              Track posts, views, and sales as they happen—all from your live Kamao dashboard.
+            </p>
+
+            <ul class="launch-checklist">
+              <li>
+                <span class="check-icon-circle">✓</span>
+                <span>CREATE YOUR BRAND PROFILE AND GET STARTED.</span>
+              </li>
+              <li>
+                <span class="check-icon-circle">✓</span>
+                <span> SET YOUR REWARDS AND POST LIMITS.</span>
+              </li>
+              <li>
+                <span class="check-icon-circle">✓</span>
+                <span>ADD FUNDS AND STAY IN CONTROL OF YOUR SPEND.</span>
+              </li>
+              <li>
+                <span class="check-icon-circle">✓</span>
+                <span>GO LIVE AND START ENGAGING YOUR AUDIENCE.</span>
+              </li>
+              <li>
+                <span class="check-icon-circle">✓</span>
+                <span> GET STARTED WITH JUST RS. 10,000.</span>
+              </li>
             </ul>
+
+            <div class="launch-buttons">
+              <a href="#get-started" class="btn btn-primary">Get started</a>
+              <a href="#demo" class="btn btn-outline">Book a demo call</a>
+            </div>
           </div>
+
+          <!-- RIGHT VISUAL COLUMN (Dashboard & Floating Badges) -->
+          <div class="launch-visual">
+            <div class="dashboard-wrapper">
+
+              <!-- Main Vibrant Sage/Green Container Box -->
+              <div class="green-dashboard-card">
+                <!-- Mock Dashboard UI -->
+                <div class="mock-dash-inner">
+                  <div class="mock-dash-top">
+                    <span class="mock-brand">Kamao</span>
+                    <span class="mock-user">Join us today!</span>
+                  </div>
+                  <div class="mock-balance-box">
+                    <span class="mock-label">Balance</span>
+                    <strong class="mock-val">Rs. 3,482.39</strong>
+                  </div>
+                  <div class="mock-posts-strip">
+                    <div class="mock-thumb"
+                      style="background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=200&q=80')">
+                    </div>
+                    <div class="mock-thumb"
+                      style="background-image: url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=200&q=80')">
+                    </div>
+                    <div class="mock-thumb"
+                      style="background-image: url('https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=200&q=80')">
+                    </div>
+                    <div class="mock-thumb"
+                      style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=200&q=80')">
+                    </div>
+                  </div>
+                  <div class="mock-metrics-grid">
+                    <div class="mock-metric-item">
+                      <span>Total investment</span>
+                      <strong>Rs. 15,843.94</strong>
+                    </div>
+                    <div class="mock-metric-item">
+                      <span>Earned media value</span>
+                      <strong>Rs. 112,415.89</strong>
+                    </div>
+                    <div class="mock-metric-item">
+                      <span>ROI</span>
+                      <strong>7.1x</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Badge 1: Top CPM -->
+              <div class="float-badge float-cpm">
+                <div class="badge-text-group">
+                  <span class="b-label reveal-item">CPM</span>
+                  <strong class="b-val">Rs. 3.75</strong>
+                </div>
+                <span class="b-icon">🔗</span>
+              </div>
+
+              <!-- Floating Badge 2: Bottom-Left Earned Media Value -->
+              <div class="float-badge float-emv">
+                <div class="badge-text-group">
+                  <span class="b-label">Earned media value</span>
+                  <strong class="b-val">Rs. 112,415.89</strong>
+                </div>
+                <span class="b-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-hand-coins">
+                    <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" />
+                    <path
+                      d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" />
+                    <path d="m2 16 6 6" />
+                    <circle cx="16" cy="9" r="2.9" />
+                    <circle cx="6" cy="5" r="3" />
+                  </svg>
+                </span>
+              </div>
+
+              <!-- Floating Badge 3: Bottom-Right ROI -->
+              <div class="float-badge float-roi">
+                <div class="badge-text-group">
+                  <span class="b-label">ROI</span>
+                  <strong class="b-val">7.1x</strong>
+                </div>
+                <span class="b-icon">📈</span>
+              </div>
+
+            </div>
+          </div>
+
         </div>
+      </div>
+    </section>
+    <!-- LAUNCH SECTION END -->
+
+
+    <!-- EVERYTHING YOU NEED  -->
+    <section class="visual-features-section">
+      <div class="visual-features-container">
+
+        <div class="visual-header reveal-item">
+          <h2 class="visual-title">EVERYTHING YOU NEED</h2>
+          <p class="visual-subtitle">One platform to run, reward, and grow.</p>
         </div>
-<!--   
+
+        <div class="bento-grid">
+
+          <div class="bento-card bento-spend reveal-item">
+            <div class="card-visual-bg spend-gradient">
+              <div class="floating-wallet-badge">
+                <span class="wallet-icon">💳</span>
+                <div class="wallet-info">
+                  <small>Spend Limit</small>
+                  <strong>Rs. 500 / mo</strong>
+                </div>
+              </div>
+              <div class="animated-wave-bar"></div>
+            </div>
+            <div class="bento-text-content">
+              <h3>Spend Control</h3>
+              <p>Configure reward limits and manage budgets instantly.</p>
+            </div>
+          </div>
+
+          <div class="bento-card bento-dash reveal-item">
+            <div class="card-visual-bg dash-gradient">
+              <div class="mini-chart-mockup">
+                <div class="chart-line"></div>
+                <span class="chart-badge">↑ 7.1x ROI</span>
+              </div>
+            </div>
+            <div class="bento-text-content">
+              <h3>Performance Dashboard</h3>
+              <p>Real-time tracking of views, ROI & spend.</p>
+            </div>
+          </div>
+
+          <div class="bento-card bento-feed reveal-item">
+            <div class="card-visual-bg feed-gradient">
+              <div class="mini-feed-strip">
+                <div class="mini-thumb"
+                  style="background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=150&q=80')">
+                </div>
+                <div class="mini-thumb"
+                  style="background-image: url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=150&q=80')">
+                </div>
+                <div class="mini-thumb"
+                  style="background-image: url('https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=150&q=80')">
+                </div>
+              </div>
+            </div>
+            <div class="bento-text-content">
+              <h3>Live Posts Feed</h3>
+              <p>Explore high-converting customer posts instantly.</p>
+            </div>
+          </div>
+
+          <div class="bento-card bento-guidelines reveal-item">
+            <div class="card-visual-bg guide-gradient">
+              <div class="icon-bubble reveal-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-indian-rupee">
+                  <path d="M6 3h12" />
+                  <path d="M6 8h12" />
+                  <path d="m6 13 8.5 8" />
+                  <path d="M6 13h3" />
+                  <path d="M9 13c6.667 0 6.667-10 0-10" />
+                </svg>
+              </div>
+            </div>
+            <div class="bento-text-content">
+              <h3>Post Guidelines & Earnings</h3>
+              <p>Provide clear briefs & guidance for creators.</p>
+            </div>
+          </div>
+
+          <div class="bento-card bento-insights reveal-item">
+            <div class="card-visual-bg insights-gradient">
+              <div class="receipt-icon-mock">Receipt Analysis
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-chart-no-axes-combined">
+                  <path d="M12 16v5" />
+                  <path d="M16 14.639V21" />
+                  <path d="M20 10.656V21" />
+                  <path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15" />
+                  <path d="M4 18.463V21" />
+                  <path d="M8 14.656V21" />
+                </svg>
+              </div>
+            </div>
+            <div class="bento-text-content">
+              <h3>Shopper Insights</h3>
+              <p>Deep monthly analytics and receipt breakdown.</p>
+            </div>
+          </div>
+
+          <div class="bento-card bento-reg reveal-item">
+            <div class="card-visual-bg reg-gradient">
+              <div class="shield-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-badge-check">
+                  <path
+                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                  <path d="m16 9-5.5 5.5L8 12" />
+                </svg>
+                Verified Compliant
+              </div>
+            </div>
+            <div class="bento-text-content">
+              <h3>Advertising Regulation</h3>
+              <p>Stay up to date automatically with FTC & ASA guidelines.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- EVERYTHING YOU NEED END -->
+
+    <!-- REVIEW SECTION -->
+    <section id="reviews-1529">
+      <div class="cs-container">
+        <div class="cs-content"> <span class="cs-topper">Brand Stories</span>
+          <h2 class="cs-title">Brands Are Turning Real Customers Into Content</h2>
+          <p class="cs-text"> Get authentic content from customers who genuinely love your products, while turning every
+            verified purchase into an opportunity for organic social marketing. </p>
+        </div>
+        <div class="cs-review">
+          <!-- Animated Content Target Wrapper -->
+          <div class="cs-review-inner">
+            <div class="cs-image-group">
+              <picture class="cs-picture">
+                <source id="cs-source-mobile" media="(max-width: 600px)"
+                  srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/day-care-review.jpg">
+                <source id="cs-source-desktop" media="(min-width: 601px)"
+                  srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/day-care-review.jpg">
+                <img id="cs-review-img" decoding="async"
+                  src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/day-care-review.jpg"
+                  alt="Kamao brand partner" width="413" height="374" aria-hidden="true">
+              </picture>
+
+              <svg class="cs-mask" width="100%" height="100%" viewBox="0 0 264 288" fill="none"
+                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M266 0H0V288H266V0ZM22.47 277.06C-3.13 224.38 3.86 98.26 11.47 34.79C14.17 12.21 18.6 9.69 30.47 8.97C77.4 6.16 139.23 4.6 215.47 5C233.88 5.12 249.16 15.2 255.47 48.69C265.38 101.42 261.07 155.11 256.9 207.21C256.76 208.98 256.62 210.76 256.47 212.53C255.06 230.47 252.33 246.68 248.47 260.19C246.3 267.74 243.11 270.79 238.47 270.12C168.15 260.11 100.01 269.4 30.47 283.03C28.95 283.34 27.89 283.03 26.47 282.04C25.05 281.04 23.47 279.16 22.47 277.08V277.06Z"
+                  fill="var(--maskBG)" />
+                <path
+                  d="M11.4688 34.7899C3.85881 98.2599 -3.13119 224.37 22.4688 277.06C23.4688 279.14 25.0488 281.02 26.4688 282.02C27.8888 283.02 28.9488 283.32 30.4688 283.01C100.009 269.38 168.149 260.09 238.469 270.1C243.109 270.77 246.299 267.72 248.469 260.17C252.329 246.66 255.059 230.45 256.469 212.51C260.759 158.76 265.719 103.2 255.469 48.6799C249.159 15.1999 233.879 5.10993 215.469 4.98993C139.229 4.58993 77.3988 6.15993 30.4688 8.95993C18.5988 9.66993 14.1688 12.1999 11.4688 34.7799V34.7899Z"
+                  stroke="var(--maskBorder)" stroke-width="8" />
+              </svg>
+            </div>
+
+            <div class="cs-flex">
+              <p id="cs-quote" class="cs-quote">
+                Kamao helps us turn genuine customer love into content we can actually see
+                and share. Every verified purchase gives our customers a reason to talk about
+                our products, while we get authentic social content and organic exposure.
+              </p>
+
+              <span id="cs-name" class="cs-name">Maya Patel</span>
+              <span id="cs-job" class="cs-job">Brand Partner</span>
+            </div>
+          </div>
+
+          <!-- Next / Previous Navigation Controls -->
+          <div class="cs-nav-controls">
+            <button class="cs-nav-btn cs-prev-btn" aria-label="Previous testimonial">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+
+            <button class="cs-nav-btn cs-next-btn" aria-label="Next testimonial">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <div class="cs-blob-wrapper">
+            <!--Left Blob-->
+            <svg class="cs-blob cs-blob1" width="162" height="128" viewBox="0 0 162 128" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.578 122.409C10.381 119.368 5.92643 114.978 3.60463 109.384C0.9885 103.088 0.175877 96.0886 -0.354449 89.3761C-0.866915 82.8575 -1.24072 75.777 -5.31557 70.3659C-9.67808 64.5668 -16.4216 63.1296 -23.3033 64.3291C-39.2035 67.104 -48.514 81.3615 -62.3523 88.2493C-76.8448 95.4647 -94.4631 94.1513 -109.354 89.1531C-116.966 86.597 -124.408 83.1835 -131.334 79.1082C-138.132 75.1098 -144.284 70.2008 -149.303 64.0714C-158.733 52.5594 -162.328 36.754 -160.217 22.0489C-158.195 7.94315 -150.61 -4.57519 -139.145 -12.908C-133.368 -17.1036 -127.101 -20.3408 -120.127 -21.8691C-111.542 -23.7487 -102.778 -23.0838 -94.1272 -21.816C-76.3173 -19.2024 -59.0408 -12.8899 -41.1498 -10.7076C-33.2319 -9.74094 -24.8931 -9.53953 -17.1478 -11.6585C-11.3315 -13.2476 -6.55438 -15.5318 -2.13146 -19.6277C2.49267 -23.9098 6.35041 -29.4307 9.8992 -34.6032C13.9864 -40.5641 18.343 -45.896 23.9319 -50.5745C35.2231 -60.0189 49.3056 -65.3874 63.9625 -65.4926C64.2181 -65.4958 64.7911 -65.5969 64.9625 -65.4906C72.1959 -65.4758 78.9861 -64.3591 85.9563 -62.4476C101.309 -58.2417 116.323 -49.9956 128.911 -40.3597C140.909 -31.1783 151.882 -20.4226 157.842 -6.30045C163.027 5.98506 163.158 20.3515 157.762 32.6995C155.234 38.4881 151.818 43.9001 146.731 47.6769C141.07 51.8764 132.65 55.09 125.721 52.634C118.883 50.211 116.075 41.9996 108.746 40.5992C102.216 39.3503 95.2099 43.0425 90.7313 47.5624C85.1368 53.2059 83.2703 60.9658 81.6883 68.5439C80.0954 76.1549 79.1905 84.1586 76.6413 91.5336C72.0829 104.72 63.2704 117.033 50.5759 123.48C39.6798 129.007 26.1617 128.597 15.578 122.409Z"
+                fill="var(--blobColor)" />
+            </svg>
+
+            <!--Right blob-->
+            <svg class="cs-blob cs-blob2" width="423" height="152" viewBox="0 0 423 152" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M446 185.996C437.652 209.276 424.317 227.375 409 226.996C398.568 226.732 389.048 219.154 380 211.996C346.92 185.812 321.111 207.237 285 219.996C244.784 234.202 223.038 185.716 189 168.996C142.612 146.21 105.611 185.367 58.9998 204.996C34.8473 215.167 10.0832 211.93 1.9998 169.996C-9.5339 110.121 40.5169 96.6287 61.9998 87.9963C77.3226 81.8377 93.2386 72.8434 107 56.9963C119.705 42.3661 131.527 7.18936 146 0.99633C152.671 -1.85625 158.896 2.75738 164 8.99633C171.922 18.6733 177.895 32.0744 187 38.9963C204.137 52.031 224.119 57.6817 244 49.9963C263.795 42.3397 279.796 18.2702 299 7.99633C309.489 2.383 321.457 2.19178 330 10.9963C344.858 26.3211 348.113 61.1321 363 76.9963C379.775 94.8809 403.952 94.1948 424 78.9963C429.052 75.168 433.775 70.4414 439 67.9963C455.161 60.443 463.429 84.0291 462 108.996C460.542 134.291 454.106 163.405 446 185.996Z"
+                fill="var(--blobColor)" />
+            </svg>
+          </div>
+
+          <!--Green Squiggles-->
+          <img class="cs-graphic cs-graphic-one"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-team-graphic-four.svg"
+            alt="graphic" loading="lazy" decoding="async" height="134" width="197">
+
+          <!--Red Squiggle-->
+          <img class="cs-graphic cs-graphic-two" src="./assets/curlyBlob.png" alt="graphic" loading="lazy"
+            decoding="async" height="191" width="138">
+        </div>
+      </div>
+
+    </section>
+    <!-- REVIEW SECTION END -->
+
+
+
+
+    <!-- FOOTER  -->
+    <footer>
+      <div class="footer-content">
+        <nav class="footer-menu">
+          <div class="footer-col">
+            <div class="item">
+              <input type="checkbox" id="products">
+              <div class="col-section reveal-item">
+                <label for="products">
+                  <h3>For Creators</h3>
+                </label>
+                <ul class="product-list">
+                  <li><a href="#">Calculator</a></li>
+                  <li><a href="#">Coach</a></li>
+                  <li><a href="#">Tearms and Conditions</a></li>
+                  <li><a href="#">FAQs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <div class="item">
+              <input type="checkbox" id="store">
+              <div class="col-section reveal-item">
+                <label for="store">
+                  <h3>For Brands</h3>
+                </label>
+                <ul class="product-list">
+                  <li><a href="#">Showcase</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Case Study</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="item">
+              <input type="checkbox" id="education">
+              <div class="col-section reveal-item">
+                <label for="education">
+                  <h3>Resources</h3>
+
+                </label>
+                <ul class="product-list">
+                  <li><a href="#">See all brands</a></li>
+                  <li><a href="#">Get more views on socials</a></li>
+                  <li><a href="#">Easiest way to get UGC</a></li>
+                  <li><a href="#">Get customers to post</a></li>
+                  <li><a href="#">Word-of-mouth marketing</a></li>
+                  <li><a href="#">Get Trustpilot reviews</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="footer-col">
+
+            <div class="item">
+              <input type="checkbox" id="business">
+              <div class="col-section reveal-item">
+                <label for="business">
+                  <h3>Our Company</h3>
+                </label>
+                <ul class="product-list">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--   
       <div class="footer-col">
         <div class="item">
           <input type="checkbox" id="acccount">
@@ -944,29 +1002,31 @@
           </div>
         </div>
       </div> -->
-    </nav>
-    <section class="footer-base">
-      <div class="footer-more-ways" x-ms-format-detection="none">
-      We value Your Brands. We make your Brand Reality. <a href="https://aayusofttech.com.np" traget="_blank">Aayusofttech</a>, <span class="nowrap">For any Queries  <a href="mailto:aayusofttech.com.np">Contact us here</a></span>.
-    </div>
-      <div class="footer-legal">
-        <div class="footer-legal-copyright">Copyright © 2026 Aayusofttech Inc. All rights reserved.</div>
-        <div class="footer-legal-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-          <a href="#">Sales and Refunds</a>
-          <a href="#">Legal</a>
-          <a href="#">Site Map</a>
-        </div>
+        </nav>
+        <section class="footer-base">
+          <div class="footer-more-ways" x-ms-format-detection="none">
+            We value Your Brands. We make your Brand Reality. <a href="https://aayusofttech.com.np"
+              traget="_blank">Aayusofttech</a>, <span class="nowrap">For any Queries <a
+                href="mailto:aayusofttech.com.np">Contact us here</a></span>.
+          </div>
+          <div class="footer-legal">
+            <div class="footer-legal-copyright">Copyright © 2026 Aayusofttech Inc. All rights reserved.</div>
+            <div class="footer-legal-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+              <a href="#">Sales and Refunds</a>
+              <a href="#">Legal</a>
+              <a href="#">Site Map</a>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
-      </div>
-  </footer>
-<!-- FOOTER END -->
+    </footer>
+    <!-- FOOTER END -->
 
-</div>
-<!-- SCROLL  -->
- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  </div>
+  <!-- SCROLL  -->
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
   <script>
     const scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
@@ -999,110 +1059,110 @@
 
     // HERO PAGE COUNTER
     // Array of items to cycle through
-const metrics = [
-  "184,441 posts",
-  "23,293 Views",
-  "Rs. 23,300 Paid to Creators",
-  "98.4% Engagement Rate",
-  "12,500+ Active Campaigns"
-];
+    const metrics = [
+      "184,441 posts",
+      "23,293 Views",
+      "Rs. 23,300 Paid to Creators",
+      "98.4% Engagement Rate",
+      "12,500+ Active Campaigns"
+    ];
 
-let currentMetricIndex = 0;
-const tickerEl = document.getElementById('counterTicker');
+    let currentMetricIndex = 0;
+    const tickerEl = document.getElementById('counterTicker');
 
-setInterval(() => {
-  if (!tickerEl) return;
+    setInterval(() => {
+      if (!tickerEl) return;
 
-  // 1. Exit animation (slide up & fade)
-  tickerEl.classList.add('ticker-exit');
+      // 1. Exit animation (slide up & fade)
+      tickerEl.classList.add('ticker-exit');
 
-  setTimeout(() => {
-    // 2. Change content to next metric
-    currentMetricIndex = (currentMetricIndex + 1) % metrics.length;
-    tickerEl.textContent = metrics[currentMetricIndex];
+      setTimeout(() => {
+        // 2. Change content to next metric
+        currentMetricIndex = (currentMetricIndex + 1) % metrics.length;
+        tickerEl.textContent = metrics[currentMetricIndex];
 
-    // 3. Move instantly to bottom starting point
-    tickerEl.classList.remove('ticker-exit');
-    tickerEl.classList.add('ticker-prepare');
+        // 3. Move instantly to bottom starting point
+        tickerEl.classList.remove('ticker-exit');
+        tickerEl.classList.add('ticker-prepare');
 
-    // 4. Animate smoothly from bottom into center
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        tickerEl.classList.remove('ticker-prepare');
-      });
-    });
-  }, 380); // Trigger right before the 0.4s CSS exit transition completes
-}, 2000); // 2 Seconds Loop
+        // 4. Animate smoothly from bottom into center
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            tickerEl.classList.remove('ticker-prepare');
+          });
+        });
+      }, 380); // Trigger right before the 0.4s CSS exit transition completes
+    }, 2000); // 2 Seconds Loop
     // HERO PAGE COUNTER ENDDSS
 
 
     // NAVBAR JAVASCRIOPT 
     // 1. Scroll-Triggered Navbar Transformation (200px threshold)
-const navbar = document.getElementById('navbar');
-const scrollThreshold = 200;
+    const navbar = document.getElementById('navbar');
+    const scrollThreshold = 200;
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > scrollThreshold) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-}, { passive: true });
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > scrollThreshold) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    }, { passive: true });
 
-// 2. Mobile Menu Toggle Animation
-const hamburgerBtn = document.getElementById('hamburgerBtn');
-const mobileMenu = document.getElementById('mobileMenu');
+    // 2. Mobile Menu Toggle Animation
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-hamburgerBtn.addEventListener('click', () => {
-  const isOpen = hamburgerBtn.classList.toggle('active');
-  mobileMenu.classList.toggle('open');
-  hamburgerBtn.setAttribute('aria-expanded', isOpen);
-});
+    hamburgerBtn.addEventListener('click', () => {
+      const isOpen = hamburgerBtn.classList.toggle('active');
+      mobileMenu.classList.toggle('open');
+      hamburgerBtn.setAttribute('aria-expanded', isOpen);
+    });
 
-// Close mobile menu automatically when a link is clicked
-document.querySelectorAll('.mobile-link, .mobile-btn').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburgerBtn.classList.remove('active');
-    mobileMenu.classList.remove('open');
-    hamburgerBtn.setAttribute('aria-expanded', 'false');
-  });
-});
+    // Close mobile menu automatically when a link is clicked
+    document.querySelectorAll('.mobile-link, .mobile-btn').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburgerBtn.classList.remove('active');
+        mobileMenu.classList.remove('open');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
 
-// Close mobile menu when clicking outside of it
-document.addEventListener('click', (e) => {
-  const isClickInside = navbar.contains(e.target) || mobileMenu.contains(e.target);
-  if (!isClickInside && mobileMenu.classList.contains('open')) {
-    hamburgerBtn.classList.remove('active');
-    mobileMenu.classList.remove('open');
-    hamburgerBtn.setAttribute('aria-expanded', 'false');
-  }
-});
+    // Close mobile menu when clicking outside of it
+    document.addEventListener('click', (e) => {
+      const isClickInside = navbar.contains(e.target) || mobileMenu.contains(e.target);
+      if (!isClickInside && mobileMenu.classList.contains('open')) {
+        hamburgerBtn.classList.remove('active');
+        mobileMenu.classList.remove('open');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
     // NAVBAR JAVASCRIOPT NEND
 
     // REAVEAL ANIMATION
     document.addEventListener("DOMContentLoaded", () => {
-  const revealItems = document.querySelectorAll('.reveal-item');
+      const revealItems = document.querySelectorAll('.reveal-item');
 
-  const observerOptions = {
-    root: null, // uses the browser viewport
-    rootMargin: '0px 0px -80px 0px', // triggers just before it fully enters screen view
-    threshold: 0.1
-  };
+      const observerOptions = {
+        root: null, // uses the browser viewport
+        rootMargin: '0px 0px -80px 0px', // triggers just before it fully enters screen view
+        threshold: 0.1
+      };
 
-  const observer = new IntersectionObserver((entries, observerInstance) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        // Unobserve once animated so it stays visible and doesn't re-trigger
-        observerInstance.unobserve(entry.target);
-      }
+      const observer = new IntersectionObserver((entries, observerInstance) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            // Unobserve once animated so it stays visible and doesn't re-trigger
+            observerInstance.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      revealItems.forEach(item => {
+        observer.observe(item);
+      });
     });
-  }, observerOptions);
-
-  revealItems.forEach(item => {
-    observer.observe(item);
-  });
-});
     // REAVEAL ANIMATION END 
 
     // MEASUREMENT SECTION 
@@ -1123,187 +1183,189 @@ document.addEventListener('click', (e) => {
 
     // BUDGET MANAGEMENT
     document.addEventListener('DOMContentLoaded', () => {
-  // Initialize Lucide Icons
-  lucide.createIcons();
+      // Initialize Lucide Icons
+      lucide.createIcons();
 
-  const slider = document.getElementById('budgetSlider');
-  const budgetValue = document.getElementById('budgetValue');
-  const postsValue = document.getElementById('postsValue');
-  const viewsValue = document.getElementById('viewsValue');
+      const slider = document.getElementById('budgetSlider');
+      const budgetValue = document.getElementById('budgetValue');
+      const postsValue = document.getElementById('postsValue');
+      const viewsValue = document.getElementById('viewsValue');
 
-  // Update calculation metrics dynamically
-  function updateCalculator() {
-    const value = parseInt(slider.value, 10);
-    
-    // Format Budget (Rs. )
-    budgetValue.textContent = value.toLocaleString();
+      // Update calculation metrics dynamically
+      function updateCalculator() {
+        const value = parseInt(slider.value, 10);
 
-    // Calculations based on budget
-    const posts = Math.round(value / 10);
-    const views = value * 100;
+        // Format Budget (Rs. )
+        budgetValue.textContent = value.toLocaleString();
 
-    postsValue.textContent = posts.toLocaleString();
-    viewsValue.textContent = views.toLocaleString();
+        // Calculations based on budget
+        const posts = Math.round(value / 10);
+        const views = value * 100;
 
-    // Dynamic Slider Fill Background Track Color
-    const percentage = ((value - slider.min) / (slider.max - slider.min)) * 100;
-    slider.style.background = `linear-gradient(to right,  #1feb0a 0%, var(--sage-dark) ${percentage}%, var(--sand) ${percentage}%, var(--sand) 100%)`;
-  }
+        postsValue.textContent = posts.toLocaleString();
+        viewsValue.textContent = views.toLocaleString();
 
-  // Listener for interactive slider adjustment
-  slider.addEventListener('input', updateCalculator);
+        // Dynamic Slider Fill Background Track Color
+        const percentage = ((value - slider.min) / (slider.max - slider.min)) * 100;
+        slider.style.background = `linear-gradient(to right,  #1feb0a 0%, var(--sage-dark) ${percentage}%, var(--sand) ${percentage}%, var(--sand) 100%)`;
+      }
 
-  // Initial calculation on page load
-  updateCalculator();
-});
+      // Listener for interactive slider adjustment
+      slider.addEventListener('input', updateCalculator);
+
+      // Initial calculation on page load
+      updateCalculator();
+    });
     // BUDGET MANAGEMENT END
 
     // REVIEW SECTION
     document.addEventListener("DOMContentLoaded", () => {
-  // Testimonials Data List
-  const testimonials = [
-    {
-      quote: "Stitch Day Care Center has been a game-changer for our family. Our child is thriving, and we're beyond grateful for their caring staff, stimulating curriculum, and strong focus on safety. Highly recommended!",
-      name: "Jenny Wilson",
-      job: "UI/UX Designer",
-      image: "https://csimages2.nyc3.digitaloceanspaces.com/Images/People/day-care-review.jpg"
-    },
-    {
-      quote: "The environment and care they provide are phenomenal. Our child looks forward to going every single morning. The teachers genuinely care about every child's individual growth.",
-      name: "David Miller",
-      job: "Software Engineer",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=413&q=80"
-    },
-    {
-      quote: "Peace of mind is priceless, and this team gives us exactly that. Incredible security standards, wonderful activities, and exceptional communication throughout the day.",
-      name: "Sarah Jenkins",
-      job: "Product Manager",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=413&q=80"
-    }
-  ];
-
-  let currentIndex = 0;
-
-  const reviewInner = document.querySelector('#reviews-1529 .cs-review-inner');
-  const reviewImg = document.getElementById('cs-review-img');
-  const sourceMobile = document.getElementById('cs-source-mobile');
-  const sourceDesktop = document.getElementById('cs-source-desktop');
-  const quoteEl = document.getElementById('cs-quote');
-  const nameEl = document.getElementById('cs-name');
-  const jobEl = document.getElementById('cs-job');
-
-  const prevBtn = document.querySelector('#reviews-1529 .cs-prev-btn');
-  const nextBtn = document.querySelector('#reviews-1529 .cs-next-btn');
-
-  function updateTestimonial(newIndex) {
-    // 1. Trigger exit/fade-out animation
-    reviewInner.classList.add('is-animating');
-
-    setTimeout(() => {
-      // 2. Update content data
-      const data = testimonials[newIndex];
-      quoteEl.textContent = data.quote;
-      nameEl.textContent = data.name;
-      jobEl.textContent = data.job;
-      reviewImg.src = data.image;
-      sourceMobile.srcset = data.image;
-      sourceDesktop.srcset = data.image;
-
-      // 3. Trigger entrance/fade-in animation
-      reviewInner.classList.remove('is-animating');
-    }, 400); // Matches CSS transition duration
+      // Testimonials Data List
+const testimonials = [
+  {
+    quote: "Kamao helps us turn genuine customer love into authentic content. Our customers make verified purchases, share their experience on social media, and we get organic content that feels real — not like traditional advertising.",
+    name: "Riya Mehta",
+    job: "Marketing Manager",
+    image: "https://csimages2.nyc3.digitaloceanspaces.com/Images/People/day-care-review.jpg"
+  },
+  {
+    quote: "What we love about Kamao is that the content comes from real customers who already chose to buy from us. It gives us genuine social proof while helping our customers get rewarded for sharing their experience.",
+    name: "Arjun Kapoor",
+    job: "Brand Manager",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=413&q=80"
+  },
+  {
+    quote: "Instead of simply paying for another ad, Kamao gives our customers a reason to talk about products they genuinely enjoy. We get authentic social content, stronger word-of-mouth, and more organic visibility for our brand.",
+    name: "Ananya Sharma",
+    job: "Head of Marketing",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=413&q=80"
   }
+];
 
-  nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % testimonials.length;
-    updateTestimonial(currentIndex);
-  });
 
-  prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-    updateTestimonial(currentIndex);
-  });
-});
+      let currentIndex = 0;
+
+      const reviewInner = document.querySelector('#reviews-1529 .cs-review-inner');
+      const reviewImg = document.getElementById('cs-review-img');
+      const sourceMobile = document.getElementById('cs-source-mobile');
+      const sourceDesktop = document.getElementById('cs-source-desktop');
+      const quoteEl = document.getElementById('cs-quote');
+      const nameEl = document.getElementById('cs-name');
+      const jobEl = document.getElementById('cs-job');
+
+      const prevBtn = document.querySelector('#reviews-1529 .cs-prev-btn');
+      const nextBtn = document.querySelector('#reviews-1529 .cs-next-btn');
+
+      function updateTestimonial(newIndex) {
+        // 1. Trigger exit/fade-out animation
+        reviewInner.classList.add('is-animating');
+
+        setTimeout(() => {
+          // 2. Update content data
+          const data = testimonials[newIndex];
+          quoteEl.textContent = data.quote;
+          nameEl.textContent = data.name;
+          jobEl.textContent = data.job;
+          reviewImg.src = data.image;
+          sourceMobile.srcset = data.image;
+          sourceDesktop.srcset = data.image;
+
+          // 3. Trigger entrance/fade-in animation
+          reviewInner.classList.remove('is-animating');
+        }, 400); // Matches CSS transition duration
+      }
+
+      nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        updateTestimonial(currentIndex);
+      });
+
+      prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+        updateTestimonial(currentIndex);
+      });
+    });
     // REVIEW SECTION END
 
 
     // HERO SECTION TEXT ANIMATION 
-        const rows = [
-            "FROM CUSTOMERS ",
-            "TO BRAND INFLUENCERS"
+    const rows = [
+      "FROM CUSTOMERS ",
+      "TO BRAND INFLUENCERS"
 
-        ];
+    ];
 
-        const highlightedWords = [
-            // "INFLUENCERS"
-        ];
+    const highlightedWords = [
+      // "INFLUENCERS"
+    ];
 
-        const titleContainer =
-            document.querySelector(".hero-title-container");
+    const titleContainer =
+      document.querySelector(".hero-title-container");
 
-        let characterIndex = 0;
+    let characterIndex = 0;
 
-        rows.forEach((rowText, rowIndex) => {
+    rows.forEach((rowText, rowIndex) => {
 
-            // Create row
-            const row = document.createElement("div");
+      // Create row
+      const row = document.createElement("div");
 
-            row.classList.add("hero-row");
+      row.classList.add("hero-row");
 
-            titleContainer.appendChild(row);
-
-
-            // Split row into characters
-            rowText.split("").forEach((char) => {
-
-                const span = document.createElement("span");
-
-                span.textContent = char;
-
-                span.classList.add(
-                    "hero-slide-up-with-fade-in"
-                );
+      titleContainer.appendChild(row);
 
 
-                // Animation delay
-                span.style.animationDelay =
-                    `${characterIndex * 0.03}s`;
+      // Split row into characters
+      rowText.split("").forEach((char) => {
+
+        const span = document.createElement("span");
+
+        span.textContent = char;
+
+        span.classList.add(
+          "hero-slide-up-with-fade-in"
+        );
 
 
-                /*
-                 * Highlight matching words
-                 */
-                highlightedWords.forEach((word) => {
-
-                    if (rowText.includes(word)) {
-
-                        const start =
-                            rowText.indexOf(word);
-
-                        const charPosition =
-                            row.indexOf(span);
-
-                        if (
-                            charPosition >= start &&
-                            charPosition < start + word.length
-                        ) {
-                            span.classList.add(
-                                "hero-special-color"
-                            );
-                        }
-                    }
-
-                });
+        // Animation delay
+        span.style.animationDelay =
+          `${characterIndex * 0.03}s`;
 
 
-                row.appendChild(span);
+        /*
+         * Highlight matching words
+         */
+        highlightedWords.forEach((word) => {
 
-                characterIndex++;
-            });
+          if (rowText.includes(word)) {
+
+            const start =
+              rowText.indexOf(word);
+
+            const charPosition =
+              row.indexOf(span);
+
+            if (
+              charPosition >= start &&
+              charPosition < start + word.length
+            ) {
+              span.classList.add(
+                "hero-special-color"
+              );
+            }
+          }
 
         });
+
+
+        row.appendChild(span);
+
+        characterIndex++;
+      });
+
+    });
 
     // HERO SECTION TEXT ANIMATION ENDN
   </script>
 </body>
+
 </html>

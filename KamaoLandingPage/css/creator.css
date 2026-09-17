@@ -27,7 +27,7 @@
     text-align: center;
     background: linear-gradient(359.8deg,
             #FAFAF9 70%,
-            #F4FAE8 99.86%);
+            var(--brightPrimary) 99.86%);
 
 
 }
@@ -83,7 +83,7 @@
 
     background: #E6F0E4;
 
-    border: 1px solid var(--primary-text);
+    border: 1px solid white;
     border-radius: 24px;
 
     text-align: center;
@@ -901,7 +901,7 @@
 .brands-section {
     position: relative;
     overflow: hidden;
-    background: #F4FAE8;
+    background: var(--brightPrimary);
     padding: 0px;
     text-align: center;
 }
@@ -1065,7 +1065,7 @@
 
 .cs-title {
     font-size: var(--headerFontSize);
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.2em;
     text-align: inherit;
     max-width: 43.75rem;
@@ -1209,7 +1209,7 @@
 @media only screen and (min-width: 0rem) {
     #sbsr-1575 {
         padding: var(--sectionPadding);
-        background: #F4FAE8;
+        background: var(--brightPrimary);
 
     }
 
@@ -1253,7 +1253,8 @@
         text-align: left;
         list-style: none;
         width: 100%;
-        background: #e0ebd9;
+        background: var(--brightPrimary);
+        filter: brightness(97%);
         /* 12px - 16px */
         padding: clamp(0.75rem, 2vw, 1rem) 1rem;
         border-radius: 12px;
@@ -1262,7 +1263,7 @@
     }
 
     #sbsr-1575 .cs-faq-item.active {
-        border-color: var(--primaryLight);
+        border-color: white;
     }
 
     #sbsr-1575 .cs-faq-item.active .cs-button {
@@ -1390,7 +1391,7 @@
         width: 100%;
         height: 100%;
         border-radius: 20px;
-        border: solid 9px #d8e4c8;
+        border: solid 9px white;
         object-fit: cover;
         position: absolute;
         top: 0;

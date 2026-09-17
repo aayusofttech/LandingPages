@@ -599,20 +599,7 @@
   padding: 14px;
 }
 
-/* Responsive breakpoint for mobile */
-@media (max-width: 900px) {
-  .nav-links,
-  .nav-actions {
-    display: none;
-  }
-  .hamburger {
-    display: flex;
-  }
-  .navbar,
-  .navbar.scrolled {
-    max-width: 100% !important; /* Take full container width minus padding on mobile */
-  }
-}
+
     /* HERO END  */
 
     /* VIEW SECTION */
@@ -2022,14 +2009,7 @@
 
 
 
-@media (max-width: 768px) {
-  .bento-grid {
-    grid-template-columns: 1fr;
-  }
-  .bento-spend {
-    grid-column: span 1;
-  }
-}
+
 .bento-text-content h3{
  background-color: transparent !important;
 }
@@ -2510,3 +2490,31 @@ input[type="checkbox"]:checked+.col-section h3::after {
     --blobColor: #28a745; /* Replace with your preferred green shade (e.g., #22c55e, #10b981) */
 }
 /* REVIEW SECTION END */
+
+
+/* Responsive breakpoint for mobile */
+@media (max-width: 900px) {
+  .nav-links,
+  .nav-actions {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .navbar,
+  .navbar.scrolled {
+    max-width: 100% !important; /* Take full container width minus padding on mobile */
+  }
+      .stats-banner {
+    padding: 75px 15px;
+}
+}
+
+@media (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+  .bento-spend {
+    grid-column: span 1;
+  }
+}

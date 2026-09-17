@@ -345,6 +345,7 @@
         padding: 26px 16px 22px;
         border-radius: 20px;
         box-shadow: 5px 5px 0 #DFFF5A;
+        flex-direction: column;
     }
 
     .creator-rating {

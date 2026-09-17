@@ -459,6 +459,10 @@
   transition: ease-in-out all 0.3s;
 }
 
+.active-page{
+  color:#6ab162 !important;
+}
+
 .nav-links a:hover {
   color: #5F8F5A;
 }

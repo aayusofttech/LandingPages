@@ -27,3 +27,161 @@
     opacity: 1;
   }
 }
+
+
+
+/* HERO TEXT ANIMATION */
+ .hero-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            font-family: var(--font-display);
+            perspective: 1000px;
+        }
+
+        .hero-title-container {
+               font-size: clamp(2.8rem, 6.5vw, 5.2rem);
+      line-height: 0.98;
+      letter-spacing: 0.01em;
+      color: var(--primary-text);
+      text-transform: uppercase;
+      max-width: 920px;
+      margin: 0 auto 18px auto;
+        }
+
+        .hero-title-container > span {
+            display: inline-block;
+            white-space: pre;
+            will-change: transform, opacity;
+        }
+
+        .hero-special-color {
+            color: #000000;
+            text-shadow: lab(72.781 29.7779 60.4593 / 0.35) 0px 0px 40px;
+        }
+
+        /* Animation option: Fade In */
+        .hero-fade-in {
+            opacity: 0;
+            animation: hero-opacity-animation ease-in-out forwards .3s;
+        }
+
+        @keyframes hero-opacity-animation {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Animation option: Slide Up with Fade In */
+        .hero-slide-up-with-fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: hero-slide-up ease-in-out forwards .3s;
+        }
+
+        @keyframes hero-slide-up {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation option: Rotate In 1 */
+        .hero-rotate-in-1 {
+            opacity: 0;
+            transform: translateY(10px) rotate(-12deg) scale(.92);
+            animation: hero-rotate-in-1 cubic-bezier(.2, .8, .2, 1) forwards .55s;
+        }
+
+        @keyframes hero-rotate-in-1 {
+            from {
+                opacity: 0;
+                transform: translateY(10px) rotate(-12deg) scale(.92);
+            }
+
+            70% {
+                transform: translateY(-5px) rotate(2deg) scale(1.02);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) rotate(0) scale(1);
+            }
+        }
+
+        /* Animation option: Rotate In 2 — 3D vertical rotation */
+        .hero-rotate-in-2 {
+            opacity: 0;
+            transform: translateY(50px) rotateX(-60deg) scale(.92);
+            animation: hero-rotate-in-2 cubic-bezier(.2, .8, .2, 1) forwards .55s;
+        }
+
+        @keyframes hero-rotate-in-2 {
+            from {
+                opacity: 0;
+                transform: translateY(50px) rotateX(-60deg) scale(.92);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) rotateX(0) scale(1);
+            }
+        }
+           .hero-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                'Segoe UI', Roboto, sans-serif;
+            padding: 2rem;
+            perspective: 1000px;
+        }
+
+        .hero-title-container {
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+            font-size: clamp(1.3rem, 5vw, 4.5rem);
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .hero-row {
+            display: block;
+            white-space: nowrap;
+        }
+
+        .hero-row > span {
+            display: inline-block;
+            white-space: pre;
+            will-change: transform, opacity;
+        }
+        /* Slide Up with Fade In */
+        .hero-slide-up-with-fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: hero-slide-up ease-in-out forwards 0.3s;
+        }
+
+        @keyframes hero-slide-up {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+/* HERO TEXT ANIMATION END */

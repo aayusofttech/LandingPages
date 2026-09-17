@@ -102,7 +102,7 @@
     font-weight: 700;
 
     color: #426340;
-;
+    ;
     text-transform: uppercase;
 }
 
@@ -860,26 +860,37 @@
 
 
 /* CONTENT SECTION */
-.content-section{
+.content-section {
     padding: 40px 0;
     width: 100%;
 }
 
-.content-container{
+.content-container {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.content-head{
+.content-head {
     font-size: 60px;
     text-align: center;
     text-transform: uppercase;
 }
 
-.content-subhead{
+.content-subhead {
     font-size: 20px;
     text-align: center;
     padding: 20px;
+}
+
+@media (max-width: 1000px) {
+    .content-head {
+        font-size: 32px;
+    }
+
+    .content-subhead {
+        font-size: 19px;
+
+    }
 }
 
 /*TESTIMONIAL SECTION END */
@@ -905,9 +916,22 @@
     padding: 50px 24px;
 }
 
-.brands-head{
+.brands-head {
     font-size: 60px;
 }
+
+
+@media (max-width: 1000px) {
+    .brands-head {
+        font-size: 32px;
+    }
+
+    .content-subhead {
+        font-size: 19px;
+
+    }
+}
+
 /* BRAND SECTION ENDS */
 
 
@@ -1235,7 +1259,7 @@
         border-radius: 12px;
         box-sizing: border-box;
         transition: border-bottom 0.3s;
-    }   
+    }
 
     #sbsr-1575 .cs-faq-item.active {
         border-color: var(--primaryLight);

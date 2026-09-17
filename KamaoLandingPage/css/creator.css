@@ -9,7 +9,11 @@
 }
 
 
+.body {
+    background: #FAFAF9;
+    color: #353037;
 
+}
 
 /* -------------------------------------------------------------------------- */
 /* CREATOR CTA / START EARNING SECTION                                       */
@@ -21,6 +25,11 @@
     width: 100%;
     padding: 30px 20px 30px;
     text-align: center;
+    background: linear-gradient(359.8deg,
+            #FAFAF9 70%,
+            #F4FAE8 99.86%);
+
+
 }
 
 .creator-cta-inner {
@@ -39,7 +48,7 @@
     font-family: var(--font-display);
     font-size: clamp(2.8rem, 5vw, 4.5rem);
     line-height: 0.98;
-    font-weight: 800;
+    font-weight: 400;
     letter-spacing: -0.03em;
     color: var(--primary-text);
     text-transform: uppercase;
@@ -62,14 +71,17 @@
 
 .creator-cta-card {
     position: relative;
-
-    width: min(100%, 545px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: min(100%, 600px);
     min-height: 242px;
 
     margin: 42px auto 0;
     padding: 28px 24px 25px;
 
-    background: var(--white);
+    background: #E6F0E4;
 
     border: 1px solid var(--primary-text);
     border-radius: 24px;
@@ -87,9 +99,10 @@
     font-family: var(--font-display);
     font-size: 2rem;
     line-height: 1;
-    font-weight: 800;
+    font-weight: 700;
 
-    color: var(--primary-text);
+    color: #426340;
+;
     text-transform: uppercase;
 }
 
@@ -99,7 +112,7 @@
 .creator-cta-card>p {
     margin-top: 16px;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-body);
     font-size: 1rem;
     color: var(--primary-navy);
 }
@@ -131,7 +144,7 @@
     color: var(--primary-text);
 
     font-size: 13px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1;
 }
 
@@ -218,7 +231,7 @@
 }
 
 .store-button small {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-body);
     font-size: 8px;
     font-weight: 500;
 
@@ -226,7 +239,7 @@
 }
 
 .store-button strong {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-body);
     font-size: 18px;
     font-weight: 500;
 }
@@ -250,8 +263,8 @@
     border: 1px solid rgba(20, 37, 54, 0.55);
     border-radius: 999px;
 
-    background: transparent;
-    color: var(--primary-text);
+    background: #334D32;
+    color: white;
 
     font-family: var(--font-body);
     font-size: 14px;
@@ -267,7 +280,7 @@
 
 /* Keep your original hover effect */
 .creator-brands-button:hover {
-    background: var(--primary-navy);
+    background: rgb(76, 134, 74);
     color: var(--white);
     transform: translateY(-2px);
 }
@@ -667,8 +680,8 @@
     text-align: center;
     text-transform: uppercase;
 
-    font-family: Arial, sans-serif;
-    font-size: clamp(48px, 7vw, 72px);
+    font-family: var(--font-display);
+    font-size: clamp(48px, 7vw, 64px);
     font-weight: 700;
     line-height: 0.95;
     letter-spacing: -0.04em;
@@ -679,7 +692,7 @@
 
     text-align: center;
 
-    font-family: Georgia, serif;
+    font-family: var(--font-body);
     font-size: clamp(20px, 3vw, 28px);
     font-style: italic;
     line-height: 1.4;
@@ -719,7 +732,7 @@
 
     text-align: center;
 
-    font-family: Arial, sans-serif;
+    font-family: var(--font-body);
     font-size: 24px;
     line-height: 1.4;
 }
@@ -840,10 +853,33 @@
 
 
 /* WORKFLOW SECTION END */
-.cs-review::before{
-    background: lime !important;
+.cs-review {
+    background: linear-gradient(99.65deg, #DDE8D6 9.39%, #FAFEEE 49.96%) !important;
 }
 
+
+/* CONTENT SECTION */
+.content-section{
+    padding: 40px 0;
+    width: 100%;
+}
+
+.content-container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.content-head{
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-subhead{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
 
 /*TESTIMONIAL SECTION END */
 
@@ -853,7 +889,9 @@
 .brands-section {
     position: relative;
     overflow: hidden;
-    background: #f5f5f2;
+    background: #F4FAE8;
+    padding: 0px;
+    text-align: center;
 }
 
 .brands-container {
@@ -863,9 +901,12 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 96px 24px;
+    padding: 50px 24px;
 }
 
+.brands-head{
+    font-size: 60px;
+}
 /* BRAND SECTION ENDS */
 
 
@@ -877,7 +918,7 @@
 /* EARNING CTA */
 .cta_earn_section {
     padding: 55px 20px;
-        color: white;
+    color: white;
 }
 
 .cta_earn_card {
@@ -888,7 +929,7 @@
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
     border-radius: 30px;
-    background:  rgb(177 177 177);
+    background: rgb(177 177 177);
 }
 
 .cta_earn_content {
@@ -907,7 +948,7 @@
 
 .cta_earn_description {
     max-width: 510px;
-    font-family: Georgia, serif;
+    font-family: var(--font-body);
     font-size: 20px;
     font-style: italic;
     line-height: 1.6;
@@ -932,7 +973,7 @@
 .cta_earn_image {
     position: relative;
     overflow: hidden;
-    background:  rgb(177 177 177);
+    background: rgb(177 177 177);
 }
 
 .cta_earn_image img {
@@ -1017,7 +1058,7 @@
     margin: 0;
     color: var(--bodyTextColor);
 }
-               
+
 /*-- -------------------------- -->
 <---           Stats            -->
 <--- -------------------------- -*/
@@ -1143,6 +1184,8 @@
 @media only screen and (min-width: 0rem) {
     #sbsr-1575 {
         padding: var(--sectionPadding);
+        background: #F4FAE8;
+
     }
 
     #sbsr-1575 .cs-container {
@@ -1178,19 +1221,20 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 0.75rem;
+        gap: 20px;
     }
 
     #sbsr-1575 .cs-faq-item {
         text-align: left;
         list-style: none;
         width: 100%;
-        background-color: #f7f7f7;
+        background: #e0ebd9;
         /* 12px - 16px */
         padding: clamp(0.75rem, 2vw, 1rem) 1rem;
+        border-radius: 12px;
         box-sizing: border-box;
         transition: border-bottom 0.3s;
-    }
+    }   
 
     #sbsr-1575 .cs-faq-item.active {
         border-color: var(--primaryLight);
@@ -1320,6 +1364,8 @@
     #sbsr-1575 .cs-picture img {
         width: 100%;
         height: 100%;
+        border-radius: 20px;
+        border: solid 9px #d8e4c8;
         object-fit: cover;
         position: absolute;
         top: 0;
@@ -1374,7 +1420,7 @@
     #sbsr-1575 .cs-image-group {
         font-size: min(1.2vw, 1em);
         height: auto;
-        margin-top: calc(clamp(10rem, 19vw, 20rem) * -1);
+        margin-top: -200px;
 
         flex: none;
         /* sends it to the right in the 2nd position */
@@ -1387,4 +1433,5 @@
         display: none;
     }
 }
+
 /* FAQ SECTION ENDS */

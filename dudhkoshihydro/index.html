@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dudhkoshi Hydropower Nepal Pvt. Ltd.</title>
+  <meta name="description" content="Dudhkoshi Hydropower Nepal Pvt. Ltd. — driving Nepal's clean energy future through the 95.7 MW Dudhkoshi-2 (Jaleshwor) peaking run-of-river project." />
+  <link rel="icon" href="assets/images/logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&family=Inter:wght@300;400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E7EBB', 'primary-dark': '#186596', deep: '#175F8C',
+            ink: '#45484D', 'ink-dark': '#3E4145', soft: '#E9F2F8', soft2: '#DDECF5'
+          },
+          fontFamily: { manrope: ['Manrope', 'sans-serif'], hind: ['Hind', 'sans-serif'] },
+          maxWidth: { site: '1450px' }
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ======================= HEADER ======================= -->
+<header id="siteHeader" class="site-header fixed top-0 inset-x-0 z-50 h-20">
+  <div class="max-w-site mx-auto h-full px-4 xl:px-0 flex items-center justify-between">
+    <a href="#home" class="shrink-0"><img src="assets/images/logo.png" alt="Dudhkoshi Hydropower" class="w-[63px] h-[57px] object-contain" /></a>
+    <nav class="hidden md:flex items-center gap-[50px] font-manrope text-base -ml-10">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#team" class="nav-link">Our Team</a>
+      <a href="#projOv" class="nav-link">Project Overview</a>
+    </nav>
+    <a href="#contact" class="btn-primary hidden md:inline-flex items-center justify-center h-11 px-6 font-manrope text-base">Contact Us</a>
+    <button id="menuBtn" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5" aria-label="Open menu">
+      <span class="w-6 h-0.5 bg-primary-dark rounded"></span><span class="w-6 h-0.5 bg-primary-dark rounded"></span><span class="w-4 h-0.5 bg-primary-dark rounded self-end mr-2"></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu md:hidden absolute top-20 inset-x-0 bg-white shadow-lg -z-10">
+    <nav class="flex flex-col p-6 gap-4 font-manrope">
+      <a href="#home" class="nav-link w-fit active">Home</a>
+      <a href="#about" class="nav-link w-fit">About Us</a>
+      <a href="#gallery" class="nav-link w-fit">Gallery</a>
+      <a href="#team" class="nav-link w-fit">Our Team</a>
+      <a href="#contact" class="btn-primary inline-flex items-center justify-center h-11 px-6 w-fit">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ======================= HERO ======================= -->
+<section id="home" class="hero-wrap pt-20 pb-7">
+  <div class="max-w-site mx-auto relative">
+    <div class="hero-card relative min-h-[934px] flex flex-col items-center text-center px-4 pt-11 pb-[200px] md:pb-0">
+      <div class="relative z-10 w-full">
+        <div class="section-tag hero-anim">
+          <span class="line l"></span><span class="dot"></span>
+          <span class="pill plain">Dudhkoshi Hydropower Limited</span>
+          <span class="dot"></span><span class="line r"></span>
+        </div>
+        <h1 class="hero-title mt-8">
+          <span class="block overflow-hidden"><span class="word grad-text hero-line">Clean Energy</span></span>
+          <span class="block overflow-hidden"><span class="word grad-text hero-line">Unstoppable Flow</span></span>
+        </h1>
+        <p class="hero-anim section-lead max-w-[1000px] mx-auto mt-10 text-ink">
+          Dudhkoshi Hydropower Nepal Pvt. Ltd. is driving Nepal’s clean energy future. Committed to meeting the country’s expanding power demands, we build sustainable, reliable hydropower solutions rooted in our foundational vision to harness the nation's incredible water resources.
+        </p>
+        <a href="#contact" class="hero-anim btn-touch inline-flex items-center gap-2 h-10 pl-3 pr-4 mt-11 text-[18px] font-hind">
+          Get in touch <img src="assets/icons/arrow-circle.svg" alt="" class="w-[26px] h-[26px]" />
+        </a>
+      </div>
+    </div>
+
+    <!-- floating glass cards -->
+    <div class="relative z-10 -mt-[164px] px-4 xl:px-0 justify-center flex flex-col lg:flex-row gap-6 lg:gap-[53px] items-stretch" id="heroCards">
+      <div class="hero-float bg-[#ffffff95] backdrop-blur-[2px] rounded-3xl gap-[12px] p-4 border-[2px] border-white/95 shadow-xl  p-5 flex flex-col sm:flex-row gap-3 lg:w-[442px] lg:h-[212px]">
+        <img src="assets/images/dam.png" alt="Dudhkoshi-2 hydropower project" class="w-full sm:w-[241px] h-[172px] object-cover rounded-xl" />
+        <div class="pt-4">
+          <span class="inline-flex items-center gap-2 bg-white/90 rounded-full h-7 px-3 font-manrope text-[12px] font-semibold tracking-[2.6px] text-ink-dark">
+            <img src="assets/icons/pin-hero.svg" alt="" class="w-[22px] h-[28px] -mx-1" />SOLUKHUMBU
+          </span>
+          <p class="mt-4 text-[14px] leading-5 text-primary">Dudhkoshi-2</p>
+          <p class="text-[14px] leading-5 text-ink-dark">hydropower project</p>
+        </div>
+      </div>
+
+     
+      <div class="hero-float  bg-[#ffffff95] backdrop-blur-[2px] rounded-3xl gap-[12px] p-4 border-[2px] border-white/95 shadow-xl p-5 pt-10  lg:w-[269px] lg:h-[212px] flex flex-col justify-between text-[14px] leading-5">
+        <p class="text-ink-dark">High-efficiency PRoR design ensuring 6 hours of peak power, even during dry seasons.</p>
+        <div class="mt-6 lg:mt-0">
+          <p class="text-primary">PRoR</p>
+          <p class="text-ink-dark">optimized project</p>
+        </div>
+      </div>
+      <div class="hero-float  bg-[#ffffff95] backdrop-blur-[2px] rounded-3xl gap-[12px] p-4 border-[2px] border-white/95 shadow-xl p-5 lg:w-[177px] lg:h-[212px] flex flex-col justify-between">
+        <img src="assets/images/valley-thumb.png" alt="Dudhkoshi valley" class="w-full lg:w-[127px] h-[72px] object-cover rounded" />
+        <div class="mt-6 lg:mt-0 text-[14px] leading-5">
+          <p class="text-ink">Total Capacity</p>
+          <p><span class="text-primary counter" data-to="95.7" data-dec="1">95.7</span><span class="text-ink ml-3">MW</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ABOUT ======================= -->
+<section id="about" class="relative pt-[52px] pb-16 bg-[radial-gradient(55%_40%_at_75%_20%,#eaf5fe_0%,rgba(255,255,255,0)_100%)]">
+  <div class="max-w-site mx-auto px-4 xl:px-0">
+    <div class="section-tag" data-aos="fade-down"><span class="line l"></span><span class="dot"></span><span class="pill">About us</span><span class="dot"></span><span class="line r"></span></div>
+    <h2 class="section-title text-center mt-[42px]" data-aos="fade-up">Empowering Nepal With<br />Clean Hydropower Solutions</h2>
+    <p class="section-lead text-center max-w-[790px] mx-auto mt-4" data-aos="fade-up" data-aos-delay="100">Dudhkoshi Hydropower Nepal Pvt. Ltd. operates the Dudhkoshi-2 (Jaleshwor) project a 95.7 MW optimized facility engineered for the highest efficiency and reliability.</p>
+
+    <div class="mt-[62px]" data-aos="fade-right"><span class="eyebrow">Technical Specification</span></div>
+
+    <div class="mt-8 grid lg:grid-cols-[416px_1fr] gap-[45px]">
+      <!-- Blue card -->
+      <div class="bg-primary rounded-2xl px-[35px] pt-[58px] pb-14 text-white" data-aos="fade-right">
+        <p class="font-hind font-semibold text-base">DUDHKOSHI HYDROPOWER</p>
+        <h3 class="font-manrope text-2xl mt-3">Engineering the Future</h3>
+        <p class="text-[20px] leading-8 mt-3 text-white/95">Dudhkoshi Hydropower Nepal Pvt. Ltd. operates the Dudhkoshi-2 (Jaleshwor) project a 95.7 MW optimized facility engineered for the highest efficiency and reliability.</p>
+        <div class="overflow-hidden rounded-xl mt-3 w-full max-w-[309px]">
+          <img src="assets/images/dam.png" alt="Hydropower dam" class="w-full h-[207px] object-cover hover:scale-105 transition duration-700" />
+        </div>
+      </div>
+
+      <!-- right column -->
+      <div class="flex flex-col gap-[26px]">
+        <div class="grid sm:grid-cols-3 gap-[26px]">
+          <div class="card-soft card-hover px-6 pt-10 pb-6" data-aos="fade-up">
+            <img src="assets/icons/spec-bolt.svg" alt="" class="w-[42px] h-[42px] -ml-[3px]" />
+            <p class="text-base text-ink-dark mt-7">Installed Capacity</p>
+            <p class="stat-value mt-3 pb-2 border-b border-soft"><span class="counter" data-to="95.7" data-dec="1">95.7</span> <span>MW</span></p>
+            <p class="text-sm text-primary-dark mt-4 font-medium">ANNUAL OUTPUT</p>
+          </div>
+          <div class="card-soft card-hover px-6 pt-10 pb-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/icons/spec-waves.svg" alt="" class="w-[42px] h-[42px] -ml-[3px]" />
+            <p class="text-base text-ink-dark mt-6">Design Discharge</p>
+            <p class="stat-value mt-3 pb-2 border-b border-soft"><span class="counter" data-to="83.5" data-dec="1">83.5</span> <span>m<sup class="text-[18px]">3</sup>/s</span></p>
+            <p class="text-sm text-primary-dark mt-4 font-medium">PEAKING ROR</p>
+          </div>
+          <div class="card-soft card-hover px-6 pl-12 pt-10 pb-6" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/icons/spec-drop.svg" alt="" class="w-[42px] h-[42px] -ml-[3px]" />
+            <p class="text-base text-ink-dark mt-6">Gross Head</p>
+            <p class="stat-value mt-3 pb-2 border-b border-soft"><span class="counter" data-to="144.5" data-dec="1">144.5</span> <span>M</span></p>
+            <p class="text-sm text-primary-dark mt-4 font-medium">HIGH-DROP HYDRO</p>
+          </div>
+        </div>
+
+        <div class="card-soft p-5 pt-10 grid grid-cols-1 min-[1200px]:grid-cols-[1fr_1fr] gap-8" data-aos="fade-up">
+          <div class="pl-2 pt-1">
+            <p class="text-sm text-primary font-medium tracking-wide">EST . 2070 B.S.</p>
+            <h3 class="font-manrope text-2xl text-ink-dark mt-2">Unshakable Foundations</h3>
+            <p class="text-sm leading-5 text-ink-dark mt-3 max-w-[280px]">Our journey is built on a foundation of integrity, where every project is planned and executed with exact precision to create a lasting bedrock for both economic and environmental security.</p>
+          </div>
+          <div class="flex flex-col" id="principles">
+            <div class="acc-item open">
+              <button class="acc-head w-full flex items-center justify-between px-5 h-[60px] text-left">
+                <span class="text-sm font-medium text-primary-dark tracking-wide">TRANSPARENCY</span>
+                <img src="assets/icons/chev-down.svg" alt="" class="chev w-5 h-[18px]" />
+              </button>
+              <div class="acc-body"><div><p class="px-5 pb-5 text-sm leading-5 text-ink-dark">Investors, lenders, regulators, and communities get a clearer view of progress and project direction.</p></div></div>
+            </div>
+            <div class="acc-item mt-px">
+              <button class="acc-head w-full flex items-center justify-between px-5 h-[57px] text-left">
+                <span class="text-sm font-medium text-primary-dark tracking-wide">ACCOUNTABILITY</span>
+                <img src="assets/icons/chev-down.svg" alt="" class="chev w-5 h-[18px]" />
+              </button>
+              <div class="acc-body"><div><p class="px-5 pb-5 text-sm leading-5 text-ink-dark">Clear ownership of every milestone, with regular reporting to stakeholders on cost, schedule and quality.</p></div></div>
+            </div>
+            <div class="acc-item mt-px">
+              <button class="acc-head w-full flex items-center justify-between px-5 h-[60px] text-left">
+                <span class="text-sm font-medium text-primary-dark tracking-wide">ETHICAL VIEWS</span>
+                <img src="assets/icons/chev-down.svg" alt="" class="chev w-5 h-[18px]" />
+              </button>
+              <div class="acc-body"><div><p class="px-5 pb-5 text-sm leading-5 text-ink-dark">Fair practices with local communities, responsible land use and respect for the Dudhkoshi river ecosystem.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SPATIAL CONSTRAINTS ======================= -->
+<section class="spatial-bg pt-6 pb-12">
+  <div class="max-w-site mx-auto px-4 xl:px-0">
+    <div class="grid lg:grid-cols-[454px_1fr] gap-10 lg:gap-[94px] overflow-hidden">
+      <div data-aos="fade-right">
+        <div class="pl-[5px]"><span class="eyebrow">Spatial Constraints</span></div>
+        <h3 class="font-manrope text-2xl text-ink-dark mt-5 pl-[5px]">Dudhkoshi-2 (Jaleshwor)</h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 mt-11">
+          <div class="pb-12 sm:border-r border-soft sm:pr-6">
+            <img src="assets/icons/terrain.svg" alt="" class="w-[42px] h-[42px] -ml-[3px]" />
+            <p class="text-sm font-medium text-primary-dark mt-3">TERRIAN</p>
+            <p class="text-base leading-5 text-ink-dark mt-3 max-w-[200px]">Steep-walled glacial gorge with high metamorphic rock stability. Gradient analyzed at 42° mean.</p>
+          </div>
+          <div class="pb-12 sm:pl-9">
+            <!-- <img src="assets/icons/water.svg" alt="" class="w-[42px] h-[42px] -ml-[4px]" /> -->
+             <div class="w-[35px] bg-[#e9f2f8] flex justify-center items-center h-[34px] rounded-[5px]">
+               <img src="assets/icons/roadster-line.svg" alt="" class=" w-[23px] h-[23px] box-content -ml-[3px]" />
+
+             </div>
+            <p class="text-sm font-medium text-primary-dark mt-3">ACCESS</p>
+            <p class="text-base leading-5 text-ink-dark mt-3 uppercase ">12 km corridor</p>
+            <p class="text-base leading-5 text-ink-dark mt-2.5 max-w-[190px]">Pedestrian and light cargo maintenance access.</p>
+          </div>
+          <div class="pt-3 pb-8 border-t border-soft sm:border-r sm:pr-6">
+            <img src="assets/icons/water.svg" alt="" class="w-[42px] h-[42px] -ml-[4px]" />
+            <p class="text-sm font-medium text-primary-dark mt-3">WATER SOURCE</p>
+            <p class="text-base leading-5 text-ink-dark mt-3 ">DUDHKOSHI RIVER</p>
+            <p class="text-base leading-5 text-ink-dark mt-3 max-w-[190px]">Glacier-fed perennial flow system with robust discharge during monsoon cycles.</p>
+          </div>
+          <div class="pt-3 pb-8 border-t border-soft sm:pl-9">
+          <div class="w-[35px] bg-[#e9f2f8] flex justify-center items-center h-[34px] rounded-[5px]">
+               <img src="assets/icons/lightbulb-flash-line.svg" alt="" class=" w-[23px] h-[23px] box-content -ml-[3px]" />
+
+             </div>
+            <p class="text-sm font-medium text-primary-dark mt-3">CONTEXT</p>
+            <p class="text-base leading-5 text-ink-dark mt-3">PEAKING POWER CAPACITY</p>
+            <p class="text-base leading-5 text-ink-dark mt-3 max-w-[190px]">Glacier-fed perennial flow system with robust discharge during monsoon cycles.</p>
+          </div>
+        </div>
+
+        <div class="mt-6 max-w-[358px] border border-[#EDEDED] rounded-lg overflow-hidden bg-white shadow-[0_1px_3px_rgba(0,0,0,.05)]">
+          <div class="bg-[#FEF5E7] h-[30px] flex items-center justify-center gap-2 font-manrope text-[12px] tracking-[2.4px] text-[#F59E0B] font-semibold">
+            <img src="assets/icons/pin-orange.svg" alt="" class="w-5 h-6" />SOLUKHUMBU
+          </div>
+          <p class="text-[11px] leading-5 text-ink-dark text-center px-6 py-3">Located in the Solukhumbu District of Koshi Province, this semi-reservoir and peaking run-of-river (PRoR) project</p>
+        </div>
+      </div>
+
+      <div class="lg:pt-[82px]" data-aos="fade-left">
+        <div class="flex justify-center lg:justify-start lg:pl-[180px]">
+          <span class="coord-pill inline-flex items-center gap-1.5 h-[34px] px-3 font-semibold"><img src="assets/icons/pin-coord.svg" alt="" class="w-4 h-5" />27°21'53"–27°25'15"N, 86°37'35"–86°41'15"E</span>
+        </div>
+        <div class="map-frame mt-[30px]">
+          <div class="map-inner h-[260px] sm:h-[509px]">
+            <!-- <img id="mapImg" src="assets/images/map.png" alt="Dudhkoshi-2 project location map" class="w-full h-full object-cover transition-transform duration-500" /> -->
+            <img id="mapImg" src="assets/images/MapOld.webp" alt="Dudhkoshi-2 project location map" class="w-full h-full object-cover transition-transform duration-500" />
+            <div class="absolute hidden right-6 bottom-0 flex flex-col gap-2 pb-0">
+              <button class="map-ctrl" id="zoomIn" aria-label="Zoom in"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="#111" stroke-width="1.6"/></svg></button>
+              <button class="map-ctrl" id="zoomOut" aria-label="Zoom out"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M1 8h14" stroke="#111" stroke-width="1.6"/></svg></button>
+              <button class="map-ctrl mt-2" aria-label="Layers"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3 2 9l10 6 10-6-10-6Z"/><path d="m2 15 10 6 10-6"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= MISSION ======================= -->
+<section class="mission-bg pt-[70px] pb-[104px]">
+  <div class="max-w-site mx-auto px-4 xl:px-0">
+    <div data-aos="fade-right"><span class="eyebrow">Our Mission &amp; Strategy</span></div>
+    <div class="grid lg:grid-cols-[453px_1fr] gap-10 lg:gap-[160px] mt-7">
+      <div>
+        <h3 class="font-manrope font-semibold text-[24px] leading-[27px] text-ink" data-aos="fade-up">Deliver reliable renewable energy through sustainable hydropower development for Nepal’s future growth.</h3>
+        <p class="text-base leading-5 text-ink-dark mt-10" data-aos="fade-up">We believe in power that respects the planet. Our strategy integrates technical excellence with deep social responsibility to create a resilient energy ecosystem.</p>
+        <div class="bg-soft2 rounded-3xl p-[26px] mt-10" data-aos="zoom-in">
+          <img src="assets/images/custom2.png" alt="Deliver reliable renewable energy infographic" class="w-full rounded-2xl shadow-[0_2px_10px_rgba(0,0,0,.05)]" />
+        </div>
+      </div>
+      <div class="flex flex-col gap-8 overflow-hidden">
+        <div class="card-soft card-hover px-5 pt-6 pb-5" data-aos="fade-left">
+          <p class="text-primary text-base pl-2">01</p>
+          <h4 class="font-manrope text-2xl text-ink-dark mt-2">Deliver Sustainable Clean Energy</h4>
+          <p class="text-base leading-5 text-ink-dark mt-2">Our journey began with a commitment to integrity. Every project is planned and executed with precision, ensuring a bedrock for long-term economic and environmental security.</p>
+          <a href="#" class="link-arrow mt-4">Explore Project Standards <img src="assets/icons/arrow-right.svg" alt="" class="w-6 h-[22px] -ml-1" /></a>
+        </div>
+        <div class="card-soft card-hover px-5 pt-6 pb-5" data-aos="fade-left" data-aos-delay="100">
+          <p class="text-primary text-base pl-2">02</p>
+          <h4 class="font-manrope text-2xl text-ink-dark mt-2">Build with Excellence &amp; Innovation</h4>
+          <p class="text-base leading-5 text-ink-dark mt-2">Our journey began with a commitment to integrity. Every project is planned and executed with precision, ensuring a bedrock for long-term economic and environmental security.</p>
+          <a href="#" class="link-arrow mt-4">View Details <img src="assets/icons/arrow-right.svg" alt="" class="w-6 h-[22px] -ml-1" /></a>
+        </div>
+        <div class="card-soft card-hover px-5 pt-6 pb-10" data-aos="fade-left" data-aos-delay="200">
+          <p class="text-primary text-base pl-2">03</p>
+          <h4 class="font-manrope text-2xl text-ink-dark mt-2">Empower Communities &amp; Create Value</h4>
+          <p class="text-base leading-5 text-ink-dark mt-2">To support local employment, uplift surrounding communities, and create long-term economic value for stakeholders, partners, and the nation.</p>
+          <a href="#" class="link-arrow mt-4">Comunity Impact Report <img src="assets/icons/arrow-right.svg" alt="" class="w-6 h-[22px] -ml-1" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= STATS BAND ======================= -->
+<section class="bg-primary hidden">
+  <div class="max-w-site mx-auto px-4 xl:px-0 py-12 lg:h-[200px] lg:py-0 grid grid-cols-2 lg:flex lg:items-center lg:justify-between gap-y-10">
+    <div data-aos="fade-up" class="lg:w-[270px]">
+      <p class="stat-num"><span class="counter" data-to="95.7" data-dec="1">95.7</span> <span class="text-[32px] tracking-normal">MW</span></p>
+      <p class="font-hind font-medium text-sm text-white mt-6 tracking-wide">ANNUAL PRODUCTION</p>
+    </div>
+    <span class="stat-div hidden lg:block h-[100px]"></span>
+    <div data-aos="fade-up" data-aos-delay="100" class="lg:w-[270px] lg:pl-[75px]">
+      <p class="stat-num"><span class="counter" data-to="12">12</span>+</p>
+      <p class="font-hind font-medium text-sm text-white mt-6 tracking-wide">ACTIVE PROJECTS</p>
+    </div>
+    <span class="stat-div hidden lg:block h-[100px]"></span>
+    <div data-aos="fade-up" data-aos-delay="200" class="lg:w-[270px] lg:pl-[73px]">
+      <p class="stat-num"><span class="counter" data-to="85">85</span>%</p>
+      <p class="font-hind font-medium text-sm text-white mt-5 tracking-wide">CARBON REDUCTION</p>
+    </div>
+    <span class="stat-div hidden lg:block h-[100px]"></span>
+    <div data-aos="fade-up" data-aos-delay="300" class="lg:w-[270px] lg:pl-[73px]">
+      <p class="stat-num"><span class="counter" data-to="5">5</span>k+</p>
+      <p class="font-hind font-medium text-sm text-white mt-6 tracking-wide">LOCAL JOBS CREATED</p>
+    </div>
+  </div>
+</section>
+<!-- ======================= TEAM ======================= -->
+<section id="team" class="team-bg pt-[58px] pb-6">
+  <div class="max-w-site mx-auto px-4 xl:px-0">
+    <div class="section-tag" data-aos="fade-down"><span class="line l"></span><span class="dot"></span><span class="pill">Meet Our Team</span><span class="dot"></span><span class="line r"></span></div>
+    <h2 class="section-title text-center mt-[46px]" data-aos="fade-up">Meet Our Team Behind Our Success</h2>
+    <p class="section-lead text-center max-w-[820px] mx-auto mt-4" data-aos="fade-up" data-aos-delay="100">Meet the multi-disciplinary team of engineers, environmental scientists, and strategic investors driving the 95.7 MW Dudhkoshi vision toward sustainable energy independence.</p>
+
+    <div class="mt-[62px] pl-px" data-aos="fade-right"><span class="eyebrow no-case">The Board</span></div>
+    <div class="tab-group hidden inline-flex flex-wrap gap-2 p-1 mt-[26px] ml-px" id="teamTabs" data-aos="fade-up">
+      <button class="tab-btn active" data-filter="all">All</button>
+      <button class="tab-btn" data-filter="directors">Directors</button>
+      <button class="tab-btn" data-filter="engineering">Engineering</button>
+      <button class="tab-btn" data-filter="management">Management</button>
+    </div>
+
+    <div class="card-soft mt-9 ml-px grid lg:grid-cols-[395px_1fr] overflow-hidden" data-aos="fade-up">
+      <div class="p-5 lg:border-r border-soft lg:min-h-[600px]">
+        <p class="font-manrope text-[12px] tracking-[2.4px] text-primary-dark hidden   pt-3 pl-px">SELECT PERSONNEL</p>
+        <div id="personList" class="flex flex-col gap-[30px] mt-10"></div>
+        <p id="personEmpty" class="hidden text-sm text-ink mt-10">No personnel listed in this category yet.</p>
+      </div>
+      <div class="p-6 lg:pl-[41px] lg:pt-[75px] grid md:grid-cols-[224px_1fr] gap-[53px]">
+        <div class="text-center">
+          <div class="overflow-hidden rounded-xl border border-[#d9e3ea] w-[224px] h-[256px] mx-auto">
+            <img id="pImg" src="assets/images/kadam-kc.png" alt="Kadam KC" class="w-full h-full object-cover object-top" />
+          </div>
+          <h4 id="pName" class="font-manrope font-medium text-2xl text-primary-dark mt-6">Kadam KC</h4>
+          <p id="pRole" class="font-hind font-medium text-sm text-primary-dark tracking-wide">CHAIRMAN</p>
+        </div>
+        <div>
+          <div id="pBio" class="text-base leading-5 text-ink-dark space-y-[22px]"></div>
+          <div class="mt-14 max-w-[447px] text-[14px]" id="pMeta"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================= PROJECT OVERVIEW ======================= -->
+<section class="po-glow relative overflow-hidden pt-[68px] pb-10" id="projOv">
+  <div class="max-w-site mx-auto px-4 xl:px-0 relative z-10">
+    <div class="section-tag" data-aos="fade-down"><span class="line l"></span><span class="dot"></span><span class="pill">Project Overview</span><span class="dot"></span><span class="line r"></span></div>
+    <h2 class="section-title text-center mt-[48px]" data-aos="fade-up">Project Overview</h2>
+    <p class="section-lead text-center max-w-[640px] mx-auto mt-[18px]" data-aos="fade-up" data-aos-delay="100">Engineering design data and technical specifications for the Dudhkoshi-2 Run-of-River Hydroelectric Scheme.</p>
+
+    <div class="mt-[72px]" data-aos="fade-right"><span class="eyebrow">Technical Parameters</span></div>
+
+    <div class="grid lg:grid-cols-[267px_1fr] gap-8 lg:gap-[111px] mt-10">
+      <div class="flex lg:flex-col gap-[26px] overflow-x-auto lg:overflow-visible pb-2 pl-[3px]" id="poTabs" data-aos="fade-right">
+        <button class="po-tab active shrink-0" data-tab="scheme"><img src="assets/icons/tab-bolt.svg" alt="" class="w-6 h-[26px]" />Scheme &amp; Capacity</button>
+        <button class="po-tab shrink-0" data-tab="water"><img src="assets/icons/tab-waves.svg" alt="" class="w-[26px] h-[26px]" />Water Conveyance</button>
+        <button class="po-tab shrink-0" data-tab="powerhouse"><img src="assets/icons/tab-building.svg" alt="" class="w-[26px] h-[26px]" />Powerhouse</button>
+        <button class="po-tab shrink-0" data-tab="turbine"><img src="assets/icons/tab-turbine.svg" alt="" class="w-[28px] h-[28px]" />Turbine &amp; Generator</button>
+        <button class="po-tab shrink-0" data-tab="evac"><img src="assets/icons/tab-turbine.svg" alt="" class="w-[28px] h-[28px]" />Power Evacuation</button>
+      </div>
+
+      <div class="po-panel -ml-[2px]" data-aos="fade-left">
+        <div class="head flex items-center gap-2.5 px-10 h-[68px]">
+          <img src="assets/icons/scheme-bolt.svg" alt="" class="w-[38px] h-[38px] -ml-1.5" />
+          <h4 id="poTitle" class="font-manrope text-2xl text-ink-dark">Scheme and Capacity</h4>
+        </div>
+        <div id="poBody" class="px-10 pt-6 pb-6"></div>
+      </div>
+    </div>
+
+    <!-- Water to Wire -->
+    <div class="mt-[86px] ml-[28px]" data-aos="fade-right"><span class="eyebrow">Water To Wire System</span></div>
+    <div class="w2w-panel mt-[58px] mx-0 lg:mx-5 px-5 lg:px-[86px] pt-[78px] pb-[60px]" data-aos="fade-up">
+      <p class="font-hind text-base text-ink-dark">WATER INTAKE &amp; CONVEYANCE</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] pb-[30px] items-center gap-4 lg:gap-[7px] mt-12">
+        <div class="w2w-card p-5 h-[190px]" data-aos="fade-up">
+          <img src="assets/icons/w2w-bolt.svg" alt="" class="w-11 h-11 -ml-1 -mt-1" />
+          <p class="w2w-title mt-5">HEADWORKS</p>
+          <p class="text-base text-ink-dark mt-1">Barrage</p>
+          <p class="text-[10px] text-ink-dark mt-2">Diversion, Intake, Desanding</p>
+          <button id="compToggle" class="text-[10px] text-primary-dark underline mt-3 inline-flex items-center gap-2">View Details <svg class="toggle-caret transition-transform duration-300" width="10" height="6" viewBox="0 0 10 6"><path d="M0 6 5 0l5 6Z" fill="#186596"/></svg></button>
+        </div>
+        <img src="assets/icons/flow-arrow.svg" alt="" class="hidden lg:block w-[30px] flow-arrow-anim" />
+        <div class="w2w-card p-5 h-[190px]" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/icons/w2w-bolt.svg" alt="" class="w-11 h-11 -ml-1 -mt-1" />
+          <p class="w2w-title mt-5">HEADRACE TUNNEL</p>
+          <p class="text-base text-ink-dark mt-1">4,791 M</p>
+          <p class="text-[10px] text-ink-dark ">Concrete Lined Inverted D-Shaped • 5.6 M Finished Dia.</p>
+                 <button id="compToggle2" class="text-[10px] text-primary-dark underline mt-3 inline-flex items-center gap-2 pb-2">View Details <svg class="toggle-caret transition-transform duration-300" width="10" height="6" viewBox="0 0 10 6"><path d="M0 6 5 0l5 6Z" fill="#186596"/></svg></button>
+        </div>
+        <img src="assets/icons/flow-arrow.svg" alt="" class="hidden lg:block w-[30px] flow-arrow-anim" />
+        <div class="w2w-card p-5 h-[190px]" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/icons/w2w-bolt.svg" alt="" class="w-11 h-11 -ml-1 -mt-1" />
+          <p class="w2w-title mt-5">SURGE SHAFT</p>
+          <p class="text-base text-ink-dark mt-1">69 M</p>
+          <p class="text-[10px] text-ink-dark mt-2">Restricted Orifice • Ø 16.0 M </p>
+                           <button id="compToggle3" class="text-[10px] text-primary-dark underline mt-3 inline-flex items-center gap-2">View Details <svg class="toggle-caret transition-transform duration-300" width="10" height="6" viewBox="0 0 10 6"><path d="M0 6 5 0l5 6Z" fill="#186596"/></svg></button>
+        </div>
+        <img src="assets/icons/flow-arrow.svg" alt="" class="hidden lg:block w-[30px] flow-arrow-anim" />
+        <div class="w2w-card p-5 h-[190px]" data-aos="fade-up" data-aos-delay="300">
+          <img src="assets/icons/w2w-bolt.svg" alt="" class="w-11 h-11 -ml-1 -mt-1" />
+          <p class="w2w-title mt-5">PENSTOCK</p>
+          <p class="text-base text-ink-dark mt-1">UNDERGROUND</p>
+          <p class="text-[10px] text-ink-dark mt-2">Ø 4.6 M • Surge Shaft to Powerhouse</p>
+              <button id="compToggle4" class="text-[10px] text-primary-dark underline mt-3 inline-flex items-center gap-2">View Details <svg class="toggle-caret transition-transform duration-300" width="10" height="6" viewBox="0 0 10 6"><path d="M0 6 5 0l5 6Z" fill="#186596"/></svg></button>
+        </div>
+      </div>
+<!-- 1st -->
+<div id="compWrap" class="comp-wrap">
+  <div>
+    <div class="bg-white rounded-2xl px-5 pt-4 pb-3">
+      <p class="text-[10px] text-primary tracking-wide">HEADWORKS COMPONENTS</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-6 mt-3 text-[10px]">
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">DIVERSION WEIR (BARRAGE)</p>
+          <p class="v mt-2">BARRAGE, WIDTH 87.85 M, FSL/WEIR LEVEL 789 MASL, MDDL 781 MASL</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">BARRAGE GATES</p>
+          <p class="v mt-2">12.0 M × 7.0 M, 4 NOS RADIAL GATES</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">UNDER SLUICE GATES</p>
+          <p class="v mt-2">4.0 M × 5.0 M, 2 NOS RADIAL GATES</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">SPILLWAY GATES</p>
+          <p class="v mt-2">12.0 M × 4 M (4 NOS) &amp; 4.0 M × 7 M (2 NOS)</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">STILLING BASIN</p>
+          <p class="v mt-2">80.00 M LENGTH</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">INTAKE</p>
+          <p class="v mt-2">SIDE INTAKE, 3 NOS, 7.5 M × 6.5 M</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">GRAVEL TRAP</p>
+          <p class="v mt-2">2 NOS 8.1 M × 14 M + 1 NO 8.7 M × 14 M (MIDDLE BAY)</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">APPROACH CANAL</p>
+          <p class="v mt-2">3.5 M × 3.5 M — LENGTHS: 86.912 M (RIGHT), 100.151 M (MIDDLE), 113.541 M (LEFT)</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">DESANDING CHAMBER</p>
+          <p class="v mt-2">SURFACE, 3 BAYS (2 HOPPERS EACH), 115 M × 13.50 M × 14.75 M</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">HEADRACE CULVERT</p>
+          <p class="v mt-2">NULL</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">APPROACH DIVERGED</p>
+          <p class="v mt-2">NULL</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- 2nd  -->
+     <div id="compWrap2" class="comp-wrap closed">
+  <div>
+    <div class="bg-white rounded-2xl px-5 pt-4 pb-3">
+      <p class="text-[10px] text-primary tracking-wide">HEADRACE TUNNEL COMPONENTS</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-6 mt-3 text-[10px]">
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">TUNNEL TYPE</p>
+          <p class="v mt-2">CONCRETE LINED, INVERTED D-SHAPED</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">TOTAL LENGTH</p>
+          <p class="v mt-2">4,791 METERS</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">FINISHED DIAMETER</p>
+          <p class="v mt-2">5.6 METERS</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">EXCAVATION</p>
+          <p class="v mt-2">NULL</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- 3rd  -->
+     <div id="compWrap3" class="comp-wrap closed">
+  <div>
+    <div class="bg-white rounded-2xl px-5 pt-4 pb-3">
+      <p class="text-[10px] text-primary tracking-wide">SURGE SHAFT COMPONENTS</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-6 mt-3 text-[10px]">
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">TYPE</p>
+          <p class="v mt-2">RESTRICTED ORIFICE SURGE SHAFT</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">HEIGHT</p>
+          <p class="v mt-2">69 METERS</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">INTERNAL DIAMETER</p>
+          <p class="v mt-2">Ø 16.0 METERS</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">ORIFICE DIAMETER</p>
+          <p class="v mt-2">Ø 3.0 METERS</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">GATE CHAMBER</p>
+          <p class="v mt-2">NULL</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- 4th -->
+<div id="compWrap4" class="comp-wrap closed">
+  <div>
+    <div class="bg-white rounded-2xl px-5 pt-4 pb-3">
+      <p class="text-[10px] text-primary tracking-wide">PENSTOCK COMPONENTS</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-6 mt-3 text-[10px]">
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">MATERIAL</p>
+          <p class="v mt-2">NULL</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">TYPE</p>
+          <p class="v mt-2">UNDERGROUND</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">LENGTH (SURGE SHAFT → DROP SHAFT)</p>
+          <p class="v mt-2">80 METERS</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">DROP SHAFT LENGTH</p>
+          <p class="v mt-2">96.97 METERS</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">INCLINED PENSTOCK TUNNEL LENGTH</p>
+          <p class="v mt-2">96.62 METERS</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">INTERNAL DIAMETER</p>
+          <p class="v mt-2">Ø 4.6 METERS</p>
+        </div>
+
+        <div class="comp-item px-2.5 py-3.5">
+          <p class="text-[#8e8e93]">ANCHOR BLOCKS</p>
+          <p class="v mt-2">NULL</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="flex justify-center mt-[40px]">
+        <span class="elev-pill inline-flex items-center gap-1.5 h-[30px] px-2.5"><img src="assets/icons/elev-arrow.svg" alt="" class="w-4 h-5" />690.10 m elevation drop</span>
+      </div>
+
+      <p class="font-hind text-base text-ink-dark mt-[38px]">GENERATION &amp; POWER EVACUATION</p>
+      <div class="grid md:grid-cols-[1fr_auto_1fr] items-center gap-6 md:gap-[60px] mt-11">
+        <div class="w2w-card h-[190px] flex flex-col items-center justify-center text-center" data-aos="fade-right">
+          <img src="assets/icons/w2w-bolt.svg" alt="" class="w-11 h-11" />
+          <p class="w2w-title mt-4">POWERHOUSE</p>
+          <p class="text-sm text-ink-dark mt-1">Surface</p>
+          <p class="text-[9px] text-primary mt-2">55 M × 26.5 M × 35.3 M</p>
+        </div>
+        <svg class="hidden md:block flow-arrow-anim" width="100" height="10" viewBox="0 0 100 10" fill="none"><path d="M0 5.2h92" stroke="#186596" stroke-width="1.5"/><path d="m100 5-10 5V0l10 5Z" fill="#186596"/></svg>
+        <div class="w2w-card h-[190px] flex flex-col items-center justify-center text-center" data-aos="fade-left">
+          <img src="assets/icons/w2w-bolt.svg" alt="" class="w-11 h-11" />
+          <p class="w2w-title mt-4">GRID CONNECTION</p>
+          <p class="text-sm text-ink-dark mt-1">Null</p>
+          <p class="text-[9px] text-primary mt-2">Null</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================= CONTACT ======================= -->
+<section id="contact" class="contact-hero pt-[150px]">
+  <div class="relative z-10 max-w-site mx-auto px-4 xl:px-0">
+    <div class="section-tag" data-aos="fade-down"><span class="line l"></span><span class="dot"></span><span class="pill">Contact Us</span><span class="dot"></span><span class="line r"></span></div>
+
+    <div class="glass-contact rounded-[40px] mt-[74px] relative px-5 pt-[70px] pb-[66px] text-center mx-auto xl:w-[1216px]" data-aos="fade-up">
+      <h2 class="section-title">Get In Touch With Us</h2>
+      <p class="section-lead max-w-[810px] mx-auto mt-4">Partner with us in engineering a sustainable future. Our team is ready to discuss infrastructure, environmental impact, or general inquiries.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-10 mt-[42px]">
+        <a href="mailto:aayududhkoshi@gmail.com" class="glass-mini rounded-2xl w-full sm:w-[202px] h-[170px] flex flex-col items-center pt-10">
+          <img src="assets/icons/mail.svg" alt="" class="w-8 h-[30px]" />
+          <span class="text-base text-primary-dark font-medium mt-3">Email Us</span>
+          <span class="text-sm text-ink-dark mt-3">aayududhkoshi@gmail.com</span>
+        </a>
+        <a href="tel:0097714102710" class="glass-mini rounded-2xl w-full sm:w-[202px] h-[170px] flex flex-col items-center pt-10">
+          <img src="assets/icons/mail.svg" alt="" class="w-8 h-[30px]" />
+          <span class="text-base text-primary-dark font-medium mt-3">Call Us</span>
+          <span class="text-sm text-ink-dark mt-3">00977-1-4102710</span>
+        </a>
+        <a href="#hq" class="glass-mini rounded-2xl w-full sm:w-[202px] h-[170px] flex flex-col items-center pt-10">
+          <img src="assets/icons/mail.svg" alt="" class="w-8 h-[30px]" />
+          <span class="text-base text-primary-dark font-medium mt-3">Visit Us</span>
+          <span class="text-sm text-ink-dark mt-3">Sama Marga, Naxal, Kathmandu, Nepal</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-[40px] border mx-auto border-[#EDF1F4] mt-14 px-5 lg:px-[60px] pt-16 pb-[74px] grid grid-cols-1 min-[1200px]:grid-cols-[2fr_1fr] justify-between gap-12 xl:w-[1216px]" data-aos="fade-up">
+      <form id="inquiryForm" novalidate>
+        <h3 class="font-manrope font-medium text-[32px] text-primary-dark">Send an Inquiry</h3>
+        <div class="grid sm:grid-cols-2 gap-6 mt-8">
+          <label class="block"><span class="label">Full Name</span><input name="name" type="text" class="field mt-3" placeholder="John Doe" required /></label>
+          <label class="block"><span class="label">Email Address</span><input name="email" type="email" class="field mt-3" placeholder="john@engineering.com" required /></label>
+        </div>
+        <label class="block mt-5"><span class="label">Subject / Department</span>
+          <select name="subject" class="field mt-3">
+            <option>Technical Infrastructure</option><option>Environmental Impact</option><option>Investor Relations</option><option>General Inquiry</option>
+          </select>
+        </label>
+        <label class="block mt-8"><span class="label">Message</span><textarea name="message" class="field mt-3" placeholder="Describe your technical inquiry or proposal..." required></textarea></label>
+        <button type="submit" class="btn-primary w-full h-11 rounded-xl font-manrope text-base mt-5">Send Message</button>
+        <p id="formMsg" class="text-sm mt-3 hidden"></p>
+      </form>
+
+      <div class="flex flex-col gap-10" id="hq">
+        <div class="border border-[#E3E8EC] rounded-2xl p-[34px] pb-10">
+          <h4 class="font-manrope text-[20px] text-ink-dark">Global Headquarter</h4>
+          <div class="flex items-center relative hidden lg:block justify-between mt-1.5 max-w-[310px]">
+            <span class="font-manrope text-base text-primary">Sama Marga, Naxal, Kathmandu</span>
+            <span class="open-badge absolute right-0 top-[-21px] inline-flex items-center gap-2 px-2 py-0.5"><i></i>Currently Open</span>
+          </div>
+          <div class="overflow-hidden rounded-xl mt-3 max-w-[310px]"><img src="assets/images/gallery/1.png" alt="Headquarter" class="w-full h-[207px] object-cover hover:scale-105 transition duration-700" /></div>
+          <a href="https://maps.app.goo.gl/D2R4KtMgM3Ww5pFJ6" target="_blank" rel="noopener" class="link-arrow mt-3">View On Map <img src="assets/icons/arrow-right.svg" alt="" class="w-6 h-[22px] -ml-1" /></a>
+        </div>
+        <div class="border border-[#E3E8EC] rounded-2xl px-6 pt-4 pb-6">
+          <h4 class="font-manrope text-[20px] text-primary-dark">Follow Us</h4>
+          <div class="social flex gap-3 mt-4">
+            <a href="#" aria-label="Facebook"><img src="assets/images/facebook.png" alt="Facebook" /></a>
+            <a href="#" aria-label="X"><img src="assets/images/x.png" alt="X" /></a>
+            <a href="#" aria-label="Instagram"><img src="assets/images/instagram.png" alt="Instagram" /></a>
+            <a href="#" aria-label="YouTube"><img src="assets/images/youtube.png" alt="YouTube" class="border border-[#eee]" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-bottom-bg h-[86px] -mt-[1px] relative"></div>
+</section>
+
+
+<!-- ======================= GALLERY ======================= -->
+<section id="gallery" class="gallery-bg pt-[92px] pb-[34px]">
+  <div class="max-w-site mx-auto px-4 xl:px-0">
+    <div class="section-tag" data-aos="fade-down"><span class="line l"></span><span class="dot"></span><span class="pill">Gallery</span><span class="dot"></span><span class="line r"></span></div>
+    <h2 class="section-title text-center mt-[46px]" data-aos="fade-up">Our Visual Journal</h2>
+    <div class="mt-[44px] pl-px" data-aos="fade-right"><span class="eyebrow">Photo Slide</span></div>
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-5 mt-[34px] pb-6 border-b border-[#E5EAEE]" data-aos="fade-up">
+      <div class="flex flex-wrap gap-2" id="galFilters">
+        <button class="pill-filter active" data-cat="all">All Photos</button>
+        <button class="pill-filter" data-cat="infra">Infrastucture</button>
+        <button class="pill-filter" data-cat="community">Community</button>
+        <button class="pill-filter" data-cat="events">Events</button>
+      </div>
+      <button id="gridToggle" class="flex items-center gap-5 text-base text-ink-dark hover:text-primary transition md:mt-4">
+        <img src="assets/icons/grid.svg" alt="" class="w-7 h-[30px]" /><span id="gridLabel">Grid View</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- carousel -->
+  <div id="carouselView" class="relative mt-[54px] overflow-hidden" data-aos="zoom-in">
+    <div class="carousel max-w-[1440px] mx-auto">
+      <div class="car-side left"><img id="carPrevImg" src="assets/images/gallery-spillway.png" alt="" /></div>
+      <div class="car-main"><img id="carMainImg" src="assets/images/valley-wide.png" alt="Gallery photo" /></div>
+      <div class="car-side right"><img id="carNextImg" src="assets/images/river.png" alt="" /></div>
+      <button class="car-arrow prev" id="carPrev" aria-label="Previous"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3m4-4L3 8l4 4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="car-arrow next" id="carNext" aria-label="Next"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <div id="carDots" class="flex justify-center gap-2 mt-11"></div>
+  </div>
+
+  <!-- grid -->
+  <div id="gridView" class="hidden max-w-site mx-auto px-4 xl:px-0 mt-[54px]">
+    <div id="galleryGrid" class="gallery-grid grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+</section>
+<!-- ======================= FAQ ======================= -->
+<section class="pt-[62px] pb-[62px]">
+  <div class="max-w-site mx-auto px-4 xl:px-0">
+    <div class="section-tag" data-aos="fade-down"><span class="line l"></span><span class="dot"></span><span class="pill">Frequently Asked Questions</span><span class="dot"></span><span class="line r"></span></div>
+    <h2 class="section-title text-center mt-[52px]" data-aos="fade-up">Project FAQs</h2>
+    <p class="section-lead text-center max-w-[640px] mx-auto mt-[18px]" data-aos="fade-up" data-aos-delay="100">Expert answers to our most frequently asked questions regarding hydro-infrastructure and sustainability initiatives.</p>
+
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mt-[72px] px-1.5 overflow-x-hidden">
+      <span class="eyebrow" data-aos="fade-right">Common Inquiries</span>
+      <div class="flex border-b border-[#E3E8EC] overflow-x-auto" id="faqTabs" data-aos="fade-left">
+        <button class="faq-tab active" data-faq="technical">Technical</button>
+        <button class="faq-tab" data-faq="environmental">Environmental</button>
+        <button class="faq-tab" data-faq="corporate">Corporate</button>
+      </div>
+    </div>
+
+    <div class="faq-panel mt-8 px-4 lg:px-[113px] pt-[50px] pb-[60px]" data-aos="fade-up">
+      <div id="faqList" class="flex flex-col gap-6"></div>
+    </div>
+  </div>
+</section>
+<!-- ======================= NEWS ======================= -->
+<section class="news-bg pt-[52px] pb-[52px]">
+  <div class="max-w-site mx-auto px-4 xl:px-0">
+    <div class="section-tag" data-aos="fade-down"><span class="line l"></span><span class="dot"></span><span class="pill">News And Events</span><span class="dot"></span><span class="line r"></span></div>
+    <h2 class="section-title text-center mt-[58px]" data-aos="fade-up">Recent Updates And Milestones</h2>
+    <p class="section-lead text-center max-w-[820px] mx-auto mt-[18px]" data-aos="fade-up" data-aos-delay="100">Meet the multi-disciplinary team of engineers, environmental scientists, and strategic investors driving the 95.7 MW Dudhkoshi vision toward sustainable energy independence.</p>
+    <div class="mt-[58px] pl-px" data-aos="fade-right"><span class="eyebrow">Updates</span></div>
+
+    <div class="grid grid-cols-1 min-[1200px]:grid-cols-[2fr_1fr] gap-9 mt-10">
+      <div class="grid sm:grid-cols-2 gap-[29px] pl-px" id="newsGrid"></div>
+
+      <aside class="">
+        <div id="sideNews" class="overflow-x-hidden"></div>
+        <div class="px-[34px] pt-[70px] hidden" data-aos="fade-up">
+          <div class="flex items-center justify-between">
+            <h5 class="font-hind font-medium text-base text-ink tracking-wide">FINANCIAL HIGHLIGHTS</h5>
+            <a href="#financial" class="text-sm text-primary hover:underline">VIEW MORE</a>
+          </div>
+          <div class="mt-5 text-[14px] text-ink-dark">
+            <div class="flex justify-between py-4 border-b border-[#EDF1F4]"><span>Revenue Growth (YoY)</span><span class="text-[#006C49]">+18.5%</span></div>
+            <div class="flex justify-between py-5 border-b border-[#EDF1F4]"><span>Operating Margin</span><span>24.2%</span></div>
+            <div class="flex justify-between py-5 border-b border-[#EDF1F4]"><span>Dividend Yield</span><span>3.12%</span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CTA ======================= -->
+<section class="cta-section">
+  <div class="bg"></div>
+  <div class="relative max-w-[1273px] mx-auto px-4 xl:px-0 pt-[58px] pb-[57px]">
+    <div class="cta-card text-center px-6 pt-[102px] pb-[76px]" data-aos="zoom-in">
+      <h2 class="cta-title max-w-[600px] mx-auto">Sustainable Energy for a Brighter Tomorrow.</h2>
+      <p class="text-[20px] leading-8 text-white max-w-[740px] mx-auto mt-6">We harness Nepal's rivers to deliver reliable, sustainable hydropower lighting homes, empowering communities, and building a cleaner future.</p>
+      <div class="flex flex-wrap justify-center gap-5 mt-[74px]">
+        <a href="#contact" class="btn-light inline-flex items-center h-[42px] px-6 text-base">Join the Revolution</a>
+        <a href="#about" class="btn-outline inline-flex items-center h-[44px] px-6 text-base">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer-wrap mt-10 pt-[62px] overflow-hidden">
+  <div class="max-w-site mx-auto px-4 xl:px-0">
+    <div class="footer-card px-6 lg:px-[65px] pt-[70px] pb-[88px] xl:w-[1216px] mx-auto" data-aos="fade-up">
+      <div class="grid lg:grid-cols-[1fr_auto] gap-12">
+        <div>
+          <a href="#home" class="flex items-center gap-4"><img src="assets/images/logo.png" alt="" class="w-[47px] h-[42px] object-contain" /><span class="font-manrope font-medium text-[24px] text-ink-dark">Dudhkoshi <span class="text-primary">Hydropower</span></span></a>
+          <p class="text-base leading-[26px] text-ink mt-6 max-w-[330px]">Building Nepal's clean energy future through sustainable, community-rooted hydropower infrastructure.</p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-[135px_176px_auto] gap-8 sm:gap-0 lg:mr-[-4px]">
+          <div>
+            <h5 class="font-manrope text-[20px] text-ink-dark">Company</h5>
+            <ul class="mt-4 space-y-[13px] text-base"><li><a href="#about" class="footer-link">About Us</a></li><li><a href="#team" class="footer-link">Our Team</a></li><li><a href="#gallery" class="footer-link">Gallery</a></li></ul>
+          </div>
+          <div>
+            <h5 class="font-manrope text-[20px] text-ink-dark">Project</h5>
+            <ul class="mt-4 space-y-[13px] text-base"><li><a href="#about" class="footer-link">Dudhkoshi 2</a></li><li><a href="#" class="footer-link">Reports</a></li><li><a href="#financial" class="footer-link">Financial Overview</a></li></ul>
+          </div>
+          <div class="col-span-2 sm:col-span-1">
+            <h5 class="font-manrope text-[20px] text-ink-dark">Contact</h5>
+            <ul class="mt-4 space-y-[13px] text-base"><li><a href="mailto:aayududhkoshi@gmail.com" class="text-primary hover:underline">aayududhkoshi@gmail.com</a></li><li><a href="tel:0097714102710" class="text-primary hover:underline">00977-1-4102710</a></li><li class="text-ink">Sama Marga, Naxal, Kathmandu, Nepal</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-[#EDF1F4] mt-12 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-base text-ink">
+        <p>© 2026 Dudhkoshi Hydropower Nepal Pvt. Ltd. All rights reserved.</p>
+        <p><a href="#" class="footer-link">Privacy Policy</a> · <a href="#" class="footer-link">Terms of Service</a></p>
+      </div>
+    </div>
+  </div>
+   <!-- h-[150px] sm:h-[186px]  -->
+  <div class="watermark text-center mt-8 overflow-hidden" id="watermark">DUDHKOSHI2</div>
+</footer>
+
+<button id="backTop" class="back-top fixed right-6 bottom-6 z-50 w-12 h-12 rounded-full bg-primary text-white shadow-lg flex items-center justify-center" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

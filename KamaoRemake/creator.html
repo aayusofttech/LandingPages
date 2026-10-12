@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/creator.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+  <header class="site-header" id="siteHeader">
+  <nav class="navbar" aria-label="Primary navigation">
+
+    <!-- Logo -->
+    <a href="./index.html" class="brand" aria-label="Kamao home">
+      <img
+        src="./images/nav_footer/kamao_logo.svg"
+        alt="Kamao"
+        class="brand-logo"
+      />
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div class="main-nav">
+      <a href="./index.html" class="nav-link ">For Brands</a>
+      <a href="./creator.html" class="nav-link is-active">For Creators</a>
+      <a href="./aboutus.html" class="nav-link">About Us</a>
+    </div>
+
+    <!-- Desktop Actions -->
+    <div class="nav-actions">
+      <button class="demo-link" type="button" data-open-modal>
+        Book a Demo
+      </button>
+
+      <button class="btn-primary nav-get-started" type="button" data-open-modal>
+        Get Started
+      </button>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button
+      class="mobile-menu-btn"
+      id="mobileMenuBtn"
+      type="button"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      aria-controls="mobileMenu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-menu" id="mobileMenu">
+
+    <div class="mobile-menu-inner">
+
+      <div class="mobile-links">
+
+        <a href="./index.html" class="mobile-nav-link ">
+          <span>For Brands</span>
+          <span class="mobile-arrow">↗</span>
+        </a>
+
+        <a href="./creator.html" class="mobile-nav-link is-active">
+          <span>For Creators</span>
+          <span class="mobile-arrow">↗</span>
+        </a>
+
+        <a href="./aboutus.html" class="mobile-nav-link">
+          <span>About Us</span>
+          <span class="mobile-arrow">↗</span>
+        </a>
+
+      </div>
+
+      <div class="mobile-actions">
+
+        <button
+          class="mobile-demo"
+          type="button"
+          data-open-modal
+        >
+          Book a Demo
+        </button>
+
+        <button
+          class="mobile-get-started"
+          type="button"
+          data-open-modal
+        >
+          Get Started
+          <span>↗</span>
+        </button>
+
+      </div>
+
+      <div class="mobile-menu-footer">
+        <span>CREATOR × BRAND</span>
+        <span>KAMAO</span>
+      </div>
+
+    </div>
+
+  </div>
+</header>
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <h1 class="hero-title roboto-700">
+          TURN YOUR SOCIAL<br />
+          REACH INTO <span class="hero-title-highlight">REVENUE</span>
+        </h1>
+
+        <p class="hero-subtitle roboto-500">
+          Earn money everytime you shop
+        </p>
+
+        <a href="#" class="hero-button roboto-700">
+          Explore Brands <span class="hero-button-icon">
+            <img src="images/creators/hero_section/rocket.svg" alt="" />
+          </span>
+        </a>
+      </div>
+
+      <!-- Hero Visual Cards -->
+      <img class="hero-card hero-card-performance" src="images/creators/hero_section/performing_card.png" alt="" />
+
+      <img class="hero-card hero-card-followers" src="images/creators/hero_section/creator_avatars.png" alt="" />
+
+      <img class="hero-card hero-card-reactions" src="images/creators/hero_section/reactions.png" alt="" />
+
+      <img class="hero-card hero-card-views" src="images/creators/hero_section/view_card.png" alt="" />
+
+      <img class="hero-card hero-card-creator" src="images/creators/hero_section/creator_content.png" alt="" />
+
+    </section>
+
+    <!-- MARQUEE SECTION  -->
+    <section class="marquee-section">
+
+        <!-- MARQUEE 1: CUSTOMERS GETTING EARNINGS (SCROLL RIGHT) -->
+        <div class="marquee-wrapper" style="margin-top: 16px;">
+            <div class="marquee-track-right" id="clientsTrack1">
+
+                <div class="client-chip-pill" style="background: var(--lavender);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo"
+                        alt="Marks & Spencer">
+                    <div class="client-info">
+                        <strong>Aarav Sharma</strong>
+                        <span>Marks & Spencer</span>
+                    </div>
+                    <div class="client-earning">+ ₹2,450</div>
+                </div>
+
+                <div class="client-chip-pill" style="background: var(--soft-blue);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Gymshark">
+                    <div class="client-info">
+                        <strong>Riya Karki</strong>
+                        <span>Gymshark</span>
+                    </div>
+                    <div class="client-earning">+ ₹3,200</div>
+                </div>
+
+                <div class="client-chip-pill" style="background: var(--peach);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Sephora">
+                    <div class="client-info">
+                        <strong>Ananya Mehta</strong>
+                        <span>Sephora</span>
+                    </div>
+                    <div class="client-earning">+ ₹1,850</div>
+                </div>
+
+                <div class="client-chip-pill" style="background: var(--sand);">
+                    <img draggable="false" src=" ./assets/brand_icon.jpeg" class="client-brand-logo" alt="Glossier">
+                    <div class="client-info">
+                        <strong>Suman Thapa</strong>
+                        <span>Glossier</span>
+                    </div>
+                    <div class="client-earning">+ ₹2,750</div>
+                </div>
+
+                <div class="client-chip-pill" style="background: var(--sage-light);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Zara">
+                    <div class="client-info">
+                        <strong>Priya Sharma</strong>
+                        <span>Zara</span>
+                    </div>
+                    <div class="client-earning">+ ₹4,120</div>
+                </div>
+
+                <div class="client-chip-pill" style="background: var(--lavender);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Kith NYC">
+                    <div class="client-info">
+                        <strong>Nischal Gurung</strong>
+                        <span>Kith NYC</span>
+                    </div>
+                    <div class="client-earning">+ ₹2,300</div>
+                </div>
+
+                <div class="client-chip-pill" style="background: var(--soft-blue);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Nespresso">
+                    <div class="client-info">
+                        <strong>Arjun Patel</strong>
+                        <span>Nespresso</span>
+                    </div>
+                    <div class="client-earning">+ ₹3,680</div>
+                </div>
+
+                <div class="client-chip-pill" style="background: var(--peach);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Alo Yoga">
+                    <div class="client-info">
+                        <strong>Smriti Bhandari</strong>
+                        <span>Alo Yoga</span>
+                    </div>
+                    <div class="client-earning">+ ₹2,950</div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- MARQUEE 2: ANOTHER SET OF CUSTOMERS GETTING EARNINGS (SCROLL LEFT) -->
+        <div class="marquee-wrapper" style="margin-top: 16px;">
+            <div class="marquee-track-left" id="clientsTrack2">
+
+                <div class="client-chip-pill" style="background: var(--sage-light);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Zara">
+                    <div class="client-info">
+                        <strong>Rohan Shrestha</strong>
+                        <span>Zara</span>
+                    </div>
+                    <div class="client-earning">+ ₹3,450</div>
+                </div>
+
+                <div class="client-chip-pill" style="background: var(--lavender);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo"
+                        alt="Marks & Spencer">
+                    <div class="client-info">
+                        <strong>Neha Joshi</strong>
+                        <span>Marks & Spencer</span>
+                    </div>
+                    <div class="client-earning">+ ₹2,180</div>
+                </div>
+
+                <div class="client-chip-pill" style="background: var(--peach);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Sephora">
+                    <div class="client-info">
+                        <strong>Aayush Adhikari</strong>
+                        <span>Sephora</span>
+                    </div>
+                    <div class="client-earning">+ ₹3,920</div>
+                </div>
+
+                <div class="client-chip-pill" style="background: var(--soft-blue);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Gymshark">
+                    <div class="client-info">
+                        <strong>Diya Singh</strong>
+                        <span>Gymshark</span>
+                    </div>
+                    <div class="client-earning">+ ₹2,640</div>
+                </div>
+
+                <div class="client-chip-pill" style="background: var(--sand);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Glossier">
+                    <div class="client-info">
+                        <strong>Prakash Rai</strong>
+                        <span>Glossier</span>
+                    </div>
+                    <div class="client-earning">+ ₹1,980</div>
+                </div>
+
+                <div class="client-chip-pill" style="background: var(--lavender);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Kith NYC">
+                    <div class="client-info">
+                        <strong>Isha Kapoor</strong>
+                        <span>Kith NYC</span>
+                    </div>
+                    <div class="client-earning">+ ₹4,250</div>
+                </div>
+
+                <div class="client-chip-pill" style="background: var(--soft-blue);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Nespresso">
+                    <div class="client-info">
+                        <strong>Bibek Poudel</strong>
+                        <span>Nespresso</span>
+                    </div>
+                    <div class="client-earning">+ ₹2,870</div>
+                </div>
+
+                <div class="client-chip-pill" style="background: var(--peach);">
+                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Alo Yoga">
+                    <div class="client-info">
+                        <strong>Kavya Shrestha</strong>
+                        <span>Alo Yoga</span>
+                    </div>
+                    <div class="client-earning">+ ₹3,150</div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="process-section">
+      <div class="process-bg" aria-hidden="true"></div>
+      <div class="process-container">
+
+        <!-- Section Heading -->
+        <div class="process-header">
+          <h2 class="process-title roboto-600">
+            THE SIMPLE<br>
+            PROCESS
+          </h2>
+
+          <p class="process-subtitle roboto-500">
+            Set up Your brand for success
+          </p>
+        </div>
+
+
+        <!-- Process Cards -->
+        <div class="process-grid">
+
+          <!-- Card 1 -->
+          <article class="process-card">
+            <div class="process-card-text roboto-condensed-400">
+              Your customer makes a
+              <span>verified purchase.</span>
+            </div>
+
+            <div class="process-image-wrapper">
+              <img src="./images/process/process1.png" alt="Customer makes a verified purchase" class="process-image">
+            </div>
+          </article>
+
+
+          <!-- Card 2 -->
+          <article class="process-card">
+            <div class="process-card-text roboto-condensed-400">
+              They share <span>genuine</span><br>
+              love for you on social media.
+            </div>
+
+            <div class="process-image-wrapper">
+              <img src="./images/process/process2.png" alt="Customer shares genuine love on social media"
+                class="process-image">
+            </div>
+          </article>
+
+
+          <!-- Card 3 -->
+          <article class="process-card">
+            <div class="process-card-text roboto-condensed-400">
+              They get a <span>cash reward</span> for
+              the post.
+            </div>
+
+            <div class="process-image-wrapper">
+              <img src="./images/process/process3.png" alt="Customer receives a cash reward" class="process-image">
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- AUTHENTIC CONTENT SECTION -->
+    <section class="content-section">
+
+      <!-- Section Heading -->
+      <div class="content-heading">
+        <h2 class="content-title roboto-600">
+          AUTHENTIC CONTENT<br>
+          MATCHES ACTUAL EARNINGS
+        </h2>
+
+        <p class="content-subtitle roboto-500">
+          Kamao functions helps creator become a prime organic<br>
+          content marketing channel.
+        </p>
+      </div>
+
+      <!-- Reels Marquee -->
+      <div class="content-wrapper">
+
+        <div class="content-track" id="contentTrack">
+
+          <!-- Reel 1 -->
+          <div class="content-reel-card">
+            <img class="content-image" src="./assets/5.gif" alt="Creator content" />
+
+            <div class="content-gradient"></div>
+
+            <div class="content-creator-pill">
+              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80"
+                class="content-avatar" alt="Creator" />
+
+              <div class="content-user-info">
+                <span class="content-username">@cam_gear</span>
+                <span class="content-metric">★ 4.9 · 95k views</span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Reel 2 -->
+          <div class="content-reel-card">
+            <img class="content-image" src="./assets/4.gif" alt="Creator content" />
+
+            <div class="content-gradient"></div>
+
+            <div class="content-creator-pill">
+              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80"
+                class="content-avatar" alt="Creator" />
+
+              <div class="content-user-info">
+                <span class="content-username">@cam_gear</span>
+                <span class="content-metric">★ 4.9 · 95k views</span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Reel 3 -->
+          <div class="content-reel-card">
+            <img class="content-image"
+              src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80"
+              alt="Creator content" />
+
+            <div class="content-gradient"></div>
+
+            <div class="content-creator-pill">
+              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80"
+                class="content-avatar" alt="Creator" />
+
+              <div class="content-user-info">
+                <span class="content-username">@cam_gear</span>
+                <span class="content-metric">★ 4.9 · 95k views</span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Reel 4 -->
+          <div class="content-reel-card">
+            <img class="content-image" src="./assets/3.gif" alt="Creator content" />
+
+            <div class="content-gradient"></div>
+
+            <div class="content-creator-pill">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
+                class="content-avatar" alt="Creator" />
+
+              <div class="content-user-info">
+                <span class="content-username">@cam_gear</span>
+                <span class="content-metric">★ 4.9 · 95k views</span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Reel 5 -->
+          <div class="content-reel-card">
+            <img class="content-image"
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80"
+              alt="Creator content" />
+
+            <div class="content-gradient"></div>
+
+            <div class="content-creator-pill">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
+                class="content-avatar" alt="Creator" />
+
+              <div class="content-user-info">
+                <span class="content-username">@glow_skincare</span>
+                <span class="content-metric">★ 4.9 · 340k sales</span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Reel 6 -->
+          <div class="content-reel-card">
+            <img class="content-image"
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80"
+              alt="Creator content" />
+
+            <div class="content-gradient"></div>
+
+            <div class="content-creator-pill">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                class="content-avatar" alt="Creator" />
+
+              <div class="content-user-info">
+                <span class="content-username">@cam_gear</span>
+                <span class="content-metric">★ 4.9 · 95k views</span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Reel 7 -->
+          <div class="content-reel-card">
+            <img class="content-image"
+              src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80"
+              alt="Creator content" />
+
+            <div class="content-gradient"></div>
+
+            <div class="content-creator-pill">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+                class="content-avatar" alt="Creator" />
+
+              <div class="content-user-info">
+                <span class="content-username">@fit_marcus</span>
+                <span class="content-metric">★ 5.0 · 85k views</span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Reel 8 -->
+          <div class="content-reel-card">
+            <img class="content-image" src="./assets/2.gif" alt="Creator content" />
+
+            <div class="content-gradient"></div>
+
+            <div class="content-creator-pill">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                class="content-avatar" alt="Creator" />
+
+              <div class="content-user-info">
+                <span class="content-username">@cam_gear</span>
+                <span class="content-metric">★ 4.9 · 95k views</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- BRANDS SECTION -->
+    <section class="brands-section">
+
+      <!-- Section Heading -->
+      <div class="brands-heading">
+
+        <h2 class="brands-title roboto-600">
+          BRANDS CREATORS<br>
+          WILL BE WORKING WITH
+        </h2>
+
+        <p class="brands-subtitle roboto-500">
+          Real reward for authentic and popular content from the<br>
+          brands.
+        </p>
+
+      </div>
+
+
+      <!-- Brands Marquee -->
+      <div class="brands-wrapper">
+
+        <div class="brands-track" id="brandsTrack">
+
+          <!-- Brand 1 -->
+          <div class="brands-chip">
+            <div class="brands-icon">
+              M
+            </div>
+
+            <span class="brands-name">
+              Marks &amp; Spencer
+            </span>
+          </div>
+
+
+          <!-- Brand 2 -->
+          <div class="brands-chip">
+            <div class="brands-icon brands-icon-green">
+              G
+            </div>
+
+            <span class="brands-name">
+              Gymshark
+            </span>
+          </div>
+
+
+          <!-- Brand 3 -->
+          <div class="brands-chip">
+            <div class="brands-icon brands-icon-orange">
+              S
+            </div>
+
+            <span class="brands-name">
+              Sephora
+            </span>
+          </div>
+
+
+          <!-- Brand 4 -->
+          <div class="brands-chip">
+            <div class="brands-icon brands-icon-dark">
+              G
+            </div>
+
+            <span class="brands-name">
+              Glossier
+            </span>
+          </div>
+
+
+          <!-- Brand 5 -->
+          <div class="brands-chip">
+            <div class="brands-icon brands-icon-zara">
+              Z
+            </div>
+
+            <span class="brands-name">
+              Zara
+            </span>
+          </div>
+
+
+          <!-- Brand 6 -->
+          <div class="brands-chip">
+            <div class="brands-icon">
+              K
+            </div>
+
+            <span class="brands-name">
+              Kith NYC
+            </span>
+          </div>
+
+
+          <!-- Brand 7 -->
+          <div class="brands-chip">
+            <div class="brands-icon brands-icon-blue">
+              N
+            </div>
+
+            <span class="brands-name">
+              Nespresso
+            </span>
+          </div>
+
+
+          <!-- Brand 8 -->
+          <div class="brands-chip">
+            <div class="brands-icon brands-icon-peach">
+              A
+            </div>
+
+            <span class="brands-name">
+              Alo Yoga
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+      <img src="./images/creators/cta/cta_ribbon.svg" alt="" class="cta-ribbon"/>
+      <div class="cta-card">
+        <div class="cta-content">
+          <h2 class="cta-title roboto-700">
+            START <span class="cta-title-highlight">KAMAO</span>
+          </h2>
+
+          <p class="cta-subtitle roboto-400">Get the app and start earning today</p>
+
+          <!-- <div class="cta-rating">
+            <span class="cta-stars">★★★★★</span>
+            <span class="cta-rating-value">4.8</span>
+            <span class="cta-members roboto-600">Join 150,905 members</span>
+          </div> -->
+
+          <div class="cta-app-buttons">
+            <a href="#" class="cta-app-link">
+              <img src="./images/creators/cta/google_play_btn.svg" alt="Get it on Google Play" class="cta-app-image" />
+            </a>
+
+            <a href="#" class="cta-app-link">
+              <img src="./images/creators/cta/app_store_btn.svg" alt="Download on the App Store"
+                class="cta-app-image" />
+            </a>
+          </div>
+        </div>
+
+        <div class="cta-wallet">
+          <img src="./images/creators/cta/wallet.png" alt="Wallet with money" class="cta-wallet-image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION ABOVE FAQ SECTION -->
+    <section class="faq-stats-banner" style="text-align: start;">
+      <div class="faq-stats-container">
+        <div class="faq-stats-content-wrapper">
+          <h2 class="faq-stats-title roboto-700 reveal-item">
+            JOIN OUR CREATOR CAMPAIGNS
+          </h2>
+
+          <p class="faq-stats-subtitle roboto-condensed-500 reveal-item">
+            Creators earn by making content for brands they actually want to promote.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ ACCORDION AND IMAGES -->
+    <section id="faq-sbsr-1575">
+      <div class="faq-container">
+
+        <!-- Right Section -->
+        <div class="faq-image-group">
+          <div class="faq-row">
+
+            <picture class="faq-picture faq-picture1">
+              <source media="(max-width: 600px)"
+                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/man2.jpg">
+
+              <source media="(min-width: 601px)"
+                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/man2.jpg">
+
+              <img draggable="false" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/man2.jpg" alt="Creator making content"
+                width="305" height="410">
+            </picture>
+
+            <picture class="faq-picture faq-picture3">
+              <source media="(max-width: 600px)" srcset="https://imgs.search.brave.com/RHkA_aMxj9lAu0mGMaz-YQjiC6GWuhgIluzz57LbIsU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9jb250/ZW50LWNyZWF0b3It/cG91cmluZy13YXRl/ci1nbGFzcy1yZWNv/cmRpbmctcG9kY2Fz/dC1jb2xsZWFndWUt/cHJvZmVzc2lvbmFs/LXN0dWRpby1jb250/ZW50LWNyZWF0b3It/NDA1NzE3MDMyLmpw/Zw">
+
+              <source media="(min-width: 601px)" srcset="https://imgs.search.brave.com/RHkA_aMxj9lAu0mGMaz-YQjiC6GWuhgIluzz57LbIsU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9jb250/ZW50LWNyZWF0b3It/cG91cmluZy13YXRl/ci1nbGFzcy1yZWNv/cmRpbmctcG9kY2Fz/dC1jb2xsZWFndWUt/cHJvZmVzc2lvbmFs/LXN0dWRpby1jb250/ZW50LWNyZWF0b3It/NDA1NzE3MDMyLmpw/Zw">
+
+              <img draggable="false" loading="lazy" decoding="async" src="https://imgs.search.brave.com/RHkA_aMxj9lAu0mGMaz-YQjiC6GWuhgIluzz57LbIsU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9jb250/ZW50LWNyZWF0b3It/cG91cmluZy13YXRl/ci1nbGFzcy1yZWNv/cmRpbmctcG9kY2Fz/dC1jb2xsZWFndWUt/cHJvZmVzc2lvbmFs/LXN0dWRpby1jb250/ZW50LWNyZWF0b3It/NDA1NzE3MDMyLmpw/Zw"
+                alt="Creator filming music" width="305" height="467">
+            </picture>
+
+          </div>
+
+          <div class="faq-row">
+
+            <picture class="faq-picture faq-picture2">
+              <source media="(max-width: 600px)"
+                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing.jpg">
+
+              <source media="(min-width: 601px)"
+                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing.jpg">
+
+              <img draggable="false" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing.jpg" alt="Camera" width="305"
+                height="615">
+            </picture>
+
+            <picture class="faq-picture faq-picture4">
+              <source media="(max-width: 600px)"
+                srcset="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80">
+
+              <source media="(min-width: 601px)"
+                srcset="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80">
+
+              <img draggable="false" loading="lazy" decoding="async"
+                src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80"
+                alt="Creator content" width="305" height="277">
+            </picture>
+
+          </div>
+        </div>
+
+
+        <!-- Left Section -->
+        <div class="faq-content">
+
+          <span class="faq-topper roboto-600 reveal-item">
+            For creators
+          </span>
+
+          <h2 class="faq-title roboto-600 reveal-item">
+            Create. Post. Get paid.
+          </h2>
+
+
+          <ul class="faq-group">
+
+            <!-- FAQ 01 -->
+            <li class="faq-item active">
+
+              <button class="faq-button">
+
+                <span class="faq-button-text roboto-600">
+                  How do I make money on Kamao?
+                </span>
+
+                <span class="faq-indicator" aria-hidden="true"></span>
+
+              </button>
+
+              <p class="faq-item-p">
+                Brands post campaigns on Kamao looking for creators to make
+                content for them. You choose the campaigns that fit your
+                content and audience, create the post, and earn when your
+                work meets the campaign requirements.
+              </p>
+
+            </li>
+
+
+            <!-- FAQ 02 -->
+            <li class="faq-item">
+
+              <button class="faq-button">
+
+                <span class="faq-button-text roboto-600">
+                  Do I have to pay to join a campaign?
+                </span>
+
+                <span class="faq-indicator" aria-hidden="true"></span>
+
+              </button>
+
+              <p class="faq-item-p">
+                No. Kamao is built around creators earning from brand
+                campaigns, not paying to access them. Each campaign can
+                have its own requirements, deliverables, and payout.
+              </p>
+
+            </li>
+
+
+            <!-- FAQ 03 -->
+            <li class="faq-item">
+
+              <button class="faq-button">
+
+                <span class="faq-button-text roboto-600">
+                  Can I choose which brands I work with?
+                </span>
+
+                <span class="faq-indicator" aria-hidden="true"></span>
+
+              </button>
+
+              <p class="faq-item-p">
+                Yes. You can browse available campaigns and decide which
+                brands, products, and content opportunities make sense
+                for you. The goal is to let creators choose work that
+                feels natural to their content.
+              </p>
+
+            </li>
+
+
+            <!-- FAQ 04 -->
+            <!-- <li class="faq-item">
+
+              <button class="faq-button">
+
+                <span class="faq-button-text roboto-600">
+                  How much can I earn from a campaign?
+                </span>
+
+                <span class="faq-indicator" aria-hidden="true"></span>
+
+              </button>
+
+              <p class="faq-item-p roboto-600">
+                Campaign payouts can vary depending on the brand,
+                campaign requirements, content format, and other
+                factors. For this draft, imagine campaigns ranging from
+                Rs. 2,000 to Rs. 50,000+.
+              </p>
+
+            </li> -->
+
+
+            <!-- FAQ 05 -->
+            <li class="faq-item">
+
+              <button class="faq-button">
+
+                <span class="faq-button-text roboto-600">
+                  Do I need a huge following to get started?
+                </span>
+
+                <span class="faq-indicator" aria-hidden="true"></span>
+
+              </button>
+
+              <p class="faq-item-p">
+                Not necessarily. Brands can look for different types of
+                creators depending on their campaign. A focused audience,
+                strong content, and a good fit with the brand can matter
+                more than simply having a large follower count.
+              </p>
+
+            </li>
+
+
+            <!-- FAQ 06 -->
+            <li class="faq-item">
+
+              <button class="faq-button">
+
+                <span class="faq-button-text roboto-600">
+                  What kind of content can I create?
+                </span>
+
+                <span class="faq-indicator" aria-hidden="true"></span>
+
+              </button>
+
+              <p class="faq-item-p">
+                Campaigns can include short-form videos, product
+                showcases, reviews, tutorials, lifestyle posts, and
+                other social content. Each campaign will tell you what
+                the brand is looking for before you create.
+              </p>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION ENDS -->
+
+    <!-- testimonial section -->
+    <section class="testimonials-section">
+      <!-- Decorative corner rings -->
+      <img src="./images/testimonials/ring.svg" alt="" class="testimonials-corner testimonials-corner-top"
+        aria-hidden="true" />
+
+      <img src="./images/testimonials/ring.svg" alt="" class="testimonials-corner testimonials-corner-bottom"
+        aria-hidden="true" />
+
+      <div class="testimonials-container">
+
+        <!-- Section heading -->
+        <div class="testimonials-heading">
+          <span class="testimonials-eyebrow roboto-600">CREATOR STORIES</span>
+
+          <h2 class="testimonials-title roboto-600">
+            Real creators, real<br class="testimonials-title-break">
+            rewards for sharing
+          </h2>
+
+          <p class="testimonials-subtitle roboto-400">
+            Hear from creators who are earning rewards by sharing genuine experiences with
+            <br class="testimonials-subtitle-break">
+            products they love and creating content their audiences can actually trust.
+          </p>
+        </div>
+
+
+        <!-- Carousel -->
+        <div class="testimonials-carousel">
+
+          <div class="testimonials-viewport">
+
+            <div class="testimonials-track roboto-400">
+
+              <!-- Testimonial 1 -->
+              <article class="testimonials-slide">
+                <div class="testimonials-card">
+
+                  <img src="./images/testimonials/hills.svg" alt="" class="testimonials-hills" aria-hidden="true" />
+
+                  <div class="testimonials-content ">
+                    <p class="testimonials-text">
+                      I love that I can share products I already use and get rewarded for it.
+                      The process is simple, and it feels much more natural than making
+                      sponsored content that doesn't really fit my audience.
+                    </p>
+
+                    <div class="testimonials-author">
+                      <strong class="testimonials-author-name">
+                        Aayusha Shrestha
+                      </strong>
+
+                      <span class="testimonials-author-role">
+                        Lifestyle Creator
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+
+              <!-- Testimonial 2 -->
+              <article class="testimonials-slide">
+                <div class="testimonials-card">
+
+                  <img src="./images/testimonials/hills.svg" alt="" class="testimonials-hills" aria-hidden="true" />
+
+                  <div class="testimonials-content">
+                    <p class="testimonials-text">
+                      I was surprised by how easy it was to get started. I simply shared my
+                      genuine experience after buying a product, and earning a reward made
+                      creating content feel even more worthwhile.
+                    </p>
+
+                    <div class="testimonials-author">
+                      <strong class="testimonials-author-name">
+                        Rohan Mehta
+                      </strong>
+
+                      <span class="testimonials-author-role">
+                        Tech & Lifestyle Creator
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+
+              <!-- Testimonial 3 -->
+              <article class="testimonials-slide">
+                <div class="testimonials-card">
+
+                  <img src="./images/testimonials/hills.svg" alt="" class="testimonials-hills" aria-hidden="true" />
+
+                  <div class="testimonials-content">
+                    <p class="testimonials-text">
+                      What I like most is that the content comes from a real purchase.
+                      I can talk about what I actually think about a product, and my followers
+                      know the recommendation is coming from my own experience.
+                    </p>
+
+                    <div class="testimonials-author">
+                      <strong class="testimonials-author-name">
+                        Priya Nair
+                      </strong>
+
+                      <span class="testimonials-author-role">
+                        Beauty Creator
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+
+              <!-- Testimonial 4 -->
+              <article class="testimonials-slide">
+                <div class="testimonials-card">
+
+                  <img src="./images/testimonials/hills.svg" alt="" class="testimonials-hills" aria-hidden="true" />
+
+                  <div class="testimonials-content">
+                    <p class="testimonials-text">
+                      As a smaller creator, it is great to have a way to earn from content
+                      without needing a huge following. I can focus on sharing honest reviews
+                      and build a little extra income along the way.
+                    </p>
+
+                    <div class="testimonials-author">
+                      <strong class="testimonials-author-name">
+                        Suman Karki
+                      </strong>
+
+                      <span class="testimonials-author-role">
+                        Content Creator
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+
+          <!-- Navigation -->
+          <div class="testimonials-navigation">
+
+            <button type="button" class="testimonials-button testimonials-button-prev"
+              aria-label="Previous testimonial">
+              <span>‹</span>
+            </button>
+
+            <button type="button" class="testimonials-button testimonials-button-next" aria-label="Next testimonial">
+              <span>›</span>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <!-- FOOTER  -->
+    <footer class="footer">
+      <div class="footer__container">
+
+        <div class="footer__columns">
+
+          <!-- For Creators -->
+          <div class="footer__column">
+            <h3 class="footer__heading">For Creators</h3>
+
+            <a href="#" class="footer__link">Terms and Conditions</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+            <a href="#" class="footer__link">Child Safety Standards</a>
+            <a href="#" class="footer__link">Delete Account</a>
+          </div>
+
+          <!-- For Brands -->
+          <div class="footer__column">
+            <h3 class="footer__heading">For Brands</h3>
+
+            <a href="#" class="footer__link">Book a Demo</a>
+            <a href="#" class="footer__link">Terms and Conditions</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+            <a href="#" class="footer__link">Child Safety Standards</a>
+          </div>
+
+          <!-- Resources -->
+          <div class="footer__column">
+            <h3 class="footer__heading">Resources</h3>
+
+            <a href="#" class="footer__link">See all brands</a>
+            <a href="#" class="footer__link">Get more reviews on socials</a>
+            <a href="#" class="footer__link">Easiest way to get UGC</a>
+            <a href="#" class="footer__link">Get customers to post</a>
+            <a href="#" class="footer__link">Word-of-mouth marketing</a>
+            <a href="#" class="footer__link">Get Trustpilot reviews</a>
+          </div>
+
+          <!-- Our Company -->
+          <div class="footer__column">
+            <h3 class="footer__heading">Our Company</h3>
+
+            <a href="#" class="footer__link">About us</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+            <a href="#" class="footer__link">Child Safety Standards</a>
+            <a href="#" class="footer__link">Terms of Use</a>
+            <a href="#" class="footer__link">Delete Account</a>
+            <a href="#" class="footer__link">Contact us</a>
+          </div>
+
+        </div>
+
+        <!-- Description -->
+        <div class="footer__description">
+          We value Your Brands. We make your Brand Reality.
+          <a href="#" class="footer__brand-link">Ayasufottech</a>,
+          For any Queries
+          <a href="#" class="footer__contact-link">Contact us here.</a>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer__bottom">
+
+          <div class="footer__copyright">
+            Copyright © 2026 Ayasufottech Inc. All rights reserved.
+          </div>
+
+          <nav class="footer__legal">
+            <a href="#" class="footer__legal-link">Privacy Policy</a>
+            <span class="footer__separator"></span>
+
+            <a href="#" class="footer__legal-link">Child Safety Standards</a>
+            <span class="footer__separator"></span>
+
+            <a href="#" class="footer__legal-link">Terms of Use</a>
+            <span class="footer__separator"></span>
+
+            <a href="#" class="footer__legal-link">Delete Account</a>
+          </nav>
+
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- FOOTER END -->
+
+  </main>
+
+<script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <script>
+
+            // ============================================
+        //              LOCOMOTIVE SCROLL
+        // ============================================
+
+        if (typeof LocomotiveScroll !== "undefined") {
+            const scrollContainer = document.querySelector("[data-scroll-container]");
+
+            if (scrollContainer) {
+                const scroll = new LocomotiveScroll({
+                    el: scrollContainer,
+                    smooth: true,
+                    smartphone: {
+                        smooth: false
+                    },
+                    tablet: {
+                        smooth: false
+                    }
+                });
+            }
+        }
+
+
+    // Duplicate the content of the marquee tracks to create a seamless scrolling effect
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const tracks = document.querySelectorAll(
+            ".marquee-track-right, .marquee-track-left"
+        );
+
+        tracks.forEach(track => {
+
+            // Copy the original cards
+            const cards = Array.from(track.children);
+
+            // Duplicate them
+            cards.forEach(card => {
+                const clone = card.cloneNode(true);
+                clone.setAttribute("aria-hidden", "true");
+                track.appendChild(clone);
+            });
+
+        });
+
+    });
+
+
+
+        const contentTrack = document.getElementById('contentTrack');
+    if (contentTrack) {
+      contentTrack.innerHTML += contentTrack.innerHTML + contentTrack.innerHTML;
+    }
+
+    // Seamless continuous infinite scroll cloning for brands section
+    const brandsTrack = document.getElementById("brandsTrack");
+    if (brandsTrack) {
+      brandsTrack.innerHTML += brandsTrack.innerHTML;
+    }
+
+
+
+    // Testimonials carousel
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const testimonialsCarousel =
+        document.querySelector(".testimonials-carousel");
+
+      if (!testimonialsCarousel) return;
+
+
+      const testimonialsTrack =
+        testimonialsCarousel.querySelector(".testimonials-track");
+
+      const testimonialsSlides =
+        testimonialsCarousel.querySelectorAll(".testimonials-slide");
+
+      const testimonialsPrev =
+        testimonialsCarousel.querySelector(".testimonials-button-prev");
+
+      const testimonialsNext =
+        testimonialsCarousel.querySelector(".testimonials-button-next");
+
+
+      let testimonialsCurrent = 0;
+      const testimonialsTotal = testimonialsSlides.length;
+
+
+      /* =========================================
+         UPDATE CAROUSEL
+      ========================================= */
+
+      function testimonialsUpdate() {
+
+        testimonialsTrack.style.transform =
+          `translateX(-${testimonialsCurrent * 100}%)`;
+
+
+        testimonialsPrev.disabled =
+          testimonialsCurrent === 0;
+
+        testimonialsNext.disabled =
+          testimonialsCurrent === testimonialsTotal - 1;
+      }
+
+
+      /* =========================================
+         NEXT
+      ========================================= */
+
+      function testimonialsGoNext() {
+
+        if (testimonialsCurrent >= testimonialsTotal - 1) {
+          return;
+        }
+
+        testimonialsCurrent++;
+
+        testimonialsUpdate();
+      }
+
+
+      /* =========================================
+         PREVIOUS
+      ========================================= */
+
+      function testimonialsGoPrevious() {
+
+        if (testimonialsCurrent <= 0) {
+          return;
+        }
+
+        testimonialsCurrent--;
+
+        testimonialsUpdate();
+      }
+
+
+      /* =========================================
+         BUTTON EVENTS
+      ========================================= */
+
+      testimonialsNext.addEventListener(
+        "click",
+        testimonialsGoNext
+      );
+
+
+      testimonialsPrev.addEventListener(
+        "click",
+        testimonialsGoPrevious
+      );
+
+
+      /* =========================================
+         KEYBOARD NAVIGATION
+      ========================================= */
+
+      testimonialsCarousel.addEventListener(
+        "keydown",
+        function (event) {
+
+          if (event.key === "ArrowRight") {
+            testimonialsGoNext();
+          }
+
+          if (event.key === "ArrowLeft") {
+            testimonialsGoPrevious();
+          }
+
+        }
+      );
+
+
+      /* =========================================
+         TOUCH / SWIPE
+      ========================================= */
+
+      let testimonialsTouchStartX = 0;
+      let testimonialsTouchEndX = 0;
+
+
+      testimonialsCarousel.addEventListener(
+        "touchstart",
+        function (event) {
+
+          testimonialsTouchStartX =
+            event.changedTouches[0].screenX;
+
+        },
+        {
+          passive: true
+        }
+      );
+
+
+      testimonialsCarousel.addEventListener(
+        "touchend",
+        function (event) {
+
+          testimonialsTouchEndX =
+            event.changedTouches[0].screenX;
+
+          testimonialsHandleSwipe();
+
+        },
+        {
+          passive: true
+        }
+      );
+
+
+      function testimonialsHandleSwipe() {
+
+        const testimonialsSwipeDistance =
+          testimonialsTouchEndX -
+          testimonialsTouchStartX;
+
+
+        const testimonialsMinimumSwipe = 45;
+
+
+        if (
+          Math.abs(testimonialsSwipeDistance) <
+          testimonialsMinimumSwipe
+        ) {
+          return;
+        }
+
+
+        if (testimonialsSwipeDistance < 0) {
+          testimonialsGoNext();
+        } else {
+          testimonialsGoPrevious();
+        }
+
+      }
+
+
+      /* =========================================
+         INITIAL STATE
+      ========================================= */
+
+      testimonialsUpdate();
+
+    });
+
+
+  </script>
+
+  <script>
+    // =========================
+    // FAQ ACCORDION
+    // =========================
+
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach((item) => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+
+
+    // =========================
+    // SCROLL EFFECT IN TEXT
+    // =========================
+
+    const buttonText = "Explore brands";
+    const textContainer = document.querySelector(".button-text");
+    const button = document.querySelector(".creator-brands-button");
+
+    if (textContainer && button) {
+
+        textContainer.innerHTML = [...buttonText]
+            .map(char => {
+
+                // Preserve spaces
+                if (char === " ") {
+                    return `<span class="button-space"></span>`;
+                }
+
+                // Create 4 copies of each character
+                return `
+                    <span class="button-letter">
+                        <span>${char}</span>
+                        <span>${char}</span>
+                        <span>${char}</span>
+                        <span>${char}</span>
+                    </span>
+                `;
+            })
+            .join("");
+
+        const letters = document.querySelectorAll(".button-letter");
+
+        button.addEventListener("mouseenter", () => {
+            letters.forEach((letter, index) => {
+                setTimeout(() => {
+                    letter.style.transform = "translateY(-310%)";
+                }, index * 30);
+            });
+        });
+
+        button.addEventListener("mouseleave", () => {
+            letters.forEach((letter, index) => {
+                setTimeout(() => {
+                    letter.style.transform = "translateY(0)";
+                }, index * 20);
+            });
+        });
+    }
+</script>
+
+</body>
+
+</html>

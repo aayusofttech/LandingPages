@@ -21,7 +21,6 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #ffffff;
   color: #111315;
   -webkit-font-smoothing: antialiased;
   font-optical-sizing: auto;
@@ -64,7 +63,7 @@ a {
   --ink-soft: #142536;
 
   --white: #ffffff;
-
+  --ring:linear-gradient(135deg,#F5D547,#7ED957 30%,#3FA9F5 55%,#7B61FF 75%,#FF6B3D);
   --max-width: 1200px;
 }
 
@@ -209,7 +208,7 @@ a {
 /* ============================================================
    HERO
    ============================================================ */
-
+/* 
 .hero {
   position: relative;
 
@@ -224,13 +223,13 @@ a {
   isolation: isolate;
 
   background: #ffffff;
-}
+} */
 
 
 /* ============================================================
    HERO BACKGROUND
    ============================================================ */
-
+/* 
 .hero-bg {
   position: absolute;
 
@@ -242,35 +241,33 @@ a {
 
   background:
 
-    /* warm center glow */
     radial-gradient(
       ellipse 620px 430px at 50% 22%,
       rgba(255, 250, 213, 0.88),
       transparent 72%
     ),
 
-    /* green right glow */
+
     radial-gradient(
       ellipse 540px 600px at 100% 53%,
       rgba(226, 249, 218, 0.82),
       transparent 76%
     ),
 
-    /* warm left glow */
     radial-gradient(
       ellipse 450px 500px at 0% 66%,
       rgba(255, 244, 207, 0.62),
       transparent 75%
     ),
 
-    /* overall background */
+
     linear-gradient(
       105deg,
       #ffffff 0%,
       #fffef8 46%,
       #f4fff1 100%
     );
-}
+} */
 
 
 /* ============================================================
@@ -1563,19 +1560,6 @@ a {
    CURRENT HERO
    ============================================================ */
 
-.hero {
-  position: relative;
-
-  min-height: 1037px;
-
-  overflow: hidden;
-  isolation: isolate;
-
-  padding: 148px 24px 0;
-
-  background: #fff;
-}
-
 
 /* ---------- Background ---------- */
 
@@ -2254,13 +2238,12 @@ a {
 
 
 
-.stats {
+.stats2121 {
   position: relative;
 
   width: 100%;
-  height: 407px;
 
-  padding: 110px 24px;
+  padding: 45px 24px;
 
   display: flex;
   justify-content: center;
@@ -2269,18 +2252,18 @@ a {
   text-align: center;
 
   overflow: hidden;
-
+/* 
   background: linear-gradient(
     185.31deg,
     #F2FFF0 5.98%,
     #FFFFFF 95.85%
-  );
+  ); */
 
   opacity: 1;
 }
 
 /* Gradient bottom border */
-.stats::after {
+.stats2121::after {
   content: "";
 
   position: absolute;
@@ -3249,11 +3232,11 @@ a {
 .process-section {
   position: relative;
   width: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     177.19deg,
     #ffffff 22.95%,
     #f7fbee 80.84%
-  );
+  ); */
   padding: 68px 20px 72px;
   box-sizing: border-box;
   overflow: hidden;
@@ -3609,7 +3592,7 @@ a {
   width: 100%;
   overflow: hidden;
   padding: 38px 0 28px;
-  background: linear-gradient(353.33deg, #F7FBEE -22.25%, #FFFFFF 96.47%);
+  /* background: linear-gradient(353.33deg, #F7FBEE -22.25%, #FFFFFF 96.47%); */
   color: #433D46;
 
 }
@@ -3796,6 +3779,12 @@ a {
 }
 
 
+
+/* NEW COMP  */
+.progress{position:fixed;left:0;top:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--ring);z-index:80}
+
+/* NEW COMP END */
+
 /* ========================================
    TABLET
 ======================================== */
@@ -3925,16 +3914,367 @@ a {
 .platform-section {
   width: 100%;
   padding: 78px 24px 30px;
-  background: #fbfffc;
+  /* background: #fbfffc; */
   box-sizing: border-box;
 }
 
 .platform-container {
   width: 100%;
-  max-width: 838px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
+/* ========================================
+   HOW KAMAO WORKS FOR BRANDS
+======================================== */
+.how-brands-section {
+  position: relative;
+  width: 100%;
+  padding: 72px 24px 88px;
+  box-sizing: border-box;
+  /* background: linear-gradient(178deg, #ffffff 14%, #f7fbee 95%); */
+  overflow: hidden;
+}
+
+.how-brands-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.how-brands-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+.how-brands-title {
+  margin: 0 0 12px;
+  color: #433d46;
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+/* app download button  */
+.stickybar {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 90;
+  display: flex;
+  justify-content: center;
+  padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: transform .5s cubic-bezier(.2,.8,.2,1), opacity .4s, visibility 0s .5s;
+}
+.stickybar.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: transform .5s cubic-bezier(.2,.8,.2,1), opacity .4s, visibility 0s;
+}
+
+/* show only the button for this device */
+.stickybar .store,
+.stickybar .store-other { display: none !important; }
+
+.os-android .stickybar .store-android { display: flex !important; }
+.os-ios     .stickybar .store-ios     { display: flex !important; }
+.os-other   .stickybar .store-other   { display: inline-flex !important; }
+.store-other { pointer-events: auto; width: 100%; max-width: 420px; justify-content: center; }
+
+/* the store button */
+.store {
+  pointer-events: auto;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 340px;
+  padding: 11px 22px;
+  border-radius: 16px;
+  background: linear-gradient(160deg, #1b2a22, #0b1410);
+  border: 1px solid rgba(255,255,255,.18);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 12px 32px rgba(11,20,16,.35);
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .2s, box-shadow .2s;
+}
+.store:active { transform: scale(.97); }
+@media (hover: hover) {
+  .store:hover { transform: translateY(-2px); box-shadow: 0 16px 38px rgba(11,20,16,.45); }
+}
+.store-ic { width: 30px; height: 30px; flex: none; }
+.store-tx { display: flex; flex-direction: column; line-height: 1.1; text-align: left; }
+.store-tx small { font-size: 11px; letter-spacing: .08em; opacity: .8; }
+.store-tx b { font-size: 20px; font-weight: 700; letter-spacing: -.01em; }
+
+/* soft shine sweeping across the button */
+.store::after {
+  content: "";
+  position: absolute;
+  top: 0; left: -60%;
+  width: 40%; height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255,255,255,.22), transparent);
+  transform: skewX(-20deg);
+  animation: storeShine 4s ease-in-out infinite;
+}
+@keyframes storeShine { 0%, 60% { left: -60%; } 100% { left: 130%; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .stickybar, .stickybar.show { transition: opacity .2s; transform: none; }
+  .store::after { animation: none; }
+}
+/* app download button END */
+
+.how-brands-subtitle {
+  margin: 0 auto;
+  max-width: 448px;
+  color: #4a434d;
+  font-size: 1.125rem;
+  line-height: 1.55;
+}
+
+.how-brands-panel {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.how-brands-visual {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.how-brands-visual-bg {
+  position: absolute;
+  left: 12%;
+  top: 12px;
+  width: min(311px, 70%);
+  height: 78%;
+  background: #f7f6dd;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.how-brands-step-pill {
+  position: absolute;
+  left: calc(12% + 16px);
+  top: 28px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 13px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.91);
+  border: 1px solid #fff;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+
+/* CURSOR FOLLOE ON HOVER ANIMATION  */
+.footer {
+  position: relative;
+  overflow: hidden;            /* the ribbons never leave the footer */
+  background: #000;
+}
+#trail {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;        /* clicks pass through to your links */
+  z-index: 1;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;                  /* links stay above the ribbons */
+}
+/* CURSOR FOLLOE ON HOVER ANIMATION END */
+
+
+.how-brands-step-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #426340;
+  flex-shrink: 0;
+}
+
+.how-brands-step-label {
+  color: #426340;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.how-brands-visual-media {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 380px);
+}
+
+.how-brands-visual-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 30px rgba(20, 37, 54, 0.12));
+}
+
+.how-brands-steps {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 24px;
+}
+
+.how-brands-track {
+  position: absolute;
+  left: 0;
+  top: 24px;
+  bottom: 24px;
+  width: 3px;
+  background: #e1ece0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.how-brands-track-fill {
+  display: block;
+  width: 100%;
+  height: 25%;
+  background: #426340;
+  border-radius: inherit;
+  transition: height 0.25s ease;
+}
+
+.how-brands-step {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.how-brands-step.is-active {
+  background: rgba(236, 253, 245, 0.45);
+  border-color: #ede6f1;
+  box-shadow: 0 4px 4px #f7f0ff;
+}
+
+.how-brands-step-icon {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  border: 1px solid #edeced;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.how-brands-step-icon img {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.how-brands-step-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.how-brands-step-title {
+  color: #433d46;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.55;
+  letter-spacing: -0.45px;
+}
+
+.how-brands-step-text {
+  color: #6e6971;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 980px) {
+  .how-brands-panel {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .how-brands-visual {
+    min-height: 360px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .how-brands-visual-bg {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .how-brands-step-pill {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 640px) {
+  .how-brands-section {
+    padding: 56px 16px 64px;
+  }
+
+  .how-brands-header {
+    margin-bottom: 32px;
+  }
+
+  .how-brands-step {
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .how-brands-step-icon {
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .how-brands-step-title {
+    font-size: 1rem;
+  }
+}
+/* HOW KAMAO WORKS FOR BRANDS END */
 /* ================================
    HEADER
 ================================ */
@@ -4161,11 +4501,11 @@ a {
 
   overflow: hidden;
 
-  background: #ffffff;
+  /* background: #ffffff; */
 
   box-sizing: border-box;
 
-  padding: 48px 24px 110px;
+  padding: 0px 24px 110px;
 
 }
 

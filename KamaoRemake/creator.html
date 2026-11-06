@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Kamao for Creators — Discover Brand Campaigns</title>
+  <meta name="description" content="Kamao helps creators discover and participate in brand campaigns. A product of Aayu Softtech" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/creator.css">
@@ -17,11 +21,43 @@
 
 <body>
 
+<!-- app download link  -->
+ <div class="stickybar" id="stickybar">
+
+  <!-- Android -->
+  <a class="store store-android"
+     href="https://play.google.com/store/apps/details?id=com.aayusofttech.kamao&hl=en"
+     target="_blank" rel="noopener" aria-label="Get Kamao on Google Play">
+    <svg class="store-ic" viewBox="0 0 512 512" aria-hidden="true">
+      <path fill="#00A0FF" d="M60 30 L270 256 L60 482 Z"/>
+      <path fill="#00E676" d="M60 30 L350 176 L270 256 Z"/>
+      <path fill="#FF3A44" d="M60 482 L350 336 L270 256 Z"/>
+      <path fill="#FFD400" d="M350 176 L460 256 L350 336 L270 256 Z"/>
+    </svg>
+    <span class="store-tx"><small>GET IT ON</small><b>Google Play</b></span>
+  </a>
+
+  <!-- iOS -->
+  <a class="store store-ios"
+     href="https://apps.apple.com/np/app/kamao/id6821818381"
+     target="_blank" rel="noopener" aria-label="Download Kamao on the App Store">
+    <svg class="store-ic" viewBox="0 0 24 24" aria-hidden="true" fill="#fff">
+      <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+    </svg>
+    <span class="store-tx"><small>Download on the</small><b>App Store</b></span>
+  </a>
+
+  <!-- Laptop / other -->
+  <a class="btn btn-r store-other" data-to="contact" style="cursor:pointer">Book a Demo</a>
+</div>
+
+
+
   <header class="site-header" id="siteHeader">
   <nav class="navbar" aria-label="Primary navigation">
 
     <!-- Logo -->
-    <a href="./index.html" class="brand" aria-label="Kamao home">
+    <a href="/" class="brand" aria-label="Kamao home">
       <img
         src="./images/nav_footer/kamao_logo.svg"
         alt="Kamao"
@@ -31,20 +67,20 @@
 
     <!-- Desktop Navigation -->
     <div class="main-nav">
-      <a href="./index.html" class="nav-link ">For Brands</a>
-      <a href="./creator.html" class="nav-link is-active">For Creators</a>
-      <a href="./aboutus.html" class="nav-link">About Us</a>
+      <a href="/" class="nav-link ">For Brands</a>
+      <a href="/creators" class="nav-link is-active">For Creators</a>
+      <a href="#about" class="nav-link">About us</a>
     </div>
 
     <!-- Desktop Actions -->
     <div class="nav-actions">
-      <button class="demo-link" type="button" data-open-modal>
-        Book a Demo
-      </button>
+      <a href="/Identity/Account/Login" class="demo-link">
+        Sign in
+      </a>
 
-      <button class="btn-primary nav-get-started" type="button" data-open-modal>
+      <a href="/Identity/Account/Register?type=creator" class="btn-primary nav-get-started">
         Get Started
-      </button>
+      </a>
     </div>
 
     <!-- Mobile Hamburger -->
@@ -70,18 +106,18 @@
 
       <div class="mobile-links">
 
-        <a href="./index.html" class="mobile-nav-link ">
+        <a href="/" class="mobile-nav-link ">
           <span>For Brands</span>
           <span class="mobile-arrow">↗</span>
         </a>
 
-        <a href="./creator.html" class="mobile-nav-link is-active">
+        <a href="/creators" class="mobile-nav-link is-active">
           <span>For Creators</span>
           <span class="mobile-arrow">↗</span>
         </a>
 
-        <a href="./aboutus.html" class="mobile-nav-link">
-          <span>About Us</span>
+        <a href="#about" class="mobile-nav-link">
+          <span>About us</span>
           <span class="mobile-arrow">↗</span>
         </a>
 
@@ -89,22 +125,20 @@
 
       <div class="mobile-actions">
 
-        <button
+        <a
           class="mobile-demo"
-          type="button"
-          data-open-modal
+          href="/Identity/Account/Login"
         >
-          Book a Demo
-        </button>
+          Sign in
+        </a>
 
-        <button
+        <a
           class="mobile-get-started"
-          type="button"
-          data-open-modal
+          href="/Identity/Account/Register?type=creator"
         >
           Get Started
           <span>↗</span>
-        </button>
+        </a>
 
       </div>
 
@@ -132,7 +166,7 @@
           Earn money everytime you shop
         </p>
 
-        <a href="#" class="hero-button roboto-700">
+        <a href="#brands" class="hero-button roboto-700">
           Explore Brands <span class="hero-button-icon">
             <img src="images/creators/hero_section/rocket.svg" alt="" />
           </span>
@@ -152,241 +186,123 @@
 
     </section>
 
-    <!-- MARQUEE SECTION  -->
-    <section class="marquee-section">
 
-        <!-- MARQUEE 1: CUSTOMERS GETTING EARNINGS (SCROLL RIGHT) -->
-        <div class="marquee-wrapper" style="margin-top: 16px;">
-            <div class="marquee-track-right" id="clientsTrack1">
-
-                <div class="client-chip-pill" style="background: var(--lavender);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo"
-                        alt="Marks & Spencer">
-                    <div class="client-info">
-                        <strong>Aarav Sharma</strong>
-                        <span>Marks & Spencer</span>
-                    </div>
-                    <div class="client-earning">+ ₹2,450</div>
-                </div>
-
-                <div class="client-chip-pill" style="background: var(--soft-blue);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Gymshark">
-                    <div class="client-info">
-                        <strong>Riya Karki</strong>
-                        <span>Gymshark</span>
-                    </div>
-                    <div class="client-earning">+ ₹3,200</div>
-                </div>
-
-                <div class="client-chip-pill" style="background: var(--peach);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Sephora">
-                    <div class="client-info">
-                        <strong>Ananya Mehta</strong>
-                        <span>Sephora</span>
-                    </div>
-                    <div class="client-earning">+ ₹1,850</div>
-                </div>
-
-                <div class="client-chip-pill" style="background: var(--sand);">
-                    <img draggable="false" src=" ./assets/brand_icon.jpeg" class="client-brand-logo" alt="Glossier">
-                    <div class="client-info">
-                        <strong>Suman Thapa</strong>
-                        <span>Glossier</span>
-                    </div>
-                    <div class="client-earning">+ ₹2,750</div>
-                </div>
-
-                <div class="client-chip-pill" style="background: var(--sage-light);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Zara">
-                    <div class="client-info">
-                        <strong>Priya Sharma</strong>
-                        <span>Zara</span>
-                    </div>
-                    <div class="client-earning">+ ₹4,120</div>
-                </div>
-
-                <div class="client-chip-pill" style="background: var(--lavender);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Kith NYC">
-                    <div class="client-info">
-                        <strong>Nischal Gurung</strong>
-                        <span>Kith NYC</span>
-                    </div>
-                    <div class="client-earning">+ ₹2,300</div>
-                </div>
-
-                <div class="client-chip-pill" style="background: var(--soft-blue);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Nespresso">
-                    <div class="client-info">
-                        <strong>Arjun Patel</strong>
-                        <span>Nespresso</span>
-                    </div>
-                    <div class="client-earning">+ ₹3,680</div>
-                </div>
-
-                <div class="client-chip-pill" style="background: var(--peach);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Alo Yoga">
-                    <div class="client-info">
-                        <strong>Smriti Bhandari</strong>
-                        <span>Alo Yoga</span>
-                    </div>
-                    <div class="client-earning">+ ₹2,950</div>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- MARQUEE 2: ANOTHER SET OF CUSTOMERS GETTING EARNINGS (SCROLL LEFT) -->
-        <div class="marquee-wrapper" style="margin-top: 16px;">
-            <div class="marquee-track-left" id="clientsTrack2">
-
-                <div class="client-chip-pill" style="background: var(--sage-light);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Zara">
-                    <div class="client-info">
-                        <strong>Rohan Shrestha</strong>
-                        <span>Zara</span>
-                    </div>
-                    <div class="client-earning">+ ₹3,450</div>
-                </div>
-
-                <div class="client-chip-pill" style="background: var(--lavender);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo"
-                        alt="Marks & Spencer">
-                    <div class="client-info">
-                        <strong>Neha Joshi</strong>
-                        <span>Marks & Spencer</span>
-                    </div>
-                    <div class="client-earning">+ ₹2,180</div>
-                </div>
-
-                <div class="client-chip-pill" style="background: var(--peach);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Sephora">
-                    <div class="client-info">
-                        <strong>Aayush Adhikari</strong>
-                        <span>Sephora</span>
-                    </div>
-                    <div class="client-earning">+ ₹3,920</div>
-                </div>
-
-                <div class="client-chip-pill" style="background: var(--soft-blue);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Gymshark">
-                    <div class="client-info">
-                        <strong>Diya Singh</strong>
-                        <span>Gymshark</span>
-                    </div>
-                    <div class="client-earning">+ ₹2,640</div>
-                </div>
-
-                <div class="client-chip-pill" style="background: var(--sand);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Glossier">
-                    <div class="client-info">
-                        <strong>Prakash Rai</strong>
-                        <span>Glossier</span>
-                    </div>
-                    <div class="client-earning">+ ₹1,980</div>
-                </div>
-
-                <div class="client-chip-pill" style="background: var(--lavender);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Kith NYC">
-                    <div class="client-info">
-                        <strong>Isha Kapoor</strong>
-                        <span>Kith NYC</span>
-                    </div>
-                    <div class="client-earning">+ ₹4,250</div>
-                </div>
-
-                <div class="client-chip-pill" style="background: var(--soft-blue);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Nespresso">
-                    <div class="client-info">
-                        <strong>Bibek Poudel</strong>
-                        <span>Nespresso</span>
-                    </div>
-                    <div class="client-earning">+ ₹2,870</div>
-                </div>
-
-                <div class="client-chip-pill" style="background: var(--peach);">
-                    <img draggable="false" src="./assets/brand_icon.jpeg" class="client-brand-logo" alt="Alo Yoga">
-                    <div class="client-info">
-                        <strong>Kavya Shrestha</strong>
-                        <span>Alo Yoga</span>
-                    </div>
-                    <div class="client-earning">+ ₹3,150</div>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
 
     <!-- PROCESS SECTION -->
-    <section class="process-section">
-      <div class="process-bg" aria-hidden="true"></div>
-      <div class="process-container">
-
-        <!-- Section Heading -->
-        <div class="process-header">
-          <h2 class="process-title roboto-600">
-            THE SIMPLE<br>
-            PROCESS
-          </h2>
-
-          <p class="process-subtitle roboto-500">
-            Set up Your brand for success
+    <!-- HOW KAMAO WORKS FOR CREATORS -->
+    <section class="how-brands-section" id="how-kamao-works" aria-labelledby="howCreatorsTitle">
+      <div class="how-brands-container">
+        <div class="how-brands-header">
+          <h2 class="how-brands-title roboto-600" id="howCreatorsTitle">How Kamao works for Creators</h2>
+          <p class="how-brands-subtitle roboto-400">
+            A simple workflow for running and participating in digital marketing campaigns.
           </p>
         </div>
 
+        <div class="how-brands-panel" data-how-works>
+          <div class="how-brands-visual">
+            <div class="how-brands-visual-bg" aria-hidden="true"></div>
+            <div class="how-brands-step-pill">
+              <span class="how-brands-step-dot" aria-hidden="true"></span>
+              <span class="how-brands-step-label" data-how-works-label>Step 1: Discover Campaigns</span>
+            </div>
+            <div class="how-brands-visual-media">
+              <img
+                src="./images/how-creators/visual-discover.png"
+                alt=""
+                class="how-brands-visual-img"
+                data-how-works-image
+              />
+            </div>
+          </div>
 
-        <!-- Process Cards -->
-        <div class="process-grid">
-
-          <!-- Card 1 -->
-          <article class="process-card">
-            <div class="process-card-text roboto-condensed-400">
-              Your customer makes a
-              <span>verified purchase.</span>
+          <div class="how-brands-steps" role="tablist" aria-label="Creator workflow steps">
+            <div class="how-brands-track" aria-hidden="true">
+              <span class="how-brands-track-fill" data-how-works-fill></span>
             </div>
 
-            <div class="process-image-wrapper">
-              <img src="./images/process/process1.png" alt="Customer makes a verified purchase" class="process-image">
-            </div>
-          </article>
+            <button
+              type="button"
+              class="how-brands-step is-active"
+              role="tab"
+              aria-selected="true"
+              data-how-works-step
+              data-step="1"
+              data-label="Step 1: Discover Campaigns"
+              data-image="./images/Brand Card 1_ Daraz.png"
+            >
+              <span class="how-brands-step-icon">
+                <img src="./images/how-creators/icon-discover.svg" alt="" width="18" height="18" />
+              </span>
+              <span class="how-brands-step-copy">
+                <span class="how-brands-step-title">Discover Campaigns</span>
+                <span class="how-brands-step-text">Explore available campaigns and review their requirements.</span>
+              </span>
+            </button>
 
+            <button
+              type="button"
+              class="how-brands-step"
+              role="tab"
+              aria-selected="false"
+              data-how-works-step
+              data-step="2"
+              data-label="Step 2: Participate"
+              data-image="./images/secondLanding.png"
+            >
+              <span class="how-brands-step-icon">
+                <img src="./images/how-creators/icon-participate.svg" alt="" width="18" height="18" />
+              </span>
+              <span class="how-brands-step-copy">
+                <span class="how-brands-step-title">Participate</span>
+                <span class="how-brands-step-text">Participate in eligible campaigns according to the requirements of each campaign.</span>
+              </span>
+            </button>
 
-          <!-- Card 2 -->
-          <article class="process-card">
-            <div class="process-card-text roboto-condensed-400">
-              They share <span>genuine</span><br>
-              love for you on social media.
-            </div>
+            <button
+              type="button"
+              class="how-brands-step"
+              role="tab"
+              aria-selected="false"
+              data-how-works-step
+              data-step="3"
+              data-label="Step 3: Manage Campaign Activity"
+              data-image="./images/thirdLanding.png"
+            >
+              <span class="how-brands-step-icon">
+                <img src="./images/thirdLanding" alt="" width="21" height="20" />
+              </span>
+              <span class="how-brands-step-copy">
+                <span class="how-brands-step-title">Manage Campaign Activity</span>
+                <span class="how-brands-step-text">Manage your campaign-related activity through Kamao.</span>
+              </span>
+            </button>
 
-            <div class="process-image-wrapper">
-              <img src="./images/process/process2.png" alt="Customer shares genuine love on social media"
-                class="process-image">
-            </div>
-          </article>
-
-
-          <!-- Card 3 -->
-          <article class="process-card">
-            <div class="process-card-text roboto-condensed-400">
-              They get a <span>cash reward</span> for
-              the post.
-            </div>
-
-            <div class="process-image-wrapper">
-              <img src="./images/process/process3.png" alt="Customer receives a cash reward" class="process-image">
-            </div>
-          </article>
-
+            <button
+              type="button"
+              class="how-brands-step"
+              role="tab"
+              aria-selected="false"
+              data-how-works-step
+              data-step="4"
+              data-label="Step 4: Track Available Information"
+              data-image="./images/4thLanding.png"
+            >
+              <span class="how-brands-step-icon">
+                <img src="./images/how-creators/icon-track.svg" alt="" width="21" height="20" />
+              </span>
+              <span class="how-brands-step-copy">
+                <span class="how-brands-step-title">Track Available Information</span>
+                <span class="how-brands-step-text">Review available campaign and participation information through the platform.</span>
+              </span>
+            </button>
+          </div>
         </div>
-
       </div>
     </section>
 
-    <!-- AUTHENTIC CONTENT SECTION -->
-    <section class="content-section">
 
-      <!-- Section Heading -->
+          <!-- Section Heading -->
       <div class="content-heading">
         <h2 class="content-title roboto-600">
           AUTHENTIC CONTENT<br>
@@ -399,292 +315,6 @@
         </p>
       </div>
 
-      <!-- Reels Marquee -->
-      <div class="content-wrapper">
-
-        <div class="content-track" id="contentTrack">
-
-          <!-- Reel 1 -->
-          <div class="content-reel-card">
-            <img class="content-image" src="./assets/5.gif" alt="Creator content" />
-
-            <div class="content-gradient"></div>
-
-            <div class="content-creator-pill">
-              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80"
-                class="content-avatar" alt="Creator" />
-
-              <div class="content-user-info">
-                <span class="content-username">@cam_gear</span>
-                <span class="content-metric">★ 4.9 · 95k views</span>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Reel 2 -->
-          <div class="content-reel-card">
-            <img class="content-image" src="./assets/4.gif" alt="Creator content" />
-
-            <div class="content-gradient"></div>
-
-            <div class="content-creator-pill">
-              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80"
-                class="content-avatar" alt="Creator" />
-
-              <div class="content-user-info">
-                <span class="content-username">@cam_gear</span>
-                <span class="content-metric">★ 4.9 · 95k views</span>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Reel 3 -->
-          <div class="content-reel-card">
-            <img class="content-image"
-              src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80"
-              alt="Creator content" />
-
-            <div class="content-gradient"></div>
-
-            <div class="content-creator-pill">
-              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80"
-                class="content-avatar" alt="Creator" />
-
-              <div class="content-user-info">
-                <span class="content-username">@cam_gear</span>
-                <span class="content-metric">★ 4.9 · 95k views</span>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Reel 4 -->
-          <div class="content-reel-card">
-            <img class="content-image" src="./assets/3.gif" alt="Creator content" />
-
-            <div class="content-gradient"></div>
-
-            <div class="content-creator-pill">
-              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
-                class="content-avatar" alt="Creator" />
-
-              <div class="content-user-info">
-                <span class="content-username">@cam_gear</span>
-                <span class="content-metric">★ 4.9 · 95k views</span>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Reel 5 -->
-          <div class="content-reel-card">
-            <img class="content-image"
-              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80"
-              alt="Creator content" />
-
-            <div class="content-gradient"></div>
-
-            <div class="content-creator-pill">
-              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
-                class="content-avatar" alt="Creator" />
-
-              <div class="content-user-info">
-                <span class="content-username">@glow_skincare</span>
-                <span class="content-metric">★ 4.9 · 340k sales</span>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Reel 6 -->
-          <div class="content-reel-card">
-            <img class="content-image"
-              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80"
-              alt="Creator content" />
-
-            <div class="content-gradient"></div>
-
-            <div class="content-creator-pill">
-              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
-                class="content-avatar" alt="Creator" />
-
-              <div class="content-user-info">
-                <span class="content-username">@cam_gear</span>
-                <span class="content-metric">★ 4.9 · 95k views</span>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Reel 7 -->
-          <div class="content-reel-card">
-            <img class="content-image"
-              src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80"
-              alt="Creator content" />
-
-            <div class="content-gradient"></div>
-
-            <div class="content-creator-pill">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
-                class="content-avatar" alt="Creator" />
-
-              <div class="content-user-info">
-                <span class="content-username">@fit_marcus</span>
-                <span class="content-metric">★ 5.0 · 85k views</span>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Reel 8 -->
-          <div class="content-reel-card">
-            <img class="content-image" src="./assets/2.gif" alt="Creator content" />
-
-            <div class="content-gradient"></div>
-
-            <div class="content-creator-pill">
-              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
-                class="content-avatar" alt="Creator" />
-
-              <div class="content-user-info">
-                <span class="content-username">@cam_gear</span>
-                <span class="content-metric">★ 4.9 · 95k views</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- BRANDS SECTION -->
-    <section class="brands-section">
-
-      <!-- Section Heading -->
-      <div class="brands-heading">
-
-        <h2 class="brands-title roboto-600">
-          BRANDS CREATORS<br>
-          WILL BE WORKING WITH
-        </h2>
-
-        <p class="brands-subtitle roboto-500">
-          Real reward for authentic and popular content from the<br>
-          brands.
-        </p>
-
-      </div>
-
-
-      <!-- Brands Marquee -->
-      <div class="brands-wrapper">
-
-        <div class="brands-track" id="brandsTrack">
-
-          <!-- Brand 1 -->
-          <div class="brands-chip">
-            <div class="brands-icon">
-              M
-            </div>
-
-            <span class="brands-name">
-              Marks &amp; Spencer
-            </span>
-          </div>
-
-
-          <!-- Brand 2 -->
-          <div class="brands-chip">
-            <div class="brands-icon brands-icon-green">
-              G
-            </div>
-
-            <span class="brands-name">
-              Gymshark
-            </span>
-          </div>
-
-
-          <!-- Brand 3 -->
-          <div class="brands-chip">
-            <div class="brands-icon brands-icon-orange">
-              S
-            </div>
-
-            <span class="brands-name">
-              Sephora
-            </span>
-          </div>
-
-
-          <!-- Brand 4 -->
-          <div class="brands-chip">
-            <div class="brands-icon brands-icon-dark">
-              G
-            </div>
-
-            <span class="brands-name">
-              Glossier
-            </span>
-          </div>
-
-
-          <!-- Brand 5 -->
-          <div class="brands-chip">
-            <div class="brands-icon brands-icon-zara">
-              Z
-            </div>
-
-            <span class="brands-name">
-              Zara
-            </span>
-          </div>
-
-
-          <!-- Brand 6 -->
-          <div class="brands-chip">
-            <div class="brands-icon">
-              K
-            </div>
-
-            <span class="brands-name">
-              Kith NYC
-            </span>
-          </div>
-
-
-          <!-- Brand 7 -->
-          <div class="brands-chip">
-            <div class="brands-icon brands-icon-blue">
-              N
-            </div>
-
-            <span class="brands-name">
-              Nespresso
-            </span>
-          </div>
-
-
-          <!-- Brand 8 -->
-          <div class="brands-chip">
-            <div class="brands-icon brands-icon-peach">
-              A
-            </div>
-
-            <span class="brands-name">
-              Alo Yoga
-            </span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
 
     <!-- CTA SECTION -->
     <section class="cta-section">
@@ -704,11 +334,11 @@
           </div> -->
 
           <div class="cta-app-buttons">
-            <a href="#" class="cta-app-link">
+            <a href="/Identity/Account/Register?type=creator" class="cta-app-link">
               <img src="./images/creators/cta/google_play_btn.svg" alt="Get it on Google Play" class="cta-app-image" />
             </a>
 
-            <a href="#" class="cta-app-link">
+            <a href="/Identity/Account/Register?type=creator" class="cta-app-link">
               <img src="./images/creators/cta/app_store_btn.svg" alt="Download on the App Store"
                 class="cta-app-image" />
             </a>
@@ -747,22 +377,22 @@
 
             <picture class="faq-picture faq-picture1">
               <source media="(max-width: 600px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/man2.jpg">
+                srcset="images/gifs/camera.gif">
 
               <source media="(min-width: 601px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/man2.jpg">
+                srcset="">
 
               <img draggable="false" loading="lazy" decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/man2.jpg" alt="Creator making content"
+                src="images/gifs/camera.gif" alt="Creator making content"
                 width="305" height="410">
             </picture>
 
             <picture class="faq-picture faq-picture3">
-              <source media="(max-width: 600px)" srcset="https://imgs.search.brave.com/RHkA_aMxj9lAu0mGMaz-YQjiC6GWuhgIluzz57LbIsU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9jb250/ZW50LWNyZWF0b3It/cG91cmluZy13YXRl/ci1nbGFzcy1yZWNv/cmRpbmctcG9kY2Fz/dC1jb2xsZWFndWUt/cHJvZmVzc2lvbmFs/LXN0dWRpby1jb250/ZW50LWNyZWF0b3It/NDA1NzE3MDMyLmpw/Zw">
+              <source media="(max-width: 600px)" srcset="images/gifs/mic.gif">
 
-              <source media="(min-width: 601px)" srcset="https://imgs.search.brave.com/RHkA_aMxj9lAu0mGMaz-YQjiC6GWuhgIluzz57LbIsU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9jb250/ZW50LWNyZWF0b3It/cG91cmluZy13YXRl/ci1nbGFzcy1yZWNv/cmRpbmctcG9kY2Fz/dC1jb2xsZWFndWUt/cHJvZmVzc2lvbmFs/LXN0dWRpby1jb250/ZW50LWNyZWF0b3It/NDA1NzE3MDMyLmpw/Zw">
+              <source media="(min-width: 601px)" srcset="images/gifs/mic.gif">
 
-              <img draggable="false" loading="lazy" decoding="async" src="https://imgs.search.brave.com/RHkA_aMxj9lAu0mGMaz-YQjiC6GWuhgIluzz57LbIsU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9jb250/ZW50LWNyZWF0b3It/cG91cmluZy13YXRl/ci1nbGFzcy1yZWNv/cmRpbmctcG9kY2Fz/dC1jb2xsZWFndWUt/cHJvZmVzc2lvbmFs/LXN0dWRpby1jb250/ZW50LWNyZWF0b3It/NDA1NzE3MDMyLmpw/Zw"
+              <img draggable="false" loading="lazy" decoding="async" src="images/gifs/mic.gif"
                 alt="Creator filming music" width="305" height="467">
             </picture>
 
@@ -772,25 +402,25 @@
 
             <picture class="faq-picture faq-picture2">
               <source media="(max-width: 600px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing.jpg">
+                srcset="images/gifs/video.gif">
 
               <source media="(min-width: 601px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing.jpg">
+                srcset="images/gifs/video.gif">
 
               <img draggable="false" loading="lazy" decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing.jpg" alt="Camera" width="305"
+                src="images/gifs/video.gif" alt="Camera" width="305"
                 height="615">
             </picture>
 
             <picture class="faq-picture faq-picture4">
               <source media="(max-width: 600px)"
-                srcset="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80">
+                srcset="images/gifs/heart.gif">
 
               <source media="(min-width: 601px)"
-                srcset="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80">
+                srcset="images/gifs/heart.gif">
 
               <img draggable="false" loading="lazy" decoding="async"
-                src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80"
+                src="images/gifs/heart.gif"
                 alt="Creator content" width="305" height="277">
             </picture>
 
@@ -957,7 +587,7 @@
     <!-- FAQ SECTION ENDS -->
 
     <!-- testimonial section -->
-    <section class="testimonials-section">
+    <section class="testimonials-section" style="padding-top: 30px;">
       <!-- Decorative corner rings -->
       <img src="./images/testimonials/ring.svg" alt="" class="testimonials-corner testimonials-corner-top"
         aria-hidden="true" />
@@ -1126,8 +756,6 @@
     </section>
 
 
-
-
     <!-- FOOTER  -->
     <footer class="footer">
       <div class="footer__container">
@@ -1138,74 +766,77 @@
           <div class="footer__column">
             <h3 class="footer__heading">For Creators</h3>
 
-            <a href="#" class="footer__link">Terms and Conditions</a>
-            <a href="#" class="footer__link">Privacy Policy</a>
-            <a href="#" class="footer__link">Child Safety Standards</a>
-            <a href="#" class="footer__link">Delete Account</a>
+            <a href="/creators" class="footer__link">Creator overview</a>
+            <a href="/terms" class="footer__link">Terms and Conditions</a>
+            <a href="/privacy" class="footer__link">Privacy Policy</a>
+            <a href="/child-safety" class="footer__link">Child Safety Standards</a>
+            <a href="/delete-account" class="footer__link">Delete Account</a>
           </div>
 
           <!-- For Brands -->
           <div class="footer__column">
             <h3 class="footer__heading">For Brands</h3>
 
-            <a href="#" class="footer__link">Book a Demo</a>
-            <a href="#" class="footer__link">Terms and Conditions</a>
-            <a href="#" class="footer__link">Privacy Policy</a>
-            <a href="#" class="footer__link">Child Safety Standards</a>
+            <a href="/" class="footer__link">Brand overview</a>
+            <a href="/book-demo" class="footer__link">Book a Demo</a>
+            <a href="/terms" class="footer__link">Terms and Conditions</a>
+            <a href="/privacy" class="footer__link">Privacy Policy</a>
+            <a href="/child-safety" class="footer__link">Child Safety Standards</a>
           </div>
 
-          <!-- Resources -->
+          <!-- Legal -->
           <div class="footer__column">
-            <h3 class="footer__heading">Resources</h3>
+            <h3 class="footer__heading">Legal</h3>
 
-            <a href="#" class="footer__link">See all brands</a>
-            <a href="#" class="footer__link">Get more reviews on socials</a>
-            <a href="#" class="footer__link">Easiest way to get UGC</a>
-            <a href="#" class="footer__link">Get customers to post</a>
-            <a href="#" class="footer__link">Word-of-mouth marketing</a>
-            <a href="#" class="footer__link">Get Trustpilot reviews</a>
+            <a href="/privacy" class="footer__link">Privacy Policy</a>
+            <a href="/terms" class="footer__link">Terms and Conditions</a>
+            <a href="/child-safety" class="footer__link">Child Safety Standards</a>
+            <a href="/delete-account" class="footer__link">Delete Account</a>
           </div>
 
           <!-- Our Company -->
           <div class="footer__column">
             <h3 class="footer__heading">Our Company</h3>
 
-            <a href="#" class="footer__link">About us</a>
-            <a href="#" class="footer__link">Privacy Policy</a>
-            <a href="#" class="footer__link">Child Safety Standards</a>
-            <a href="#" class="footer__link">Terms of Use</a>
-            <a href="#" class="footer__link">Delete Account</a>
-            <a href="#" class="footer__link">Contact us</a>
+            <a href="https://aayusofttech.com.np" target="_blank" rel="noopener" class="footer__link">Aayu Softtech</a>
+            <a href="/privacy" class="footer__link">Privacy Policy</a>
+            <a href="/child-safety" class="footer__link">Child Safety Standards</a>
+            <a href="/terms" class="footer__link">Terms of Use</a>
+            <a href="/delete-account" class="footer__link">Delete Account</a>
+            <a href="/book-demo" class="footer__link">Contact us</a>
           </div>
 
         </div>
 
         <!-- Description -->
         <div class="footer__description">
-          We value Your Brands. We make your Brand Reality.
-          <a href="#" class="footer__brand-link">Ayasufottech</a>,
-          For any Queries
-          <a href="#" class="footer__contact-link">Contact us here.</a>
+          <strong>Kamao — A product of Aayu Softtech</strong>
+          Campaign platform for brands and creators.
+          <a href="https://aayusofttech.com.np" target="_blank" rel="noopener" class="footer__brand-link">aayusofttech.com.np</a>
+          ·
+          <a href="mailto:aayusoft@outlook.com" class="footer__contact-link">aayusoft@outlook.com</a>
+          ·
+          <a href="/book-demo" class="footer__contact-link">Contact</a>
         </div>
 
         <!-- Bottom -->
         <div class="footer__bottom">
 
           <div class="footer__copyright">
-            Copyright © 2026 Ayasufottech Inc. All rights reserved.
+            Copyright © 2026 Aayu Softtech All rights reserved.
           </div>
 
           <nav class="footer__legal">
-            <a href="#" class="footer__legal-link">Privacy Policy</a>
+            <a href="/privacy" class="footer__legal-link">Privacy Policy</a>
             <span class="footer__separator"></span>
 
-            <a href="#" class="footer__legal-link">Child Safety Standards</a>
+            <a href="/child-safety" class="footer__legal-link">Child Safety Standards</a>
             <span class="footer__separator"></span>
 
-            <a href="#" class="footer__legal-link">Terms of Use</a>
+            <a href="/terms" class="footer__legal-link">Terms of Use</a>
             <span class="footer__separator"></span>
 
-            <a href="#" class="footer__legal-link">Delete Account</a>
+            <a href="/delete-account" class="footer__legal-link">Delete Account</a>
           </nav>
 
         </div>
@@ -1218,6 +849,9 @@
   </main>
 
 <script src="js/main.js"></script>
+  <script src="js/howKamaoWorks.js" defer></script>
+  <script src="js/stickyBtn.js" defer></script>
+
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
   <script>
 
@@ -1243,41 +877,6 @@
         }
 
 
-    // Duplicate the content of the marquee tracks to create a seamless scrolling effect
-    document.addEventListener("DOMContentLoaded", () => {
-
-        const tracks = document.querySelectorAll(
-            ".marquee-track-right, .marquee-track-left"
-        );
-
-        tracks.forEach(track => {
-
-            // Copy the original cards
-            const cards = Array.from(track.children);
-
-            // Duplicate them
-            cards.forEach(card => {
-                const clone = card.cloneNode(true);
-                clone.setAttribute("aria-hidden", "true");
-                track.appendChild(clone);
-            });
-
-        });
-
-    });
-
-
-
-        const contentTrack = document.getElementById('contentTrack');
-    if (contentTrack) {
-      contentTrack.innerHTML += contentTrack.innerHTML + contentTrack.innerHTML;
-    }
-
-    // Seamless continuous infinite scroll cloning for brands section
-    const brandsTrack = document.getElementById("brandsTrack");
-    if (brandsTrack) {
-      brandsTrack.innerHTML += brandsTrack.innerHTML;
-    }
 
 
 

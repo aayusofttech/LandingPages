@@ -42,7 +42,6 @@
 
 
   /* Close when clicking outside */
-
   document.addEventListener("click", (event) => {
     if (!menuOpen) return;
 
@@ -59,7 +58,6 @@
 
 
   /* Escape key */
-
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && menuOpen) {
       closeMenu();
@@ -74,3 +72,6 @@
       closeMenu();
     }
   });
+
+
+

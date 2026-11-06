@@ -1867,7 +1867,7 @@ radial-gradient(86.16% 489.99% at 15% 20%, rgba(184, 214, 176, 0.35) 0%, rgba(18
 
 #faq-sbsr-1575{
   background: linear-gradient(101.71deg, #FFF1E3 10.14%, #ECFFED 67.07%, #ECF7FF 104.6%);
-  padding: 100px 0px;
+    padding: 100px 0px 0px 0px;
 
 }
 
@@ -2159,7 +2159,7 @@ radial-gradient(86.16% 489.99% at 15% 20%, rgba(184, 214, 176, 0.35) 0%, rgba(18
     #faq-sbsr-1575 .faq-image-group {
         font-size: min(2.3vw, .89em);
         width: 39.375em;
-        min-height: 63.125em;
+        min-height: 56.125em;
         display: flex;
         gap: 1.25em;
         position: relative;
@@ -2194,24 +2194,24 @@ radial-gradient(86.16% 489.99% at 15% 20%, rgba(184, 214, 176, 0.35) 0%, rgba(18
     }
 
     #faq-sbsr-1575 .faq-picture1 {
-        width: 19.0625em;
-        height: 40.594059%;
+         width: 16.0625em;
+        height: 24.594059%;
         margin-top: 7.125em;
     }
 
     #faq-sbsr-1575 .faq-picture2 {
-        width: 19.0625em;
-        height: 60.891089%;
+        width: 13.0625em;
+        height: 18.891089%;
     }
 
     #faq-sbsr-1575 .faq-picture3 {
-        width: 19.0625em;
-        height: 60%;
+           width: 14.0625em;
+        height: 25%;
     }
 
     #faq-sbsr-1575 .faq-picture4 {
-        width: 19.0625em;
-        height: 27.425743%;
+        width: 16.0625em;
+        height: 25.425743%;
     }
 }
 

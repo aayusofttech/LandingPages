@@ -2251,3 +2251,12 @@ radial-gradient(86.16% 489.99% at 15% 20%, rgba(184, 214, 176, 0.35) 0%, rgba(18
 
 /* FAQ SECTION ENDS */
 /* test  */
+
+
+
+.btn-r{
+  color: var(--ink);
+    border: 3px solid transparent;
+    background: linear-gradient(#fff, #fff) padding-box, var(--ring) border-box;
+    box-shadow: 0 8px 24px rgba(63, 143, 224, .18);
+}

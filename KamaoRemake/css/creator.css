@@ -1562,7 +1562,7 @@ vertical-align: middle;
   background: #3e6341;
   box-sizing: border-box;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .cta-ribbon{
@@ -2194,26 +2194,25 @@ radial-gradient(86.16% 489.99% at 15% 20%, rgba(184, 214, 176, 0.35) 0%, rgba(18
         gap: 8em;
     }
 
-    #faq-sbsr-1575 .faq-picture1 {
-                 width: 8.0625em;
-        height: 15.594059%;
-
+  #faq-sbsr-1575 .faq-picture1 {
+        width: 19.0625em;
+        height: 40.594059%;
         margin-top: 7.125em;
     }
 
     #faq-sbsr-1575 .faq-picture2 {
-                width: 9.0625em;
-        height: 13.891089%;
+        width: 19.0625em;
+        height: 60.891089%;
     }
 
     #faq-sbsr-1575 .faq-picture3 {
-                   width: 9.0625em;
-        height: 16%;
+        width: 19.0625em;
+        height: 60%;
     }
 
     #faq-sbsr-1575 .faq-picture4 {
-                width: 9.0625em;
-        height: 14.425743%;
+        width: 19.0625em;
+        height: 27.425743%;
     }
 }
 

@@ -1,7 +1,7 @@
 :root{
   --ink:#16201A;--muted:#5A655E;--cream:#FBFBF4;--mint:#EDF3E8;--line:#DCE5D4;--forest:#4A6341;--forest-d:#3A5133;--gold:#C9A24A;--navy:#13202C;
-  --grad:linear-gradient(90deg,#E0922E 0%,#B5C93A 35%,#6BD65C 60%,#3FB8B0 80%,#3F8FE0 100%);
-  --ring:linear-gradient(135deg,#F5D547,#7ED957 30%,#3FA9F5 55%,#7B61FF 75%,#FF6B3D);
+  --grad:linear-gradient(90deg,#E0922E 0%,#B5C93A 35%,#6BD65C 60%,#3fb84f 80%,#9af079 100%);
+  --ring:linear-gradient(135deg,#F5D547,#7ED957 30%,#76f157 55%,#007032 75%,#FF6B3D);
   color-scheme:light;
 }
 *{box-sizing:border-box}
@@ -85,7 +85,7 @@ h1.h1{margin:0 auto;max-width:1120px;font-weight:900;text-transform:uppercase;fo
 .w>span.grad{animation:rise 1.1s cubic-bezier(.2,.8,.2,1) forwards,shift 7s ease-in-out 1.3s infinite alternate;animation-delay:calc(var(--i)*.1s + .2s),1.3s}
 @keyframes shift{to{background-position:100% 0}}
 .oring{display:inline-block;position:relative;width:.8em;height:.8em;vertical-align:-.02em;margin:0 .02em}
-.oring b{position:absolute;inset:0;border-radius:50%;background:conic-gradient(#F5D547,#7ED957,#3FA9F5,#7B61FF,#FF6B3D,#F5D547);animation:spin 9s linear infinite}
+.oring b{position:absolute;inset:0;border-radius:50%;background:conic-gradient(#F5D547,#7ED957,#3ff55d,#7B61FF,#FF6B3D,#F5D547);animation:spin 9s linear infinite}
 .oring i{position:absolute;inset:15%;border-radius:50%;background:#fff}
 .oring em{position:absolute;left:41%;top:30%;border-left:.22em solid #FF9B3D;border-top:.17em solid transparent;border-bottom:.17em solid transparent}
 @keyframes spin{to{transform:rotate(360deg)}}
@@ -121,7 +121,7 @@ h2.h2{margin:0;font-weight:900;text-transform:uppercase;font-size:56px;line-heig
 .rv{opacity:.001;transform:perspective(900px) rotateX(14deg) translateY(34px);transform-origin:50% 100%;transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
 .rv.in{opacity:1;transform:none}
 .hair{height:1px;width:120px;margin:22px auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-.rainbar{height:20px;background:linear-gradient(90deg,#F28A30,#C9C93A 35%,#6BE55C 60%,#3FB8B0 80%,#3F8FE0)}
+.rainbar{height:20px;background:linear-gradient(90deg,#F28A30,#C9C93A 35%,#6BE55C 60%,#3FB8B0 80%,#e03fe0)}
 
 /* brands: how it works (pinned) */
 .pin{height:420vh}
@@ -144,7 +144,7 @@ h2.h2{margin:0;font-weight:900;text-transform:uppercase;font-size:56px;line-heig
 .plat{display:flex;gap:8px;margin-top:12px}.plat span{font-size:15px;width:30px;height:30px;border-radius:50%;background:var(--mint);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--forest)}
 .row{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:14px;background:#F6FAF1;margin-top:10px;font-size:14px}
 .row .st{margin-left:auto;font-size:11px;font-weight:700;padding:4px 9px;border-radius:999px;background:#E6F6E4;color:#1F7A3A}
-.row .st.o{background:#FFF1D6;color:#8A5A00}.row .st.p{background:#E3EEFF;color:#1F4E9C}
+.row .st.o{background:#FFF1D6;color:#8A5A00}.row .st.p{background:#E3EEFF;color:#3c9c1f}
 .big{font-size:52px;font-weight:900;letter-spacing:-.02em;line-height:1}
 .steplist{position:relative;padding-left:26px;display:flex;flex-direction:column;gap:10px}
 .vline{position:absolute;left:0;top:6px;bottom:6px;width:3px;background:var(--line);border-radius:3px}

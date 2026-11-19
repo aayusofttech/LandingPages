@@ -1562,6 +1562,7 @@ vertical-align: middle;
   background: #3e6341;
   box-sizing: border-box;
   position: relative;
+  overflow-x: hidden;
 }
 
 .cta-ribbon{

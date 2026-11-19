@@ -11,272 +11,408 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@500&display=swap"
     rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
-<link rel="stylesheet" href="assets/light/style.css">
-<link rel="stylesheet" href="assets/regular/style.css">
-<link rel="stylesheet" href="assets/bold/style.css">
-<link rel="stylesheet" href="assets/fill/style.css">
-<link rel="stylesheet" href="assets/stylesNew.css">
+  <link rel="stylesheet" href="assets/light/style.css">
+  <link rel="stylesheet" href="assets/regular/style.css">
+  <link rel="stylesheet" href="assets/bold/style.css">
+  <link rel="stylesheet" href="assets/fill/style.css">
+  <link rel="stylesheet" href="assets/stylesNew.css">
 
 
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
-<link rel="stylesheet" href="css/responsive.css">
-<style>
-  @media screen and (max-width: 750px) {
-.hero{
-  min-height: auto !important;
-}
-  }
-</style>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    @media screen and (max-width: 750px) {
+      .hero {
+        min-height: auto !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<div class="progress" id="prog"></div>
-<div class="bgfix" aria-hidden="true"></div>
+  <div class="progress" id="prog"></div>
+  <div class="bgfix" aria-hidden="true"></div>
 
 
-<!-- app download link  -->
- <div class="stickybar" id="stickybar">
+  <!-- app download link  -->
+  <div class="stickybar" id="stickybar">
 
-  <!-- Android -->
-  <a class="store store-android"
-     href="https://play.google.com/store/apps/details?id=com.aayusofttech.kamao&hl=en"
-     target="_blank" rel="noopener" aria-label="Get Kamao on Google Play">
-    <svg class="store-ic" viewBox="0 0 512 512" aria-hidden="true">
-      <path fill="#00A0FF" d="M60 30 L270 256 L60 482 Z"/>
-      <path fill="#00E676" d="M60 30 L350 176 L270 256 Z"/>
-      <path fill="#FF3A44" d="M60 482 L350 336 L270 256 Z"/>
-      <path fill="#FFD400" d="M350 176 L460 256 L350 336 L270 256 Z"/>
-    </svg>
-    <span class="store-tx"><small>GET IT ON</small><b>Google Play</b></span>
-  </a>
+    <!-- Android -->
+    <a class="store store-android" href="https://play.google.com/store/apps/details?id=com.aayusofttech.kamao&hl=en"
+      target="_blank" rel="noopener" aria-label="Get Kamao on Google Play">
+      <svg class="store-ic" viewBox="0 0 512 512" aria-hidden="true">
+        <path fill="#00A0FF" d="M60 30 L270 256 L60 482 Z" />
+        <path fill="#00E676" d="M60 30 L350 176 L270 256 Z" />
+        <path fill="#FF3A44" d="M60 482 L350 336 L270 256 Z" />
+        <path fill="#FFD400" d="M350 176 L460 256 L350 336 L270 256 Z" />
+      </svg>
+      <span class="store-tx"><small>GET IT ON</small><b>Google Play</b></span>
+    </a>
 
-  <!-- iOS -->
-  <a class="store store-ios"
-     href="https://apps.apple.com/np/app/kamao/id6821818381"
-     target="_blank" rel="noopener" aria-label="Download Kamao on the App Store">
-    <svg class="store-ic" viewBox="0 0 24 24" aria-hidden="true" fill="#fff">
-      <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
-    </svg>
-    <span class="store-tx"><small>Download on the</small><b>App Store</b></span>
-  </a>
+    <!-- iOS -->
+    <a class="store store-ios" href="https://apps.apple.com/np/app/kamao/id6821818381" target="_blank" rel="noopener"
+      aria-label="Download Kamao on the App Store">
+      <svg class="store-ic" viewBox="0 0 24 24" aria-hidden="true" fill="#fff">
+        <path
+          d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701" />
+      </svg>
+      <span class="store-tx"><small>Download on the</small><b>App Store</b></span>
+    </a>
 
-  <!-- Laptop / other -->
-  <a class="btn btn-r store-other" data-to="contact" style="cursor:pointer">Book a Demo</a>
-</div>
+    <!-- Laptop / other -->
+    <a class="btn btn-r store-other" data-to="contact" style="cursor:pointer">Book a Demo</a>
+  </div>
 
   <!-- =========================================================
        HEADER / NAVBAR
   ========================================================== -->
   <div class="site-header" id="siteHeader">
-  <nav class="navbar" aria-label="Primary navigation">
+    <nav class="navbar" aria-label="Primary navigation">
 
-    <!-- Logo -->
-    <a href="./index.html" class="brand" aria-label="Kamao home">
-      <img
-        src="./images/nav_footer/kamao_logo.svg"
-        alt="Kamao"
-        class="brand-logo"
-      />
-    </a>
+      <!-- Logo -->
+      <a href="./index.html" class="brand" aria-label="Kamao home">
+        <img src="./images/nav_footer/kamao_logo.svg" alt="Kamao" class="brand-logo" />
+      </a>
 
-    <!-- Desktop Navigation -->
-    <div class="main-nav">
-      <a href="./index.html" class="nav-link is-active">For Brands</a>
-      <a href="./creator.html" class="nav-link">For Creators</a>
-      <a href="./aboutus.html" class="nav-link">About Us</a>
-    </div>
-
-    <!-- Desktop Actions -->
-    <div class="nav-actions">
-      <button class="demo-link" type="button" data-open-modal>
-        Book a Demo
-      </button>
-
-      <button class="btn-primary nav-get-started" type="button" data-open-modal>
-        Get Started
-      </button>
-    </div>
-
-    <!-- Mobile Hamburger -->
-    <button
-      class="mobile-menu-btn"
-      id="mobileMenuBtn"
-      type="button"
-      aria-label="Toggle navigation"
-      aria-expanded="false"
-      aria-controls="mobileMenu"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-  </nav>
-
-  <!-- Mobile Navigation -->
-  <div class="mobile-menu" id="mobileMenu">
-
-    <div class="mobile-menu-inner">
-
-      <div class="mobile-links">
-
-        <a href="./index.html" class="mobile-nav-link is-active">
-          <span>For Brands</span>
-          <span class="mobile-arrow">↗</span>
-        </a>
-
-        <a href="./creator.html" class="mobile-nav-link">
-          <span>For Creators</span>
-          <span class="mobile-arrow">↗</span>
-        </a>
-
-        <a href="./aboutus.html" class="mobile-nav-link">
-          <span>About Us</span>
-          <span class="mobile-arrow">↗</span>
-        </a>
-
+      <!-- Desktop Navigation -->
+      <div class="main-nav">
+        <a href="./index.html" class="nav-link is-active">For Brands</a>
+        <a href="./creator.html" class="nav-link">For Creators</a>
+        <a href="./aboutus.html" class="nav-link">About Us</a>
       </div>
 
-      <div class="mobile-actions">
-
-        <button
-          class="mobile-demo"
-          type="button"
-          data-open-modal
-        >
+      <!-- Desktop Actions -->
+      <div class="nav-actions">
+        <button class="demo-link" type="button" data-open-modal>
           Book a Demo
         </button>
 
-        <button
-          class="mobile-get-started"
-          type="button"
-          data-open-modal
-        >
+        <button class="btn-primary nav-get-started" type="button" data-open-modal>
           Get Started
-          <span>↗</span>
         </button>
-
       </div>
 
-      <div class="mobile-menu-footer">
-        <span>CREATOR × BRAND</span>
-        <span>KAMAO</span>
+      <!-- Mobile Hamburger -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Toggle navigation"
+        aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-menu" id="mobileMenu">
+
+      <div class="mobile-menu-inner">
+
+        <div class="mobile-links">
+
+          <a href="./index.html" class="mobile-nav-link is-active">
+            <span>For Brands</span>
+            <span class="mobile-arrow">↗</span>
+          </a>
+
+          <a href="./creator.html" class="mobile-nav-link">
+            <span>For Creators</span>
+            <span class="mobile-arrow">↗</span>
+          </a>
+
+          <a href="./aboutus.html" class="mobile-nav-link">
+            <span>About Us</span>
+            <span class="mobile-arrow">↗</span>
+          </a>
+
+        </div>
+
+        <div class="mobile-actions">
+
+          <button class="mobile-demo" type="button" data-open-modal>
+            Book a Demo
+          </button>
+
+          <button class="mobile-get-started" type="button" data-open-modal>
+            Get Started
+            <span>↗</span>
+          </button>
+
+        </div>
+
+        <div class="mobile-menu-footer">
+          <span>CREATOR × BRAND</span>
+          <span>KAMAO</span>
+        </div>
+
       </div>
 
     </div>
-
   </div>
-</div>
 
   <main>
 
     <!-- UPDATE HERO SEC  -->
-<!-- ============ HERO ============ -->
- <main>
-<header class="hero" id="hero">
-  <canvas class="dots" id="dots1" aria-hidden="true"></canvas>
-  <div class="ribbons" aria-hidden="true"><svg viewBox="0 0 1440 700" preserveAspectRatio="xMidYMin slice"><defs><linearGradient id="rbG" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1440" y2="0"><stop offset="0" stop-color="#7DE5B2"/><stop offset=".55" stop-color="#A6F0DA"/><stop offset="1" stop-color="#82D6F2"/><animateTransform attributeName="gradientTransform" type="translate" values="-220 0;220 0;-220 0" dur="18s" repeatCount="indefinite"/></linearGradient><linearGradient id="rbY" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1440" y2="0"><stop offset="0" stop-color="#F8EE92"/><stop offset=".5" stop-color="#F9DB80"/><stop offset="1" stop-color="#F5B466"/><animateTransform attributeName="gradientTransform" type="translate" values="180 0;-180 0;180 0" dur="21s" repeatCount="indefinite"/></linearGradient><linearGradient id="rbO" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1440" y2="0"><stop offset="0" stop-color="#F7C46B"/><stop offset="1" stop-color="#F08A3C"/></linearGradient><linearGradient id="rbB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D8E8F9"/><stop offset="1" stop-color="#B9D5F3"/></linearGradient></defs><g class="px" style="--k:.05"><g class="fl f1"><path fill="url(#rbG)" opacity=".72" d="M-100 -30 C 330 10 780 210 1500 520 C 960 360 380 200 -100 130 Z"><animate attributeName="d" dur="15s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1" values="M-100 -30 C 330 10 780 210 1500 520 C 960 360 380 200 -100 130 Z;M-100 -10 C 380 20 840 190 1500 545 C 900 330 420 235 -100 155 Z;M-100 -30 C 330 10 780 210 1500 520 C 960 360 380 200 -100 130 Z"/></path></g></g><g class="px" style="--k:.12"><g class="fl f2"><path fill="url(#rbY)" opacity=".72" d="M-100 112 C 340 160 760 300 1500 560 C 980 440 400 300 -100 252 Z"><animate attributeName="d" dur="17s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1" values="M-100 112 C 340 160 760 300 1500 560 C 980 440 400 300 -100 252 Z;M-100 135 C 380 150 800 285 1500 585 C 940 420 440 335 -100 275 Z;M-100 112 C 340 160 760 300 1500 560 C 980 440 400 300 -100 252 Z"/></path></g></g><g data-v="c"><g class="px" style="--k:.2"><g class="fl f3"><path fill="url(#rbO)" opacity=".5" d="M-100 232 C 330 272 740 352 1500 592 C 980 522 400 382 -100 332 Z"><animate attributeName="d" dur="19s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1" values="M-100 232 C 330 272 740 352 1500 592 C 980 522 400 382 -100 332 Z;M-100 252 C 360 262 760 372 1500 606 C 940 505 430 398 -100 352 Z;M-100 232 C 330 272 740 352 1500 592 C 980 522 400 382 -100 332 Z"/></path></g></g><g class="px" style="--k:.08"><g class="fl f4"><path fill="url(#rbB)" opacity=".6" d="M1560 10 L1560 660 C 1310 540 1130 470 1000 428 C 1150 340 1350 160 1560 10 Z"><animate attributeName="d" dur="21s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1" values="M1560 10 L1560 660 C 1310 540 1130 470 1000 428 C 1150 340 1350 160 1560 10 Z;M1560 30 L1560 650 C 1290 560 1110 480 1010 440 C 1170 330 1330 190 1560 30 Z;M1560 10 L1560 660 C 1310 540 1130 470 1000 428 C 1150 340 1350 160 1560 10 Z"/></path></g></g></g><path d="M-100 116 C 330 154 760 292 1500 552" fill="none" stroke="#C9A24A" stroke-opacity=".5" stroke-width="1.2"/><g><circle r="14" fill="#C9A24A" opacity=".16"><animateMotion dur="12s" repeatCount="indefinite" path="M-100 116 C 330 154 760 292 1500 552"/></circle><circle r="4.5" fill="#C9A24A" opacity=".9"><animateMotion dur="12s" repeatCount="indefinite" path="M-100 116 C 330 154 760 292 1500 552"/></circle></g></svg></div>
-  <div class="wrap hero-in" id="heroIn">
-    <!-- brands text -->
-    <div data-v="b">
-      <h1 class="h1" aria-label="From customers to brand influencers"><span class="w" style="--i:0"><span>From</span></span> <span class="w" style="--i:1"><span>cust<span class="oring" aria-hidden="true"><b></b><i></i><em></em></span>mers</span></span><br><span class="w" style="--i:2"><span>to</span></span> <span class="w" style="--i:3"><span>brand</span></span> <span class="w" style="--i:4"><span class="grad">influencers</span></span></h1>
-      <p class="sub">Kamao is a campaign platform that connects brands and creators to create, manage and participate in digital marketing campaigns.</p>
-      <div class="cta"><a class="btn btn-r" data-to="contact" style="cursor:pointer">Launch campaign</a><a class="btn btn-f" data-to="contact" style="cursor:pointer">Book a Demo</a></div>
-      <div class="trustbar"><span class="tb"><span class="ic t-lime"><i class="ph-bold ph-receipt"></i></span>Verified by receipt</span><span class="tb"><span class="ic t-gold"><i class="ph-bold ph-sliders"></i></span>You set the budget</span><span class="tb"><span class="ic t-sky"><i class="ph-bold ph-seal-check"></i></span>Pay only for approved posts</span></div>
-    </div>
+    <!-- ============ HERO ============ -->
+    <main>
+      <header class="hero" id="hero">
+        <canvas class="dots" id="dots1" aria-hidden="true"></canvas>
+        <div class="ribbons" aria-hidden="true"><svg viewBox="0 0 1440 700" preserveAspectRatio="xMidYMin slice">
+            <defs>
+              <linearGradient id="rbG" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1440" y2="0">
+                <stop offset="0" stop-color="#7DE5B2" />
+                <stop offset=".55" stop-color="#A6F0DA" />
+                <stop offset="1" stop-color="#82D6F2" />
+                <animateTransform attributeName="gradientTransform" type="translate" values="-220 0;220 0;-220 0"
+                  dur="18s" repeatCount="indefinite" />
+              </linearGradient>
+              <linearGradient id="rbY" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1440" y2="0">
+                <stop offset="0" stop-color="#F8EE92" />
+                <stop offset=".5" stop-color="#F9DB80" />
+                <stop offset="1" stop-color="#F5B466" />
+                <animateTransform attributeName="gradientTransform" type="translate" values="180 0;-180 0;180 0"
+                  dur="21s" repeatCount="indefinite" />
+              </linearGradient>
+              <linearGradient id="rbO" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1440" y2="0">
+                <stop offset="0" stop-color="#F7C46B" />
+                <stop offset="1" stop-color="#F08A3C" />
+              </linearGradient>
+              <linearGradient id="rbB" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#D8E8F9" />
+                <stop offset="1" stop-color="#B9D5F3" />
+              </linearGradient>
+            </defs>
+            <g class="px" style="--k:.05">
+              <g class="fl f1">
+                <path fill="url(#rbG)" opacity=".72"
+                  d="M-100 -30 C 330 10 780 210 1500 520 C 960 360 380 200 -100 130 Z">
+                  <animate attributeName="d" dur="15s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1"
+                    keySplines=".45 0 .55 1;.45 0 .55 1"
+                    values="M-100 -30 C 330 10 780 210 1500 520 C 960 360 380 200 -100 130 Z;M-100 -10 C 380 20 840 190 1500 545 C 900 330 420 235 -100 155 Z;M-100 -30 C 330 10 780 210 1500 520 C 960 360 380 200 -100 130 Z" />
+                </path>
+              </g>
+            </g>
+            <g class="px" style="--k:.12">
+              <g class="fl f2">
+                <path fill="url(#rbY)" opacity=".72"
+                  d="M-100 112 C 340 160 760 300 1500 560 C 980 440 400 300 -100 252 Z">
+                  <animate attributeName="d" dur="17s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1"
+                    keySplines=".45 0 .55 1;.45 0 .55 1"
+                    values="M-100 112 C 340 160 760 300 1500 560 C 980 440 400 300 -100 252 Z;M-100 135 C 380 150 800 285 1500 585 C 940 420 440 335 -100 275 Z;M-100 112 C 340 160 760 300 1500 560 C 980 440 400 300 -100 252 Z" />
+                </path>
+              </g>
+            </g>
+            <g data-v="c">
+              <g class="px" style="--k:.2">
+                <g class="fl f3">
+                  <path fill="url(#rbO)" opacity=".5"
+                    d="M-100 232 C 330 272 740 352 1500 592 C 980 522 400 382 -100 332 Z">
+                    <animate attributeName="d" dur="19s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1"
+                      keySplines=".45 0 .55 1;.45 0 .55 1"
+                      values="M-100 232 C 330 272 740 352 1500 592 C 980 522 400 382 -100 332 Z;M-100 252 C 360 262 760 372 1500 606 C 940 505 430 398 -100 352 Z;M-100 232 C 330 272 740 352 1500 592 C 980 522 400 382 -100 332 Z" />
+                  </path>
+                </g>
+              </g>
+              <g class="px" style="--k:.08">
+                <g class="fl f4">
+                  <path fill="url(#rbB)" opacity=".6"
+                    d="M1560 10 L1560 660 C 1310 540 1130 470 1000 428 C 1150 340 1350 160 1560 10 Z">
+                    <animate attributeName="d" dur="21s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1"
+                      keySplines=".45 0 .55 1;.45 0 .55 1"
+                      values="M1560 10 L1560 660 C 1310 540 1130 470 1000 428 C 1150 340 1350 160 1560 10 Z;M1560 30 L1560 650 C 1290 560 1110 480 1010 440 C 1170 330 1330 190 1560 30 Z;M1560 10 L1560 660 C 1310 540 1130 470 1000 428 C 1150 340 1350 160 1560 10 Z" />
+                  </path>
+                </g>
+              </g>
+            </g>
+            <path d="M-100 116 C 330 154 760 292 1500 552" fill="none" stroke="#C9A24A" stroke-opacity=".5"
+              stroke-width="1.2" />
+            <g>
+              <circle r="14" fill="#C9A24A" opacity=".16">
+                <animateMotion dur="12s" repeatCount="indefinite" path="M-100 116 C 330 154 760 292 1500 552" />
+              </circle>
+              <circle r="4.5" fill="#C9A24A" opacity=".9">
+                <animateMotion dur="12s" repeatCount="indefinite" path="M-100 116 C 330 154 760 292 1500 552" />
+              </circle>
+            </g>
+          </svg></div>
+        <div class="wrap hero-in" id="heroIn">
+          <!-- brands text -->
+          <div data-v="b">
+            <h1 class="h1" aria-label="From customers to brand influencers"><span class="w"
+                style="--i:0"><span>From</span></span> <span class="w" style="--i:1"><span>cust<span class="oring"
+                    aria-hidden="true"><b></b><i></i><em></em></span>mers</span></span><br><span class="w"
+                style="--i:2"><span>to</span></span> <span class="w" style="--i:3"><span>brand</span></span> <span
+                class="w" style="--i:4"><span class="grad">influencers</span></span></h1>
+            <p class="sub">Kamao is a campaign platform that connects brands and creators to create, manage and
+              participate in digital marketing campaigns.</p>
+            <div class="cta"><a class="btn btn-r" data-to="contact" style="cursor:pointer">Launch campaign</a><a
+                class="btn btn-f" data-to="contact" style="cursor:pointer">Book a Demo</a></div>
+            <div class="trustbar"><span class="tb"><span class="ic t-lime"><i
+                    class="ph-bold ph-receipt"></i></span>Verified by receipt</span><span class="tb"><span
+                  class="ic t-gold"><i class="ph-bold ph-sliders"></i></span>You set the budget</span><span
+                class="tb"><span class="ic t-sky"><i class="ph-bold ph-seal-check"></i></span>Pay only for approved
+                posts</span></div>
+          </div>
 
 
-    <!-- brands scene: framed tiles (no photos) -->
-    <div class="sceneWrap" data-v="b" aria-hidden="true"><div class="scene" id="sceneB">
-      <div class="l" style="--z:60px;--rz:-3deg;left:calc(50% - 580px);top:120px"><div class="bob"><div class="frm" style="--fc:#E3EBDD;--fb:linear-gradient(160deg,#E2EDE0,#D4E4D2)"><div><svg viewBox="0 0 140 190"><rect x="26" y="22" width="88" height="130" rx="8" fill="#fff"/><rect x="40" y="40" width="60" height="7" rx="3" fill="#D6DED2"/><rect x="40" y="56" width="40" height="7" rx="3" fill="#E5EAE1"/><rect x="40" y="72" width="52" height="7" rx="3" fill="#E5EAE1"/><rect x="40" y="88" width="34" height="7" rx="3" fill="#E5EAE1"/><rect x="40" y="118" width="60" height="9" rx="3" fill="#4A6341"/><g class="popc"><circle cx="106" cy="150" r="22" fill="#2E9B4E"/><path d="M96 150l7 7 13-15" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g></svg></div></div></div></div>
-      <div class="l" style="--z:130px;--rz:2deg;left:calc(50% - 270px);top:200px"><div class="bob b2"><div class="frm" style="--fc:#BDF2C0;--fb:linear-gradient(160deg,#D8F76E,#A6F0C4)"><div><svg viewBox="0 0 170 190">
-        <g fill="#F5B82E"><g transform="translate(6 0)">
-          <path class="tw" style="animation-delay:0s" d="M24 54l5 11 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z"/>
-        </g>
-        <g transform="translate(36 0)">
-          <path class="tw" style="animation-delay:0.3s" d="M24 54l5 11 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z"/>
-        </g>
-        <g transform="translate(66 0)">
-          <path class="tw" style="animation-delay:0.6s" d="M24 54l5 11 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z"/>
-        </g>
-        <g transform="translate(96 0)" opacity="1">
-          <path class="tw" style="animation-delay:0.9s" d="M24 54l5 11 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z"/>
-        </g>
-        <g transform="translate(126 0)">
-  <path class="tw" style="animation-delay:1.2s"
-    d="M24 54l5 11 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z"/>
-</g>
-      </g>
-        <rect x="14" y="108" width="112" height="56" rx="14" fill="#fff"/><rect x="28" y="124" width="70" height="7" rx="3" fill="#CBD8C2"/><rect x="28" y="140" width="48" height="7" rx="3" fill="#DCE6D4"/></svg></div></div></div></div>
-      <div class="l" style="--z:30px;--rz:-2deg;left:calc(50% + 80px);top:150px">
-        
-        <div class="bob b3"><div class="frm" style="--fc:#B8D6F7;--fb:linear-gradient(160deg,#8DB4F2,#B9D9FA)"><div><svg viewBox="0 0 140 190"><rect class="gb" x="18" y="104" width="22" height="50" rx="6" fill="#fff"/><rect class="gb" style="animation-delay:-.8s" x="48" y="82" width="22" height="72" rx="6" fill="#fff"/><rect class="gb" style="animation-delay:-1.6s" x="78" y="58" width="22" height="96" rx="6" fill="#fff"/><rect class="gb" style="animation-delay:-2.4s" x="108" y="30" width="22" height="124" rx="6" fill="#4A6341"/><path class="dr go" pathLength="1" d="M18 90 C46 80 70 60 128 24" stroke="#F5D547" stroke-width="5" fill="none" stroke-linecap="round"/></svg></div></div></div></div>
+          <!-- brands scene: framed tiles (no photos) -->
+          <div class="sceneWrap" data-v="b" aria-hidden="true">
+            <div class="scene" id="sceneB">
+              <div class="l" style="--z:60px;--rz:-3deg;left:calc(50% - 580px);top:120px">
+                <div class="bob">
+                  <div class="frm" style="--fc:#E3EBDD;--fb:linear-gradient(160deg,#E2EDE0,#D4E4D2)">
+                    <div><svg viewBox="0 0 140 190">
+                        <rect x="26" y="22" width="88" height="130" rx="8" fill="#fff" />
+                        <rect x="40" y="40" width="60" height="7" rx="3" fill="#D6DED2" />
+                        <rect x="40" y="56" width="40" height="7" rx="3" fill="#E5EAE1" />
+                        <rect x="40" y="72" width="52" height="7" rx="3" fill="#E5EAE1" />
+                        <rect x="40" y="88" width="34" height="7" rx="3" fill="#E5EAE1" />
+                        <rect x="40" y="118" width="60" height="9" rx="3" fill="#4A6341" />
+                        <g class="popc">
+                          <circle cx="106" cy="150" r="22" fill="#2E9B4E" />
+                          <path d="M96 150l7 7 13-15" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </g>
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <div class="l" style="--z:130px;--rz:2deg;left:calc(50% - 270px);top:200px">
+                <div class="bob b2">
+                  <div class="frm" style="--fc:#BDF2C0;--fb:linear-gradient(160deg,#D8F76E,#A6F0C4)">
+                    <div><svg viewBox="0 0 170 190">
+                        <g fill="#F5B82E">
+                          <g transform="translate(6 0)">
+                            <path class="tw" style="animation-delay:0s"
+                              d="M24 54l5 11 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z" />
+                          </g>
+                          <g transform="translate(36 0)">
+                            <path class="tw" style="animation-delay:0.3s"
+                              d="M24 54l5 11 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z" />
+                          </g>
+                          <g transform="translate(66 0)">
+                            <path class="tw" style="animation-delay:0.6s"
+                              d="M24 54l5 11 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z" />
+                          </g>
+                          <g transform="translate(96 0)" opacity="1">
+                            <path class="tw" style="animation-delay:0.9s"
+                              d="M24 54l5 11 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z" />
+                          </g>
+                          <g transform="translate(126 0)">
+                            <path class="tw" style="animation-delay:1.2s"
+                              d="M24 54l5 11 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z" />
+                          </g>
+                        </g>
+                        <rect x="14" y="108" width="112" height="56" rx="14" fill="#fff" />
+                        <rect x="28" y="124" width="70" height="7" rx="3" fill="#CBD8C2" />
+                        <rect x="28" y="140" width="48" height="7" rx="3" fill="#DCE6D4" />
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <div class="l" style="--z:30px;--rz:-2deg;left:calc(50% + 80px);top:150px">
 
-        
-      <div class="l" style="--z:100px;--rz:3deg;left:calc(50% + 380px);top:30px"><div class="bob b4"><div class="frm" style="--fc:#E3EBDD;--fb:linear-gradient(160deg,#DCE8DA,#E9F1E4)"><div><svg viewBox="0 0 140 190"><rect x="34" y="14" width="72" height="140" rx="16" fill="#fff" stroke="#C4D4BC" stroke-width="3"/><rect x="56" y="22" width="28" height="7" rx="3.5" fill="#E3EADF"/>
-        
-        <!-- <path class="hb" d="M70 92c-14-10-22-18-22-28a12 12 0 0 1 22-6 12 12 0 0 1 22 6c0 10-8 18-22 28z" fill="#E5535A"/>
+                <div class="bob b3">
+                  <div class="frm" style="--fc:#B8D6F7;--fb:linear-gradient(160deg,#8DB4F2,#B9D9FA)">
+                    <div><svg viewBox="0 0 140 190">
+                        <rect class="gb" x="18" y="104" width="22" height="50" rx="6" fill="#fff" />
+                        <rect class="gb" style="animation-delay:-.8s" x="48" y="82" width="22" height="72" rx="6"
+                          fill="#fff" />
+                        <rect class="gb" style="animation-delay:-1.6s" x="78" y="58" width="22" height="96" rx="6"
+                          fill="#fff" />
+                        <rect class="gb" style="animation-delay:-2.4s" x="108" y="30" width="22" height="124" rx="6"
+                          fill="#4A6341" />
+                        <path class="dr go" pathLength="1" d="M18 90 C46 80 70 60 128 24" stroke="#F5D547"
+                          stroke-width="5" fill="none" stroke-linecap="round" />
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="l" style="--z:100px;--rz:3deg;left:calc(50% + 380px);top:30px">
+                <div class="bob b4">
+                  <div class="frm" style="--fc:#E3EBDD;--fb:linear-gradient(160deg,#DCE8DA,#E9F1E4)">
+                    <div><svg viewBox="0 0 140 190">
+                        <rect x="34" y="14" width="72" height="140" rx="16" fill="#fff" stroke="#C4D4BC"
+                          stroke-width="3" />
+                        <rect x="56" y="22" width="28" height="7" rx="3.5" fill="#E3EADF" />
+
+                        <!-- <path class="hb" d="M70 92c-14-10-22-18-22-28a12 12 0 0 1 22-6 12 12 0 0 1 22 6c0 10-8 18-22 28z" fill="#E5535A"/>
         <g class="popc" style="animation-delay:-1.4s"><circle cx="102" cy="150" r="22" fill="#2E9B4E"/>
           <path d="M92 150l7 7 13-15" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>  
         </g> -->
 
-        <path class="hb" fill="#E5535A"
-  d="M70 94 C63 89 57 84.5 52.75 79.625 C48.5 74.75 46 69.5 46 63 C46 58.5 47.75 54.75 50.375 52.125 C53 49.5 56.5 48 60 48 C65 48 69 51 70 55 C71 51 75 48 80 48 C83.5 48 87 49.5 89.625 52.125 C92.25 54.75 94 58.5 94 63 C94 69.5 91.5 74.75 87.25 79.625 C83 84.5 77 89 70 94 Z">
+                        <path class="hb" fill="#E5535A"
+                          d="M70 94 C63 89 57 84.5 52.75 79.625 C48.5 74.75 46 69.5 46 63 C46 58.5 47.75 54.75 50.375 52.125 C53 49.5 56.5 48 60 48 C65 48 69 51 70 55 C71 51 75 48 80 48 C83.5 48 87 49.5 89.625 52.125 C92.25 54.75 94 58.5 94 63 C94 69.5 91.5 74.75 87.25 79.625 C83 84.5 77 89 70 94 Z">
 
-  <animate attributeName="d" dur="4s" repeatCount="indefinite"
-    calcMode="spline"
-    keyTimes="0;.35;.5;.85;1"
-    keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1;.45 0 .55 1"
-    values="
+                          <animate attributeName="d" dur="4s" repeatCount="indefinite" calcMode="spline"
+                            keyTimes="0;.35;.5;.85;1" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1;.45 0 .55 1"
+                            values="
       M70 94 C63 89 57 84.5 52.75 79.625 C48.5 74.75 46 69.5 46 63 C46 58.5 47.75 54.75 50.375 52.125 C53 49.5 56.5 48 60 48 C65 48 69 51 70 55 C71 51 75 48 80 48 C83.5 48 87 49.5 89.625 52.125 C92.25 54.75 94 58.5 94 63 C94 69.5 91.5 74.75 87.25 79.625 C83 84.5 77 89 70 94 Z;
       M70 94 C63 89 57 84.5 52.75 79.625 C48.5 74.75 46 69.5 46 63 C46 58.5 47.75 54.75 50.375 52.125 C53 49.5 56.5 48 60 48 C65 48 69 51 70 55 C71 51 75 48 80 48 C83.5 48 87 49.5 89.625 52.125 C92.25 54.75 94 58.5 94 63 C94 69.5 91.5 74.75 87.25 79.625 C83 84.5 77 89 70 94 Z;
       M66 97 C60 97 52 98 44 98 C44 90 44 74 44 66 C48 66 52 66 56 66 C59 64 62 59 63 55 C64 50 66 46 70 46 C73 46 74 49 74 53 C74 58 78 60 88 60 C93 60 96 64 96 70 C96 84 94 96 88 96 C80 96 72 97 66 97 Z;
       M66 97 C60 97 52 98 44 98 C44 90 44 74 44 66 C48 66 52 66 56 66 C59 64 62 59 63 55 C64 50 66 46 70 46 C73 46 74 49 74 53 C74 58 78 60 88 60 C93 60 96 64 96 70 C96 84 94 96 88 96 C80 96 72 97 66 97 Z;
-      M70 94 C63 89 57 84.5 52.75 79.625 C48.5 74.75 46 69.5 46 63 C46 58.5 47.75 54.75 50.375 52.125 C53 49.5 56.5 48 60 48 C65 48 69 51 70 55 C71 51 75 48 80 48 C83.5 48 87 49.5 89.625 52.125 C92.25 54.75 94 58.5 94 63 C94 69.5 91.5 74.75 87.25 79.625 C83 84.5 77 89 70 94 Z"/>
+      M70 94 C63 89 57 84.5 52.75 79.625 C48.5 74.75 46 69.5 46 63 C46 58.5 47.75 54.75 50.375 52.125 C53 49.5 56.5 48 60 48 C65 48 69 51 70 55 C71 51 75 48 80 48 C83.5 48 87 49.5 89.625 52.125 C92.25 54.75 94 58.5 94 63 C94 69.5 91.5 74.75 87.25 79.625 C83 84.5 77 89 70 94 Z" />
 
-  <animate attributeName="fill" dur="4s" repeatCount="indefinite"
-    calcMode="spline"
-    keyTimes="0;.35;.5;.85;1"
-    keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1;.45 0 .55 1"
-    values="#E5535A;#E5535A;#3F8FE0;#3F8FE0;#E5535A"/>
-</path>
+                          <animate attributeName="fill" dur="4s" repeatCount="indefinite" calcMode="spline"
+                            keyTimes="0;.35;.5;.85;1" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1;.45 0 .55 1"
+                            values="#E5535A;#E5535A;#3F8FE0;#3F8FE0;#E5535A" />
+                        </path>
 
-<!-- cuff gap + finger lines: visible only during the thumb phase -->
-<g stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none" opacity="0">
-  <path d="M50 70 V94"/>
-  <path d="M68 70 H90"/>
-  <path d="M68 78 H90"/>
-  <path d="M68 86 H88"/>
-  <animate attributeName="opacity" dur="4s" repeatCount="indefinite"
-    keyTimes="0;.35;.5;.85;1" values="0;0;1;1;0"/>
-</g>
-      
-      </svg></div></div></div></div>
+                        <!-- cuff gap + finger lines: visible only during the thumb phase -->
+                        <g stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none" opacity="0">
+                          <path d="M50 70 V94" />
+                          <path d="M68 70 H90" />
+                          <path d="M68 78 H90" />
+                          <path d="M68 86 H88" />
+                          <animate attributeName="opacity" dur="4s" repeatCount="indefinite" keyTimes="0;.35;.5;.85;1"
+                            values="0;0;1;1;0" />
+                        </g>
+
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
 
 
 
-      <div class="l" style="--z:150px;left:calc(50% - 440px);top:10px"><div class="bob"><div class="glass"><small>Top performing</small><b>Festival feedback</b> <span class="up">+24%</span></div></div></div>
-      <div class="l" style="--z:140px;left:calc(50% + 160px);top:330px"><div class="bob b2"><div class="glass" style="display:flex;align-items:center;gap:12px"><span class="tick"><i class="ph-bold ph-check"></i></span><div><b style="font-size:15px">Verified by receipt</b><small>Checked before payout</small></div></div></div></div>
-    </div></div>
+              <div class="l" style="--z:150px;left:calc(50% - 440px);top:10px">
+                <div class="bob">
+                  <div class="glass"><small>Top performing</small><b>Festival feedback</b> <span class="up">+24%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="l" style="--z:140px;left:calc(50% + 160px);top:330px">
+                <div class="bob b2">
+                  <div class="glass" style="display:flex;align-items:center;gap:12px"><span class="tick"><i
+                        class="ph-bold ph-check"></i></span>
+                    <div><b style="font-size:15px">Verified by receipt</b><small>Checked before payout</small></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  </div>
-</header>
-</main>
-<!-- UPDATE HERO SEC END -->
+        </div>
+      </header>
+    </main>
+    <!-- UPDATE HERO SEC END -->
 
     <!-- VIEWS SECTION -->
     <section class="stats2121 ">
       <div class="stats-container">
         <div class="stats-content-wrapper">
           <h2 class="stats-title roboto-600 reveal-item ">REACH MILLIONS OF REAL VIEWS</h2>
-          <p class="stats-subtitle roboto-500 reveal-item">on average, with every  penny invested</p>
+          <p class="stats-subtitle roboto-500 reveal-item">on average, with every penny invested</p>
         </div>
       </div>
     </section>
@@ -300,12 +436,7 @@
               <span class="how-brands-step-label" data-how-works-label>Step 1: Create Campaigns</span>
             </div>
             <div class="how-brands-visual-media">
-              <img
-                src="./images/Brand Card 1_ Daraz.png"
-                alt=""
-                class="how-brands-visual-img"
-                data-how-works-image
-              />
+              <img src="./images/Brand Card 1_ Daraz.png" alt="" class="how-brands-visual-img" data-how-works-image />
             </div>
           </div>
 
@@ -314,79 +445,51 @@
               <span class="how-brands-track-fill" data-how-works-fill></span>
             </div>
 
-            <button
-              type="button"
-              class="how-brands-step is-active"
-              role="tab"
-              aria-selected="true"
-              data-how-works-step
-              data-step="1"
-              data-label="Step 1: Create Campaigns"
-              data-image="./images/Brand Card 1_ Daraz.png"
-            >
+            <button type="button" class="how-brands-step is-active" role="tab" aria-selected="true" data-how-works-step
+              data-step="1" data-label="Step 1: Create Campaigns" data-image="./images/Brand Card 1_ Daraz.png">
               <span class="how-brands-step-icon">
                 <img src="./images/Brand Card 1_ Daraz.png" alt="" width="18" height="18" />
               </span>
               <span class="how-brands-step-copy">
                 <span class="how-brands-step-title">Create Campaigns</span>
-                <span class="how-brands-step-text">Create campaigns based on your marketing objectives, requirements and desired participation.</span>
+                <span class="how-brands-step-text">Create campaigns based on your marketing objectives, requirements and
+                  desired participation.</span>
               </span>
             </button>
 
-            <button
-              type="button"
-              class="how-brands-step"
-              role="tab"
-              aria-selected="false"
-              data-how-works-step
-              data-step="2"
-              data-label="Step 2: Manage Participation"
-              data-image="./images/secondLanding.png"
-            >
+            <button type="button" class="how-brands-step" role="tab" aria-selected="false" data-how-works-step
+              data-step="2" data-label="Step 2: Manage Participation" data-image="./images/secondLanding.png">
               <span class="how-brands-step-icon">
                 <img src="./images/secondLanding.png" alt="" width="18" height="18" />
               </span>
               <span class="how-brands-step-copy">
                 <span class="how-brands-step-title">Manage Participation</span>
-                <span class="how-brands-step-text">Organize campaign participation and manage campaign activity through Kamao.</span>
+                <span class="how-brands-step-text">Organize campaign participation and manage campaign activity through
+                  Kamao.</span>
               </span>
             </button>
 
-            <button
-              type="button"
-              class="how-brands-step"
-              role="tab"
-              aria-selected="false"
-              data-how-works-step
-              data-step="3"
-              data-label="Step 3: Review Campaign Activity"
-              data-image="./images/thirdLanding.png"
-            >
+            <button type="button" class="how-brands-step" role="tab" aria-selected="false" data-how-works-step
+              data-step="3" data-label="Step 3: Review Campaign Activity" data-image="./images/thirdLanding.png">
               <span class="how-brands-step-icon">
                 <img src="./images/thirdLanding.png" alt="" width="21" height="20" />
               </span>
               <span class="how-brands-step-copy">
                 <span class="how-brands-step-title">Review Campaign Activity</span>
-                <span class="how-brands-step-text">Review available information related to campaign participation and performance.</span>
+                <span class="how-brands-step-text">Review available information related to campaign participation and
+                  performance.</span>
               </span>
             </button>
 
-            <button
-              type="button"
-              class="how-brands-step"
-              role="tab"
-              aria-selected="false"
-              data-how-works-step
-              data-step="4"
-              data-label="Step 4: Grow Your Reach"
-              data-image="./images/4thLanding.png"
-            >
+            <button type="button" class="how-brands-step" role="tab" aria-selected="false" data-how-works-step
+              data-step="4" data-label="Step 4: Grow Your Reach" data-image="./images/4thLanding.png">
               <span class="how-brands-step-icon">
                 <img src="./images/4thLanding.png" alt="" width="21" height="20" />
               </span>
               <span class="how-brands-step-copy">
                 <span class="how-brands-step-title">Grow Your Reach</span>
-                <span class="how-brands-step-text">Work with creators to support your digital marketing objectives.</span>
+                <span class="how-brands-step-text">Work with creators to support your digital marketing
+                  objectives.</span>
               </span>
             </button>
           </div>
@@ -643,31 +746,73 @@
     </section>
 
 
-        <!-- TIME LOOP  -->
-     <section class="dialsec" data-v="b" id="dial" style="overflow:clip">
-  <canvas class="dots" id="dots2" aria-hidden="true"></canvas>
-  <div class="dsticky"><div class="wrap dgrid">
-    <div><p class="eyebrow">The trust loop</p><h2 class="h2" style="font-size:50px">Every second, <span class="grad">accounted for</span></h2><p class="lead">One purchase starts the clock. Watch the hand sweep through the loop that keeps brands and customers coming back.</p>
-      <div class="legend" id="legend"><div class="leg"><span class="ic sm t-lime" style="margin-right:2px"><b>1</b></span><div><b>Brands fund</b><span>Budget, limits and rules set up front.</span></div></div><div class="leg"><span class="ic sm t-gold" style="margin-right:2px"><b>2</b></span><div><b>Customers earn</b><span>Genuine feedback, rewarded when approved.</span></div></div><div class="leg"><span class="ic sm t-sky" style="margin-right:2px"><b>3</b></span><div><b>Proof appears</b><span>Verified posts, views and spend in one place.</span></div></div><div class="leg"><span class="ic sm t-coral" style="margin-right:2px"><b>4</b></span><div><b>Brands renew</b><span>Results earn the next campaign.</span></div></div></div></div>
-    <div class="dial" id="dialEl" aria-label="Chronograph dial showing the Kamao trust loop">
-      <span class="phase p1">1. Brands fund</span><span class="phase p2">2. Customers earn</span><span class="phase p3">3. Proof appears</span><span class="phase p4">4. Brands renew</span>
-      <svg class="face2" viewBox="0 0 500 500"><defs><radialGradient id="dfc" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E4F0DA"/></radialGradient><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6E7B4"/><stop offset=".5" stop-color="#C79A35"/><stop offset="1" stop-color="#F2DC95"/></linearGradient></defs>
-        <circle cx="250" cy="250" r="246" fill="none" stroke="url(#gold)" stroke-width="3"/><circle cx="250" cy="250" r="238" fill="url(#dfc)" stroke="rgba(201,162,74,.5)" stroke-width="1"/><g id="ticks"></g><circle cx="250" cy="250" r="176" fill="none" stroke="rgba(201,162,74,.35)" stroke-width="1"/></svg>
-      <div class="sweep"></div><div class="trust"><b>TRUST</b><small>grows each round</small></div>
-      <div class="sub-d sd1" id="sd1"><b id="dv1">0</b><small>Verified</small></div><div class="sub-d sd2" id="sd2"><b id="dv2">0</b><small>Paid</small></div><div class="sub-d sd3" id="sd3"><b id="dv3">0</b><small>Views</small></div>
-      <div class="hand"></div><div class="hub"></div>
-    </div>
-  </div></div>
-</section>
+    <!-- TIME LOOP  -->
+    <section class="dialsec" data-v="b" id="dial" style="overflow:clip">
+      <canvas class="dots" id="dots2" aria-hidden="true"></canvas>
+      <div class="dsticky">
+        <div class="wrap dgrid">
+          <div>
+            <p class="eyebrow">The trust loop</p>
+            <h2 class="h2" style="font-size:50px">Every second, <span class="grad">accounted for</span></h2>
+            <p class="lead">One purchase starts the clock. Watch the hand sweep through the loop that keeps brands and
+              customers coming back.</p>
+            <div class="legend" id="legend">
+              <div class="leg"><span class="ic sm t-lime" style="margin-right:2px"><b>1</b></span>
+                <div><b>Brands fund</b><span>Budget, limits and rules set up front.</span></div>
+              </div>
+              <div class="leg"><span class="ic sm t-gold" style="margin-right:2px"><b>2</b></span>
+                <div><b>Customers earn</b><span>Genuine feedback, rewarded when approved.</span></div>
+              </div>
+              <div class="leg"><span class="ic sm t-sky" style="margin-right:2px"><b>3</b></span>
+                <div><b>Proof appears</b><span>Verified posts, views and spend in one place.</span></div>
+              </div>
+              <div class="leg"><span class="ic sm t-coral" style="margin-right:2px"><b>4</b></span>
+                <div><b>Brands renew</b><span>Results earn the next campaign.</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="dial" id="dialEl" aria-label="Chronograph dial showing the Kamao trust loop">
+            <span class="phase p1">1. Brands fund</span><span class="phase p2">2. Customers earn</span><span
+              class="phase p3">3. Proof appears</span><span class="phase p4">4. Brands renew</span>
+            <svg class="face2" viewBox="0 0 500 500">
+              <defs>
+                <radialGradient id="dfc" cx=".5" cy=".4" r=".7">
+                  <stop offset="0" stop-color="#FFFFFF" />
+                  <stop offset="1" stop-color="#E4F0DA" />
+                </radialGradient>
+                <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#F6E7B4" />
+                  <stop offset=".5" stop-color="#C79A35" />
+                  <stop offset="1" stop-color="#F2DC95" />
+                </linearGradient>
+              </defs>
+              <circle cx="250" cy="250" r="246" fill="none" stroke="url(#gold)" stroke-width="3" />
+              <circle cx="250" cy="250" r="238" fill="url(#dfc)" stroke="rgba(201,162,74,.5)" stroke-width="1" />
+              <g id="ticks"></g>
+              <circle cx="250" cy="250" r="176" fill="none" stroke="rgba(201,162,74,.35)" stroke-width="1" />
+            </svg>
+            <div class="sweep"></div>
+            <div class="trust"><b>TRUST</b><small>grows each round</small></div>
+            <div class="sub-d sd1" id="sd1"><b id="dv1">0</b><small>Verified</small></div>
+            <div class="sub-d sd2" id="sd2"><b id="dv2">0</b><small>Paid</small></div>
+            <div class="sub-d sd3" id="sd3"><b id="dv3">0</b><small>Views</small></div>
+            <div class="hand"></div>
+            <div class="hub"></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- TIME LOOP END -->
 
 
     <!-- testimonial section -->
     <section class="testimonials-section">
       <!-- Decorative corner rings -->
-      <img src="./images/testimonials/ring.svg" alt="" class="testimonials-corner testimonials-corner-top" aria-hidden="true" />
+      <img src="./images/testimonials/ring.svg" alt="" class="testimonials-corner testimonials-corner-top"
+        aria-hidden="true" />
 
-      <img src="./images/testimonials/ring.svg" alt="" class="testimonials-corner testimonials-corner-bottom" aria-hidden="true" />
+      <img src="./images/testimonials/ring.svg" alt="" class="testimonials-corner testimonials-corner-bottom"
+        aria-hidden="true" />
 
       <div class="testimonials-container">
 
@@ -835,109 +980,128 @@
 
 
     <!-- MAGNETIC CTA  -->
-     <section class="final" id="final">
-  <div class="wrap"><div class="fbox rv"><span class="rg"></span><span class="rg"></span><span class="rg"></span>
-    <h2 class="h2" style="font-size:clamp(38px,7vw,96px)">Hear your <span class="grad">real customers</span></h2>
-    <p class="lead" style="margin:18px auto 0;color:#35505C">Launch your first campaign, or join as a customer and earn for what you already think.</p>
-    <div class="cta"><a class="btn btn-r" href="#final">Launch campaign</a><a class="btn btn-f" href="#final">Join as Creator</a></div>
-  </div></div>
-</section>
+    <section class="final" id="final">
+      <div class="wrap">
+        <div class="fbox rv"><span class="rg"></span><span class="rg"></span><span class="rg"></span>
+          <h2 class="h2" style="font-size:clamp(38px,7vw,96px)">Hear your <span class="grad">real customers</span></h2>
+          <p class="lead" style="margin:18px auto 0;color:#35505C">Launch your first campaign, or join as a customer and
+            earn for what you already think.</p>
+          <div class="cta"><a class="btn btn-r" href="#final">Launch campaign</a><a class="btn btn-f" href="#final">Join
+              as Creator</a></div>
+        </div>
+      </div>
+    </section>
     <!-- MAGNETIC CTA  -->
 
 
     <!-- CONTACT  -->
-     <section class="contact" id="contact">
-  <div class="wrap center rv"><h2 class="h2" style="font-size:38px;text-transform:none">Contact Kamao</h2><p class="lead" style="font-size:16px;max-width:520px">Have questions about Kamao, campaigns or participation? Get in touch with our team.</p>
-    <div class="ccard rv"><b style="font-size:18px">Aayu Softtech</b><p style="color:var(--muted)">Kamao is a product of Aayu Softtech</p><div class="crow"><span class="ic t-sky"><i class="ph-light ph-envelope-simple"></i></span><div><small>Email</small><b><a>aayusoft@outlook.com</a></b></div></div><div class="crow"><span class="ic t-lime"><i class="ph-light ph-globe"></i></span><div><small>Website</small><b><a>aayusofttech.com.np</a></b></div></div><div class="crow"><span class="ic t-gold"><i class="ph-light ph-chat-circle-text"></i></span><div><small>Talk to us</small><b><a>Book a demo / Contact</a></b></div></div></div></div>
-</section>
+    <section class="contact" id="contact">
+      <div class="wrap center rv contactClear">
+        <h2 class="h2" style="font-size:38px;text-transform:none">Contact Kamao</h2>
+        <p class="lead" style="font-size:16px;max-width:520px">Have questions about Kamao, campaigns or participation?
+          Get in touch with our team.</p>
+        <div class="ccard rv"><b style="font-size:18px">Aayu Softtech</b>
+          <p style="color:var(--muted)">Kamao is a product of Aayu Softtech</p>
+          <div class="crow"><span class="ic t-sky"><i class="ph-light ph-envelope-simple"></i></span>
+            <div><small>Email</small><b><a>aayusoft@outlook.com</a></b></div>
+          </div>
+          <div class="crow"><span class="ic t-lime"><i class="ph-light ph-globe"></i></span>
+            <div><small>Website</small><b><a>aayusofttech.com.np</a></b></div>
+          </div>
+          <div class="crow"><span class="ic t-gold"><i class="ph-light ph-chat-circle-text"></i></span>
+            <div><small>Talk to us</small><b><a>Book a demo / Contact</a></b></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- CONTACT END -->
 
     <!-- FOOTER  -->
-  <footer class="footer" id="footer">
-  <canvas id="trail" aria-hidden="true"></canvas>
+    <footer class="footer" id="footer">
+      <canvas id="trail" aria-hidden="true"></canvas>
 
-    <div class="footer__container footer-content">
+      <div class="footer__container footer-content">
 
-      <div class="footer__columns">
+        <div class="footer__columns">
 
-        <!-- For Creators -->
-        <div class="footer__column">
-          <h3 class="footer__heading">For Creators</h3>
+          <!-- For Creators -->
+          <div class="footer__column">
+            <h3 class="footer__heading">For Creators</h3>
 
-          <a href="#" class="footer__link">Terms and Conditions</a>
-          <a href="#" class="footer__link">Privacy Policy</a>
-          <a href="#" class="footer__link">Child Safety Standards</a>
-          <a href="#" class="footer__link">Delete Account</a>
+            <a href="#" class="footer__link">Terms and Conditions</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+            <a href="#" class="footer__link">Child Safety Standards</a>
+            <a href="#" class="footer__link">Delete Account</a>
+          </div>
+
+          <!-- For Brands -->
+          <div class="footer__column">
+            <h3 class="footer__heading">For Brands</h3>
+
+            <a href="#" class="footer__link">Book a Demo</a>
+            <a href="#" class="footer__link">Terms and Conditions</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+            <a href="#" class="footer__link">Child Safety Standards</a>
+          </div>
+
+          <!-- Resources -->
+          <div class="footer__column">
+            <h3 class="footer__heading">Resources</h3>
+
+            <a href="#" class="footer__link">See all brands</a>
+            <a href="#" class="footer__link">Get more reviews on socials</a>
+            <a href="#" class="footer__link">Easiest way to get UGC</a>
+            <a href="#" class="footer__link">Get customers to post</a>
+            <a href="#" class="footer__link">Word-of-mouth marketing</a>
+            <a href="#" class="footer__link">Get Trustpilot reviews</a>
+          </div>
+
+          <!-- Our Company -->
+          <div class="footer__column">
+            <h3 class="footer__heading">Our Company</h3>
+
+            <a href="#" class="footer__link">About us</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+            <a href="#" class="footer__link">Child Safety Standards</a>
+            <a href="#" class="footer__link">Terms of Use</a>
+            <a href="#" class="footer__link">Delete Account</a>
+            <a href="#" class="footer__link">Contact us</a>
+          </div>
+
         </div>
 
-        <!-- For Brands -->
-        <div class="footer__column">
-          <h3 class="footer__heading">For Brands</h3>
-
-          <a href="#" class="footer__link">Book a Demo</a>
-          <a href="#" class="footer__link">Terms and Conditions</a>
-          <a href="#" class="footer__link">Privacy Policy</a>
-          <a href="#" class="footer__link">Child Safety Standards</a>
+        <!-- Description -->
+        <div class="footer__description">
+          We value Your Brands. We make your Brand Reality.
+          <a href="#" class="footer__brand-link">Ayasufottech</a>,
+          For any Queries
+          <a href="#" class="footer__contact-link">Contact us here.</a>
         </div>
 
-        <!-- Resources -->
-        <div class="footer__column">
-          <h3 class="footer__heading">Resources</h3>
+        <!-- Bottom -->
+        <div class="footer__bottom">
 
-          <a href="#" class="footer__link">See all brands</a>
-          <a href="#" class="footer__link">Get more reviews on socials</a>
-          <a href="#" class="footer__link">Easiest way to get UGC</a>
-          <a href="#" class="footer__link">Get customers to post</a>
-          <a href="#" class="footer__link">Word-of-mouth marketing</a>
-          <a href="#" class="footer__link">Get Trustpilot reviews</a>
-        </div>
+          <div class="footer__copyright">
+            Copyright © 2026 Ayasufottech Inc. All rights reserved.
+          </div>
 
-        <!-- Our Company -->
-        <div class="footer__column">
-          <h3 class="footer__heading">Our Company</h3>
+          <nav class="footer__legal">
+            <a href="#" class="footer__legal-link">Privacy Policy</a>
+            <span class="footer__separator"></span>
 
-          <a href="#" class="footer__link">About us</a>
-          <a href="#" class="footer__link">Privacy Policy</a>
-          <a href="#" class="footer__link">Child Safety Standards</a>
-          <a href="#" class="footer__link">Terms of Use</a>
-          <a href="#" class="footer__link">Delete Account</a>
-          <a href="#" class="footer__link">Contact us</a>
+            <a href="#" class="footer__legal-link">Child Safety Standards</a>
+            <span class="footer__separator"></span>
+
+            <a href="#" class="footer__legal-link">Terms of Use</a>
+            <span class="footer__separator"></span>
+
+            <a href="#" class="footer__legal-link">Delete Account</a>
+          </nav>
+
         </div>
 
       </div>
-
-      <!-- Description -->
-      <div class="footer__description">
-        We value Your Brands. We make your Brand Reality.
-        <a href="#" class="footer__brand-link">Ayasufottech</a>,
-        For any Queries
-        <a href="#" class="footer__contact-link">Contact us here.</a>
-      </div>
-
-      <!-- Bottom -->
-      <div class="footer__bottom">
-
-        <div class="footer__copyright">
-          Copyright © 2026 Ayasufottech Inc. All rights reserved.
-        </div>
-
-        <nav class="footer__legal">
-          <a href="#" class="footer__legal-link">Privacy Policy</a>
-          <span class="footer__separator"></span>
-
-          <a href="#" class="footer__legal-link">Child Safety Standards</a>
-          <span class="footer__separator"></span>
-
-          <a href="#" class="footer__legal-link">Terms of Use</a>
-          <span class="footer__separator"></span>
-
-          <a href="#" class="footer__legal-link">Delete Account</a>
-        </nav>
-
-      </div>
-
-    </div>
-  </footer>
+    </footer>
 
     <!-- FOOTER END -->
 
@@ -1004,37 +1168,37 @@
       // });
 
 
-/* ==========================================================
-   RIBBON — DELAYED LEFT → RIGHT REVEAL
-========================================================== */
+      /* ==========================================================
+         RIBBON — DELAYED LEFT → RIGHT REVEAL
+      ========================================================== */
 
-// const revealRibbon = () => {
+      // const revealRibbon = () => {
 
-//   // Ensure the ribbon starts fully hidden
-//   ribbon.style.clipPath = "inset(0 100% 0 0)";
+      //   // Ensure the ribbon starts fully hidden
+      //   ribbon.style.clipPath = "inset(0 100% 0 0)";
 
-//   ribbon.style.transform =
-//     "translateX(calc(-50% - 80px)) scale(.96)";
+      //   ribbon.style.transform =
+      //     "translateX(calc(-50% - 80px)) scale(.96)";
 
-//   // Trigger 0.5 seconds after entering the hero section
-//   setTimeout(() => {
+      //   // Trigger 0.5 seconds after entering the hero section
+      //   setTimeout(() => {
 
-//     ribbon.style.transition =
-//       "clip-path 1.2s ease, transform 1.2s ease";
+      //     ribbon.style.transition =
+      //       "clip-path 1.2s ease, transform 1.2s ease";
 
-//     // Reveal from left to right
-//     ribbon.style.clipPath = "inset(0 0 0 0)";
+      //     // Reveal from left to right
+      //     ribbon.style.clipPath = "inset(0 0 0 0)";
 
-//     // Move into position and grow slightly
-//     ribbon.style.transform =
-//       "translateX(-50%) scale(1)";
+      //     // Move into position and grow slightly
+      //     ribbon.style.transform =
+      //       "translateX(-50%) scale(1)";
 
-//   }, 500);
+      //   }, 500);
 
-// };
+      // };
 
-// revealRibbon();
-}); 
+      // revealRibbon();
+    }); 
   </script>
 
   <script>
@@ -1052,189 +1216,189 @@
 
 
     // Testimonials carousel
-  document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
 
-    const testimonialsCarousel =
-      document.querySelector(".testimonials-carousel");
+      const testimonialsCarousel =
+        document.querySelector(".testimonials-carousel");
 
-    if (!testimonialsCarousel) return;
-
-
-    const testimonialsTrack =
-      testimonialsCarousel.querySelector(".testimonials-track");
-
-    const testimonialsSlides =
-      testimonialsCarousel.querySelectorAll(".testimonials-slide");
-
-    const testimonialsPrev =
-      testimonialsCarousel.querySelector(".testimonials-button-prev");
-
-    const testimonialsNext =
-      testimonialsCarousel.querySelector(".testimonials-button-next");
+      if (!testimonialsCarousel) return;
 
 
-    let testimonialsCurrent = 0;
-    const testimonialsTotal = testimonialsSlides.length;
+      const testimonialsTrack =
+        testimonialsCarousel.querySelector(".testimonials-track");
+
+      const testimonialsSlides =
+        testimonialsCarousel.querySelectorAll(".testimonials-slide");
+
+      const testimonialsPrev =
+        testimonialsCarousel.querySelector(".testimonials-button-prev");
+
+      const testimonialsNext =
+        testimonialsCarousel.querySelector(".testimonials-button-next");
 
 
-    /* =========================================
-       UPDATE CAROUSEL
-    ========================================= */
-
-    function testimonialsUpdate() {
-
-      testimonialsTrack.style.transform =
-        `translateX(-${testimonialsCurrent * 100}%)`;
+      let testimonialsCurrent = 0;
+      const testimonialsTotal = testimonialsSlides.length;
 
 
-      testimonialsPrev.disabled =
-        testimonialsCurrent === 0;
+      /* =========================================
+         UPDATE CAROUSEL
+      ========================================= */
 
-      testimonialsNext.disabled =
-        testimonialsCurrent === testimonialsTotal - 1;
-    }
+      function testimonialsUpdate() {
+
+        testimonialsTrack.style.transform =
+          `translateX(-${testimonialsCurrent * 100}%)`;
 
 
-    /* =========================================
-       NEXT
-    ========================================= */
+        testimonialsPrev.disabled =
+          testimonialsCurrent === 0;
 
-    function testimonialsGoNext() {
-
-      if (testimonialsCurrent >= testimonialsTotal - 1) {
-        return;
+        testimonialsNext.disabled =
+          testimonialsCurrent === testimonialsTotal - 1;
       }
 
-      testimonialsCurrent++;
 
-      testimonialsUpdate();
-    }
+      /* =========================================
+         NEXT
+      ========================================= */
 
+      function testimonialsGoNext() {
 
-    /* =========================================
-       PREVIOUS
-    ========================================= */
-
-    function testimonialsGoPrevious() {
-
-      if (testimonialsCurrent <= 0) {
-        return;
-      }
-
-      testimonialsCurrent--;
-
-      testimonialsUpdate();
-    }
-
-
-    /* =========================================
-       BUTTON EVENTS
-    ========================================= */
-
-    testimonialsNext.addEventListener(
-      "click",
-      testimonialsGoNext
-    );
-
-
-    testimonialsPrev.addEventListener(
-      "click",
-      testimonialsGoPrevious
-    );
-
-
-    /* =========================================
-       KEYBOARD NAVIGATION
-    ========================================= */
-
-    testimonialsCarousel.addEventListener(
-      "keydown",
-      function (event) {
-
-        if (event.key === "ArrowRight") {
-          testimonialsGoNext();
+        if (testimonialsCurrent >= testimonialsTotal - 1) {
+          return;
         }
 
-        if (event.key === "ArrowLeft") {
+        testimonialsCurrent++;
+
+        testimonialsUpdate();
+      }
+
+
+      /* =========================================
+         PREVIOUS
+      ========================================= */
+
+      function testimonialsGoPrevious() {
+
+        if (testimonialsCurrent <= 0) {
+          return;
+        }
+
+        testimonialsCurrent--;
+
+        testimonialsUpdate();
+      }
+
+
+      /* =========================================
+         BUTTON EVENTS
+      ========================================= */
+
+      testimonialsNext.addEventListener(
+        "click",
+        testimonialsGoNext
+      );
+
+
+      testimonialsPrev.addEventListener(
+        "click",
+        testimonialsGoPrevious
+      );
+
+
+      /* =========================================
+         KEYBOARD NAVIGATION
+      ========================================= */
+
+      testimonialsCarousel.addEventListener(
+        "keydown",
+        function (event) {
+
+          if (event.key === "ArrowRight") {
+            testimonialsGoNext();
+          }
+
+          if (event.key === "ArrowLeft") {
+            testimonialsGoPrevious();
+          }
+
+        }
+      );
+
+
+      /* =========================================
+         TOUCH / SWIPE
+      ========================================= */
+
+      let testimonialsTouchStartX = 0;
+      let testimonialsTouchEndX = 0;
+
+
+      testimonialsCarousel.addEventListener(
+        "touchstart",
+        function (event) {
+
+          testimonialsTouchStartX =
+            event.changedTouches[0].screenX;
+
+        },
+        {
+          passive: true
+        }
+      );
+
+
+      testimonialsCarousel.addEventListener(
+        "touchend",
+        function (event) {
+
+          testimonialsTouchEndX =
+            event.changedTouches[0].screenX;
+
+          testimonialsHandleSwipe();
+
+        },
+        {
+          passive: true
+        }
+      );
+
+
+      function testimonialsHandleSwipe() {
+
+        const testimonialsSwipeDistance =
+          testimonialsTouchEndX -
+          testimonialsTouchStartX;
+
+
+        const testimonialsMinimumSwipe = 45;
+
+
+        if (
+          Math.abs(testimonialsSwipeDistance) <
+          testimonialsMinimumSwipe
+        ) {
+          return;
+        }
+
+
+        if (testimonialsSwipeDistance < 0) {
+          testimonialsGoNext();
+        } else {
           testimonialsGoPrevious();
         }
 
       }
-    );
 
 
-    /* =========================================
-       TOUCH / SWIPE
-    ========================================= */
+      /* =========================================
+         INITIAL STATE
+      ========================================= */
 
-    let testimonialsTouchStartX = 0;
-    let testimonialsTouchEndX = 0;
+      testimonialsUpdate();
 
-
-    testimonialsCarousel.addEventListener(
-      "touchstart",
-      function (event) {
-
-        testimonialsTouchStartX =
-          event.changedTouches[0].screenX;
-
-      },
-      {
-        passive: true
-      }
-    );
-
-
-    testimonialsCarousel.addEventListener(
-      "touchend",
-      function (event) {
-
-        testimonialsTouchEndX =
-          event.changedTouches[0].screenX;
-
-        testimonialsHandleSwipe();
-
-      },
-      {
-        passive: true
-      }
-    );
-
-
-    function testimonialsHandleSwipe() {
-
-      const testimonialsSwipeDistance =
-        testimonialsTouchEndX -
-        testimonialsTouchStartX;
-
-
-      const testimonialsMinimumSwipe = 45;
-
-
-      if (
-        Math.abs(testimonialsSwipeDistance) <
-        testimonialsMinimumSwipe
-      ) {
-        return;
-      }
-
-
-      if (testimonialsSwipeDistance < 0) {
-        testimonialsGoNext();
-      } else {
-        testimonialsGoPrevious();
-      }
-
-    }
-
-
-    /* =========================================
-       INITIAL STATE
-    ========================================= */
-
-    testimonialsUpdate();
-
-  });
+    });
 
 
 

@@ -2191,28 +2191,29 @@ radial-gradient(86.16% 489.99% at 15% 20%, rgba(184, 214, 176, 0.35) 0%, rgba(18
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1.25em;
+        gap: 8em;
     }
 
     #faq-sbsr-1575 .faq-picture1 {
-         width: 16.0625em;
-        height: 24.594059%;
+                 width: 8.0625em;
+        height: 15.594059%;
+
         margin-top: 7.125em;
     }
 
     #faq-sbsr-1575 .faq-picture2 {
-        width: 13.0625em;
-        height: 18.891089%;
+                width: 9.0625em;
+        height: 13.891089%;
     }
 
     #faq-sbsr-1575 .faq-picture3 {
-           width: 14.0625em;
-        height: 25%;
+                   width: 9.0625em;
+        height: 16%;
     }
 
     #faq-sbsr-1575 .faq-picture4 {
-        width: 16.0625em;
-        height: 25.425743%;
+                width: 9.0625em;
+        height: 14.425743%;
     }
 }
 
@@ -2235,7 +2236,6 @@ radial-gradient(86.16% 489.99% at 15% 20%, rgba(184, 214, 176, 0.35) 0%, rgba(18
     #faq-sbsr-1575 .faq-image-group {
         font-size: min(1.2vw, 1em);
         height: auto;
-        margin-top: -200px;
         flex: none;
         order: 2;
     }

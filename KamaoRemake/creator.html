@@ -48,7 +48,10 @@
   </a>
 
   <!-- Laptop / other -->
-  <a class="btn btn-r store-other" data-to="contact" style="cursor:pointer">Book a Demo</a>
+  <a href="/Identity/Account/Register?type=creator" class="btn btn-r store-other" data-to="contact" style="cursor:pointer">Get Started</a>
+
+
+
 </div>
 
 
@@ -328,11 +331,11 @@
           </div> -->
 
           <div class="cta-app-buttons">
-            <a href="/Identity/Account/Register?type=creator" class="cta-app-link">
+            <a href="https://play.google.com/store/apps/details?id=com.aayusofttech.kamao&hl=en" target="_blank" class="cta-app-link">
               <img src="./images/creators/cta/google_play_btn.svg" alt="Get it on Google Play" class="cta-app-image" />
             </a>
 
-            <a href="/Identity/Account/Register?type=creator" class="cta-app-link">
+            <a href="https://apps.apple.com/us/app/kamao/id6821818381" target="_blank" class="cta-app-link">
               <img src="./images/creators/cta/app_store_btn.svg" alt="Download on the App Store"
                 class="cta-app-image" />
             </a>
@@ -751,92 +754,91 @@
 
 
     <!-- FOOTER  -->
-    <footer class="footer">
-      <div class="footer__container">
+<footer class="footer" id="footer">
+  <canvas id="trail" aria-hidden="true"></canvas>
 
-        <div class="footer__columns">
+    <div class="footer__container footer-content">
 
-          <!-- For Creators -->
-          <div class="footer__column">
-            <h3 class="footer__heading">For Creators</h3>
+      <div class="footer__columns">
 
-            <a href="/creators" class="footer__link">Creator overview</a>
-            <a href="/terms" class="footer__link">Terms and Conditions</a>
-            <a href="/privacy" class="footer__link">Privacy Policy</a>
-            <a href="/child-safety" class="footer__link">Child Safety Standards</a>
-            <a href="/delete-account" class="footer__link">Delete Account</a>
-          </div>
+        <!-- For Creators -->
+        <div class="footer__column">
+          <h3 class="footer__heading">For Creators</h3>
 
-          <!-- For Brands -->
-          <div class="footer__column">
-            <h3 class="footer__heading">For Brands</h3>
-
-            <a href="/" class="footer__link">Brand overview</a>
-            <a href="/book-demo" class="footer__link">Book a Demo</a>
-            <a href="/terms" class="footer__link">Terms and Conditions</a>
-            <a href="/privacy" class="footer__link">Privacy Policy</a>
-            <a href="/child-safety" class="footer__link">Child Safety Standards</a>
-          </div>
-
-          <!-- Legal -->
-          <div class="footer__column">
-            <h3 class="footer__heading">Legal</h3>
-
-            <a href="/privacy" class="footer__link">Privacy Policy</a>
-            <a href="/terms" class="footer__link">Terms and Conditions</a>
-            <a href="/child-safety" class="footer__link">Child Safety Standards</a>
-            <a href="/delete-account" class="footer__link">Delete Account</a>
-          </div>
-
-          <!-- Our Company -->
-          <div class="footer__column">
-            <h3 class="footer__heading">Our Company</h3>
-
-            <a href="https://aayusofttech.com.np" target="_blank" rel="noopener" class="footer__link">Aayu Softtech</a>
-            <a href="/privacy" class="footer__link">Privacy Policy</a>
-            <a href="/child-safety" class="footer__link">Child Safety Standards</a>
-            <a href="/terms" class="footer__link">Terms of Use</a>
-            <a href="/delete-account" class="footer__link">Delete Account</a>
-            <a href="/book-demo" class="footer__link">Contact us</a>
-          </div>
-
+          <a href="/creators" class="footer__link">Creator overview</a>
+          <a href="/terms" class="footer__link">Terms and Conditions</a>
+          <a href="/privacy" class="footer__link">Privacy Policy</a>
+          <a href="/child-safety" class="footer__link">Child Safety Standards</a>
+          <a href="/delete-account" class="footer__link">Delete Account</a>
         </div>
 
-        <!-- Description -->
-        <div class="footer__description">
-          <strong>Kamao — A product of Aayu Softtech</strong>
-          Campaign platform for brands and creators.
-          <a href="https://aayusofttech.com.np" target="_blank" rel="noopener" class="footer__brand-link">aayusofttech.com.np</a>
-          ·
-          <a href="mailto:aayusoft@outlook.com" class="footer__contact-link">aayusoft@outlook.com</a>
-          ·
-          <a href="/book-demo" class="footer__contact-link">Contact</a>
+        <!-- For Brands -->
+        <div class="footer__column">
+          <h3 class="footer__heading">For Brands</h3>
+
+
+          <a href="/book-demo" class="footer__link">Book a Demo</a>
+          <a href="/terms" class="footer__link">Terms and Conditions</a>
+          <a href="/privacy" class="footer__link">Privacy Policy</a>
+          <a href="/child-safety" class="footer__link">Child Safety Standards</a>
         </div>
 
-        <!-- Bottom -->
-        <div class="footer__bottom">
+        <!-- Resources -->
+        <div class="footer__column">
+          <h3 class="footer__heading">Resources</h3>
 
-          <div class="footer__copyright">
-            Copyright © 2026 Aayu Softtech All rights reserved.
-          </div>
 
-          <nav class="footer__legal">
-            <a href="/privacy" class="footer__legal-link">Privacy Policy</a>
-            <span class="footer__separator"></span>
+          <a href="/privacy" class="footer__link">Privacy Policy</a>
+          <a href="/terms" class="footer__link">Terms and Conditions</a>
+          <a href="/child-safety" class="footer__link">Child Safety Standards</a>
+          <a href="/delete-account" class="footer__link">Delete Account</a>
+        </div>
 
-            <a href="/child-safety" class="footer__legal-link">Child Safety Standards</a>
-            <span class="footer__separator"></span>
+        <!-- Our Company -->
+        <div class="footer__column">
+          <h3 class="footer__heading">Our Company</h3>
 
-            <a href="/terms" class="footer__legal-link">Terms of Use</a>
-            <span class="footer__separator"></span>
-
-            <a href="/delete-account" class="footer__legal-link">Delete Account</a>
-          </nav>
-
+          <a href="https://aayusofttech.com.np" target="_blank" rel="noopener" class="footer__link">Aayu Softtech</a>
+          <a href="/privacy" class="footer__link">Privacy Policy</a>
+          <a href="/child-safety" class="footer__link">Child Safety Standards</a>
+          <a href="/terms" class="footer__link">Terms of Use</a>
+          <a href="/delete-account" class="footer__link">Delete Account</a>
+          <a href="/book-demo" class="footer__link">Contact us</a>
         </div>
 
       </div>
-    </footer>
+
+      <!-- Description -->
+     <div class="footer__description">
+        We value Your Brands. We make your Brand Reality.
+        <a href="https://aayusofttech.com.np" target="_blank" rel="noopener" class="footer__brand-link" class="footer__brand-link">aayusofttech.com.np</a>,
+        For any Queries
+              <a href="mailto:aayusoft@outlook.com" class="footer__contact-link">aayusoft@outlook.com</a>
+      </div>
+      <!-- Bottom -->
+      <div class="footer__bottom">
+
+        <div class="footer__copyright">
+          Copyright © 2026 Ayasufottech Inc. All rights reserved.
+        </div>
+
+        <nav class="footer__legal">
+          <a href="/privacy" class="footer__legal-link">Privacy Policy</a>
+          <span class="footer__separator"></span>
+
+          <a href="/child-safety" class="footer__legal-link">Child Safety Standards</a>
+          <span class="footer__separator"></span>
+
+          <a href="/terms" class="footer__legal-link">Terms of Use</a>
+          <span class="footer__separator"></span>
+
+          <a href="/delete-account" class="footer__legal-link">Delete Account</a>
+        </nav>
+
+      </div>
+
+    </div>
+  </footer>
 
     <!-- FOOTER END -->
 

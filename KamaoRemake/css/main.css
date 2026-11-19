@@ -5369,3 +5369,76 @@ a {
     font-size: 9px;
   }
 }
+/* OVERFLOW HIDDNE  */
+
+/* 1. Fixed overlays (.bgfix, .stickybar) */
+.bgfix,
+.stickybar {
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* 2. Hero ribbons SVG (header#hero.hero) */
+#hero {
+  position: relative;
+  overflow-x: clip;
+}
+
+#hero .ribbons,
+#hero .ribbons svg {
+  max-width: 100%;
+}
+
+#hero .ribbons svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 3. Testimonials carousel & corner graphics (section.testimonials-section) */
+.testimonials-section {
+  position: relative;
+  overflow-x: clip;
+}
+
+.testimonials-corner {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Clip the horizontal track/viewport that holds .testimonials-slide */
+.testimonials-track,
+.testimonials-slider,
+.testimonials-viewport {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.testimonials-slide,
+.testimonials-card {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* 4. Final & Contact sections (#final, #contact) */
+#final {
+  position: relative;
+  overflow-x: clip;
+}
+
+#final .rg {
+  max-width: 100%;
+}
+
+#contact {
+  overflow-x: clip;
+}
+
+#contact .wrap {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+/* OVERFLOW HIDDNE TEST  */

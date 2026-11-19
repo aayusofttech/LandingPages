@@ -33,7 +33,6 @@
 
 
   /* Close after clicking a link */
-
   document.querySelectorAll(".mobile-nav-link").forEach(link => {
     link.addEventListener("click", () => {
       closeMenu();

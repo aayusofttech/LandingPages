@@ -1446,7 +1446,6 @@
     #sbsr-1575 .cs-image-group {
         font-size: min(1.2vw, 1em);
         height: auto;
-        margin-top: -200px;
 
         flex: none;
         /* sends it to the right in the 2nd position */

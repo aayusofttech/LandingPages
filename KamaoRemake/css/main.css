@@ -4670,6 +4670,8 @@ a {
   width: 100%;
 
   box-sizing: border-box;
+        overflow: hidden;
+    border-radius: 69px;
 }
 
 
@@ -4690,6 +4692,8 @@ a {
   padding: 56px 76px 25px;
 
   border-radius: 68px;
+
+
 
   /*
     Gradient border matching the reference:
@@ -5413,7 +5417,6 @@ a {
 .testimonials-track,
 .testimonials-slider,
 .testimonials-viewport {
-  overflow: hidden;
   max-width: 100%;
 }
 

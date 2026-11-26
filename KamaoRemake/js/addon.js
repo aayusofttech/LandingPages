@@ -336,7 +336,7 @@
 
     $('#dv1').textContent = Math.round(212 * p);
     $('#dv2').textContent = Math.round(150 * p);
-    $('#dv3').textContent = fmtK(24600 * p);
+    $('#dv3').textContent = fmtK(100000 * p);
   }
 
   var ticking = false;

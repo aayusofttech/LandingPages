@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamao for Creators — Discover Brand Campaigns</title>
+  <meta name="description" content="Kamao helps creators discover and participate in brand campaigns. A product of Aayu Softtech" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/creator.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- app download link  -->
+ <div class="stickybar" id="stickybar">
+
+  <!-- Android -->
+  <a class="store store-android"
+     href="https://play.google.com/store/apps/details?id=com.aayusofttech.kamao&hl=en"
+     target="_blank" rel="noopener" aria-label="Get Kamao on Google Play">
+    <svg class="store-ic" viewBox="0 0 512 512" aria-hidden="true">
+      <path fill="#00A0FF" d="M60 30 L270 256 L60 482 Z"/>
+      <path fill="#00E676" d="M60 30 L350 176 L270 256 Z"/>
+      <path fill="#FF3A44" d="M60 482 L350 336 L270 256 Z"/>
+      <path fill="#FFD400" d="M350 176 L460 256 L350 336 L270 256 Z"/>
+    </svg>
+    <span class="store-tx"><small>GET IT ON</small><b>Google Play</b></span>
+  </a>
+
+  <!-- iOS -->
+  <a class="store store-ios"
+     href="https://apps.apple.com/np/app/kamao/id6821818381"
+     target="_blank" rel="noopener" aria-label="Download Kamao on the App Store">
+    <svg class="store-ic" viewBox="0 0 24 24" aria-hidden="true" fill="#fff">
+      <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+    </svg>
+    <span class="store-tx"><small>Download on the</small><b>App Store</b></span>
+  </a>
+
+  <!-- Laptop / other -->
+  <a href="/Identity/Account/Register?type=creator" class="btn btn-r store-other" data-to="contact" style="cursor:pointer">Get Started</a>
+
+
+
+</div>
+
+
+
+  <header class="site-header" id="siteHeader">
+  <nav class="navbar" aria-label="Primary navigation">
+
+    <!-- Logo -->
+    <a href="./index.html" class="brand" aria-label="Kamao home">
+      <img
+        src="./images/nav_footer/kamao_logo.svg"
+        alt="Kamao"
+        class="brand-logo"
+      />
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div class="main-nav">
+      <a href="./index.html" class="nav-link ">For Brands</a>
+      <a href="./creators.html" class="nav-link is-active">For Creators</a>
+      <a href="./aboutus.html" class="nav-link">About us</a>
+    </div>
+
+    <!-- Desktop Actions -->
+    <div class="nav-actions">
+      <a href="/Identity/Account/Login" class="demo-link">
+        Sign in
+      </a>
+
+      <a href="/Identity/Account/Register?type=creator" class="btn-primary nav-get-started">
+        Get Started
+      </a>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button
+      class="mobile-menu-btn"
+      id="mobileMenuBtn"
+      type="button"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      aria-controls="mobileMenu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-menu" id="mobileMenu">
+
+    <div class="mobile-menu-inner">
+
+      <div class="mobile-links">
+
+        <a href="/" class="mobile-nav-link ">
+          <span>For Brands</span>
+          <span class="mobile-arrow">↗</span>
+        </a>
+
+        <a href="/creators" class="mobile-nav-link is-active">
+          <span>For Creators</span>
+          <span class="mobile-arrow">↗</span>
+        </a>
+
+        <a href="#about" class="mobile-nav-link">
+          <span>About us</span>
+          <span class="mobile-arrow">↗</span>
+        </a>
+
+      </div>
+
+      <div class="mobile-actions">
+
+
+        <a
+          class="mobile-get-started"
+          href="/Identity/Account/Register?type=creator"
+        >
+          Get Started
+          <span>↗</span>
+        </a>
+
+      </div>
+
+      <div class="mobile-menu-footer">
+        <span>CREATOR × BRAND</span>
+        <span>KAMAO</span>
+      </div>
+
+    </div>
+
+  </div>
+</header>
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <h1 class="hero-title reveal-item roboto-700">
+          TURN YOUR SOCIAL<br />
+          REACH INTO <span class="hero-title-highlight">REVENUE</span>
+        </h1>
+
+        <p class="hero-subtitle reveal-item roboto-500">
+          Earn money everytime you shop
+        </p>
+
+        <a href="#brands" class="hero-button roboto-700">
+          Explore Brands <span class="hero-button-icon">
+            <img class="reveal-item" src="images/creators/hero_section/rocket.svg" alt="" />
+          </span>
+        </a>
+      </div>
+
+      <!-- Hero Visual Cards -->
+      <img class="hero-card reveal-item hero-card-performance" src="images/creators/hero_section/performing_card.png" alt="" />
+
+      <img class="hero-card reveal-item hero-card-followers" src="images/creators/hero_section/creator_avatars.png" alt="" />
+
+      <img class="hero-card reveal-item hero-card-reactions" src="images/creators/hero_section/reactions.png" alt="" />
+
+      <img class="hero-card reveal-item hero-card-views" src="images/creators/hero_section/view_card.png" alt="" />
+
+      <img class="hero-card reveal-item hero-card-creator" src="images/creators/hero_section/creator_content.png" alt="" />
+
+    </section>
+
+
+
+    <!-- PROCESS SECTION -->
+    <!-- HOW KAMAO WORKS FOR CREATORS -->
+    <section class="how-brands-section" id="how-kamao-works" aria-labelledby="howCreatorsTitle">
+      <div class="how-brands-container">
+        <div class="how-brands-header">
+          <h2 class="how-brands-title roboto-600" id="howCreatorsTitle reveal-item">How Kamao works for Creators</h2>
+          <p class="how-brands-subtitle roboto-400">
+            A simple workflow for running and participating in digital marketing campaigns.
+          </p>
+        </div>
+
+        <div class="how-brands-panel" data-how-works>
+          <div class="how-brands-visual">
+            <div class="how-brands-visual-bg" aria-hidden="true"></div>
+            <div class="how-brands-step-pill">
+              <span class="how-brands-step-dot" aria-hidden="true"></span>
+              <span class="how-brands-step-label" data-how-works-label>Step 1: Discover Campaigns</span>
+            </div>
+            <div class="how-brands-visual-media">
+              <img
+                src="./images/how-creators/visual-discover.png"
+                alt=""
+                class="how-brands-visual-img"
+                data-how-works-image
+              />
+            </div>
+          </div>
+
+          <div class="how-brands-steps" role="tablist" aria-label="Creator workflow steps">
+            <div class="how-brands-track" aria-hidden="true">
+              <span class="how-brands-track-fill" data-how-works-fill></span>
+            </div>
+
+            <button
+              type="button"
+              class="how-brands-step is-active"
+              role="tab"
+              aria-selected="true"
+              data-how-works-step
+              data-step="1"
+              data-label="Step 1: Discover Campaigns"
+              data-image="./images/Article - Brand Card 1_ Kamao.png"
+            >
+              <span class="how-brands-step-icon">
+                <img src="./images/Article - Brand Card 1_ Kamao.png" alt="" width="18" height="18" />
+              </span>
+              <span class="how-brands-step-copy">
+                <span class="how-brands-step-title">Discover Campaigns</span>
+                <span class="how-brands-step-text">Explore available campaigns and review their requirements.</span>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              class="how-brands-step"
+              role="tab"
+              aria-selected="false"
+              data-how-works-step
+              data-step="2"
+              data-label="Step 2: Participate"
+              data-image="./images/secondLanding.png"
+            >
+              <span class="how-brands-step-icon">
+                <img src="./images/secondLanding.png" alt="" width="18" height="18" />
+              </span>
+              <span class="how-brands-step-copy">
+                <span class="how-brands-step-title">Participate</span>
+                <span class="how-brands-step-text">Participate in eligible campaigns according to the requirements of each campaign.</span>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              class="how-brands-step"
+              role="tab"
+              aria-selected="false"
+              data-how-works-step
+              data-step="3"
+              data-label="Step 3: Manage Campaign Activity"
+              data-image="./images/thirdLanding.png"
+            >
+              <span class="how-brands-step-icon">
+                <img src="./images/thirdLanding.png" alt="" width="21" height="20" />
+              </span>
+              <span class="how-brands-step-copy">
+                <span class="how-brands-step-title">Manage Campaign Activity</span>
+                <span class="how-brands-step-text">Manage your campaign-related activity through Kamao.</span>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              class="how-brands-step"
+              role="tab"
+              aria-selected="false"
+              data-how-works-step
+              data-step="4"
+              data-label="Step 4: Track Available Information"
+              data-image="./images/4thLanding.png"
+            >
+              <span class="how-brands-step-icon">
+                <img src="./images/4thLanding.png" alt="" width="21" height="20" />
+              </span>
+              <span class="how-brands-step-copy">
+                <span class="how-brands-step-title">Track Available Information</span>
+                <span class="how-brands-step-text">Review available campaign and participation information through the platform.</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+          <!-- Section Heading -->
+      <div class="content-heading">
+        <h2 class="content-title roboto-600 reveal-item">
+          AUTHENTIC CONTENT<br>
+          MATCHES ACTUAL EARNINGS
+        </h2>
+
+        <p class="content-subtitle roboto-500">
+          Kamao functions helps creator become a prime organic<br>
+          content marketing channel.
+        </p>
+      </div>
+
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+      <img src="./images/creators/cta/cta_ribbon.svg" alt="" class="cta-ribbon"/>
+      <div class="cta-card">
+        <div class="cta-content">
+          <h2 class="cta-title roboto-700">
+            START <span class="cta-title-highlight">KAMAO</span>
+          </h2>
+
+          <p class="cta-subtitle roboto-400">Get the app and start earning today</p>
+
+          <!-- <div class="cta-rating">
+            <span class="cta-stars">★★★★★</span>
+            <span class="cta-rating-value">4.8</span>
+            <span class="cta-members roboto-600">Join 150,905 members</span>
+          </div> -->
+
+          <div class="cta-app-buttons">
+            <a href="https://play.google.com/store/apps/details?id=com.aayusofttech.kamao&hl=en" target="_blank" class="cta-app-link">
+              <img src="./images/creators/cta/google_play_btn.svg" alt="Get it on Google Play" class="cta-app-image" />
+            </a>
+
+            <a href="https://apps.apple.com/us/app/kamao/id6821818381" target="_blank" class="cta-app-link">
+              <img src="./images/creators/cta/app_store_btn.svg" alt="Download on the App Store"
+                class="cta-app-image" />
+            </a>
+          </div>
+        </div>
+
+        <div class="cta-wallet">
+          <img src="./images/creators/cta/wallet.png" alt="Wallet with money" class="cta-wallet-image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION ABOVE FAQ SECTION -->
+    <section class="faq-stats-banner" style="text-align: start;">
+      <div class="faq-stats-container">
+        <div class="faq-stats-content-wrapper">
+          <h2 class="faq-stats-title roboto-700 reveal-item">
+            JOIN OUR CREATOR CAMPAIGNS
+          </h2>
+
+          <p class="faq-stats-subtitle roboto-condensed-500 reveal-item">
+            Creators earn by making content for brands they actually want to promote.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ ACCORDION AND IMAGES -->
+    <section id="faq-sbsr-1575">
+      <div class="faq-container">
+
+        <!-- Right Section -->
+         <div class="faq-image-group">
+          <div class="faq-row">
+
+            <picture class="faq-picture faq-picture1">
+              <source media="(max-width: 600px)"
+                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/man2.jpg">
+
+              <source media="(min-width: 601px)"
+                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/man2.jpg">
+
+              <img draggable="false" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/man2.jpg" alt="Creator making content"
+                width="305" height="410">
+            </picture>
+
+            <picture class="faq-picture faq-picture3">
+              <source media="(max-width: 600px)" srcset="https://imgs.search.brave.com/RHkA_aMxj9lAu0mGMaz-YQjiC6GWuhgIluzz57LbIsU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9jb250/ZW50LWNyZWF0b3It/cG91cmluZy13YXRl/ci1nbGFzcy1yZWNv/cmRpbmctcG9kY2Fz/dC1jb2xsZWFndWUt/cHJvZmVzc2lvbmFs/LXN0dWRpby1jb250/ZW50LWNyZWF0b3It/NDA1NzE3MDMyLmpw/Zw">
+
+              <source media="(min-width: 601px)" srcset="https://imgs.search.brave.com/RHkA_aMxj9lAu0mGMaz-YQjiC6GWuhgIluzz57LbIsU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9jb250/ZW50LWNyZWF0b3It/cG91cmluZy13YXRl/ci1nbGFzcy1yZWNv/cmRpbmctcG9kY2Fz/dC1jb2xsZWFndWUt/cHJvZmVzc2lvbmFs/LXN0dWRpby1jb250/ZW50LWNyZWF0b3It/NDA1NzE3MDMyLmpw/Zw">
+
+              <img draggable="false" loading="lazy" decoding="async" src="https://imgs.search.brave.com/RHkA_aMxj9lAu0mGMaz-YQjiC6GWuhgIluzz57LbIsU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9jb250/ZW50LWNyZWF0b3It/cG91cmluZy13YXRl/ci1nbGFzcy1yZWNv/cmRpbmctcG9kY2Fz/dC1jb2xsZWFndWUt/cHJvZmVzc2lvbmFs/LXN0dWRpby1jb250/ZW50LWNyZWF0b3It/NDA1NzE3MDMyLmpw/Zw"
+                alt="Creator filming music" width="305" height="467">
+            </picture>
+
+          </div>
+
+          <div class="faq-row">
+
+            <picture class="faq-picture faq-picture2">
+              <source media="(max-width: 600px)"
+                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing.jpg">
+
+              <source media="(min-width: 601px)"
+                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing.jpg">
+
+              <img draggable="false" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing.jpg" alt="Camera" width="305"
+                height="615">
+            </picture>
+
+            <picture class="faq-picture faq-picture4">
+              <source media="(max-width: 600px)"
+                srcset="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80">
+
+              <source media="(min-width: 601px)"
+                srcset="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80">
+
+              <img draggable="false" loading="lazy" decoding="async"
+                src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80"
+                alt="Creator content" width="305" height="277">
+            </picture>
+
+          </div>
+        </div>
+
+
+        <!-- Left Section -->
+        <div class="faq-content">
+
+          <span class="faq-topper roboto-600 reveal-item">
+            For creators
+          </span>
+
+          <h2 class="faq-title roboto-600 reveal-item">
+            Create. Post. Get paid.
+          </h2>
+
+
+          <ul class="faq-group">
+
+            <!-- FAQ 01 -->
+            <li class="faq-item active">
+
+              <button class="faq-button">
+
+                <span class="faq-button-text roboto-600">
+                  How do I make money on Kamao?
+                </span>
+
+                <span class="faq-indicator" aria-hidden="true"></span>
+
+              </button>
+
+              <p class="faq-item-p">
+                Brands post campaigns on Kamao looking for creators to make
+                content for them. You choose the campaigns that fit your
+                content and audience, create the post, and earn when your
+                work meets the campaign requirements.
+              </p>
+
+            </li>
+
+
+            <!-- FAQ 02 -->
+            <li class="faq-item">
+
+              <button class="faq-button">
+
+                <span class="faq-button-text roboto-600">
+                  Do I have to pay to join a campaign?
+                </span>
+
+                <span class="faq-indicator" aria-hidden="true"></span>
+
+              </button>
+
+              <p class="faq-item-p">
+                No. Kamao is built around creators earning from brand
+                campaigns, not paying to access them. Each campaign can
+                have its own requirements, deliverables, and payout.
+              </p>
+
+            </li>
+
+
+            <!-- FAQ 03 -->
+            <li class="faq-item">
+
+              <button class="faq-button">
+
+                <span class="faq-button-text roboto-600">
+                  Can I choose which brands I work with?
+                </span>
+
+                <span class="faq-indicator" aria-hidden="true"></span>
+
+              </button>
+
+              <p class="faq-item-p">
+                Yes. You can browse available campaigns and decide which
+                brands, products, and content opportunities make sense
+                for you. The goal is to let creators choose work that
+                feels natural to their content.
+              </p>
+
+            </li>
+
+
+            <!-- FAQ 04 -->
+            <!-- <li class="faq-item">
+
+              <button class="faq-button">
+
+                <span class="faq-button-text roboto-600">
+                  How much can I earn from a campaign?
+                </span>
+
+                <span class="faq-indicator" aria-hidden="true"></span>
+
+              </button>
+
+              <p class="faq-item-p roboto-600">
+                Campaign payouts can vary depending on the brand,
+                campaign requirements, content format, and other
+                factors. For this draft, imagine campaigns ranging from
+                Rs. 2,000 to Rs. 50,000+.
+              </p>
+
+            </li> -->
+
+
+            <!-- FAQ 05 -->
+            <li class="faq-item">
+
+              <button class="faq-button">
+
+                <span class="faq-button-text roboto-600">
+                  Do I need a huge following to get started?
+                </span>
+
+                <span class="faq-indicator" aria-hidden="true"></span>
+
+              </button>
+
+              <p class="faq-item-p">
+                Not necessarily. Brands can look for different types of
+                creators depending on their campaign. A focused audience,
+                strong content, and a good fit with the brand can matter
+                more than simply having a large follower count.
+              </p>
+
+            </li>
+
+
+            <!-- FAQ 06 -->
+            <li class="faq-item">
+
+              <button class="faq-button">
+
+                <span class="faq-button-text roboto-600">
+                  What kind of content can I create?
+                </span>
+
+                <span class="faq-indicator" aria-hidden="true"></span>
+
+              </button>
+
+              <p class="faq-item-p">
+                Campaigns can include short-form videos, product
+                showcases, reviews, tutorials, lifestyle posts, and
+                other social content. Each campaign will tell you what
+                the brand is looking for before you create.
+              </p>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION ENDS -->
+
+    <!-- testimonial section -->
+    <section class="testimonials-section" style="padding-top: 30px;">
+      <!-- Decorative corner rings -->
+      <img src="./images/testimonials/ring.svg" alt="" class="testimonials-corner testimonials-corner-top"
+        aria-hidden="true" />
+
+      <img src="./images/testimonials/ring.svg" alt="" class="testimonials-corner testimonials-corner-bottom"
+        aria-hidden="true" />
+
+      <div class="testimonials-container">
+
+        <!-- Section heading -->
+        <div class="testimonials-heading">
+          <span class="testimonials-eyebrow roboto-600">CREATOR STORIES</span>
+
+          <h2 class="testimonials-title roboto-600">
+            Real creators, real<br class="testimonials-title-break">
+            rewards for sharing
+          </h2>
+
+          <p class="testimonials-subtitle roboto-400">
+            Hear from creators who are earning rewards by sharing genuine experiences with
+            <br class="testimonials-subtitle-break">
+            products they love and creating content their audiences can actually trust.
+          </p>
+        </div>
+
+
+        <!-- Carousel -->
+        <div class="testimonials-carousel">
+
+          <div class="testimonials-viewport">
+
+            <div class="testimonials-track roboto-400">
+
+              <!-- Testimonial 1 -->
+              <article class="testimonials-slide">
+                <div class="testimonials-card">
+
+                  <img src="./images/testimonials/hills.svg" alt="" class="testimonials-hills" aria-hidden="true" />
+
+                  <div class="testimonials-content ">
+                    <p class="testimonials-text">
+                      I love that I can share products I already use and get rewarded for it.
+                      The process is simple, and it feels much more natural than making
+                      sponsored content that doesn't really fit my audience.
+                    </p>
+
+                    <div class="testimonials-author">
+                      <strong class="testimonials-author-name">
+                        Aayusha Shrestha
+                      </strong>
+
+                      <span class="testimonials-author-role">
+                        Lifestyle Creator
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+
+              <!-- Testimonial 2 -->
+              <article class="testimonials-slide">
+                <div class="testimonials-card">
+
+                  <img src="./images/testimonials/hills.svg" alt="" class="testimonials-hills" aria-hidden="true" />
+
+                  <div class="testimonials-content">
+                    <p class="testimonials-text">
+                      I was surprised by how easy it was to get started. I simply shared my
+                      genuine experience after buying a product, and earning a reward made
+                      creating content feel even more worthwhile.
+                    </p>
+
+                    <div class="testimonials-author">
+                      <strong class="testimonials-author-name">
+                        Rohan Mehta
+                      </strong>
+
+                      <span class="testimonials-author-role">
+                        Tech & Lifestyle Creator
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+
+              <!-- Testimonial 3 -->
+              <article class="testimonials-slide">
+                <div class="testimonials-card">
+
+                  <img src="./images/testimonials/hills.svg" alt="" class="testimonials-hills" aria-hidden="true" />
+
+                  <div class="testimonials-content">
+                    <p class="testimonials-text">
+                      What I like most is that the content comes from a real purchase.
+                      I can talk about what I actually think about a product, and my followers
+                      know the recommendation is coming from my own experience.
+                    </p>
+
+                    <div class="testimonials-author">
+                      <strong class="testimonials-author-name">
+                        Priya Nair
+                      </strong>
+
+                      <span class="testimonials-author-role">
+                        Beauty Creator
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+
+              <!-- Testimonial 4 -->
+              <article class="testimonials-slide">
+                <div class="testimonials-card">
+
+                  <img src="./images/testimonials/hills.svg" alt="" class="testimonials-hills" aria-hidden="true" />
+
+                  <div class="testimonials-content">
+                    <p class="testimonials-text">
+                      As a smaller creator, it is great to have a way to earn from content
+                      without needing a huge following. I can focus on sharing honest reviews
+                      and build a little extra income along the way.
+                    </p>
+
+                    <div class="testimonials-author">
+                      <strong class="testimonials-author-name">
+                        Suman Karki
+                      </strong>
+
+                      <span class="testimonials-author-role">
+                        Content Creator
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+
+          <!-- Navigation -->
+          <div class="testimonials-navigation">
+
+            <button type="button" class="testimonials-button testimonials-button-prev"
+              aria-label="Previous testimonial">
+              <span>‹</span>
+            </button>
+
+            <button type="button" class="testimonials-button testimonials-button-next" aria-label="Next testimonial">
+              <span>›</span>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- FOOTER  -->
+<footer class="footer" id="footer">
+  <canvas id="trail" aria-hidden="true"></canvas>
+
+    <div class="footer__container footer-content" id="contact">
+
+      <div class="footer__columns">
+
+        <!-- For Creators -->
+        <div class="footer__column">
+          <h3 class="footer__heading">For Creators</h3>
+
+          <a href="/creators" class="footer__link">Creator overview</a>
+          <a href="/terms" class="footer__link">Terms and Conditions</a>
+          <a href="/privacy" class="footer__link">Privacy Policy</a>
+          <a href="/child-safety" class="footer__link">Child Safety Standards</a>
+          <a href="/delete-account" class="footer__link">Delete Account</a>
+        </div>
+
+        <!-- For Brands -->
+        <div class="footer__column">
+          <h3 class="footer__heading">For Brands</h3>
+
+
+          <a href="/book-demo" class="footer__link">Book a Demo</a>
+          <a href="/terms" class="footer__link">Terms and Conditions</a>
+          <a href="/privacy" class="footer__link">Privacy Policy</a>
+          <a href="/child-safety" class="footer__link">Child Safety Standards</a>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer__column">
+          <h3 class="footer__heading">Resources</h3>
+
+
+          <a href="/privacy" class="footer__link">Privacy Policy</a>
+          <a href="/terms" class="footer__link">Terms and Conditions</a>
+          <a href="/child-safety" class="footer__link">Child Safety Standards</a>
+          <a href="/delete-account" class="footer__link">Delete Account</a>
+        </div>
+
+        <!-- Our Company -->
+        <div class="footer__column">
+          <h3 class="footer__heading">Our Company</h3>
+
+          <a href="https://aayusofttech.com.np" target="_blank" rel="noopener" class="footer__link">Aayu Softtech</a>
+          <a href="/privacy" class="footer__link">Privacy Policy</a>
+          <a href="/child-safety" class="footer__link">Child Safety Standards</a>
+          <a href="/terms" class="footer__link">Terms of Use</a>
+          <a href="/delete-account" class="footer__link">Delete Account</a>
+          <a href="/book-demo" class="footer__link">Contact us</a>
+        </div>
+
+      </div>
+
+      <!-- Description -->
+     <div class="footer__description">
+        We value Your Brands. We make your Brand Reality.
+        <a href="https://aayusofttech.com.np" target="_blank" rel="noopener" class="footer__brand-link" class="footer__brand-link">aayusofttech.com.np</a>,
+        For any Queries
+              <a href="mailto:aayusoft@outlook.com" class="footer__contact-link">aayusoft@outlook.com</a>
+      </div>
+      <!-- Bottom -->
+      <div class="footer__bottom">
+
+        <div class="footer__copyright">
+          Copyright © 2026 Ayasufottech Inc. All rights reserved.
+        </div>
+
+        <nav class="footer__legal">
+          <a href="/privacy" class="footer__legal-link">Privacy Policy</a>
+          <span class="footer__separator"></span>
+
+          <a href="/child-safety" class="footer__legal-link">Child Safety Standards</a>
+          <span class="footer__separator"></span>
+
+          <a href="/terms" class="footer__legal-link">Terms of Use</a>
+          <span class="footer__separator"></span>
+
+          <a href="/delete-account" class="footer__legal-link">Delete Account</a>
+        </nav>
+
+      </div>
+
+    </div>
+  </footer>
+
+    <!-- FOOTER END -->
+
+  </main>
+
+<script src="js/main.js"></script>
+  <script src="js/howKamaoWorks.js" defer></script>
+  <script src="js/stickyBtn.js" defer></script>
+  <script src="js/textReveal.js" defer></script>
+  <script src="js/ribbonFollowOnCursor.js" defer></script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <script>
+
+            // ============================================
+        //              LOCOMOTIVE SCROLL
+        // ============================================
+
+        if (typeof LocomotiveScroll !== "undefined") {
+            const scrollContainer = document.querySelector("[data-scroll-container]");
+
+            if (scrollContainer) {
+                const scroll = new LocomotiveScroll({
+                    el: scrollContainer,
+                    smooth: true,
+                    smartphone: {
+                        smooth: false
+                    },
+                    tablet: {
+                        smooth: false
+                    }
+                });
+            }
+        }
+
+
+
+
+
+    // Testimonials carousel
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const testimonialsCarousel =
+        document.querySelector(".testimonials-carousel");
+
+      if (!testimonialsCarousel) return;
+
+
+      const testimonialsTrack =
+        testimonialsCarousel.querySelector(".testimonials-track");
+
+      const testimonialsSlides =
+        testimonialsCarousel.querySelectorAll(".testimonials-slide");
+
+      const testimonialsPrev =
+        testimonialsCarousel.querySelector(".testimonials-button-prev");
+
+      const testimonialsNext =
+        testimonialsCarousel.querySelector(".testimonials-button-next");
+
+
+      let testimonialsCurrent = 0;
+      const testimonialsTotal = testimonialsSlides.length;
+
+
+      /* =========================================
+         UPDATE CAROUSEL
+      ========================================= */
+
+      function testimonialsUpdate() {
+
+        testimonialsTrack.style.transform =
+          `translateX(-${testimonialsCurrent * 100}%)`;
+
+
+        testimonialsPrev.disabled =
+          testimonialsCurrent === 0;
+
+        testimonialsNext.disabled =
+          testimonialsCurrent === testimonialsTotal - 1;
+      }
+
+
+      /* =========================================
+         NEXT
+      ========================================= */
+
+      function testimonialsGoNext() {
+
+        if (testimonialsCurrent >= testimonialsTotal - 1) {
+          return;
+        }
+
+        testimonialsCurrent++;
+
+        testimonialsUpdate();
+      }
+
+
+      /* =========================================
+         PREVIOUS
+      ========================================= */
+
+      function testimonialsGoPrevious() {
+
+        if (testimonialsCurrent <= 0) {
+          return;
+        }
+
+        testimonialsCurrent--;
+
+        testimonialsUpdate();
+      }
+
+
+      /* =========================================
+         BUTTON EVENTS
+      ========================================= */
+
+      testimonialsNext.addEventListener(
+        "click",
+        testimonialsGoNext
+      );
+
+
+      testimonialsPrev.addEventListener(
+        "click",
+        testimonialsGoPrevious
+      );
+
+
+      /* =========================================
+         KEYBOARD NAVIGATION
+      ========================================= */
+
+      testimonialsCarousel.addEventListener(
+        "keydown",
+        function (event) {
+
+          if (event.key === "ArrowRight") {
+            testimonialsGoNext();
+          }
+
+          if (event.key === "ArrowLeft") {
+            testimonialsGoPrevious();
+          }
+
+        }
+      );
+
+
+      /* =========================================
+         TOUCH / SWIPE
+      ========================================= */
+
+      let testimonialsTouchStartX = 0;
+      let testimonialsTouchEndX = 0;
+
+
+      testimonialsCarousel.addEventListener(
+        "touchstart",
+        function (event) {
+
+          testimonialsTouchStartX =
+            event.changedTouches[0].screenX;
+
+        },
+        {
+          passive: true
+        }
+      );
+
+
+      testimonialsCarousel.addEventListener(
+        "touchend",
+        function (event) {
+
+          testimonialsTouchEndX =
+            event.changedTouches[0].screenX;
+
+          testimonialsHandleSwipe();
+
+        },
+        {
+          passive: true
+        }
+      );
+
+
+      function testimonialsHandleSwipe() {
+
+        const testimonialsSwipeDistance =
+          testimonialsTouchEndX -
+          testimonialsTouchStartX;
+
+
+        const testimonialsMinimumSwipe = 45;
+
+
+        if (
+          Math.abs(testimonialsSwipeDistance) <
+          testimonialsMinimumSwipe
+        ) {
+          return;
+        }
+
+
+        if (testimonialsSwipeDistance < 0) {
+          testimonialsGoNext();
+        } else {
+          testimonialsGoPrevious();
+        }
+
+      }
+
+
+      /* =========================================
+         INITIAL STATE
+      ========================================= */
+
+      testimonialsUpdate();
+
+    });
+
+
+  </script>
+
+  <script>
+    // =========================
+    // FAQ ACCORDION
+    // =========================
+
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach((item) => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+
+
+    // =========================
+    // SCROLL EFFECT IN TEXT
+    // =========================
+
+    const buttonText = "Explore brands";
+    const textContainer = document.querySelector(".button-text");
+    const button = document.querySelector(".creator-brands-button");
+
+    if (textContainer && button) {
+
+        textContainer.innerHTML = [...buttonText]
+            .map(char => {
+
+                // Preserve spaces
+                if (char === " ") {
+                    return `<span class="button-space"></span>`;
+                }
+
+                // Create 4 copies of each character
+                return `
+                    <span class="button-letter">
+                        <span>${char}</span>
+                        <span>${char}</span>
+                        <span>${char}</span>
+                        <span>${char}</span>
+                    </span>
+                `;
+            })
+            .join("");
+
+        const letters = document.querySelectorAll(".button-letter");
+
+        button.addEventListener("mouseenter", () => {
+            letters.forEach((letter, index) => {
+                setTimeout(() => {
+                    letter.style.transform = "translateY(-310%)";
+                }, index * 30);
+            });
+        });
+
+        button.addEventListener("mouseleave", () => {
+            letters.forEach((letter, index) => {
+                setTimeout(() => {
+                    letter.style.transform = "translateY(0)";
+                }, index * 20);
+            });
+        });
+    }
+</script>
+
+</body>
+
+</html>

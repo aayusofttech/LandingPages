@@ -110,7 +110,7 @@
 .nav-link {
   position: relative;
 
-  font-size: 15.2px;
+  font-size: 18.2px;
   font-weight: 500;
 
   color: #111315;
@@ -162,7 +162,7 @@
 
   color: var(--ink-soft);
 
-  font-size: 15.2px;
+  font-size: 18.2px;
   font-weight: 500;
 
   white-space: nowrap;
@@ -1402,4 +1402,9 @@
   #events-1511 {
     display: none ;
   }
+}
+@media (min-width: 1000px) {
+.mt30Lscreen{
+  margin-top: 35px !important;
+}
 }

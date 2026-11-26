@@ -1,0 +1,263 @@
+/* Creator page stack card css  */
+   .card-stack {
+  /* ---- easy settings ---- */
+  --stack-radius: 28px;                          /* corner roundness */
+  --stack-time: .85s;                            /* speed: bigger = slower */
+  --stack-ease: cubic-bezier(.22, 1, .36, 1);    /* soft, smooth landing */
+
+  position: relative;
+  width: min(100%, 460px);                       /* fits every screen */
+  aspect-ratio: 3 / 4;
+  margin: 0 auto;
+  touch-action: pan-y;                           /* page still scrolls up/down, swipe sideways is ours */
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.stack-card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 66%;
+  height: 80%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  border-radius: var(--stack-radius);
+  transform-origin: 0 0;
+  will-change: transform;
+  -webkit-tap-highlight-color: transparent;
+  /* z-index flips halfway through the move, at the peak of the slide-out */
+  transition:
+    transform var(--stack-time) var(--stack-ease),
+    opacity .5s ease,
+    filter .6s ease,
+    z-index 0s linear .3s;
+}
+
+.stack-inner {
+  position: absolute;
+  inset: 0;
+  display: block;
+  overflow: hidden;
+  border-radius: var(--stack-radius);
+  background: linear-gradient(160deg, #dfeadb, #c5d9c2);   /* shows if an image is missing */
+  box-shadow: 0 14px 30px -14px rgba(20, 35, 25, .3);
+  transition: box-shadow var(--stack-time) var(--stack-ease),
+              transform .45s var(--stack-ease);
+}
+.stack-card:nth-child(2) .stack-inner { background: linear-gradient(160deg, #f3d4d0, #e7a9a2); }
+.stack-card:nth-child(3) .stack-inner { background: linear-gradient(160deg, #d6e4f7, #a9c5ec); }
+.stack-card:nth-child(4) .stack-inner { background: linear-gradient(160deg, #f6e8c4, #e8cf8c); }
+
+.stack-inner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+/* light sweep, plays on the clicked card */
+.stack-inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, .45) 50%, transparent 65%);
+  transform: translateX(-130%);
+  pointer-events: none;
+}
+
+/* ---------- positions: rank 0 = front ---------- */
+.stack-card[data-pos="0"] { z-index: 5; transform: translate(0, 0) rotate(0) scale(1); filter: none; }
+.stack-card[data-pos="1"] { z-index: 4; transform: translate(40%, 14%) rotate(2deg) scale(.94);  filter: brightness(.97); }
+.stack-card[data-pos="2"] { z-index: 3; transform: translate(12%, 26%) rotate(-2deg) scale(.88); filter: brightness(.94); }
+.stack-card[data-pos="3"] { z-index: 2; transform: translate(46%, 34%) rotate(3deg) scale(.82);  filter: brightness(.92); }
+.stack-card[data-pos="4"] { z-index: 1; transform: translate(46%, 34%) rotate(3deg) scale(.82);  opacity: 0; pointer-events: none; }
+
+.stack-card[data-pos="0"] .stack-inner {
+  box-shadow: 0 34px 60px -22px rgba(20, 35, 25, .5), 0 8px 22px rgba(20, 35, 25, .12);
+}
+.stack-card[data-pos="0"] { cursor: default; }
+
+/* a small lift on hover, so people know the back cards are clickable */
+@media (hover: hover) {
+  .stack-card:not([data-pos="0"]):hover .stack-inner { transform: translateY(-2.5%); }
+}
+
+.stack-card:focus-visible { outline: none; }
+.stack-card:focus-visible .stack-inner { outline: 3px solid #4a6341; outline-offset: 3px; }
+
+/* ---------- the slide-out when a card is clicked ---------- */
+@keyframes stackSwoop {
+  0%   { transform: translate3d(0, 0, 0) rotate(0) scale(1); }
+  38%  { transform: translate3d(16%, -5%, 0) rotate(4deg) scale(1.04); }
+  100% { transform: translate3d(0, 0, 0) rotate(0) scale(1); }
+}
+@keyframes stackShine {
+  from { transform: translateX(-130%); }
+  to   { transform: translateX(130%); }
+}
+.stack-card.is-swoop .stack-inner { animation: stackSwoop .9s cubic-bezier(.45, 0, .2, 1); }
+.stack-card.is-swoop .stack-inner::after { animation: stackShine .9s ease .15s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .stack-card { transition: opacity .2s, z-index 0s; }
+  .stack-card.is-swoop .stack-inner,
+  .stack-card.is-swoop .stack-inner::after { animation: none; }
+}
+
+
+/* ================= HOW KAMAO WORKS: STEP 1 CARD STACK ================= */
+
+/* things that fade out when the stack is showing */
+.how-brands-visual .how-brands-visual-media {
+  transition: opacity .45s ease, scale .6s cubic-bezier(.22,1,.36,1), visibility 0s;
+}
+.how-brands-visual .how-brands-visual-bg {
+  transition: opacity .5s ease, scale .6s cubic-bezier(.22,1,.36,1);
+}
+.how-brands-visual .how-brands-step-pill {
+  transition: left .7s cubic-bezier(.22,1,.36,1);
+}
+.how-brands-visual.is-stack .how-brands-visual-media {
+  opacity: 0; visibility: hidden; scale: .96; pointer-events: none;
+  transition: opacity .35s ease, scale .5s ease, visibility 0s .35s;
+}
+.how-brands-visual.is-stack .how-brands-visual-bg { opacity: 0; scale: .96; }
+/* the pill follows the front card's top-left corner and never blocks clicks */
+.how-brands-visual.is-stack .how-brands-step-pill {
+  left: calc((100% - min(94%, 350px)) / 2 + 16px);
+  pointer-events: none;
+}
+
+/* the stack container */
+.how-brands-visual .hb-stack {
+  /* ---- easy settings ---- */
+  --hb-radius: 24px;                            /* corner roundness (use 0 if your images have their own corners) */
+  --hb-time: .85s;                              /* move speed: bigger = slower */
+  --hb-ease: cubic-bezier(.22, 1, .36, 1);      /* soft, smooth landing */
+
+  position: absolute;
+  top: 12px;
+  left: 0; right: 0;
+  margin-inline: auto;
+  width: min(94%, 350px);                       /* stack width: shrinks on small screens */
+  height: calc(100% - 12px);
+  z-index: 1;
+  touch-action: pan-y;
+  -webkit-user-select: none; user-select: none;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity .35s ease, visibility 0s .35s;
+}
+.how-brands-visual.is-stack .hb-stack {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transition: opacity .4s ease, visibility 0s;
+}
+
+/* a card */
+.hb-stack .hb-card {
+  position: absolute;
+  left: 0; top: 0;
+  width: 68%;
+  height: 80%;
+  padding: 0; margin: 0; border: 0;
+  background: none;
+  cursor: pointer;
+  border-radius: var(--hb-radius);
+  transform-origin: 0 0;
+  will-change: transform;
+  -webkit-tap-highlight-color: transparent;
+  translate: 0 40px;                            /* waiting below, before the deal-in */
+  transition:
+    transform var(--hb-time) var(--hb-ease),
+    opacity .5s ease,
+    filter .6s ease,
+    z-index 0s linear .3s,
+    translate .35s ease;
+}
+/* deal-in: back cards arrive first, the front card last */
+.how-brands-visual.is-stack .hb-stack .hb-card {
+  translate: 0 0;
+  transition:
+    transform var(--hb-time) var(--hb-ease),
+    opacity .5s ease,
+    filter .6s ease,
+    z-index 0s linear .3s,
+    translate .9s var(--hb-ease) calc((4 - var(--i, 0)) * .08s + .12s);
+}
+
+.hb-stack .hb-inner {
+  position: absolute; inset: 0;
+  display: block;
+  overflow: hidden;
+  border-radius: var(--hb-radius);
+  background: linear-gradient(160deg, #dfeadb, #c5d9c2);    /* shows if an image is missing */
+  box-shadow: 0 14px 30px -14px rgba(20, 35, 25, .3);
+  opacity: 0;
+  transition: opacity .3s ease, box-shadow var(--hb-time) var(--hb-ease), transform .45s var(--hb-ease);
+}
+.how-brands-visual.is-stack .hb-stack .hb-inner {
+  opacity: 1;
+  transition:
+    opacity .6s ease calc((4 - var(--i, 0)) * .08s + .1s),
+    box-shadow var(--hb-time) var(--hb-ease),
+    transform .45s var(--hb-ease);
+}
+.hb-stack .hb-card:nth-child(2) .hb-inner { background: linear-gradient(160deg, #f3d4d0, #e7a9a2); }
+.hb-stack .hb-card:nth-child(3) .hb-inner { background: linear-gradient(160deg, #d6e4f7, #a9c5ec); }
+.hb-stack .hb-card:nth-child(4) .hb-inner { background: linear-gradient(160deg, #f6e8c4, #e8cf8c); }
+
+.hb-stack .hb-inner img {
+  display: block; width: 100%; height: 100%;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+/* light sweep, plays on the clicked card */
+.hb-stack .hb-inner::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(105deg, transparent 35%, rgba(255,255,255,.45) 50%, transparent 65%);
+  transform: translateX(-130%);
+  pointer-events: none;
+}
+
+/* positions: 0 = front */
+.hb-stack .hb-card[data-pos="0"] { z-index: 5; transform: translate(0, 0) rotate(0) scale(1); filter: none; cursor: default; }
+.hb-stack .hb-card[data-pos="1"] { z-index: 4; transform: translate(40%, 14%) rotate(2deg) scale(.94);  filter: brightness(.97); }
+.hb-stack .hb-card[data-pos="2"] { z-index: 3; transform: translate(12%, 26%) rotate(-2deg) scale(.88); filter: brightness(.94); }
+.hb-stack .hb-card[data-pos="3"] { z-index: 2; transform: translate(46%, 34%) rotate(3deg) scale(.82);  filter: brightness(.92); }
+.hb-stack .hb-card[data-pos="4"] { z-index: 1; transform: translate(46%, 34%) rotate(3deg) scale(.82);  opacity: 0; pointer-events: none; }
+
+.hb-stack .hb-card[data-pos="0"] .hb-inner {
+  box-shadow: 0 34px 60px -22px rgba(20, 35, 25, .5), 0 8px 22px rgba(20, 35, 25, .12);
+}
+
+@media (hover: hover) {
+  .hb-stack .hb-card:not([data-pos="0"]):hover .hb-inner { transform: translateY(-2.5%); }
+}
+
+.hb-stack .hb-card:focus-visible { outline: none; }
+.hb-stack .hb-card:focus-visible .hb-inner { outline: 3px solid #4a6341; outline-offset: 3px; }
+
+/* the swing when a card is chosen */
+@keyframes hbSwoop {
+  0%   { transform: translate3d(0, 0, 0) rotate(0) scale(1); }
+  38%  { transform: translate3d(16%, -5%, 0) rotate(4deg) scale(1.04); }
+  100% { transform: translate3d(0, 0, 0) rotate(0) scale(1); }
+}
+@keyframes hbShine { from { transform: translateX(-130%); } to { transform: translateX(130%); } }
+.hb-stack .hb-card.is-swoop .hb-inner { animation: hbSwoop .9s cubic-bezier(.45, 0, .2, 1); }
+.hb-stack .hb-card.is-swoop .hb-inner::after { animation: hbShine .9s ease .15s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hb-stack .hb-card, .hb-stack .hb-inner,
+  .how-brands-visual .how-brands-visual-media,
+  .how-brands-visual .how-brands-step-pill { transition: opacity .2s !important; translate: none !important; }
+  .hb-stack .hb-card.is-swoop .hb-inner,
+  .hb-stack .hb-card.is-swoop .hb-inner::after { animation: none; }
+}

@@ -109,7 +109,7 @@ h1.h1{margin:0 auto;max-width:1120px;font-weight:900;text-transform:uppercase;fo
 @keyframes fade{from{opacity:0;transform:translateX(-30px)}}
 
 /* shared type */
-.eyebrow{font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--forest);margin:0 0 12px}
+.eyebrow{font-size:16px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--forest);margin:0 0 12px}
 h2.h2{margin:0;font-weight:900;text-transform:uppercase;font-size:56px;line-height:1.04;letter-spacing:-.015em}
 .lead{font-size:19px;color:#454F49;max-width:620px;margin:16px 0 0}
 .center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
@@ -192,7 +192,7 @@ h2.h2{margin:0;font-weight:900;text-transform:uppercase;font-size:56px;line-heig
 .leg.on{opacity:1;border-color:var(--gold);background:#fff;box-shadow:0 18px 44px rgba(201,162,74,.2)}
 .leg i{flex:0 0 32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:900;background:var(--mint);color:var(--forest)}
 .leg.on i{background:var(--forest);color:#fff}
-.leg b{display:block}.leg span{font-size:14px;color:var(--muted)}
+.leg b{display:block}.leg span{font-size:17px;color:var(--muted)}
 .dial{position:relative;width:500px;height:500px;margin:0 auto}
 .dial svg.face2{position:absolute;inset:0;width:100%;height:100%}
 .dial .sweep{position:absolute;inset:34px;border-radius:50%;background:conic-gradient(from 0deg,rgba(126,217,87,0) 0deg,rgba(126,217,87,0) 285deg,rgba(126,217,87,.34) 360deg);transform:rotate(calc(var(--ang,0)*1deg));mask:radial-gradient(circle,transparent 0 28px,#000 29px);-webkit-mask:radial-gradient(circle,transparent 0 28px,#000 29px)}
@@ -237,7 +237,10 @@ h2.h2{margin:0;font-weight:900;text-transform:uppercase;font-size:56px;line-heig
 .phone::before{content:"";position:absolute;left:50%;top:8px;transform:translateX(-50%);width:80px;height:22px;border-radius:12px;background:#0B100D;z-index:7}
 .phone::after{content:"";position:absolute;top:-10%;bottom:-10%;left:-70%;width:46%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-16deg);animation:gloss 7.5s ease-in-out 1.6s infinite;pointer-events:none;z-index:8}
 @keyframes gloss{0%,55%{left:-70%}100%{left:140%}}
-.pstat{position:absolute;top:10px;left:22px;right:22px;display:flex;justify-content:space-between;align-items:center;font-size:11px;font-weight:700;z-index:6;color:var(--ink)}
+.pstat{position:absolute;top:10px;left:0;right:0;    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; display:flex;justify-content:space-between;align-items:center;font-size:11px;font-weight:700;z-index:6;color:var(--ink)}
 .pstat .pi{display:flex;gap:5px;align-items:center;font-size:13px}
 .ptab{position:absolute;left:10px;right:10px;bottom:10px;height:54px;border-radius:27px;background:rgba(255,255,255,.94);box-shadow:0 12px 28px rgba(22,32,26,.16);border:1px solid #fff;display:flex;align-items:center;justify-content:space-around;z-index:6}
 .ptab span{font-size:20px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;border-radius:12px;color:#9AA59A}
@@ -344,7 +347,16 @@ footer{background:#F4F6EF;padding:62px 0 34px;border-top:1px solid var(--line)}
 
 
 /* ---------- ribbons (animated) ---------- */
-.ribbons{position:absolute;left:-50px;top:0;width:calc(100% + 100px);height:780px;z-index:0;pointer-events:none;transform:translate3d(calc(var(--px,0)*-22px),calc(var(--sy,0)*-.2px),0);-webkit-mask-image:linear-gradient(#000 62%,transparent);mask-image:linear-gradient(#000 62%,transparent)}
+.ribbons{
+  position:absolute;
+  /* left:-50px; */
+  top:0;
+  width:calc(100% + 100px);
+  height:780px;z-index:0;
+  pointer-events:none;
+  transform:translate3d(calc(var(--px,0)*-22px),calc(var(--sy,0)*-.2px),0);
+  -webkit-mask-image:linear-gradient(#000 62%,transparent);mask-image:linear-gradient(#000 62%,transparent)
+}
 .ribbons svg{width:100%;height:100%;display:block;animation:fade 2.2s ease .2s both}
 .ribbons .px{transform:translateY(calc(var(--sy,0)*var(--k,0)*-1px))}
 .ribbons .fl{animation:rbfloat 11s ease-in-out infinite}.ribbons .f2{animation-duration:13s;animation-delay:-3s}.ribbons .f3{animation-duration:15s;animation-delay:-6s}.ribbons .f4{animation-duration:17s;animation-delay:-2s}
@@ -468,7 +480,7 @@ footer{background:#F4F6EF;padding:62px 0 34px;border-top:1px solid var(--line)}
 
 /* trust bar under the hero */
 .trustbar{display:flex;gap:30px;justify-content:center;align-items:center;margin-top:34px;flex-wrap:wrap}
-.tb{display:inline-flex;align-items:center;gap:11px;font-size:14.5px;font-weight:500;color:#3E4A43}
+.tb{display:inline-flex;align-items:center;gap:11px;font-size:16.5px;font-weight:500;color:#3E4A43}
 .tb .ic{--s:34px}
 
 /* glow behind key 3D icons */

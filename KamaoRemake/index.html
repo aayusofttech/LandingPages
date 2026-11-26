@@ -17,6 +17,7 @@
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/stackCard.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
@@ -27,7 +28,7 @@
   <link rel="stylesheet" href="assets/stylesNew.css">
 
 
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/responsive.css">
   <style>
     @media screen and (max-width: 750px) {
@@ -264,7 +265,7 @@
         <path fill="#FFD400" d="M350 176 L460 256 L350 336 L270 256 Z" />
       </svg>
       <span class="store-tx"><small>GET IT ON</small><b>Google Play</b></span>
-    </a>
+    </a> 
 
     <!-- iOS -->
     <a class="store store-ios" href="https://apps.apple.com/np/app/kamao/id6821818381" target="_blank" rel="noopener"
@@ -345,9 +346,6 @@
 
         <div class="mobile-actions">
 
-          <a href="/book-demo" class="mobile-demo" type="button" data-open-modal>
-            Book a Demo
-          </a>
 
           <a href="/Identity/Account/Register?type=launcher"  class="mobile-get-started" type="button" data-open-modal>
             Get Started
@@ -366,7 +364,8 @@
     </div>
   </div>
 
-  <main>
+      <main class="ribbonFollower"  data-name="BrnadsHero">
+    <canvas aria-hidden="true"></canvas>
 
     <!-- UPDATE HERO SEC  -->
     <!-- ============ HERO ============ -->
@@ -481,14 +480,22 @@
 
 
 
-            <p class="sub reveal-item">Kamao is a campaign platform that connects brands and creators to create, manage and
-              participate in digital marketing campaigns.</p>
+            <p class="sub reveal-item">Your own customers post about you and get rewarded for it. You set the budget, they share real experiences, and every reward is checked against a receipt before you pay.</p>
             <div class="cta"><a href="/Identity/Account/Register?type=launcher"  class="btn btn-r" data-to="contact" style="cursor:pointer">Launch campaign</a><a href="/book-demo"
                 class="btn btn-f" data-to="contact" style="cursor:pointer">Book a Demo</a></div>
-            <div class="trustbar"><span class="tb"><span class="ic t-lime"><i
-                    class="ph-bold ph-receipt"></i></span>Verified by receipt</span><span class="tb"><span
-                  class="ic t-gold"><i class="ph-bold ph-sliders"></i></span>You set the budget</span><span
-                class="tb"><span class="ic t-sky"><i class="ph-bold ph-seal-check"></i></span>Pay only for approved
+            <div class="trustbar"><span class="tb"><span class="ic t-lime">
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+            </span>Verified by receipt</span><span class="tb"><span
+                  class="ic t-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M13 3.99996H6C5.44773 3.99996 5.00003 4.4477 5 4.99996V15.3369C5.45462 15.1209 5.96321 15 6.5 15H19V9.99997H21V21C21 21.5523 20.5523 22 20 22H6.5C4.567 22 3 20.433 3 18.5V4.99996C3.00003 3.34313 4.34316 1.99996 6 1.99996H13V3.99996ZM6.5 17C5.67159 17 5.00003 17.6716 5 18.5C5 19.3284 5.67157 20 6.5 20H19V17H6.5ZM18.5293 0.329292C18.7059 -0.0964934 19.2942 -0.0965048 19.4707 0.329292L19.7236 0.940621C20.1556 1.98342 20.9616 2.81613 21.9746 3.2668L22.6924 3.58613C23.1026 3.76896 23.1026 4.36615 22.6924 4.54903L21.9326 4.88692C20.9449 5.3262 20.1534 6.12942 19.7139 7.1379L19.4668 7.70333C19.2864 8.11746 18.7137 8.11746 18.5332 7.70333L18.2871 7.1379C17.8476 6.12926 17.0552 5.32625 16.0674 4.88692L15.3076 4.54903C14.8974 4.36617 14.8974 3.76894 15.3076 3.58613L16.0254 3.2668C17.0385 2.81614 17.8445 1.98343 18.2764 0.940621L18.5293 0.329292Z"></path></svg>
+                
+                </span>You set the budget</span><span
+                class="tb"><span class="ic t-sky">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M18.0049 6.99979H21.0049C21.5572 6.99979 22.0049 7.4475 22.0049 7.99979V19.9998C22.0049 20.5521 21.5572 20.9998 21.0049 20.9998H3.00488C2.4526 20.9998 2.00488 20.5521 2.00488 19.9998V3.99979C2.00488 3.4475 2.4526 2.99979 3.00488 2.99979H18.0049V6.99979ZM4.00488 8.99979V18.9998H20.0049V8.99979H4.00488ZM4.00488 4.99979V6.99979H16.0049V4.99979H4.00488ZM15.0049 12.9998H18.0049V14.9998H15.0049V12.9998Z"></path></svg>
+
+                </span>Pay only for approved
                 posts</span></div>
           </div>
 
@@ -623,8 +630,11 @@
               </div>
               <div class="l" style="--z:140px;left:calc(50% + 160px);top:330px">
                 <div class="bob b2">
-                  <div class="glass" style="display:flex;align-items:center;gap:12px"><span class="tick"><i
-                        class="ph-bold ph-check"></i></span>
+                  <div class="glass" style="display:flex;align-items:center;gap:12px"><span class="tick">
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+                  </span>
                     <div><b style="font-size:15px">Verified by receipt</b><small>Checked before payout</small></div>
                   </div>
                 </div>
@@ -637,95 +647,117 @@
     </main>
     <!-- UPDATE HERO SEC END -->
 
-    <!-- VIEWS SECTION -->
-    <section class="stats2121 ">
+    <!-- VIEWS SECTION | REACH MILLIONS OF REAL VIEWS -->
+    <!-- <section class="stats2121 ">
       <div class="stats-container">
         <div class="stats-content-wrapper">
           <h2 class="stats-title roboto-600 reveal-item ">REACH MILLIONS OF REAL VIEWS</h2>
           <p class="stats-subtitle roboto-500 reveal-item">on average, with every penny invested</p>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     <!-- HOW KAMAO WORKS FOR BRANDS -->
+
     <section class="how-brands-section" id="how-kamao-works" aria-labelledby="howBrandsTitle">
-      <div class="how-brands-container">
-        <div class="how-brands-header">
-          <h2 class="how-brands-title roboto-600" id="howBrandsTitle">How Kamao works for brands</h2>
-          <p class="how-brands-subtitle roboto-400">
-            A simple workflow for running and participating in digital marketing campaigns.
-          </p>
+  <div class="how-brands-container">
+    <div class="how-brands-header">
+      <h2 class="how-brands-title roboto-600" id="howBrandsTitle">How Kamao works for brands</h2>
+      <p class="how-brands-subtitle roboto-400">
+        A simple workflow for running and participating in digital marketing campaigns.
+      </p>
+    </div>
+
+    <div class="how-brands-panel" data-how-works>
+
+      <!-- VISUAL: poster image (steps 2 and 3) + card stack (step 1) -->
+      <div class="how-brands-visual is-stack">
+        <div class="how-brands-visual-bg" aria-hidden="true"></div>
+        <div class="how-brands-step-pill">
+          <span class="how-brands-step-dot" aria-hidden="true"></span>
+          <span class="how-brands-step-label" data-how-works-label>Step 1: Launch a campaign</span>
+        </div>
+        <div class="how-brands-visual-media">
+          <img src="./images/Article - Brand Card 1_ Kamao.png" alt="" class="how-brands-visual-img" data-how-works-image />
         </div>
 
-        <div class="how-brands-panel" data-how-works>
-          <div class="how-brands-visual">
-            <div class="how-brands-visual-bg" aria-hidden="true"></div>
-            <div class="how-brands-step-pill">
-              <span class="how-brands-step-dot" aria-hidden="true"></span>
-              <span class="how-brands-step-label" data-how-works-label>Step 1: Create Campaigns</span>
-            </div>
-            <div class="how-brands-visual-media">
-              <img src="./images/Article - Brand Card 1_ Kamao.png" alt="" class="how-brands-visual-img" data-how-works-image />
-            </div>
-          </div>
-
-          <div class="how-brands-steps" role="tablist" aria-label="Brand workflow steps">
-            <div class="how-brands-track" aria-hidden="true">
-              <span class="how-brands-track-fill" data-how-works-fill></span>
-            </div>
-
-            <button type="button" class="how-brands-step is-active" role="tab" aria-selected="true" data-how-works-step
-              data-step="1" data-label="Step 1: Create Campaigns" data-image="./images/Article - Brand Card 1_ Kamao.png">
-              <span class="how-brands-step-icon">
-                <img src="./images/Article - Brand Card 1_ Kamao.png" alt="" width="18" height="18" />
-              </span>
-              <span class="how-brands-step-copy">
-                <span class="how-brands-step-title">Create Campaigns</span>
-                <span class="how-brands-step-text">Create campaigns based on your marketing objectives, requirements and
-                  desired participation.</span>
-              </span>
-            </button>
-
-            <button type="button" class="how-brands-step" role="tab" aria-selected="false" data-how-works-step
-              data-step="2" data-label="Step 2: Manage Participation" data-image="./images/secondLanding.png">
-              <span class="how-brands-step-icon">
-                <img src="./images/secondLanding.png" alt="" width="18" height="18" />
-              </span>
-              <span class="how-brands-step-copy">
-                <span class="how-brands-step-title">Manage Participation</span>
-                <span class="how-brands-step-text">Organize campaign participation and manage campaign activity through
-                  Kamao.</span>
-              </span>
-            </button>
-
-            <button type="button" class="how-brands-step" role="tab" aria-selected="false" data-how-works-step
-              data-step="3" data-label="Step 3: Review Campaign Activity" data-image="./images/thirdLanding.png">
-              <span class="how-brands-step-icon">
-                <img src="./images/thirdLanding.png" alt="" width="21" height="20" />
-              </span>
-              <span class="how-brands-step-copy">
-                <span class="how-brands-step-title">Review Campaign Activity</span>
-                <span class="how-brands-step-text">Review available information related to campaign participation and
-                  performance.</span>
-              </span>
-            </button>
-
-            <button type="button" class="how-brands-step" role="tab" aria-selected="false" data-how-works-step
-              data-step="4" data-label="Step 4: Grow Your Reach" data-image="./images/4thLanding.png">
-              <span class="how-brands-step-icon">
-                <img src="./images/4thLanding.png" alt="" width="21" height="20" />
-              </span>
-              <span class="how-brands-step-copy">
-                <span class="how-brands-step-title">Grow Your Reach</span>
-                <span class="how-brands-step-text">Work with creators to support your digital marketing
-                  objectives.</span>
-              </span>
-            </button>
-          </div>
+        <!-- CARD STACK: change the image paths. For more images, copy one button block. -->
+             <div class="hb-stack" data-hb-stack aria-label="Brand gallery">
+          <button class="hb-card" type="button" data-pos="0" aria-label="Show brand 1">
+            <span class="hb-inner"><img src="./images/campaigns/fishtail.png" alt="" draggable="false"></span>
+          </button>
+          <button class="hb-card" type="button" data-pos="1" aria-label="Show brand 2">
+            <span class="hb-inner"><img src="./images/campaigns/poojalaya.png" alt="" draggable="false"></span>
+          </button>
+          <button class="hb-card" type="button" data-pos="2" aria-label="Show brand 3">
+            <span class="hb-inner"><img src="./images/campaigns/karnaliYaks.png" alt="" draggable="false"></span>
+          </button>
+          <button class="hb-card" type="button" data-pos="3" aria-label="Show brand 4">
+            <span class="hb-inner"><img src="./images/campaigns/poojalaya.png" alt="" draggable="false"></span>
+          </button>
         </div>
       </div>
-    </section>
+
+      <div class="how-brands-steps" role="tablist" aria-label="Brand workflow steps">
+        <div class="how-brands-track" aria-hidden="true">
+          <span class="how-brands-track-fill" data-how-works-fill></span>
+        </div>
+
+        <!-- Step 1: shows the card stack (data-stack) -->
+        <button type="button" class="how-brands-step is-active" role="tab" aria-selected="true" data-how-works-step
+          data-step="1" data-stack data-label="Step 1: Launch a campaign" data-image="./images/Article - Brand Card 1_ Kamao.png">
+          <span class="how-brands-step-icon">
+            <img src="./images/Article - Brand Card 1_ Kamao.png" alt="" width="18" height="18" />
+          </span>
+          <span class="how-brands-step-copy">
+            <span class="how-brands-step-title">Launch a campaign</span>
+            <span class="how-brands-step-text">Tell people what you would like them to share. It takes minutes, and you stay in control.</span>
+          </span>
+        </button>
+
+        <!-- Step 2: image swap -->
+        <button type="button" class="how-brands-step" role="tab" aria-selected="false" data-how-works-step
+          data-step="2" data-label="Step 2: Real customers join in" data-image="./images/secondLanding.png">
+          <span class="how-brands-step-icon">
+            <img src="./images/secondLanding.png" alt="" width="18" height="18" />
+          </span>
+          <span class="how-brands-step-copy">
+            <span class="how-brands-step-title">Real customers join in</span>
+            <span class="how-brands-step-text">People who actually use your product share their honest experience on their own social accounts.</span>
+          </span>
+        </button>
+
+        <!-- Step 3: image swap -->
+        <button  type="button" class="how-brands-step" role="tab" aria-selected="false" data-how-works-step
+          data-step="3" data-label="Step 3: You see what works" data-image="./images/autoMateBrand.webp">
+          <span class="how-brands-step-icon">
+            <img src="./images/autoMateBrand.webp"  alt="" width="21" height="20" />
+          </span>
+          <span class="how-brands-step-copy">
+            <span class="how-brands-step-title">You see what works</span>
+            <span class="how-brands-step-text">Every post is reviewed by Kamao. You see the results, and keep the content you love.</span>
+          </span>
+        </button>
+
+        <!-- <button type="button" class="how-brands-step" role="tab" aria-selected="false" data-how-works-step
+          data-step="4" data-label="Step 4: Grow Your Reach" data-image="./images/4thLanding.png">
+          <span class="how-brands-step-icon">
+            <img src="./images/4thLanding.png" alt="" width="21" height="20" />
+          </span>
+          <span class="how-brands-step-copy">
+            <span class="how-brands-step-title">Grow Your Reach</span>
+            <span class="how-brands-step-text">Work with creators to support your digital marketing
+              objectives.</span>
+          </span>
+        </button> -->
+      </div>
+    </div>
+
+    <p class="howWorksBox">Why it works: a recommendation from a <b> real customer </b> is trusted far more than an advert, and Kamao turns that into something you can budget for and measure.</p>
+
+  </div>
+</section>
     <!-- HOW KAMAO WORKS FOR BRANDS -->
 
 
@@ -794,83 +826,13 @@
       </div>
     </section>
 
-    <!-- dashboard SECTION -->
-    <section class="dashboard-section">
-      <div class="dashboard-container">
-
-        <!-- Top heading -->
-        <div class="dashboard-heading">
-          <h2 class="dashboard-title reveal-item roboto-600">
-            LAUNCH. THEN WATCH<br />
-            THE RESULTS ROLL IN.
-          </h2>
-
-          <p class="dashboard-subtitle roboto-400">
-            SEE YOUR RESULTS IN REAL TIME.
-          </p>
-        </div>
-
-        <!-- Main content -->
-        <div class="dashboard-content roboto-condensed-500">
-
-          <!-- Left content -->
-          <div class="dashboard-copy">
-            <p class="dashboard-description">
-              Track posts, views, and sales as they happen—all from your live
-              Kamao dashboard.
-            </p>
-
-            <ul class="dashboard-list">
-              <li class="dashboard-list-item">
-                <span class="dashboard-check">✓</span>
-                <span>CREATE YOUR BRAND PROFILE AND GET STARTED.</span>
-              </li>
-
-              <li class="dashboard-list-item">
-                <span class="dashboard-check">✓</span>
-                <span>SET YOUR REWARDS AND POST LIMITS.</span>
-              </li>
-
-              <li class="dashboard-list-item">
-                <span class="dashboard-check">✓</span>
-                <span>ADD FUNDS AND STAY IN CONTROL OF YOUR SPEND.</span>
-              </li>
-
-              <li class="dashboard-list-item">
-                <span class="dashboard-check">✓</span>
-                <span>GO LIVE AND START ENGAGING YOUR AUDIENCE.</span>
-              </li>
-
-              <li class="dashboard-list-item">
-                <span class="dashboard-check">✓</span>
-                <span>GET STARTED WITH JUST RS. 10,000.</span>
-              </li>
-            </ul>
-
-            <div class="dashboard-buttons roboto-500">
-              <a href="/Identity/Account/Register?type=launcher"  class="dashboard-button dashboard-button-primary">
-                Get started
-              </a>
-
-              <a href="/book-demo" class="dashboard-button dashboard-button-secondary">
-                Book a demo call
-              </a>
-            </div>
-          </div>
-
-          <!-- Right dashboard image -->
-          <!-- <div class="dashboard-visual">
-            <img class="dashboard-dashboard" src="./images/launch/dashboard.png"
-              alt="Kamao dashboard showing real-time campaign results" />
-          </div> -->
-
-        </div>
-      </div>
-    </section>
+    <!-- dashboard SECTION STARTs-->
+     <!-- in backup.html  -->
+    <!-- dashboard SECTION ENDs -->
 
 
     <!--platform section -->
-    <section class="platform-section">
+    <!-- <section class="platform-section">
       <div class="platform-container">
 
         <div class="platform-header">
@@ -882,7 +844,7 @@
 
         <div class="platform-grid">
 
-          <!-- Card 1 -->
+    
           <article class="platform-card">
             <div class="platform-card-image platform-bg-yellow">
               <img src="./images/platform/plat1.png" alt="Spend Control" class="platform-image" />
@@ -896,7 +858,7 @@
             </div>
           </article>
 
-          <!-- Card 2 -->
+      
           <article class="platform-card">
             <div class="platform-card-image platform-bg-green">
               <img src="./images/platform/plat2.png" alt="Live Posts Feed" class="platform-image" />
@@ -910,7 +872,7 @@
             </div>
           </article>
 
-          <!-- Card 3 -->
+
           <article class="platform-card">
             <div class="platform-card-image platform-bg-blue">
               <img src="./images/platform/plat3.png" alt="Performance Dashboard" class="platform-image" />
@@ -924,7 +886,7 @@
             </div>
           </article>
 
-          <!-- Card 4 -->
+
           <article class="platform-card">
             <div class="platform-card-image platform-bg-blue">
               <span class="platform-badge">
@@ -943,7 +905,7 @@
             </div>
           </article>
 
-          <!-- Card 5 -->
+
           <article class="platform-card">
             <div class="platform-card-image platform-bg-green">
               <img src="./images/platform/plat5.png" alt="Post Guidelines and Earnings" class="platform-image" />
@@ -957,7 +919,6 @@
             </div>
           </article>
 
-          <!-- Card 6 -->
           <article class="platform-card">
             <div class="platform-card-image platform-bg-yellow">
               <img src="./images/platform/plat6.png" alt="Shopper Insights" class="platform-image" />
@@ -973,7 +934,7 @@
 
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     <!-- TIME LOOP  -->
@@ -1232,14 +1193,21 @@
           Get in touch with our team.</p>
         <div class="ccard rv"><b style="font-size:18px">Aayu Softtech</b>
           <!-- <p style="color:var(--muted)">Kamao is a product of Aayu Softtech</p> -->
-          <div class="crow"><span class="ic t-sky"><i class="ri-mail-unread-line"></i></span>
+          <div class="crow"><span class="ic t-sky">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path></svg>
+          </span>
             <div><small>Email</small><b>        <a href="mailto:aayusoft@outlook.com" >aayusoft@outlook.com</a>
 </b></div>
           </div>
-          <div class="crow"><span class="ic t-lime"><i class="ri-global-line"></i></span>
+          <div class="crow"><span class="ic t-lime">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9.71002 19.6674C8.74743 17.6259 8.15732 15.3742 8.02731 13H4.06189C4.458 16.1765 6.71639 18.7747 9.71002 19.6674ZM10.0307 13C10.1811 15.4388 10.8778 17.7297 12 19.752C13.1222 17.7297 13.8189 15.4388 13.9693 13H10.0307ZM19.9381 13H15.9727C15.8427 15.3742 15.2526 17.6259 14.29 19.6674C17.2836 18.7747 19.542 16.1765 19.9381 13ZM4.06189 11H8.02731C8.15732 8.62577 8.74743 6.37407 9.71002 4.33256C6.71639 5.22533 4.458 7.8235 4.06189 11ZM10.0307 11H13.9693C13.8189 8.56122 13.1222 6.27025 12 4.24799C10.8778 6.27025 10.1811 8.56122 10.0307 11ZM14.29 4.33256C15.2526 6.37407 15.8427 8.62577 15.9727 11H19.9381C19.542 7.8235 17.2836 5.22533 14.29 4.33256Z"></path></svg>
+          </span>
             <div><small>Website</small><b><a href="https://aayusofttech.com.np" target="_blank">aayusofttech.com.np</a></b></div>
           </div>
-          <div class="crow"><span class="ic t-gold"><i class="ri-eye-2-line"></i></span>
+          <div class="crow"><span class="ic t-gold">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M5.76282 17H13.083C13.0284 17.3252 13 17.6593 13 18C13 18.3407 13.0284 18.6748 13.083 19H6.45455L2 22.5V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V12.8027C21.3926 12.4513 20.7179 12.2034 20 12.083V5H4V18.3851L5.76282 17ZM23.9497 21.5355L22.4462 20.032C22.7981 19.4365 23 18.7418 23 18C23 15.7909 21.2091 14 19 14C16.7909 14 15 15.7909 15 18C15 20.2091 16.7909 22 19 22C19.7418 22 20.4365 21.7981 21.032 21.4462L22.5355 22.9497L23.9497 21.5355ZM21 18C21 19.1046 20.1046 20 19 20C17.8954 20 17 19.1046 17 18C17 16.8954 17.8954 16 19 16C20.1046 16 21 16.8954 21 18Z"></path></svg>
+          </span>
             <div><small>Talk to us</small><b><a href="/book-demo">Book a demo / Contact</a></b></div>
           </div>
         </div>
@@ -1248,9 +1216,9 @@
     <!-- CONTACT END -->
 
     <!-- FOOTER  -->
-<footer class="footer" id="footer">
-  <canvas id="trail" aria-hidden="true"></canvas>
+<footer class="footer ribbonFollower" data-name="footer" id="footer">
 
+  <canvas aria-hidden="true"></canvas>
     <div class="footer__container footer-content">
 
       <div class="footer__columns">
